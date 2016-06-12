@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games">
+      <UniqueIdentifier>{7a89e08a-1a34-4365-8e9a-7819ca4ccae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameMessage">
+      <UniqueIdentifier>{aa3e8a33-fbde-41c8-8f0d-d165a441d07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable">
+      <UniqueIdentifier>{42bcdada-d09a-48e6-8902-05a18a3b073d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\Card.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\CardPool.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\CardPoolUser.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ConcealedKong.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\EastMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\Factory.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\GameManager.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\HuCard.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\MahjongCard.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\MahjongCardPool.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\MahjongCardPoolUser.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\MeldedKong.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\NorthMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\PoolAction.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ResourceLoader.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\SouthMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\TouchCard.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\TouchKong.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\WestMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\XZMJ_GameTableLogic.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\XZMJ_GameTableUI.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMessage\XZMJ_MessageHead.h">
+      <Filter>src\Games\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\Card.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\CardPool.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\CardPoolUser.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ConcealedKong.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\EastMahjongCardPool.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\Factory.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\GameManager.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\HuCard.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\MahjongCard.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\MahjongCardPool.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\MahjongCardPoolUser.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\MeldedKong.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\NorthMahjongCardPool.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\PoolAction.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ResourceLoader.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\SouthMahjongCardPool.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\TouchCard.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\TouchKong.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\WestMahjongCardPool.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\XZMJ_GameTableLogic.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\XZMJ_GameTableUI.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\XZMJ_GameTableUICallback.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

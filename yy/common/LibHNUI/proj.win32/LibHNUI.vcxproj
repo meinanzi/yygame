@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FD96982-B16E-4721-B3CF-0C29025FEB9B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <ProjectName>LibHNUI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.;..;$(EngineRoot);$(EngineRoot)\cocos\;$(EngineRoot)\cocos\audio\include;$(EngineRoot)\cocos\platform\win32;$(EngineRoot)\cocos\editor-support;$(EngineRoot)\extensions;$(EngineRoot)\external;$(EngineRoot)\external\glfw3\include\win32;$(EngineRoot)\external\win32-specific\gles\include\OGLES;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <DisableSpecificWarnings>4819;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\HNUIExport.h" />
+    <ClInclude Include="..\Sound\HNAudioEngine.h" />
+    <ClInclude Include="..\Tool\Tools.h" />
+    <ClInclude Include="..\UI\Base\HNLayer.h" />
+    <ClInclude Include="..\UI\Base\HNLayerColor.h" />
+    <ClInclude Include="..\UI\Base\HNNode.h" />
+    <ClInclude Include="..\UI\Base\HNScene.h" />
+    <ClInclude Include="..\UI\Base\HNSprite.h" />
+    <ClInclude Include="..\UI\HNDialogBase.h" />
+    <ClInclude Include="..\UI\HNEditBox.h" />
+    <ClInclude Include="..\UI\HNShake.h" />
+    <ClInclude Include="..\UI\LoadingLayer.h" />
+    <ClInclude Include="..\UI\TextSprite.h" />
+    <ClInclude Include="..\UI\UserHead.h" />
+    <ClInclude Include="..\UI\Wrapper\HNSwitchImageViewWrapper.h" />
+    <ClInclude Include="..\UI\Wrapper\HNWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sound\HNAudioEngine.cpp" />
+    <ClCompile Include="..\Tool\Tools.cpp" />
+    <ClCompile Include="..\UI\Base\HNLayer.cpp" />
+    <ClCompile Include="..\UI\Base\HNLayerColor.cpp" />
+    <ClCompile Include="..\UI\Base\HNNode.cpp" />
+    <ClCompile Include="..\UI\Base\HNScene.cpp" />
+    <ClCompile Include="..\UI\Base\HNSprite.cpp" />
+    <ClCompile Include="..\UI\HNDialogBase.cpp" />
+    <ClCompile Include="..\UI\HNEditBox.cpp" />
+    <ClCompile Include="..\UI\HNShake.cpp" />
+    <ClCompile Include="..\UI\LoadingLayer.cpp" />
+    <ClCompile Include="..\UI\TextSprite.cpp" />
+    <ClCompile Include="..\UI\UserHead.cpp" />
+    <ClCompile Include="..\UI\Wrapper\HNSwitchImageViewWrapper.cpp" />
+    <ClCompile Include="..\UI\Wrapper\HNWrapper.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

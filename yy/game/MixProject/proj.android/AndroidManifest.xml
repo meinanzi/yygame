@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.YX.MixProject"
+      android:versionCode="14"
+      android:versionName="2.6.1"
+      android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="9"/>
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon">
+					 
+        <!-- Tell Cocos2dxActivity the name of our .so -->
+        <meta-data android:name="android.app.lib_name"
+	              android:value="cocos2dcpp" />
+
+        <activity android:name="com.YX.project.AppActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.alipay.sdk.app.H5PayActivity"/> 
+        
+        <!-- ###################注册SDK使用的Activity###################### -->
+	    <!--分享编辑页-->
+	    <activity
+	        android:name="com.umeng.socialize.view.ShareActivity"
+	        android:configChanges="orientation|keyboard"
+	        android:launchMode="singleTask"
+	        android:noHistory="true"
+	        android:theme="@style/Theme.UMDialog"
+	        android:windowSoftInputMode="stateVisible|adjustResize" >
+	    </activity>
+	    
+	     <!-- ###################pp钱包Activity###################### -->
+	    <activity
+            android:name="com.hn.pay.HNPayActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="cn.paypalm.pppayment.WaitingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="cn.paypalm.pppayment.PPPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <service android:name="cn.paypalm.service.SafeService" />
+        <receiver android:name="cn.paypalm.receiver.SafeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+		
+		
+		<!-- ############### 智付 ######################-->
+	   <activity android:name="com.dinpay.plugin.activity.DinpayChannelActivity"
+           android:screenOrientation="portrait"
+           android:configChanges="orientation|keyboardHidden" />
+       
+       <activity android:name="com.unionpay.uppay.PayActivity"
+            android:theme="@style/Theme.UPPay"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"/>
+        
+        <activity android:name="com.unionpay.uppay.PayActivityEx"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize"/> 
+		
+		<!-- 新增支付通道 Activity,客户在集成的时候务必全部注册这些Activity，否则调用插件时会直接退出； -->  
+		<activity
+            android:name="com.dinpay.plugin.activity.OrderMessageActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+        >
+         </activity>
+		 <activity
+            android:name="com.dinpay.plugin.activity.BindMobileActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+		<activity
+            android:name="com.dinpay.plugin.activity.DinpayPayActivity"
+            android:screenOrientation="portrait"       
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+             >
+        </activity>
+		<activity
+            android:name="com.dinpay.plugin.activity.BankCardListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            >
+        </activity>	
+		<activity
+            android:name="com.dinpay.plugin.activity.PayResultActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+        <activity
+            android:name="com.dinpay.plugin.activity.AgreeMentActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+         <activity
+            android:name="com.dinpay.plugin.activity.DinpayBaseActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+         >
+         </activity>
+         <activity
+            android:name="com.dinpay.plugin.activity.BaseActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+         >
+         </activity>
+         <activity android:name="com.redbird.Landlord.MerchantPayResultActivity" 
+            android:screenOrientation="portrait"
+			android:configChanges ="keyboardHidden|orientation"/>
+       
+       
+	    <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+	    <activity
+	        android:name="com.tencent.tauth.AuthActivity"
+	        android:launchMode="singleTask"
+	        android:noHistory="true" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.VIEW" />
+	
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <category android:name="android.intent.category.BROWSABLE" />
+	            <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID-->
+	            <data android:scheme="tencent1105327702" /> 
+	        </intent-filter>
+	    </activity>
+	    
+	    
+	    <activity android:name="com.tencent.plus.ImageActivity" />
+	    <activity android:name="com.tencent.connect.common.AssistActivity"
+	        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+	        android:screenOrientation="portrait">
+	    </activity>
+
+	    <!-- 微信分享activity注册 -->
+	    <activity
+	        android:name="com.YX.Landlord.wxapi.WXEntryActivity"
+	        android:configChanges="keyboardHidden|orientation|screenSize"
+	        android:exported="true"
+	        android:screenOrientation="portrait"
+	        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+	    
+	    <meta-data
+	        android:name="UMENG_APPKEY"
+	        android:value="666bfe6767e58e7dcc0051d5" >
+    	</meta-data>
+    </application>
+
+    <supports-screens android:anyDensity="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/><!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.INTERNET"/><!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/><!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  <!-- 用于评论模块分享位置信息 -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!-- 用于评论模块分享位置信息 -->
+	
+	<uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc.hce" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+</manifest> 

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UMeng">
+      <UniqueIdentifier>{c2d39194-b834-4ad3-a54d-4e8b525489c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UMeng\Cocos2dx">
+      <UniqueIdentifier>{43bfc8d4-0904-4743-9f65-e83dfdb29452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UMeng\Cocos2dx\Common">
+      <UniqueIdentifier>{bceb844b-a2a2-4bb5-b209-adcb1e1eb90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UMeng\Cocos2dx\ShareButton">
+      <UniqueIdentifier>{159d7eb1-14ef-4cd6-aaf2-6d2397ffecaf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\UMeng\Cocos2dx\Common\CCUMSocialSDK.cpp">
+      <Filter>UMeng\Cocos2dx\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UMeng\Cocos2dx\ShareButton\UMShareButton.cpp">
+      <Filter>UMeng\Cocos2dx\ShareButton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\UMeng\Cocos2dx\Common\CCUMSocialSDK.h">
+      <Filter>UMeng\Cocos2dx\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UMeng\Cocos2dx\Common\CCUMTypeDef.h">
+      <Filter>UMeng\Cocos2dx\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UMeng\Cocos2dx\ShareButton\UMShareButton.h">
+      <Filter>UMeng\Cocos2dx\ShareButton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNOpenExport.h" />
+  </ItemGroup>
+</Project>

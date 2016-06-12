@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HNPay</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Button_WECHAT">微信支付</string>
+    <string name="Button_ALIPAY">支付宝</string>
+    <string name="string_products_des">商品：1,680,000,000筹码</string>
+    <string name="string_products_money">价格：100元</string>
+    <string name="string_customer_service_phone">如有疑问请联系： 400-8819-308 / 0755-23021758</string>
+
+</resources>

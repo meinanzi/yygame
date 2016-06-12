@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F110F5D1B2BD106004D8703 /* HNUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F110F5B1B2BD106004D8703 /* HNUpdate.cpp */; };
+		586B843F1BE2508200C7F104 /* GameGiftShop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 586B843D1BE2508200C7F104 /* GameGiftShop.cpp */; };
+		7F3BFBC81BACF292003C41EC /* GameWebView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BFBC61BACF292003C41EC /* GameWebView.cpp */; };
+		7F3BFBCB1BACF2F5003C41EC /* NoticeList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BFBC91BACF2F5003C41EC /* NoticeList.cpp */; };
+		7F3E97E31BC8B120007757CD /* SpreadEditLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E97E11BC8B120007757CD /* SpreadEditLayer.cpp */; };
+		BC5B7B111B9C7627002AA3BF /* GamePasswordInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC5B7B0F1B9C7627002AA3BF /* GamePasswordInput.cpp */; };
+		BC9E6C561B11A19A002EEC6F /* GameBankLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C1A1B11A19A002EEC6F /* GameBankLayer.cpp */; };
+		BC9E6C571B11A19A002EEC6F /* GameExitChangeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C1C1B11A19A002EEC6F /* GameExitChangeLayer.cpp */; };
+		BC9E6C581B11A19A002EEC6F /* GamePayLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C1E1B11A19A002EEC6F /* GamePayLayer.cpp */; };
+		BC9E6C591B11A19A002EEC6F /* GameRankingList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C201B11A19A002EEC6F /* GameRankingList.cpp */; };
+		BC9E6C5A1B11A19A002EEC6F /* GameSetLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C221B11A19A002EEC6F /* GameSetLayer.cpp */; };
+		BC9E6C5B1B11A19A002EEC6F /* GameSignLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C241B11A19A002EEC6F /* GameSignLayer.cpp */; };
+		BC9E6C5C1B11A19A002EEC6F /* GameStoreLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C261B11A19A002EEC6F /* GameStoreLayer.cpp */; };
+		BC9E6C5D1B11A19A002EEC6F /* ServiceLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C281B11A19A002EEC6F /* ServiceLayer.cpp */; };
+		BC9E6C5E1B11A19A002EEC6F /* FontConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C2A1B11A19A002EEC6F /* FontConfig.cpp */; };
+		BC9E6C5F1B11A19A002EEC6F /* GameDesk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C2C1B11A19A002EEC6F /* GameDesk.cpp */; };
+		BC9E6C601B11A19A002EEC6F /* GameExitLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C2E1B11A19A002EEC6F /* GameExitLayer.cpp */; };
+		BC9E6C611B11A19A002EEC6F /* GameInitial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C301B11A19A002EEC6F /* GameInitial.cpp */; };
+		BC9E6C621B11A19A002EEC6F /* GameLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C321B11A19A002EEC6F /* GameLists.cpp */; };
+		BC9E6C631B11A19A002EEC6F /* GameMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C341B11A19A002EEC6F /* GameMatch.cpp */; };
+		BC9E6C641B11A19A002EEC6F /* GameLandLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C371B11A19A002EEC6F /* GameLandLayer.cpp */; };
+		BC9E6C651B11A19A002EEC6F /* GameMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C391B11A19A002EEC6F /* GameMenu.cpp */; };
+		BC9E6C661B11A19A002EEC6F /* GameRegisterLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C3B1B11A19A002EEC6F /* GameRegisterLayer.cpp */; };
+		BC9E6C671B11A19A002EEC6F /* GameNotice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C3D1B11A19A002EEC6F /* GameNotice.cpp */; };
+		BC9E6C681B11A19A002EEC6F /* GamePlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C3F1B11A19A002EEC6F /* GamePlatform.cpp */; };
+		BC9E6C691B11A19A002EEC6F /* GamePrompt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C411B11A19A002EEC6F /* GamePrompt.cpp */; };
+		BC9E6C6A1B11A19A002EEC6F /* GameRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C431B11A19A002EEC6F /* GameRoom.cpp */; };
+		BC9E6C6B1B11A19A002EEC6F /* LayerManger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C451B11A19A002EEC6F /* LayerManger.cpp */; };
+		BC9E6C6C1B11A19A002EEC6F /* BindPhone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C481B11A19A002EEC6F /* BindPhone.cpp */; };
+		BC9E6C6D1B11A19A002EEC6F /* GameUserDataLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C4A1B11A19A002EEC6F /* GameUserDataLayer.cpp */; };
+		BC9E6C6E1B11A19A002EEC6F /* ModifyPassword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C4C1B11A19A002EEC6F /* ModifyPassword.cpp */; };
+		BC9E6C6F1B11A19A002EEC6F /* PlatformConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C4E1B11A19A002EEC6F /* PlatformConfig.cpp */; };
+		BC9E6C701B11A19A002EEC6F /* ProductInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C521B11A19A002EEC6F /* ProductInfo.cpp */; };
+		BC9E6C711B11A19A002EEC6F /* ShopManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C541B11A19A002EEC6F /* ShopManager.cpp */; };
+		BCF40F5C1B14477F00C53522 /* GameOnlineReward.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCF40F5A1B14477F00C53522 /* GameOnlineReward.cpp */; };
+		BCF40F5F1B14743A00C53522 /* GameRechargeRebate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCF40F5D1B14743A00C53522 /* GameRechargeRebate.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0DFDCDA1A450A9D00FAD800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F110F5B1B2BD106004D8703 /* HNUpdate.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = HNUpdate.cpp; sourceTree = "<group>"; };
+		1F110F5C1B2BD106004D8703 /* HNUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNUpdate.h; sourceTree = "<group>"; };
+		586B843D1BE2508200C7F104 /* GameGiftShop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameGiftShop.cpp; sourceTree = "<group>"; };
+		586B843E1BE2508200C7F104 /* GameGiftShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameGiftShop.h; sourceTree = "<group>"; };
+		7F3BFBC61BACF292003C41EC /* GameWebView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWebView.cpp; sourceTree = "<group>"; };
+		7F3BFBC71BACF292003C41EC /* GameWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWebView.h; sourceTree = "<group>"; };
+		7F3BFBC91BACF2F5003C41EC /* NoticeList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoticeList.cpp; sourceTree = "<group>"; };
+		7F3BFBCA1BACF2F5003C41EC /* NoticeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeList.h; sourceTree = "<group>"; };
+		7F3E97E11BC8B120007757CD /* SpreadEditLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpreadEditLayer.cpp; sourceTree = "<group>"; };
+		7F3E97E21BC8B120007757CD /* SpreadEditLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadEditLayer.h; sourceTree = "<group>"; };
+		BC5B7B0F1B9C7627002AA3BF /* GamePasswordInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePasswordInput.cpp; sourceTree = "<group>"; };
+		BC5B7B101B9C7627002AA3BF /* GamePasswordInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePasswordInput.h; sourceTree = "<group>"; };
+		BC9E6C1A1B11A19A002EEC6F /* GameBankLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameBankLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C1B1B11A19A002EEC6F /* GameBankLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBankLayer.h; sourceTree = "<group>"; };
+		BC9E6C1C1B11A19A002EEC6F /* GameExitChangeLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameExitChangeLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C1D1B11A19A002EEC6F /* GameExitChangeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameExitChangeLayer.h; sourceTree = "<group>"; };
+		BC9E6C1E1B11A19A002EEC6F /* GamePayLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePayLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C1F1B11A19A002EEC6F /* GamePayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePayLayer.h; sourceTree = "<group>"; };
+		BC9E6C201B11A19A002EEC6F /* GameRankingList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRankingList.cpp; sourceTree = "<group>"; };
+		BC9E6C211B11A19A002EEC6F /* GameRankingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRankingList.h; sourceTree = "<group>"; };
+		BC9E6C221B11A19A002EEC6F /* GameSetLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSetLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C231B11A19A002EEC6F /* GameSetLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetLayer.h; sourceTree = "<group>"; };
+		BC9E6C241B11A19A002EEC6F /* GameSignLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSignLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C251B11A19A002EEC6F /* GameSignLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSignLayer.h; sourceTree = "<group>"; };
+		BC9E6C261B11A19A002EEC6F /* GameStoreLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = GameStoreLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C271B11A19A002EEC6F /* GameStoreLayer.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = GameStoreLayer.h; sourceTree = "<group>"; };
+		BC9E6C281B11A19A002EEC6F /* ServiceLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServiceLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C291B11A19A002EEC6F /* ServiceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceLayer.h; sourceTree = "<group>"; };
+		BC9E6C2A1B11A19A002EEC6F /* FontConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FontConfig.cpp; sourceTree = "<group>"; };
+		BC9E6C2B1B11A19A002EEC6F /* FontConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontConfig.h; sourceTree = "<group>"; };
+		BC9E6C2C1B11A19A002EEC6F /* GameDesk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameDesk.cpp; sourceTree = "<group>"; };
+		BC9E6C2D1B11A19A002EEC6F /* GameDesk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDesk.h; sourceTree = "<group>"; };
+		BC9E6C2E1B11A19A002EEC6F /* GameExitLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameExitLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C2F1B11A19A002EEC6F /* GameExitLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameExitLayer.h; sourceTree = "<group>"; };
+		BC9E6C301B11A19A002EEC6F /* GameInitial.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameInitial.cpp; sourceTree = "<group>"; };
+		BC9E6C311B11A19A002EEC6F /* GameInitial.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GameInitial.h; sourceTree = "<group>"; };
+		BC9E6C321B11A19A002EEC6F /* GameLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLists.cpp; sourceTree = "<group>"; };
+		BC9E6C331B11A19A002EEC6F /* GameLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLists.h; sourceTree = "<group>"; };
+		BC9E6C341B11A19A002EEC6F /* GameMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameMatch.cpp; sourceTree = "<group>"; };
+		BC9E6C351B11A19A002EEC6F /* GameMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMatch.h; sourceTree = "<group>"; };
+		BC9E6C371B11A19A002EEC6F /* GameLandLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameLandLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C381B11A19A002EEC6F /* GameLandLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLandLayer.h; sourceTree = "<group>"; };
+		BC9E6C391B11A19A002EEC6F /* GameMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameMenu.cpp; sourceTree = "<group>"; };
+		BC9E6C3A1B11A19A002EEC6F /* GameMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenu.h; sourceTree = "<group>"; };
+		BC9E6C3B1B11A19A002EEC6F /* GameRegisterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameRegisterLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C3C1B11A19A002EEC6F /* GameRegisterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRegisterLayer.h; sourceTree = "<group>"; };
+		BC9E6C3D1B11A19A002EEC6F /* GameNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameNotice.cpp; sourceTree = "<group>"; };
+		BC9E6C3E1B11A19A002EEC6F /* GameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameNotice.h; sourceTree = "<group>"; };
+		BC9E6C3F1B11A19A002EEC6F /* GamePlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = GamePlatform.cpp; sourceTree = "<group>"; };
+		BC9E6C401B11A19A002EEC6F /* GamePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlatform.h; sourceTree = "<group>"; };
+		BC9E6C411B11A19A002EEC6F /* GamePrompt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePrompt.cpp; sourceTree = "<group>"; };
+		BC9E6C421B11A19A002EEC6F /* GamePrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePrompt.h; sourceTree = "<group>"; };
+		BC9E6C431B11A19A002EEC6F /* GameRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoom.cpp; sourceTree = "<group>"; };
+		BC9E6C441B11A19A002EEC6F /* GameRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoom.h; sourceTree = "<group>"; };
+		BC9E6C451B11A19A002EEC6F /* LayerManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerManger.cpp; sourceTree = "<group>"; };
+		BC9E6C461B11A19A002EEC6F /* LayerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerManger.h; sourceTree = "<group>"; };
+		BC9E6C481B11A19A002EEC6F /* BindPhone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BindPhone.cpp; sourceTree = "<group>"; };
+		BC9E6C491B11A19A002EEC6F /* BindPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPhone.h; sourceTree = "<group>"; };
+		BC9E6C4A1B11A19A002EEC6F /* GameUserDataLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameUserDataLayer.cpp; sourceTree = "<group>"; };
+		BC9E6C4B1B11A19A002EEC6F /* GameUserDataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameUserDataLayer.h; sourceTree = "<group>"; };
+		BC9E6C4C1B11A19A002EEC6F /* ModifyPassword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModifyPassword.cpp; sourceTree = "<group>"; };
+		BC9E6C4D1B11A19A002EEC6F /* ModifyPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPassword.h; sourceTree = "<group>"; };
+		BC9E6C4E1B11A19A002EEC6F /* PlatformConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformConfig.cpp; sourceTree = "<group>"; };
+		BC9E6C4F1B11A19A002EEC6F /* PlatformConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformConfig.h; sourceTree = "<group>"; };
+		BC9E6C501B11A19A002EEC6F /* PlatformDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefine.h; sourceTree = "<group>"; };
+		BC9E6C521B11A19A002EEC6F /* ProductInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProductInfo.cpp; sourceTree = "<group>"; };
+		BC9E6C531B11A19A002EEC6F /* ProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductInfo.h; sourceTree = "<group>"; };
+		BC9E6C541B11A19A002EEC6F /* ShopManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShopManager.cpp; sourceTree = "<group>"; };
+		BC9E6C551B11A19A002EEC6F /* ShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopManager.h; sourceTree = "<group>"; };
+		BC9E6C721B11A1AB002EEC6F /* HNLobbyExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNLobbyExport.h; path = ../HNLobbyExport.h; sourceTree = "<group>"; };
+		BCF40F5A1B14477F00C53522 /* GameOnlineReward.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOnlineReward.cpp; sourceTree = "<group>"; };
+		BCF40F5B1B14477F00C53522 /* GameOnlineReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOnlineReward.h; sourceTree = "<group>"; };
+		BCF40F5D1B14743A00C53522 /* GameRechargeRebate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRechargeRebate.cpp; sourceTree = "<group>"; };
+		BCF40F5E1B14743A00C53522 /* GameRechargeRebate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRechargeRebate.h; sourceTree = "<group>"; };
+		D0DFDCDC1A450A9D00FAD800 /* libLibHNLobby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibHNLobby.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0DFDCD91A450A9D00FAD800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F3E97E01BC8B120007757CD /* Popularise */ = {
+			isa = PBXGroup;
+			children = (
+				7F3E97E11BC8B120007757CD /* SpreadEditLayer.cpp */,
+				7F3E97E21BC8B120007757CD /* SpreadEditLayer.h */,
+			);
+			path = Popularise;
+			sourceTree = "<group>";
+		};
+		BC9E6C181B11A19A002EEC6F /* HNLobby */ = {
+			isa = PBXGroup;
+			children = (
+				7F3E97E01BC8B120007757CD /* Popularise */,
+				7F3BFBC61BACF292003C41EC /* GameWebView.cpp */,
+				7F3BFBC71BACF292003C41EC /* GameWebView.h */,
+				BC9E6C191B11A19A002EEC6F /* ChildLayer */,
+				BC9E6C2A1B11A19A002EEC6F /* FontConfig.cpp */,
+				BC9E6C2B1B11A19A002EEC6F /* FontConfig.h */,
+				BC9E6C2C1B11A19A002EEC6F /* GameDesk.cpp */,
+				BC9E6C2D1B11A19A002EEC6F /* GameDesk.h */,
+				BC9E6C2E1B11A19A002EEC6F /* GameExitLayer.cpp */,
+				1F110F5B1B2BD106004D8703 /* HNUpdate.cpp */,
+				1F110F5C1B2BD106004D8703 /* HNUpdate.h */,
+				BC9E6C2F1B11A19A002EEC6F /* GameExitLayer.h */,
+				BC9E6C301B11A19A002EEC6F /* GameInitial.cpp */,
+				BC9E6C311B11A19A002EEC6F /* GameInitial.h */,
+				BC9E6C321B11A19A002EEC6F /* GameLists.cpp */,
+				BC9E6C331B11A19A002EEC6F /* GameLists.h */,
+				BC9E6C341B11A19A002EEC6F /* GameMatch.cpp */,
+				BC9E6C351B11A19A002EEC6F /* GameMatch.h */,
+				BC9E6C361B11A19A002EEC6F /* GameMenu */,
+				BC9E6C3D1B11A19A002EEC6F /* GameNotice.cpp */,
+				BC9E6C3E1B11A19A002EEC6F /* GameNotice.h */,
+				BC9E6C3F1B11A19A002EEC6F /* GamePlatform.cpp */,
+				BC9E6C401B11A19A002EEC6F /* GamePlatform.h */,
+				BC9E6C411B11A19A002EEC6F /* GamePrompt.cpp */,
+				BC9E6C421B11A19A002EEC6F /* GamePrompt.h */,
+				BC9E6C431B11A19A002EEC6F /* GameRoom.cpp */,
+				BC9E6C441B11A19A002EEC6F /* GameRoom.h */,
+				BC9E6C451B11A19A002EEC6F /* LayerManger.cpp */,
+				BC9E6C461B11A19A002EEC6F /* LayerManger.h */,
+				BC9E6C471B11A19A002EEC6F /* PersionalCenter */,
+				BC9E6C4E1B11A19A002EEC6F /* PlatformConfig.cpp */,
+				BC9E6C4F1B11A19A002EEC6F /* PlatformConfig.h */,
+				BC9E6C501B11A19A002EEC6F /* PlatformDefine.h */,
+				BC9E6C511B11A19A002EEC6F /* Shop */,
+			);
+			name = HNLobby;
+			path = ../HNLobby;
+			sourceTree = "<group>";
+		};
+		BC9E6C191B11A19A002EEC6F /* ChildLayer */ = {
+			isa = PBXGroup;
+			children = (
+				586B843D1BE2508200C7F104 /* GameGiftShop.cpp */,
+				586B843E1BE2508200C7F104 /* GameGiftShop.h */,
+				7F3BFBC91BACF2F5003C41EC /* NoticeList.cpp */,
+				7F3BFBCA1BACF2F5003C41EC /* NoticeList.h */,
+				BC5B7B0F1B9C7627002AA3BF /* GamePasswordInput.cpp */,
+				BC5B7B101B9C7627002AA3BF /* GamePasswordInput.h */,
+				BCF40F5D1B14743A00C53522 /* GameRechargeRebate.cpp */,
+				BCF40F5E1B14743A00C53522 /* GameRechargeRebate.h */,
+				BCF40F5A1B14477F00C53522 /* GameOnlineReward.cpp */,
+				BCF40F5B1B14477F00C53522 /* GameOnlineReward.h */,
+				BC9E6C1A1B11A19A002EEC6F /* GameBankLayer.cpp */,
+				BC9E6C1B1B11A19A002EEC6F /* GameBankLayer.h */,
+				BC9E6C1C1B11A19A002EEC6F /* GameExitChangeLayer.cpp */,
+				BC9E6C1D1B11A19A002EEC6F /* GameExitChangeLayer.h */,
+				BC9E6C1E1B11A19A002EEC6F /* GamePayLayer.cpp */,
+				BC9E6C1F1B11A19A002EEC6F /* GamePayLayer.h */,
+				BC9E6C201B11A19A002EEC6F /* GameRankingList.cpp */,
+				BC9E6C211B11A19A002EEC6F /* GameRankingList.h */,
+				BC9E6C221B11A19A002EEC6F /* GameSetLayer.cpp */,
+				BC9E6C231B11A19A002EEC6F /* GameSetLayer.h */,
+				BC9E6C241B11A19A002EEC6F /* GameSignLayer.cpp */,
+				BC9E6C251B11A19A002EEC6F /* GameSignLayer.h */,
+				BC9E6C261B11A19A002EEC6F /* GameStoreLayer.cpp */,
+				BC9E6C271B11A19A002EEC6F /* GameStoreLayer.h */,
+				BC9E6C281B11A19A002EEC6F /* ServiceLayer.cpp */,
+				BC9E6C291B11A19A002EEC6F /* ServiceLayer.h */,
+			);
+			path = ChildLayer;
+			sourceTree = "<group>";
+		};
+		BC9E6C361B11A19A002EEC6F /* GameMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C371B11A19A002EEC6F /* GameLandLayer.cpp */,
+				BC9E6C381B11A19A002EEC6F /* GameLandLayer.h */,
+				BC9E6C391B11A19A002EEC6F /* GameMenu.cpp */,
+				BC9E6C3A1B11A19A002EEC6F /* GameMenu.h */,
+				BC9E6C3B1B11A19A002EEC6F /* GameRegisterLayer.cpp */,
+				BC9E6C3C1B11A19A002EEC6F /* GameRegisterLayer.h */,
+			);
+			path = GameMenu;
+			sourceTree = "<group>";
+		};
+		BC9E6C471B11A19A002EEC6F /* PersionalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C481B11A19A002EEC6F /* BindPhone.cpp */,
+				BC9E6C491B11A19A002EEC6F /* BindPhone.h */,
+				BC9E6C4A1B11A19A002EEC6F /* GameUserDataLayer.cpp */,
+				BC9E6C4B1B11A19A002EEC6F /* GameUserDataLayer.h */,
+				BC9E6C4C1B11A19A002EEC6F /* ModifyPassword.cpp */,
+				BC9E6C4D1B11A19A002EEC6F /* ModifyPassword.h */,
+			);
+			path = PersionalCenter;
+			sourceTree = "<group>";
+		};
+		BC9E6C511B11A19A002EEC6F /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C521B11A19A002EEC6F /* ProductInfo.cpp */,
+				BC9E6C531B11A19A002EEC6F /* ProductInfo.h */,
+				BC9E6C541B11A19A002EEC6F /* ShopManager.cpp */,
+				BC9E6C551B11A19A002EEC6F /* ShopManager.h */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		D0DFDCD31A450A9D00FAD800 = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C721B11A1AB002EEC6F /* HNLobbyExport.h */,
+				BC9E6C181B11A19A002EEC6F /* HNLobby */,
+				D0DFDCDD1A450A9D00FAD800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0DFDCDD1A450A9D00FAD800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDCDC1A450A9D00FAD800 /* libLibHNLobby.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0DFDCDB1A450A9D00FAD800 /* LibHNLobby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNLobby" */;
+			buildPhases = (
+				D0DFDCD81A450A9D00FAD800 /* Sources */,
+				D0DFDCD91A450A9D00FAD800 /* Frameworks */,
+				D0DFDCDA1A450A9D00FAD800 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibHNLobby;
+			productName = LibHNNet;
+			productReference = D0DFDCDC1A450A9D00FAD800 /* libLibHNLobby.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0DFDCD41A450A9D00FAD800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = redbird;
+				TargetAttributes = {
+					D0DFDCDB1A450A9D00FAD800 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNLobby" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0DFDCD31A450A9D00FAD800;
+			productRefGroup = D0DFDCDD1A450A9D00FAD800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0DFDCDB1A450A9D00FAD800 /* LibHNLobby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0DFDCD81A450A9D00FAD800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9E6C591B11A19A002EEC6F /* GameRankingList.cpp in Sources */,
+				7F3BFBC81BACF292003C41EC /* GameWebView.cpp in Sources */,
+				BCF40F5C1B14477F00C53522 /* GameOnlineReward.cpp in Sources */,
+				BC9E6C671B11A19A002EEC6F /* GameNotice.cpp in Sources */,
+				BC5B7B111B9C7627002AA3BF /* GamePasswordInput.cpp in Sources */,
+				BC9E6C5A1B11A19A002EEC6F /* GameSetLayer.cpp in Sources */,
+				BC9E6C5C1B11A19A002EEC6F /* GameStoreLayer.cpp in Sources */,
+				BCF40F5F1B14743A00C53522 /* GameRechargeRebate.cpp in Sources */,
+				BC9E6C5B1B11A19A002EEC6F /* GameSignLayer.cpp in Sources */,
+				BC9E6C5F1B11A19A002EEC6F /* GameDesk.cpp in Sources */,
+				BC9E6C6C1B11A19A002EEC6F /* BindPhone.cpp in Sources */,
+				BC9E6C6A1B11A19A002EEC6F /* GameRoom.cpp in Sources */,
+				BC9E6C6F1B11A19A002EEC6F /* PlatformConfig.cpp in Sources */,
+				BC9E6C711B11A19A002EEC6F /* ShopManager.cpp in Sources */,
+				BC9E6C561B11A19A002EEC6F /* GameBankLayer.cpp in Sources */,
+				586B843F1BE2508200C7F104 /* GameGiftShop.cpp in Sources */,
+				BC9E6C661B11A19A002EEC6F /* GameRegisterLayer.cpp in Sources */,
+				BC9E6C621B11A19A002EEC6F /* GameLists.cpp in Sources */,
+				BC9E6C631B11A19A002EEC6F /* GameMatch.cpp in Sources */,
+				BC9E6C571B11A19A002EEC6F /* GameExitChangeLayer.cpp in Sources */,
+				BC9E6C691B11A19A002EEC6F /* GamePrompt.cpp in Sources */,
+				BC9E6C6D1B11A19A002EEC6F /* GameUserDataLayer.cpp in Sources */,
+				BC9E6C6E1B11A19A002EEC6F /* ModifyPassword.cpp in Sources */,
+				BC9E6C581B11A19A002EEC6F /* GamePayLayer.cpp in Sources */,
+				BC9E6C611B11A19A002EEC6F /* GameInitial.cpp in Sources */,
+				BC9E6C6B1B11A19A002EEC6F /* LayerManger.cpp in Sources */,
+				1F110F5D1B2BD106004D8703 /* HNUpdate.cpp in Sources */,
+				BC9E6C5E1B11A19A002EEC6F /* FontConfig.cpp in Sources */,
+				7F3BFBCB1BACF2F5003C41EC /* NoticeList.cpp in Sources */,
+				BC9E6C651B11A19A002EEC6F /* GameMenu.cpp in Sources */,
+				BC9E6C641B11A19A002EEC6F /* GameLandLayer.cpp in Sources */,
+				BC9E6C681B11A19A002EEC6F /* GamePlatform.cpp in Sources */,
+				BC9E6C5D1B11A19A002EEC6F /* ServiceLayer.cpp in Sources */,
+				BC9E6C701B11A19A002EEC6F /* ProductInfo.cpp in Sources */,
+				7F3E97E31BC8B120007757CD /* SpreadEditLayer.cpp in Sources */,
+				BC9E6C601B11A19A002EEC6F /* GameExitLayer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0DFDCEE1A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../cocos2d",
+					"$(SRCROOT)/../../cocos2d/cocos",
+					"$(SRCROOT)/../../cocos2d/external",
+					"$(SRCROOT)/../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios/Simulation",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0DFDCEF1A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../cocos2d",
+					"$(SRCROOT)/../../cocos2d/cocos",
+					"$(SRCROOT)/../../cocos2d/external",
+					"$(SRCROOT)/../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios/Simulation",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0DFDCF11A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNNet",
+					"$(SRCROOT)/../../LibHNOpen",
+					"$(SRCROOT)/../../LibHNLogic",
+					"$(SRCROOT)/../../LibHNMarket",
+					"$(SRCROOT)/../../LibHNUI",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LibHNLobby;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0DFDCF21A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNNet",
+					"$(SRCROOT)/../../LibHNOpen",
+					"$(SRCROOT)/../../LibHNLogic",
+					"$(SRCROOT)/../../LibHNMarket",
+					"$(SRCROOT)/../../LibHNUI",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LibHNLobby;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNLobby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCEE1A450A9D00FAD800 /* Debug */,
+				D0DFDCEF1A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNLobby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCF11A450A9D00FAD800 /* Debug */,
+				D0DFDCF21A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0DFDCD41A450A9D00FAD800 /* Project object */;
+}

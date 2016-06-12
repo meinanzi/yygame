@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- 银联控件样式 -->
+    <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+	
+</resources>

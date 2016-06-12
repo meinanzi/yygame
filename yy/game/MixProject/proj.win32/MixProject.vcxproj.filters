@@ -1,0 +1,1082 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games">
+      <UniqueIdentifier>{7a89e08a-1a34-4365-8e9a-7819ca4ccae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\FishKing">
+      <UniqueIdentifier>{0de30e50-4745-4a09-ac88-a230817d1844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\FishKing\GameMessage">
+      <UniqueIdentifier>{db622f96-567b-4b90-adcb-1685d42fbc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\FishKing\GameTable">
+      <UniqueIdentifier>{83776e48-0858-4db0-bf05-65c887951b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\LandLord">
+      <UniqueIdentifier>{f1f2ce2d-5c31-46d8-a420-f0f1147a1295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\LandLord\GameMessage">
+      <UniqueIdentifier>{a6ca1ee6-133b-463b-ab35-eef237575a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\LandLord\GameTable">
+      <UniqueIdentifier>{0b55e1d5-4f6a-4f1d-91fb-caefe149054d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BJL">
+      <UniqueIdentifier>{9c69ec3d-b9d1-4976-a797-a233e75e25f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BJL\GameMessage">
+      <UniqueIdentifier>{428caeb4-1af6-424a-9f07-f70a4578d20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BJL\GameTable">
+      <UniqueIdentifier>{dec78b49-3807-4fc9-acd1-1979db52cddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BloodyMahjong">
+      <UniqueIdentifier>{ef3d67b3-5c97-4286-9a02-3f3b83e5b0ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BloodyMahjong\GameMessage">
+      <UniqueIdentifier>{53155d88-3f37-4f9e-8d52-ae1d41b62554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BloodyMahjong\GameTable">
+      <UniqueIdentifier>{df71cb95-73dc-4bca-8750-03675d9e5b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BqtFruitMachine">
+      <UniqueIdentifier>{a7436293-2839-4240-bbc0-2b0273faafda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BqtFruitMachine\GameMessage">
+      <UniqueIdentifier>{acd06618-2376-4919-8a7f-d66c4acbb4f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\BqtFruitMachine\GameTable">
+      <UniqueIdentifier>{d10f7437-24df-4b7c-bdbd-8f00ee8d3700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\DriftingCar">
+      <UniqueIdentifier>{025d8096-4b2a-48a0-ad9a-60f4de68bc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\DriftingCar\GameMessage">
+      <UniqueIdentifier>{d2e1db60-c757-4a29-8692-50d47447277c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\DriftingCar\GameTable">
+      <UniqueIdentifier>{dbe6fd33-e87d-4733-a632-441890cc5650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\DZPoker">
+      <UniqueIdentifier>{ef010aac-98ba-47a7-a86e-0f523fb65c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\DZPoker\GameMessage">
+      <UniqueIdentifier>{a85a0392-5b04-48a7-804f-eae02f191479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\DZPoker\GameTable">
+      <UniqueIdentifier>{b3ca4a5d-c6bc-4b76-90cc-ed437da82165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GoldenToad">
+      <UniqueIdentifier>{0606b6b0-da29-4495-a7a6-da6e79599e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GoldenToad\GameMessage">
+      <UniqueIdentifier>{ac7b446c-43f8-4d6f-9ba9-0e4cd11b3e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GoldenToad\GameTable">
+      <UniqueIdentifier>{9b6f1494-be87-42e7-abba-a1e761a1d5d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\HappyGoldenFlower">
+      <UniqueIdentifier>{ede94218-74fc-4002-a73c-fe6299499e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\HappyGoldenFlower\GameMessage">
+      <UniqueIdentifier>{e343cf0e-885a-4211-9d7e-f30605fb4f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\HappyGoldenFlower\GameTable">
+      <UniqueIdentifier>{f495b041-07aa-4a5c-af55-893eb6d4c86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\NN4">
+      <UniqueIdentifier>{706bf4d0-c256-49e6-b2d0-b132551f80a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\NN4\GameMessage">
+      <UniqueIdentifier>{ad05e1d3-00fa-448b-8f96-9af2c579a1d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\NN4\GameTable">
+      <UniqueIdentifier>{93061cb0-dca0-45bf-a9a6-d173cf8c5730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\TTNN">
+      <UniqueIdentifier>{3cceaeb1-ca4f-4ac4-ad89-c0a03066d874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\TTNN\GameMessage">
+      <UniqueIdentifier>{ad8e0b33-b5f7-4c74-953e-8dcf63dd4cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\TTNN\GameTable">
+      <UniqueIdentifier>{78d8b15d-4290-4997-ba5c-d382fbf7fdcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\WaterMargin">
+      <UniqueIdentifier>{95dd0920-19fb-434f-b5fe-f51e0f236e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\WaterMargin\GameMessage">
+      <UniqueIdentifier>{f1381ced-04f3-4e89-861d-5ae19970b9c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\WaterMargin\GameTable">
+      <UniqueIdentifier>{9fb7dd2c-7706-4670-a44c-c81f5ae4617c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordCardListBoard.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordCardOutList.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordCardTypeAnimation.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordExitPrompt.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameAudio.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameCardType.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameChatDlg.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameLogic.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameNotice.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGamePlayer.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameTableLogic.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameTableUI.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameUserMessageBox.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordPokerCard.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordToolbar.cpp">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameAdmin.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameAudio.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameBullet.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameFishManager.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameFishObject.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameLoading.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameMathAide.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGamePlayer.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameSceneFishTrace.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameTableLogic.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameTableUI.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameToolbar.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameUserMessageBox.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameVortexLayer.cpp">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLGameLogic.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLGameTableLogic.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLGameTableUI.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLHistoryDialog.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLNotice.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLPokerCard.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLResultCard.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLResultDialog.cpp">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\Card.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\CardPool.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\CardPoolUser.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\ConcealedKong.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\EastMahjongCardPool.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\Factory.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\GameManager.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\HuCard.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCard.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPool.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPoolUser.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MeldedKong.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\NorthMahjongCardPool.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\PoolAction.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\ResourceLoader.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\SouthMahjongCardPool.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\TouchCard.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\TouchKong.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\WestMahjongCardPool.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableLogic.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableUI.cpp">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameAudio.cpp">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameCell.cpp">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableLogic.cpp">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableUI.cpp">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameAudio.cpp">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameBoard.cpp">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameCell.cpp">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameResultHistory.cpp">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableLogic.cpp">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableUI.cpp">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerBuyDialog.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameCardType.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameChipUI.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameDealerUI.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameNotice.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGamePlayer.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableLogic.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableUI.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameUserMessageBox.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerPokerCard.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\GameLogic.cpp">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAdmin.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAudio.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameBullet.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameChatDlg.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishManager.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishObject.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameLoading.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameMathAide.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGamePlayer.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameSceneFishTrace.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableLogic.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableUI.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameToolbar.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameUserMessageBox.cpp">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerDrawEllipse.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameCardType.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameChipUI.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDashboard.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDealerUI.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameLogic.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameNotice.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGamePlayer.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableLogic.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableUI.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameUserMessageBox.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerPokerCard.cpp">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4CardSuite.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameNotice.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameTableLogic.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameTableUI.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameUserMessageBox.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4NodeList.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4PlayerUI.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4Poker.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4PokerList.cpp">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNActions.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNBankerLayer.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNBet.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNBetObj.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNChatDialog.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNClock.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGameLogic.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGameTableLogic.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGameTableUI.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGiveGift.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNMakeBlack.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNMsg.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNOtherPlayer.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNPlayerSeat.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNPokerCard.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNSendFace.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNTableView.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNUionBankerLayer.cpp">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAnimation.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAudio.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBDBtn.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBiBei.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameMaLi.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameRollImage.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableLogic.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableUI.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameUserBox.cpp">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameMessage\LandlordMessageHead.h">
+      <Filter>src\Games\LandLord\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordCardListBoard.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordCardOutList.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordCardTypeAnimation.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordExitPrompt.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameAudio.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameCardType.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameChatDlg.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameLogic.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameNotice.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGamePlayer.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameTableLogic.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameTableUI.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameTableUICallback.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameUserMessageBox.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordPokerCard.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordToolbar.h">
+      <Filter>src\Games\LandLord\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameMessage\FishKingMessageHead.h">
+      <Filter>src\Games\FishKing\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameAdmin.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameAudio.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameBullet.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameFishManager.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameFishObject.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameLoading.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameMathAide.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGamePlayer.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameSceneFishTrace.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameTableLogic.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameTableUI.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameTableUICallback.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameToolbar.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameUserMessageBox.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameVortexLayer.h">
+      <Filter>src\Games\FishKing\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameMessage\BJLMessageHead.h">
+      <Filter>src\Games\BJL\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameLogic.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableLogic.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableUI.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableUICallback.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableUIData.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLHistoryDialog.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLNotice.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLPokerCard.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLResultCard.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLResultDialog.h">
+      <Filter>src\Games\BJL\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameMessage\XZMJ_MessageHead.h">
+      <Filter>src\Games\BloodyMahjong\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\Card.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\CardPool.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\CardPoolUser.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\ConcealedKong.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\EastMahjongCardPool.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\Factory.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\GameManager.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\HuCard.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCard.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPool.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPoolUser.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MeldedKong.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\NorthMahjongCardPool.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\PoolAction.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\ResourceLoader.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\SouthMahjongCardPool.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\TouchCard.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\TouchKong.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\WestMahjongCardPool.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableLogic.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableUI.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableUICallback.h">
+      <Filter>src\Games\BloodyMahjong\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameMessage\BqtFruitMachineMessageHead.h">
+      <Filter>src\Games\BqtFruitMachine\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameAudio.h">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameCell.h">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableLogic.h">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableUI.h">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableUICallback.h">
+      <Filter>src\Games\BqtFruitMachine\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameMessage\DriftingCarMessageHead.h">
+      <Filter>src\Games\DriftingCar\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameAudio.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameBoard.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameCell.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameResultHistory.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableLogic.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableUI.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableUICallback.h">
+      <Filter>src\Games\DriftingCar\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameMessage\DZPokerGameClientMessage.h">
+      <Filter>src\Games\DZPoker\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameMessage\DZPokerUpgradeMessage.h">
+      <Filter>src\Games\DZPoker\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerBuyDialog.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameCardType.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameChipUI.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameDealerUI.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameNotice.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGamePlayer.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableLogic.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableUI.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableUICallback.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameUserMessageBox.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerPokerCard.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\GameLogic.h">
+      <Filter>src\Games\DZPoker\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameMessage\GoldenToadMessageHead.h">
+      <Filter>src\Games\GoldenToad\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAdmin.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAudio.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameBullet.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameChatDlg.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishManager.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishObject.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameLoading.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameMathAide.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGamePlayer.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameSceneFishTrace.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableLogic.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableUI.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableUICallback.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameToolbar.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameUserMessageBox.h">
+      <Filter>src\Games\GoldenToad\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameMessage\GoldenFlowerMessageHead.h">
+      <Filter>src\Games\HappyGoldenFlower\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerDrawEllipse.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameCardType.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameChipUI.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDashboard.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDealerUI.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameLogic.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameNotice.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGamePlayer.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableLogic.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableUI.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableUICallback.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameUserMessageBox.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerPokerCard.h">
+      <Filter>src\Games\HappyGoldenFlower\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameMessage\NN4MessageHead.h">
+      <Filter>src\Games\NN4\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4CardSuite.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameNotice.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameTableLogic.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameTableUI.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameTableUICallback.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameUserMessageBox.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4NodeList.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4PlayerUI.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4Poker.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4PokerList.h">
+      <Filter>src\Games\NN4\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameMessage\TTNNMessageHead.h">
+      <Filter>src\Games\TTNN\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNActions.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNBankerLayer.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNBet.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNBetObj.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNChatDialog.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNClock.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameLogic.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameTableLogic.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameTableUI.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameTableUICallback.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGiveGift.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNMakeBlack.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNMsg.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNOtherPlayer.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNPlayerSeat.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNPokerCard.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNSendFace.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNTableView.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNTypesDef.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNUionBankerLayer.h">
+      <Filter>src\Games\TTNN\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameMessage\WaterMarginMessageHead.h">
+      <Filter>src\Games\WaterMargin\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAnimation.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAudio.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBDBtn.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBiBei.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameMaLi.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameRollImage.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameRule.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableLogic.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableUI.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableUICallback.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameUserBox.h">
+      <Filter>src\Games\WaterMargin\GameTable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="UI">
+      <UniqueIdentifier>{6c07612a-84d8-45cc-be8d-70debd50401d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{217bc2e5-c586-4da1-a7bc-ab0f5d88e74b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Base">
+      <UniqueIdentifier>{e3166d53-6d6a-4c1a-8b5c-21ff2f6681f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{52e0e1c7-58b8-4f94-bc49-3d412d51de8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrapper">
+      <UniqueIdentifier>{fe6789f1-640c-4182-ae26-f0c11e41a1d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Sound\HNAudioEngine.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Base\HNLayer.h">
+      <Filter>UI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Base\HNLayerColor.h">
+      <Filter>UI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Base\HNNode.h">
+      <Filter>UI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Base\HNScene.h">
+      <Filter>UI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Base\HNSprite.h">
+      <Filter>UI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\HNDialogBase.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\LoadingLayer.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\TextSprite.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNUIExport.h" />
+    <ClInclude Include="..\UI\UserHead.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Tool\Tools.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\HNEditBox.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\HNShake.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Wrapper\HNSwitchImageViewWrapper.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Wrapper\HNWrapper.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sound\HNAudioEngine.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Base\HNLayer.cpp">
+      <Filter>UI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Base\HNLayerColor.cpp">
+      <Filter>UI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Base\HNNode.cpp">
+      <Filter>UI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Base\HNScene.cpp">
+      <Filter>UI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Base\HNSprite.cpp">
+      <Filter>UI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\HNDialogBase.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\LoadingLayer.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\TextSprite.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\UserHead.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Tool\Tools.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\HNEditBox.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\HNShake.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Wrapper\HNSwitchImageViewWrapper.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UI\Wrapper\HNWrapper.cpp">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

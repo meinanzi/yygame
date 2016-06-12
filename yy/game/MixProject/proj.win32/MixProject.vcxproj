@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);..\..\..\common\LibHNLobby;..\..\..\common\LibHNLogic;..\..\..\common\LibHNMarket;..\..\..\common\LibHNNet;..\..\..\common\LibHNOpen;..\..\..\common\LibHNUI;..\..\Landlord\Classes\GameMessage;..\..\Landlord\Classes\GameTable;..\..\FishKing\Classes\GameMessage;..\..\FishKing\Classes\GameTable;..\..\BJL\Classes\GameMessage;..\..\BJL\Classes\GameTable;..\..\BloodyMahjong\Classes\GameMessage;..\..\BloodyMahjong\Classes\GameTable;..\..\BqtFruitMachine\Classes\GameMessage;..\..\BqtFruitMachine\Classes\GameTable;..\..\DriftingCar\Classes\GameMessage;..\..\DriftingCar\Classes\GameTable;..\..\DZPoker\Classes\GameMessage;..\..\DZPoker\Classes\GameTable;..\..\GoldenToad\Classes\GameMessage;..\..\GoldenToad\Classes\GameTable;..\..\HappyGoldenFlower\Classes\GameMessage;..\..\HappyGoldenFlower\Classes\GameTable;..\..\NN4\Classes\GameMessage;..\..\NN4\Classes\GameTable;..\..\TTNN\Classes\GameMessage;..\..\TTNN\Classes\GameTable;..\..\WaterMargin\Classes\GameMessage;..\..\WaterMargin\Classes\GameTable</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);LibHNLobby.lib;LibHNLogic.lib;LibHNMarket.lib;LibHNNet.lib;LibHNOpen.lib;LibHNUI.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)update.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+      </Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+    <Link>
+      <ProgramDatabaseFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLGameLogic.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLGameTableLogic.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLGameTableUI.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLHistoryDialog.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLNotice.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLPokerCard.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLResultCard.cpp" />
+    <ClCompile Include="..\..\BJL\Classes\GameTable\BJLResultDialog.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\Card.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\CardPool.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\CardPoolUser.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\ConcealedKong.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\EastMahjongCardPool.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\Factory.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\GameManager.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\HuCard.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCard.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPool.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPoolUser.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\MeldedKong.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\NorthMahjongCardPool.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\PoolAction.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\ResourceLoader.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\SouthMahjongCardPool.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\TouchCard.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\TouchKong.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\WestMahjongCardPool.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableLogic.cpp" />
+    <ClCompile Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableUI.cpp" />
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameAudio.cpp" />
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameCell.cpp" />
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableLogic.cpp" />
+    <ClCompile Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableUI.cpp" />
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameAudio.cpp" />
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameBoard.cpp" />
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameCell.cpp" />
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameResultHistory.cpp" />
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableLogic.cpp" />
+    <ClCompile Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableUI.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerBuyDialog.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameCardType.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameChipUI.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameDealerUI.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameNotice.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGamePlayer.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableLogic.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableUI.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerGameUserMessageBox.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\DZPokerPokerCard.cpp" />
+    <ClCompile Include="..\..\DZPoker\Classes\GameTable\GameLogic.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameAdmin.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameAudio.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameBullet.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameFishManager.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameFishObject.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameLoading.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameMathAide.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGamePlayer.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameSceneFishTrace.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameTableLogic.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameTableUI.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameToolbar.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameUserMessageBox.cpp" />
+    <ClCompile Include="..\..\FishKing\Classes\GameTable\FishKingGameVortexLayer.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAdmin.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAudio.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameBullet.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameChatDlg.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishManager.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishObject.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameLoading.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameMathAide.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGamePlayer.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameSceneFishTrace.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableLogic.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableUI.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameToolbar.cpp" />
+    <ClCompile Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameUserMessageBox.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerDrawEllipse.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameCardType.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameChipUI.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDashboard.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDealerUI.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameLogic.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameNotice.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGamePlayer.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableLogic.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableUI.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameUserMessageBox.cpp" />
+    <ClCompile Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerPokerCard.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordCardListBoard.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordCardOutList.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordCardTypeAnimation.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordExitPrompt.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameAudio.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameCardType.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameChatDlg.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameLogic.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameNotice.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGamePlayer.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameTableLogic.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameTableUI.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordGameUserMessageBox.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordPokerCard.cpp" />
+    <ClCompile Include="..\..\Landlord\Classes\GameTable\LandlordToolbar.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4CardSuite.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameNotice.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameTableLogic.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameTableUI.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4GameUserMessageBox.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4NodeList.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4PlayerUI.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4Poker.cpp" />
+    <ClCompile Include="..\..\NN4\Classes\GameTable\NN4PokerList.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNActions.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNBankerLayer.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNBet.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNBetObj.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNChatDialog.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNClock.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGameLogic.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGameTableLogic.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGameTableUI.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNGiveGift.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNMakeBlack.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNMsg.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNOtherPlayer.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNPlayerSeat.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNPokerCard.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNSendFace.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNTableView.cpp" />
+    <ClCompile Include="..\..\TTNN\Classes\GameTable\TTNNUionBankerLayer.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAnimation.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAudio.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBDBtn.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBiBei.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameMaLi.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameRollImage.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableLogic.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableUI.cpp" />
+    <ClCompile Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameUserBox.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\BJL\Classes\GameMessage\BJLMessageHead.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameLogic.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableLogic.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableUI.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableUICallback.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLGameTableUIData.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLHistoryDialog.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLNotice.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLPokerCard.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLResultCard.h" />
+    <ClInclude Include="..\..\BJL\Classes\GameTable\BJLResultDialog.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameMessage\XZMJ_MessageHead.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\Card.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\CardPool.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\CardPoolUser.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\ConcealedKong.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\EastMahjongCardPool.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\Factory.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\GameManager.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\HuCard.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCard.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPool.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MahjongCardPoolUser.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\MeldedKong.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\NorthMahjongCardPool.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\PoolAction.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\ResourceLoader.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\SouthMahjongCardPool.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\TouchCard.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\TouchKong.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\WestMahjongCardPool.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableLogic.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableUI.h" />
+    <ClInclude Include="..\..\BloodyMahjong\Classes\GameTable\XZMJ_GameTableUICallback.h" />
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameMessage\BqtFruitMachineMessageHead.h" />
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameAudio.h" />
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameCell.h" />
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableLogic.h" />
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableUI.h" />
+    <ClInclude Include="..\..\BqtFruitMachine\Classes\GameTable\BqtFruitMachineGameTableUICallback.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameMessage\DriftingCarMessageHead.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameAudio.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameBoard.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameCell.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameResultHistory.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableLogic.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableUI.h" />
+    <ClInclude Include="..\..\DriftingCar\Classes\GameTable\DriftingCarGameTableUICallback.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameMessage\DZPokerGameClientMessage.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameMessage\DZPokerUpgradeMessage.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerBuyDialog.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameCardType.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameChipUI.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameDealerUI.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameNotice.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGamePlayer.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableLogic.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableUI.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameTableUICallback.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerGameUserMessageBox.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\DZPokerPokerCard.h" />
+    <ClInclude Include="..\..\DZPoker\Classes\GameTable\GameLogic.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameMessage\FishKingMessageHead.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameAdmin.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameAudio.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameBullet.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameFishManager.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameFishObject.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameLoading.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameMathAide.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGamePlayer.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameSceneFishTrace.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameTableLogic.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameTableUI.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameTableUICallback.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameToolbar.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameUserMessageBox.h" />
+    <ClInclude Include="..\..\FishKing\Classes\GameTable\FishKingGameVortexLayer.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameMessage\GoldenToadMessageHead.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAdmin.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameAudio.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameBullet.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameChatDlg.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishManager.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameFishObject.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameLoading.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameMathAide.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGamePlayer.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameSceneFishTrace.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableLogic.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableUI.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameTableUICallback.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameToolbar.h" />
+    <ClInclude Include="..\..\GoldenToad\Classes\GameTable\GoldenToadGameUserMessageBox.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameMessage\GoldenFlowerMessageHead.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerDrawEllipse.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameCardType.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameChipUI.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDashboard.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameDealerUI.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameLogic.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameNotice.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGamePlayer.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableLogic.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableUI.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameTableUICallback.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerGameUserMessageBox.h" />
+    <ClInclude Include="..\..\HappyGoldenFlower\Classes\GameTable\GoldenFlowerPokerCard.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameMessage\LandlordMessageHead.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordCardListBoard.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordCardOutList.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordCardTypeAnimation.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordExitPrompt.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameAudio.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameCardType.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameChatDlg.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameLogic.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameNotice.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGamePlayer.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameTableLogic.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameTableUI.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameTableUICallback.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordGameUserMessageBox.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordPokerCard.h" />
+    <ClInclude Include="..\..\Landlord\Classes\GameTable\LandlordToolbar.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameMessage\NN4MessageHead.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4CardSuite.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameNotice.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameTableLogic.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameTableUI.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameTableUICallback.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4GameUserMessageBox.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4NodeList.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4PlayerUI.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4Poker.h" />
+    <ClInclude Include="..\..\NN4\Classes\GameTable\NN4PokerList.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameMessage\TTNNMessageHead.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNActions.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNBankerLayer.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNBet.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNBetObj.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNChatDialog.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNClock.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameLogic.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameTableLogic.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameTableUI.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGameTableUICallback.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNGiveGift.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNMakeBlack.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNMsg.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNOtherPlayer.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNPlayerSeat.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNPokerCard.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNSendFace.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNTableView.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNTypesDef.h" />
+    <ClInclude Include="..\..\TTNN\Classes\GameTable\TTNNUionBankerLayer.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameMessage\WaterMarginMessageHead.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAnimation.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameAudio.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBDBtn.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameBiBei.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameMaLi.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameRollImage.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameRule.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableLogic.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableUI.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameTableUICallback.h" />
+    <ClInclude Include="..\..\WaterMargin\Classes\GameTable\WaterMarginGameUserBox.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cocos2d\external\bullet\proj.win32\libbullet.vcxproj">
+      <Project>{012dff48-a13f-4f52-b07b-f8b9d21ce95b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cocos2d\external\recast\proj.win32\librecast.vcxproj">
+      <Project>{41e34993-647e-4282-8384-4ab1ae31a452}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\LibHNLobby\proj.win32\LibHNLobby.vcxproj">
+      <Project>{22052a71-bc11-4b63-909d-3d8766d62358}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\LibHNLogic\proj.win32\LibHNLogic.vcxproj">
+      <Project>{7826eb45-75fa-40a3-a017-63fbcb6f87a2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\LibHNMarket\proj.win32\LibHNMarket.vcxproj">
+      <Project>{ec1aa21d-892b-4efd-acc2-7ff2a8f16f71}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\LibHNNet\proj.win32\LibHNNet.vcxproj">
+      <Project>{fd1ff17c-34e3-4013-93bf-16562934a956}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\LibHNOpen\proj.win32\LibHNOpen.vcxproj">
+      <Project>{67eab1a5-3f81-4573-86ef-4cf8126706b6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\common\LibHNUI\proj.win32\LibHNUI.vcxproj">
+      <Project>{1fd96982-b16e-4721-b3cf-0c29025feb9b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

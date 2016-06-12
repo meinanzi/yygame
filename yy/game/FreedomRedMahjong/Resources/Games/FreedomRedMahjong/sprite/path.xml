@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileConfig>
+  <fnt path="Games/FreedomRedMahjong/sprite/fnt/">
+    <a>futura-48</a>
+    <a>game_time</a>
+    <a>number-10</a>
+    <a>game_time</a>
+    <a>number-11</a>
+    <a>resultNum1</a>
+    <a>timer</a>
+    <a>touzi</a>
+    <a>ziji</a>
+  </fnt>
+  <pic path="Games/FreedomRedMahjong/sprite/pic/">
+    <a />
+  </pic>
+</fileConfig>

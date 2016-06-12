@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<AnimationProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>E:\code\MobileWork\Games\WaterMargin\cocoStudioFile\yaoqi</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>E:\code\MobileWork\Games\WaterMargin\cocoStudioFile\yaoqi\Resources</Resources>
+  <Name>yaoqi</Name>
+  <JsonFileName>yaoqi.json</JsonFileName>
+  <JsonFolder>E:\code\MobileWork\Games\WaterMargin\cocoStudioFile\yaoqi\Json</JsonFolder>
+  <JsonList />
+  <CanvasSize>
+    <Width>0</Width>
+    <Height>0</Height>
+  </CanvasSize>
+  <filePath>E:\code\MobileWork\Games\WaterMargin\cocoStudioFile\yaoqi\yaoqi.xml.animation</filePath>
+  <ProjectType>AnimationProject</ProjectType>
+  <ResRelativePath />
+  <ResourceFileList />
+  <bBatchImage>true</bBatchImage>
+</AnimationProject>

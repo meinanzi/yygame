@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>E:\MobileWork\Games\WaterMargin\cocostudio_file\tableui_1</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>E:\MobileWork\Games\WaterMargin\cocostudio_file\tableui_1\Resources</Resources>
+  <Name>tableui_1</Name>
+  <JsonFileName>tableui_1.json</JsonFileName>
+  <JsonFolder>E:\MobileWork\Games\WaterMargin\cocostudio_file\tableui_1\Json</JsonFolder>
+  <JsonList>
+    <string>bibei.json</string>
+    <string>btn.json</string>
+    <string>tableui.json</string>
+    <string>tableui_1.json</string>
+    <string>userBox.json</string>
+    <string>MaLi.json</string>
+    <string>loading.json</string>
+  </JsonList>
+  <CanvasSize>
+    <Width>1280</Width>
+    <Height>720</Height>
+  </CanvasSize>
+  <filePath>E:\MobileWork\Games\WaterMargin\cocostudio_file\tableui_1\tableui_1.xml.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath />
+  <imageFileList />
+  <imagePngList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson />
+</UIProject>

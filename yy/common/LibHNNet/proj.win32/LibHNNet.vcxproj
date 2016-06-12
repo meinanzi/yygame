@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD1FF17C-34E3-4013-93BF-16562934A956}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <ProjectName>LibHNNet</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>.;..;$(EngineRoot);$(EngineRoot)\cocos\;$(EngineRoot)\cocos\audio\include;$(EngineRoot)\cocos\platform\win32;$(EngineRoot)\external\win32-specific\gles\include\OGLES;$(EngineRoot)\external\glfw3\include\win32;$(EngineRoot)\extensions;$(EngineRoot)\external;..\..\LibHNUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <DisableSpecificWarnings>4819;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\HNBaseType.h" />
+    <ClInclude Include="..\HNCommon\HNCommonMarco.h" />
+    <ClInclude Include="..\HNCommon\HNConverCode.h" />
+    <ClInclude Include="..\HNCommon\HNLog.h" />
+    <ClInclude Include="..\HNCommon\HNSingleAutoPtr.h" />
+    <ClInclude Include="..\HNCommon\HNThread.h" />
+    <ClInclude Include="..\HNCommon\HNUIDelegateQueue.h" />
+    <ClInclude Include="..\HNCommon\HNMemoryPool.h" />
+    <ClInclude Include="..\HNData\HNGamesInfoModule.h" />
+    <ClInclude Include="..\HNData\HNMatchInfoCache.h" />
+    <ClInclude Include="..\HNData\HNRoomInfoModule.h" />
+    <ClInclude Include="..\HNData\HNUserInfoModule.h" />
+    <ClInclude Include="..\HNExternal\MD5\MD5.h" />
+    <ClInclude Include="..\HNGame\HNGameMessageDelegate.h" />
+    <ClInclude Include="..\HNGame\HNGameTableUsersData.h" />
+    <ClInclude Include="..\HNGame\HNGameUIBase.h" />
+    <ClInclude Include="..\HNHttp\HNHttp.h" />
+    <ClInclude Include="..\HNNetExport.h" />
+    <ClInclude Include="..\HNNetProtocol\HNBankMessage.h" />
+    <ClInclude Include="..\HNNetProtocol\HNBaseCommand.h" />
+    <ClInclude Include="..\HNNetProtocol\HNComStruct.h" />
+    <ClInclude Include="..\HNNetProtocol\HNMatchMessage.h" />
+    <ClInclude Include="..\HNNetProtocol\HNNetMessageHead.h" />
+    <ClInclude Include="..\HNNetProtocol\HNPlatformMessage.h" />
+    <ClInclude Include="..\HNNetProtocol\HNProtocolExport.h" />
+    <ClInclude Include="..\HNNetProtocol\HNRoomMessage.h" />
+    <ClInclude Include="..\HNPlatform\HNGameCreator.h" />
+    <ClInclude Include="..\HNPlatform\HNPlatformLogic.h" />
+    <ClInclude Include="..\HNPlatform\HNPlatformNotifyDelegate.h" />
+    <ClInclude Include="..\HNPlatform\HNPlatformExport.h" />
+    <ClInclude Include="..\HNPlatform\HNPlatformBase.h" />
+    <ClInclude Include="..\HNRoom\HNRoomMessageDelegate.h" />
+    <ClInclude Include="..\HNRoom\HNRoomLogic.h" />
+    <ClInclude Include="..\HNRoom\HNRoomExport.h" />
+    <ClInclude Include="..\HNSocket\HNSocket.h" />
+    <ClInclude Include="..\HNSocket\HNSocketEventDelegate.h" />
+    <ClInclude Include="..\HNSocket\HNSocketExport.h" />
+    <ClInclude Include="..\HNSocket\HNSocketLogic.h" />
+    <ClInclude Include="..\HNSocket\HNSocketMessage.h" />
+    <ClInclude Include="..\HNSocket\HNSocketMessageDelegate.h" />
+    <ClInclude Include="..\HNSocket\HNSocketProtocolData.h" />
+    <ClInclude Include="..\HNSocket\HNSocketSelector.h" />
+    <ClInclude Include="..\HNSocket\HNSocketThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\HNCommon\HNConverCode.cpp" />
+    <ClCompile Include="..\HNCommon\HNLog.cpp" />
+    <ClCompile Include="..\HNCommon\HNThread.cpp" />
+    <ClCompile Include="..\HNCommon\HNMemoryPool.cpp" />
+    <ClCompile Include="..\HNData\HNGamesInfoModule.cpp" />
+    <ClCompile Include="..\HNData\HNMatchInfoCache.cpp" />
+    <ClCompile Include="..\HNData\HNRoomInfoModule.cpp" />
+    <ClCompile Include="..\HNData\HNUserInfoModule.cpp" />
+    <ClCompile Include="..\HNExternal\MD5\MD5.cpp" />
+    <ClCompile Include="..\HNGame\HNGameTableUsersData.cpp" />
+    <ClCompile Include="..\HNGame\HNGameUIBase.cpp" />
+    <ClCompile Include="..\HNHttp\HNHttp.cpp" />
+    <ClCompile Include="..\HNNetProtocol\HNBaseCommand.cpp" />
+    <ClCompile Include="..\HNPlatform\HNGameCreator.cpp" />
+    <ClCompile Include="..\HNPlatform\HNPlatformLogic.cpp" />
+    <ClCompile Include="..\HNPlatform\HNPlatformBase.cpp" />
+    <ClCompile Include="..\HNRoom\HNRoomLogic.cpp" />
+    <ClCompile Include="..\HNSocket\HNSocket.cpp" />
+    <ClCompile Include="..\HNSocket\HNSocketLogic.cpp" />
+    <ClCompile Include="..\HNSocket\HNSocketMessage.cpp" />
+    <ClCompile Include="..\HNSocket\HNSocketProtocolData.cpp" />
+    <ClCompile Include="..\HNSocket\HNSocketThread.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

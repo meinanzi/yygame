@@ -1,0 +1,17 @@
+info face="FZLTZHK--GBK1-0" size=66 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=2,2
+common lineHeight=91 base=68 scaleW=512 scaleH=256 pages=1 packed=0
+page id=0 file="landlordtype.png"
+chars count=13
+char id=33457 x=2 y=2 width=68 height=67 xoffset=2 yoffset=11 xadvance=66 page=0 chnl=0 letter="花"
+char id=31661 x=72 y=2 width=67 height=67 xoffset=2 yoffset=11 xadvance=66 page=0 chnl=0 letter="箭"
+char id=24352 x=141 y=2 width=66 height=67 xoffset=3 yoffset=12 xadvance=66 page=0 chnl=0 letter="张"
+char id=23545 x=209 y=2 width=68 height=66 xoffset=1 yoffset=11 xadvance=66 page=0 chnl=0 letter="对"
+char id=39034 x=279 y=2 width=68 height=66 xoffset=1 yoffset=13 xadvance=66 page=0 chnl=0 letter="顺"
+char id=28779 x=349 y=2 width=67 height=66 xoffset=2 yoffset=12 xadvance=66 page=0 chnl=0 letter="火"
+char id=22823 x=418 y=2 width=66 height=66 xoffset=2 yoffset=12 xadvance=66 page=0 chnl=0 letter="大"
+char id=23567 x=2 y=71 width=67 height=65 xoffset=2 yoffset=12 xadvance=66 page=0 chnl=0 letter="小"
+char id=21516 x=71 y=71 width=60 height=63 xoffset=5 yoffset=15 xadvance=66 page=0 chnl=0 letter="同"
+char id=23376 x=133 y=71 width=68 height=62 xoffset=2 yoffset=15 xadvance=66 page=0 chnl=0 letter="子"
+char id=29579 x=203 y=71 width=64 height=58 xoffset=3 yoffset=16 xadvance=66 page=0 chnl=0 letter="王"
+char id=19977 x=269 y=71 width=67 height=57 xoffset=2 yoffset=17 xadvance=66 page=0 chnl=0 letter="三"
+char id=32 x=338 y=71 width=0 height=0 xoffset=18 yoffset=88 xadvance=19 page=0 chnl=0 letter="space"

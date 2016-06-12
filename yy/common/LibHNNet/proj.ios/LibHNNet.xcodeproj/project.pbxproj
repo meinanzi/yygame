@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FD9C0C21C2E29FA00464DE2 /* HNHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9C0C01C2E29FA00464DE2 /* HNHttp.cpp */; };
+		BC8BDE1F1B11C32A0099F841 /* HNBaseCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8BDE1D1B11C32A0099F841 /* HNBaseCommand.cpp */; };
+		D092D61A1A84B8E300402098 /* HNGameCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D092D6181A84B8E300402098 /* HNGameCreator.cpp */; };
+		D0DFDDF31A4516FB00FAD800 /* HNConverCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDAD1A4516FB00FAD800 /* HNConverCode.cpp */; };
+		D0DFDDF41A4516FB00FAD800 /* HNLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDAF1A4516FB00FAD800 /* HNLog.cpp */; };
+		D0DFDDF51A4516FB00FAD800 /* HNMemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDB11A4516FB00FAD800 /* HNMemoryPool.cpp */; };
+		D0DFDDF61A4516FB00FAD800 /* HNThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDB41A4516FB00FAD800 /* HNThread.cpp */; };
+		D0DFDDF71A4516FB00FAD800 /* HNRoomInfoModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDB81A4516FB00FAD800 /* HNRoomInfoModule.cpp */; };
+		D0DFDDF81A4516FB00FAD800 /* HNUserInfoModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDBA1A4516FB00FAD800 /* HNUserInfoModule.cpp */; };
+		D0DFDDF91A4516FB00FAD800 /* MD5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDBE1A4516FB00FAD800 /* MD5.cpp */; };
+		D0DFDDFB1A4516FB00FAD800 /* HNGameTableUsersData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDC41A4516FB00FAD800 /* HNGameTableUsersData.cpp */; };
+		D0DFDDFC1A4516FB00FAD800 /* HNGameUIBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDC61A4516FB00FAD800 /* HNGameUIBase.cpp */; };
+		D0DFDDFD1A4516FB00FAD800 /* HNPlatformBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDD11A4516FB00FAD800 /* HNPlatformBase.cpp */; };
+		D0DFDDFF1A4516FB00FAD800 /* HNPlatformLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDD61A4516FB00FAD800 /* HNPlatformLogic.cpp */; };
+		D0DFDE021A4516FB00FAD800 /* HNRoomLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDDF1A4516FB00FAD800 /* HNRoomLogic.cpp */; };
+		D0DFDE031A4516FB00FAD800 /* HNSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDE31A4516FB00FAD800 /* HNSocket.cpp */; };
+		D0DFDE041A4516FB00FAD800 /* HNSocketLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDE71A4516FB00FAD800 /* HNSocketLogic.cpp */; };
+		D0DFDE051A4516FB00FAD800 /* HNSocketMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDE91A4516FB00FAD800 /* HNSocketMessage.cpp */; };
+		D0DFDE061A4516FB00FAD800 /* HNSocketProtocolData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDEC1A4516FB00FAD800 /* HNSocketProtocolData.cpp */; };
+		D0DFDE071A4516FB00FAD800 /* HNSocketThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDDEF1A4516FB00FAD800 /* HNSocketThread.cpp */; };
+		D0ED03121A57AA0300DE42CC /* HNGamesInfoModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0ED03101A57AA0300DE42CC /* HNGamesInfoModule.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0DFDCDA1A450A9D00FAD800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1FD9C0C01C2E29FA00464DE2 /* HNHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNHttp.cpp; sourceTree = "<group>"; };
+		1FD9C0C11C2E29FA00464DE2 /* HNHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttp.h; sourceTree = "<group>"; };
+		BC8BDE1C1B11C32A0099F841 /* HNBankMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNBankMessage.h; sourceTree = "<group>"; };
+		BC8BDE1D1B11C32A0099F841 /* HNBaseCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = HNBaseCommand.cpp; sourceTree = "<group>"; };
+		BC8BDE1E1B11C32A0099F841 /* HNMatchMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNMatchMessage.h; sourceTree = "<group>"; };
+		D092D6181A84B8E300402098 /* HNGameCreator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNGameCreator.cpp; sourceTree = "<group>"; };
+		D092D6191A84B8E300402098 /* HNGameCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGameCreator.h; sourceTree = "<group>"; };
+		D0DFDCDC1A450A9D00FAD800 /* libLibHNNet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibHNNet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DFDDAC1A4516FB00FAD800 /* HNCommonMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNCommonMarco.h; sourceTree = "<group>"; };
+		D0DFDDAD1A4516FB00FAD800 /* HNConverCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNConverCode.cpp; sourceTree = "<group>"; };
+		D0DFDDAE1A4516FB00FAD800 /* HNConverCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNConverCode.h; sourceTree = "<group>"; };
+		D0DFDDAF1A4516FB00FAD800 /* HNLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNLog.cpp; sourceTree = "<group>"; };
+		D0DFDDB01A4516FB00FAD800 /* HNLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNLog.h; sourceTree = "<group>"; };
+		D0DFDDB11A4516FB00FAD800 /* HNMemoryPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNMemoryPool.cpp; sourceTree = "<group>"; };
+		D0DFDDB21A4516FB00FAD800 /* HNMemoryPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNMemoryPool.h; sourceTree = "<group>"; };
+		D0DFDDB31A4516FB00FAD800 /* HNSingleAutoPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSingleAutoPtr.h; sourceTree = "<group>"; };
+		D0DFDDB41A4516FB00FAD800 /* HNThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNThread.cpp; sourceTree = "<group>"; };
+		D0DFDDB51A4516FB00FAD800 /* HNThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNThread.h; sourceTree = "<group>"; };
+		D0DFDDB61A4516FB00FAD800 /* HNUIDelegateQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNUIDelegateQueue.h; sourceTree = "<group>"; };
+		D0DFDDB81A4516FB00FAD800 /* HNRoomInfoModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNRoomInfoModule.cpp; sourceTree = "<group>"; };
+		D0DFDDB91A4516FB00FAD800 /* HNRoomInfoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomInfoModule.h; sourceTree = "<group>"; };
+		D0DFDDBA1A4516FB00FAD800 /* HNUserInfoModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNUserInfoModule.cpp; sourceTree = "<group>"; };
+		D0DFDDBB1A4516FB00FAD800 /* HNUserInfoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNUserInfoModule.h; sourceTree = "<group>"; };
+		D0DFDDBE1A4516FB00FAD800 /* MD5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MD5.cpp; sourceTree = "<group>"; };
+		D0DFDDBF1A4516FB00FAD800 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		D0DFDDC31A4516FB00FAD800 /* HNGameMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGameMessageDelegate.h; sourceTree = "<group>"; };
+		D0DFDDC41A4516FB00FAD800 /* HNGameTableUsersData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNGameTableUsersData.cpp; sourceTree = "<group>"; };
+		D0DFDDC51A4516FB00FAD800 /* HNGameTableUsersData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGameTableUsersData.h; sourceTree = "<group>"; };
+		D0DFDDC61A4516FB00FAD800 /* HNGameUIBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNGameUIBase.cpp; sourceTree = "<group>"; };
+		D0DFDDC71A4516FB00FAD800 /* HNGameUIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGameUIBase.h; sourceTree = "<group>"; };
+		D0DFDDC91A4516FB00FAD800 /* HNBaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNBaseCommand.h; sourceTree = "<group>"; };
+		D0DFDDCA1A4516FB00FAD800 /* HNComStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNComStruct.h; sourceTree = "<group>"; };
+		D0DFDDCB1A4516FB00FAD800 /* HNErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNErrorCode.h; sourceTree = "<group>"; };
+		D0DFDDCC1A4516FB00FAD800 /* HNNetMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNNetMessageHead.h; sourceTree = "<group>"; };
+		D0DFDDCD1A4516FB00FAD800 /* HNPlatformMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformMessage.h; sourceTree = "<group>"; };
+		D0DFDDCE1A4516FB00FAD800 /* HNProtocolExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNProtocolExport.h; sourceTree = "<group>"; };
+		D0DFDDCF1A4516FB00FAD800 /* HNRoomMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomMessage.h; sourceTree = "<group>"; };
+		D0DFDDD11A4516FB00FAD800 /* HNPlatformBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformBase.cpp; sourceTree = "<group>"; };
+		D0DFDDD21A4516FB00FAD800 /* HNPlatformBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformBase.h; sourceTree = "<group>"; };
+		D0DFDDD51A4516FB00FAD800 /* HNPlatformExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformExport.h; sourceTree = "<group>"; };
+		D0DFDDD61A4516FB00FAD800 /* HNPlatformLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformLogic.cpp; sourceTree = "<group>"; };
+		D0DFDDD71A4516FB00FAD800 /* HNPlatformLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformLogic.h; sourceTree = "<group>"; };
+		D0DFDDD81A4516FB00FAD800 /* HNPlatformNotifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformNotifyDelegate.h; sourceTree = "<group>"; };
+		D0DFDDDE1A4516FB00FAD800 /* HNRoomExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomExport.h; sourceTree = "<group>"; };
+		D0DFDDDF1A4516FB00FAD800 /* HNRoomLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNRoomLogic.cpp; sourceTree = "<group>"; };
+		D0DFDDE01A4516FB00FAD800 /* HNRoomLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomLogic.h; sourceTree = "<group>"; };
+		D0DFDDE11A4516FB00FAD800 /* HNRoomMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomMessageDelegate.h; sourceTree = "<group>"; };
+		D0DFDDE31A4516FB00FAD800 /* HNSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocket.cpp; sourceTree = "<group>"; };
+		D0DFDDE41A4516FB00FAD800 /* HNSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocket.h; sourceTree = "<group>"; };
+		D0DFDDE51A4516FB00FAD800 /* HNSocketEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketEventDelegate.h; sourceTree = "<group>"; };
+		D0DFDDE61A4516FB00FAD800 /* HNSocketExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketExport.h; sourceTree = "<group>"; };
+		D0DFDDE71A4516FB00FAD800 /* HNSocketLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketLogic.cpp; sourceTree = "<group>"; };
+		D0DFDDE81A4516FB00FAD800 /* HNSocketLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketLogic.h; sourceTree = "<group>"; };
+		D0DFDDE91A4516FB00FAD800 /* HNSocketMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketMessage.cpp; sourceTree = "<group>"; };
+		D0DFDDEA1A4516FB00FAD800 /* HNSocketMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketMessage.h; sourceTree = "<group>"; };
+		D0DFDDEB1A4516FB00FAD800 /* HNSocketMessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketMessageDelegate.h; sourceTree = "<group>"; };
+		D0DFDDEC1A4516FB00FAD800 /* HNSocketProtocolData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketProtocolData.cpp; sourceTree = "<group>"; };
+		D0DFDDED1A4516FB00FAD800 /* HNSocketProtocolData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketProtocolData.h; sourceTree = "<group>"; };
+		D0DFDDEE1A4516FB00FAD800 /* HNSocketSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketSelector.h; sourceTree = "<group>"; };
+		D0DFDDEF1A4516FB00FAD800 /* HNSocketThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketThread.cpp; sourceTree = "<group>"; };
+		D0DFDDF01A4516FB00FAD800 /* HNSocketThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSocketThread.h; sourceTree = "<group>"; };
+		D0DFDDF11A4516FB00FAD800 /* HNBaseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNBaseType.h; path = ../HNBaseType.h; sourceTree = "<group>"; };
+		D0DFDDF21A4516FB00FAD800 /* HNNetExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNNetExport.h; path = ../HNNetExport.h; sourceTree = "<group>"; };
+		D0ED03101A57AA0300DE42CC /* HNGamesInfoModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNGamesInfoModule.cpp; sourceTree = "<group>"; };
+		D0ED03111A57AA0300DE42CC /* HNGamesInfoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGamesInfoModule.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0DFDCD91A450A9D00FAD800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FD9C0BF1C2E29FA00464DE2 /* HNHttp */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9C0C01C2E29FA00464DE2 /* HNHttp.cpp */,
+				1FD9C0C11C2E29FA00464DE2 /* HNHttp.h */,
+			);
+			name = HNHttp;
+			path = ../HNHttp;
+			sourceTree = "<group>";
+		};
+		D0DFDCD31A450A9D00FAD800 = {
+			isa = PBXGroup;
+			children = (
+				1FD9C0BF1C2E29FA00464DE2 /* HNHttp */,
+				D0DFDDAB1A4516FB00FAD800 /* HNCommon */,
+				D0DFDDB71A4516FB00FAD800 /* HNData */,
+				D0DFDDBC1A4516FB00FAD800 /* HNExternal */,
+				D0DFDDC01A4516FB00FAD800 /* HNGame */,
+				D0DFDDC81A4516FB00FAD800 /* HNNetProtocol */,
+				D0DFDDD01A4516FB00FAD800 /* HNPlatform */,
+				D0DFDDD91A4516FB00FAD800 /* HNRoom */,
+				D0DFDDE21A4516FB00FAD800 /* HNSocket */,
+				D0DFDDF11A4516FB00FAD800 /* HNBaseType.h */,
+				D0DFDDF21A4516FB00FAD800 /* HNNetExport.h */,
+				D0DFDCDD1A450A9D00FAD800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0DFDCDD1A450A9D00FAD800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDCDC1A450A9D00FAD800 /* libLibHNNet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0DFDDAB1A4516FB00FAD800 /* HNCommon */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDDAC1A4516FB00FAD800 /* HNCommonMarco.h */,
+				D0DFDDAD1A4516FB00FAD800 /* HNConverCode.cpp */,
+				D0DFDDAE1A4516FB00FAD800 /* HNConverCode.h */,
+				D0DFDDAF1A4516FB00FAD800 /* HNLog.cpp */,
+				D0DFDDB01A4516FB00FAD800 /* HNLog.h */,
+				D0DFDDB11A4516FB00FAD800 /* HNMemoryPool.cpp */,
+				D0DFDDB21A4516FB00FAD800 /* HNMemoryPool.h */,
+				D0DFDDB31A4516FB00FAD800 /* HNSingleAutoPtr.h */,
+				D0DFDDB41A4516FB00FAD800 /* HNThread.cpp */,
+				D0DFDDB51A4516FB00FAD800 /* HNThread.h */,
+				D0DFDDB61A4516FB00FAD800 /* HNUIDelegateQueue.h */,
+			);
+			name = HNCommon;
+			path = ../HNCommon;
+			sourceTree = "<group>";
+		};
+		D0DFDDB71A4516FB00FAD800 /* HNData */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED03101A57AA0300DE42CC /* HNGamesInfoModule.cpp */,
+				D0ED03111A57AA0300DE42CC /* HNGamesInfoModule.h */,
+				D0DFDDB81A4516FB00FAD800 /* HNRoomInfoModule.cpp */,
+				D0DFDDB91A4516FB00FAD800 /* HNRoomInfoModule.h */,
+				D0DFDDBA1A4516FB00FAD800 /* HNUserInfoModule.cpp */,
+				D0DFDDBB1A4516FB00FAD800 /* HNUserInfoModule.h */,
+			);
+			name = HNData;
+			path = ../HNData;
+			sourceTree = "<group>";
+		};
+		D0DFDDBC1A4516FB00FAD800 /* HNExternal */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDDBD1A4516FB00FAD800 /* MD5 */,
+			);
+			name = HNExternal;
+			path = ../HNExternal;
+			sourceTree = "<group>";
+		};
+		D0DFDDBD1A4516FB00FAD800 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDDBE1A4516FB00FAD800 /* MD5.cpp */,
+				D0DFDDBF1A4516FB00FAD800 /* MD5.h */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		D0DFDDC01A4516FB00FAD800 /* HNGame */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDDC31A4516FB00FAD800 /* HNGameMessageDelegate.h */,
+				D0DFDDC41A4516FB00FAD800 /* HNGameTableUsersData.cpp */,
+				D0DFDDC51A4516FB00FAD800 /* HNGameTableUsersData.h */,
+				D0DFDDC61A4516FB00FAD800 /* HNGameUIBase.cpp */,
+				D0DFDDC71A4516FB00FAD800 /* HNGameUIBase.h */,
+			);
+			name = HNGame;
+			path = ../HNGame;
+			sourceTree = "<group>";
+		};
+		D0DFDDC81A4516FB00FAD800 /* HNNetProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				BC8BDE1C1B11C32A0099F841 /* HNBankMessage.h */,
+				BC8BDE1E1B11C32A0099F841 /* HNMatchMessage.h */,
+				BC8BDE1D1B11C32A0099F841 /* HNBaseCommand.cpp */,
+				D0DFDDC91A4516FB00FAD800 /* HNBaseCommand.h */,
+				D0DFDDCA1A4516FB00FAD800 /* HNComStruct.h */,
+				D0DFDDCB1A4516FB00FAD800 /* HNErrorCode.h */,
+				D0DFDDCC1A4516FB00FAD800 /* HNNetMessageHead.h */,
+				D0DFDDCD1A4516FB00FAD800 /* HNPlatformMessage.h */,
+				D0DFDDCE1A4516FB00FAD800 /* HNProtocolExport.h */,
+				D0DFDDCF1A4516FB00FAD800 /* HNRoomMessage.h */,
+			);
+			name = HNNetProtocol;
+			path = ../HNNetProtocol;
+			sourceTree = "<group>";
+		};
+		D0DFDDD01A4516FB00FAD800 /* HNPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				D092D6181A84B8E300402098 /* HNGameCreator.cpp */,
+				D092D6191A84B8E300402098 /* HNGameCreator.h */,
+				D0DFDDD11A4516FB00FAD800 /* HNPlatformBase.cpp */,
+				D0DFDDD21A4516FB00FAD800 /* HNPlatformBase.h */,
+				D0DFDDD51A4516FB00FAD800 /* HNPlatformExport.h */,
+				D0DFDDD61A4516FB00FAD800 /* HNPlatformLogic.cpp */,
+				D0DFDDD71A4516FB00FAD800 /* HNPlatformLogic.h */,
+				D0DFDDD81A4516FB00FAD800 /* HNPlatformNotifyDelegate.h */,
+			);
+			name = HNPlatform;
+			path = ../HNPlatform;
+			sourceTree = "<group>";
+		};
+		D0DFDDD91A4516FB00FAD800 /* HNRoom */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDDDE1A4516FB00FAD800 /* HNRoomExport.h */,
+				D0DFDDDF1A4516FB00FAD800 /* HNRoomLogic.cpp */,
+				D0DFDDE01A4516FB00FAD800 /* HNRoomLogic.h */,
+				D0DFDDE11A4516FB00FAD800 /* HNRoomMessageDelegate.h */,
+			);
+			name = HNRoom;
+			path = ../HNRoom;
+			sourceTree = "<group>";
+		};
+		D0DFDDE21A4516FB00FAD800 /* HNSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDDE31A4516FB00FAD800 /* HNSocket.cpp */,
+				D0DFDDE41A4516FB00FAD800 /* HNSocket.h */,
+				D0DFDDE51A4516FB00FAD800 /* HNSocketEventDelegate.h */,
+				D0DFDDE61A4516FB00FAD800 /* HNSocketExport.h */,
+				D0DFDDE71A4516FB00FAD800 /* HNSocketLogic.cpp */,
+				D0DFDDE81A4516FB00FAD800 /* HNSocketLogic.h */,
+				D0DFDDE91A4516FB00FAD800 /* HNSocketMessage.cpp */,
+				D0DFDDEA1A4516FB00FAD800 /* HNSocketMessage.h */,
+				D0DFDDEB1A4516FB00FAD800 /* HNSocketMessageDelegate.h */,
+				D0DFDDEC1A4516FB00FAD800 /* HNSocketProtocolData.cpp */,
+				D0DFDDED1A4516FB00FAD800 /* HNSocketProtocolData.h */,
+				D0DFDDEE1A4516FB00FAD800 /* HNSocketSelector.h */,
+				D0DFDDEF1A4516FB00FAD800 /* HNSocketThread.cpp */,
+				D0DFDDF01A4516FB00FAD800 /* HNSocketThread.h */,
+			);
+			name = HNSocket;
+			path = ../HNSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0DFDCDB1A450A9D00FAD800 /* LibHNNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNNet" */;
+			buildPhases = (
+				D0DFDCD81A450A9D00FAD800 /* Sources */,
+				D0DFDCD91A450A9D00FAD800 /* Frameworks */,
+				D0DFDCDA1A450A9D00FAD800 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibHNNet;
+			productName = LibHNNet;
+			productReference = D0DFDCDC1A450A9D00FAD800 /* libLibHNNet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0DFDCD41A450A9D00FAD800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = redbird;
+				TargetAttributes = {
+					D0DFDCDB1A450A9D00FAD800 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNNet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0DFDCD31A450A9D00FAD800;
+			productRefGroup = D0DFDCDD1A450A9D00FAD800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0DFDCDB1A450A9D00FAD800 /* LibHNNet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0DFDCD81A450A9D00FAD800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DFDE051A4516FB00FAD800 /* HNSocketMessage.cpp in Sources */,
+				D0DFDDF81A4516FB00FAD800 /* HNUserInfoModule.cpp in Sources */,
+				1FD9C0C21C2E29FA00464DE2 /* HNHttp.cpp in Sources */,
+				D0DFDE021A4516FB00FAD800 /* HNRoomLogic.cpp in Sources */,
+				D0ED03121A57AA0300DE42CC /* HNGamesInfoModule.cpp in Sources */,
+				D0DFDDF41A4516FB00FAD800 /* HNLog.cpp in Sources */,
+				D0DFDDFF1A4516FB00FAD800 /* HNPlatformLogic.cpp in Sources */,
+				D0DFDDF31A4516FB00FAD800 /* HNConverCode.cpp in Sources */,
+				D0DFDDF51A4516FB00FAD800 /* HNMemoryPool.cpp in Sources */,
+				D0DFDE061A4516FB00FAD800 /* HNSocketProtocolData.cpp in Sources */,
+				D0DFDE041A4516FB00FAD800 /* HNSocketLogic.cpp in Sources */,
+				D0DFDDF71A4516FB00FAD800 /* HNRoomInfoModule.cpp in Sources */,
+				D0DFDE031A4516FB00FAD800 /* HNSocket.cpp in Sources */,
+				D0DFDDFC1A4516FB00FAD800 /* HNGameUIBase.cpp in Sources */,
+				BC8BDE1F1B11C32A0099F841 /* HNBaseCommand.cpp in Sources */,
+				D0DFDDF61A4516FB00FAD800 /* HNThread.cpp in Sources */,
+				D0DFDE071A4516FB00FAD800 /* HNSocketThread.cpp in Sources */,
+				D092D61A1A84B8E300402098 /* HNGameCreator.cpp in Sources */,
+				D0DFDDFB1A4516FB00FAD800 /* HNGameTableUsersData.cpp in Sources */,
+				D0DFDDF91A4516FB00FAD800 /* MD5.cpp in Sources */,
+				D0DFDDFD1A4516FB00FAD800 /* HNPlatformBase.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0DFDCEE1A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0DFDCEF1A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0DFDCF11A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+					"COCOS2D_DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNUI",
+					"$(SRCROOT)/../../LibHNLogic",
+					"$(SRCROOT)/../../LibHNLobby",
+					"$(SRCROOT)/../../LibHNMarket",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0DFDCF21A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNUI",
+					"$(SRCROOT)/../../LibHNLogic",
+					"$(SRCROOT)/../../LibHNLobby",
+					"$(SRCROOT)/../../LibHNMarket",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCEE1A450A9D00FAD800 /* Debug */,
+				D0DFDCEF1A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCF11A450A9D00FAD800 /* Debug */,
+				D0DFDCF21A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0DFDCD41A450A9D00FAD800 /* Project object */;
+}

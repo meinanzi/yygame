@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4A6CE51B1DA31A00E612DC /* HNEditBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6CE31B1DA31A00E612DC /* HNEditBox.cpp */; };
+		1F55DDAB1B4CE6FE00348512 /* HNShake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F55DDA91B4CE6FE00348512 /* HNShake.cpp */; };
+		BC8BDE7F1B11C57D0099F841 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8BDE7D1B11C57D0099F841 /* Tools.cpp */; };
+		BCD8D41D1A540AA200033D91 /* UserHead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D41C1A540AA200033D91 /* UserHead.cpp */; };
+		D0DFDD8A1A450E5300FAD800 /* HNAudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD751A450E5300FAD800 /* HNAudioEngine.cpp */; };
+		D0DFDD8B1A450E5300FAD800 /* HNLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD791A450E5300FAD800 /* HNLayer.cpp */; };
+		D0DFDD8C1A450E5300FAD800 /* HNLayerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD7B1A450E5300FAD800 /* HNLayerColor.cpp */; };
+		D0DFDD8D1A450E5300FAD800 /* HNNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD7D1A450E5300FAD800 /* HNNode.cpp */; };
+		D0DFDD8E1A450E5300FAD800 /* HNScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD7F1A450E5300FAD800 /* HNScene.cpp */; };
+		D0DFDD8F1A450E5300FAD800 /* HNSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD811A450E5300FAD800 /* HNSprite.cpp */; };
+		D0DFDD901A450E5300FAD800 /* HNDialogBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD831A450E5300FAD800 /* HNDialogBase.cpp */; };
+		D0DFDD911A450E5300FAD800 /* LoadingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD851A450E5300FAD800 /* LoadingLayer.cpp */; };
+		D0DFDD921A450E5300FAD800 /* TextSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0DFDD871A450E5300FAD800 /* TextSprite.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0DFDCDA1A450A9D00FAD800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F4A6CE31B1DA31A00E612DC /* HNEditBox.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = HNEditBox.cpp; sourceTree = "<group>"; };
+		1F4A6CE41B1DA31A00E612DC /* HNEditBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNEditBox.h; sourceTree = "<group>"; };
+		1F55DDA91B4CE6FE00348512 /* HNShake.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNShake.cpp; sourceTree = "<group>"; };
+		1F55DDAA1B4CE6FE00348512 /* HNShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNShake.h; sourceTree = "<group>"; };
+		BC8BDE7D1B11C57D0099F841 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
+		BC8BDE7E1B11C57D0099F841 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		BCD8D41C1A540AA200033D91 /* UserHead.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserHead.cpp; sourceTree = "<group>"; };
+		BCD8D41E1A540AB200033D91 /* UserHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHead.h; sourceTree = "<group>"; };
+		D0DFDCDC1A450A9D00FAD800 /* libLibHNUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibHNUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DFDD751A450E5300FAD800 /* HNAudioEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNAudioEngine.cpp; sourceTree = "<group>"; };
+		D0DFDD761A450E5300FAD800 /* HNAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAudioEngine.h; sourceTree = "<group>"; };
+		D0DFDD791A450E5300FAD800 /* HNLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNLayer.cpp; sourceTree = "<group>"; };
+		D0DFDD7A1A450E5300FAD800 /* HNLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNLayer.h; sourceTree = "<group>"; };
+		D0DFDD7B1A450E5300FAD800 /* HNLayerColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNLayerColor.cpp; sourceTree = "<group>"; };
+		D0DFDD7C1A450E5300FAD800 /* HNLayerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNLayerColor.h; sourceTree = "<group>"; };
+		D0DFDD7D1A450E5300FAD800 /* HNNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNNode.cpp; sourceTree = "<group>"; };
+		D0DFDD7E1A450E5300FAD800 /* HNNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNNode.h; sourceTree = "<group>"; };
+		D0DFDD7F1A450E5300FAD800 /* HNScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNScene.cpp; sourceTree = "<group>"; };
+		D0DFDD801A450E5300FAD800 /* HNScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNScene.h; sourceTree = "<group>"; };
+		D0DFDD811A450E5300FAD800 /* HNSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNSprite.cpp; sourceTree = "<group>"; };
+		D0DFDD821A450E5300FAD800 /* HNSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNSprite.h; sourceTree = "<group>"; };
+		D0DFDD831A450E5300FAD800 /* HNDialogBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNDialogBase.cpp; sourceTree = "<group>"; };
+		D0DFDD841A450E5300FAD800 /* HNDialogBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNDialogBase.h; sourceTree = "<group>"; };
+		D0DFDD851A450E5300FAD800 /* LoadingLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingLayer.cpp; sourceTree = "<group>"; };
+		D0DFDD861A450E5300FAD800 /* LoadingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingLayer.h; sourceTree = "<group>"; };
+		D0DFDD871A450E5300FAD800 /* TextSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextSprite.cpp; sourceTree = "<group>"; };
+		D0DFDD881A450E5300FAD800 /* TextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextSprite.h; sourceTree = "<group>"; };
+		D0DFDD891A450E5300FAD800 /* HNUIExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNUIExport.h; path = ../HNUIExport.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0DFDCD91A450A9D00FAD800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8BDE7C1B11C57D0099F841 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC8BDE7D1B11C57D0099F841 /* Tools.cpp */,
+				BC8BDE7E1B11C57D0099F841 /* Tools.h */,
+			);
+			name = Tool;
+			path = ../Tool;
+			sourceTree = "<group>";
+		};
+		D0DFDCD31A450A9D00FAD800 = {
+			isa = PBXGroup;
+			children = (
+				BC8BDE7C1B11C57D0099F841 /* Tool */,
+				D0DFDD741A450E5300FAD800 /* Sound */,
+				D0DFDD771A450E5300FAD800 /* UI */,
+				D0DFDD891A450E5300FAD800 /* HNUIExport.h */,
+				D0DFDCDD1A450A9D00FAD800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0DFDCDD1A450A9D00FAD800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDCDC1A450A9D00FAD800 /* libLibHNUI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0DFDD741A450E5300FAD800 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDD751A450E5300FAD800 /* HNAudioEngine.cpp */,
+				D0DFDD761A450E5300FAD800 /* HNAudioEngine.h */,
+			);
+			name = Sound;
+			path = ../Sound;
+			sourceTree = "<group>";
+		};
+		D0DFDD771A450E5300FAD800 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8D41E1A540AB200033D91 /* UserHead.h */,
+				BCD8D41C1A540AA200033D91 /* UserHead.cpp */,
+				D0DFDD781A450E5300FAD800 /* Base */,
+				1F4A6CE31B1DA31A00E612DC /* HNEditBox.cpp */,
+				1F4A6CE41B1DA31A00E612DC /* HNEditBox.h */,
+				1F55DDA91B4CE6FE00348512 /* HNShake.cpp */,
+				1F55DDAA1B4CE6FE00348512 /* HNShake.h */,
+				D0DFDD831A450E5300FAD800 /* HNDialogBase.cpp */,
+				D0DFDD841A450E5300FAD800 /* HNDialogBase.h */,
+				D0DFDD851A450E5300FAD800 /* LoadingLayer.cpp */,
+				D0DFDD861A450E5300FAD800 /* LoadingLayer.h */,
+				D0DFDD871A450E5300FAD800 /* TextSprite.cpp */,
+				D0DFDD881A450E5300FAD800 /* TextSprite.h */,
+			);
+			name = UI;
+			path = ../UI;
+			sourceTree = "<group>";
+		};
+		D0DFDD781A450E5300FAD800 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDD791A450E5300FAD800 /* HNLayer.cpp */,
+				D0DFDD7A1A450E5300FAD800 /* HNLayer.h */,
+				D0DFDD7B1A450E5300FAD800 /* HNLayerColor.cpp */,
+				D0DFDD7C1A450E5300FAD800 /* HNLayerColor.h */,
+				D0DFDD7D1A450E5300FAD800 /* HNNode.cpp */,
+				D0DFDD7E1A450E5300FAD800 /* HNNode.h */,
+				D0DFDD7F1A450E5300FAD800 /* HNScene.cpp */,
+				D0DFDD801A450E5300FAD800 /* HNScene.h */,
+				D0DFDD811A450E5300FAD800 /* HNSprite.cpp */,
+				D0DFDD821A450E5300FAD800 /* HNSprite.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0DFDCDB1A450A9D00FAD800 /* LibHNUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNUI" */;
+			buildPhases = (
+				D0DFDCD81A450A9D00FAD800 /* Sources */,
+				D0DFDCD91A450A9D00FAD800 /* Frameworks */,
+				D0DFDCDA1A450A9D00FAD800 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibHNUI;
+			productName = LibHNNet;
+			productReference = D0DFDCDC1A450A9D00FAD800 /* libLibHNUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0DFDCD41A450A9D00FAD800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = redbird;
+				TargetAttributes = {
+					D0DFDCDB1A450A9D00FAD800 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0DFDCD31A450A9D00FAD800;
+			productRefGroup = D0DFDCDD1A450A9D00FAD800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0DFDCDB1A450A9D00FAD800 /* LibHNUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0DFDCD81A450A9D00FAD800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DFDD8A1A450E5300FAD800 /* HNAudioEngine.cpp in Sources */,
+				D0DFDD8C1A450E5300FAD800 /* HNLayerColor.cpp in Sources */,
+				D0DFDD8B1A450E5300FAD800 /* HNLayer.cpp in Sources */,
+				1F4A6CE51B1DA31A00E612DC /* HNEditBox.cpp in Sources */,
+				D0DFDD8E1A450E5300FAD800 /* HNScene.cpp in Sources */,
+				1F55DDAB1B4CE6FE00348512 /* HNShake.cpp in Sources */,
+				D0DFDD911A450E5300FAD800 /* LoadingLayer.cpp in Sources */,
+				D0DFDD8F1A450E5300FAD800 /* HNSprite.cpp in Sources */,
+				BCD8D41D1A540AA200033D91 /* UserHead.cpp in Sources */,
+				D0DFDD901A450E5300FAD800 /* HNDialogBase.cpp in Sources */,
+				D0DFDD921A450E5300FAD800 /* TextSprite.cpp in Sources */,
+				BC8BDE7F1B11C57D0099F841 /* Tools.cpp in Sources */,
+				D0DFDD8D1A450E5300FAD800 /* HNNode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0DFDCEE1A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../cocos2d",
+					"$(SRCROOT)/../../cocos2d/cocos",
+					"$(SRCROOT)/../../cocos2d/external",
+					"$(SRCROOT)/../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios/Simulation",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0DFDCEF1A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../cocos2d",
+					"$(SRCROOT)/../../cocos2d/cocos",
+					"$(SRCROOT)/../../cocos2d/external",
+					"$(SRCROOT)/../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios/Simulation",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0DFDCF11A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNNet",
+					"$(SRCROOT)/../../LibHNMarket",
+					"$(SRCROOT)/../../LibHNLogic",
+					"$(SRCROOT)/../../LibHNLobby",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LibHNUI;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0DFDCF21A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNNet",
+					"$(SRCROOT)/../../LibHNMarket",
+					"$(SRCROOT)/../../LibHNLogic",
+					"$(SRCROOT)/../../LibHNLobby",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LibHNUI;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCEE1A450A9D00FAD800 /* Debug */,
+				D0DFDCEF1A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCF11A450A9D00FAD800 /* Debug */,
+				D0DFDCF21A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0DFDCD41A450A9D00FAD800 /* Project object */;
+}

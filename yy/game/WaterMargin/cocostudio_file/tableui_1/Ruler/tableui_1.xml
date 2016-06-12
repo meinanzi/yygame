@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfGuidesProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuidesProject>
+    <Project>tableui</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>userBox</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>btn</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>bibei</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>tableui_1</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>MaLi</Project>
+    <GuidesList />
+  </GuidesProject>
+  <GuidesProject>
+    <Project>loading</Project>
+    <GuidesList />
+  </GuidesProject>
+</ArrayOfGuidesProject>

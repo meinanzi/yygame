@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="30.0dip" >
+
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_back_style" />
+
+        <TextView
+            android:id="@+id/textView_product_description"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="@string/string_products_des"
+            android:textColor="@color/yellow"
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/textView_product_money"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/string_products_money"
+            android:textColor="@color/yellow"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView_Alipay"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="1"
+            android:src="@drawable/alipay_n" />
+
+        <ImageView
+            android:id="@+id/imageView_WeChat"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="1"
+            android:src="@drawable/wchat_n" />
+
+        <ImageView
+            android:id="@+id/imageView_UnionPay"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_weight="1"
+            android:src="@drawable/unionpay_n" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:padding="30.0dip"
+        android:text="@string/string_customer_service_phone"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

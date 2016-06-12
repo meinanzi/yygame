@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F3E97E81BC8B144007757CD /* HNPlatformSpreadLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E97E61BC8B144007757CD /* HNPlatformSpreadLogic.cpp */; };
+		7F3E97E91BC8B144007757CD /* HNPlatformSpreadManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E97E71BC8B144007757CD /* HNPlatformSpreadManager.cpp */; };
+		BC9E6C901B11A1F2002EEC6F /* HNLogicBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C7C1B11A1F2002EEC6F /* HNLogicBase.cpp */; };
+		BC9E6C911B11A1F2002EEC6F /* HNPlatformGameList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C7F1B11A1F2002EEC6F /* HNPlatformGameList.cpp */; };
+		BC9E6C921B11A1F2002EEC6F /* HNPlatformLogicBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C811B11A1F2002EEC6F /* HNPlatformLogicBase.cpp */; };
+		BC9E6C931B11A1F2002EEC6F /* HNPlatformLogin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C831B11A1F2002EEC6F /* HNPlatformLogin.cpp */; };
+		BC9E6C941B11A1F2002EEC6F /* HNPlatformRegist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C851B11A1F2002EEC6F /* HNPlatformRegist.cpp */; };
+		BC9E6C951B11A1F2002EEC6F /* HNPlatformRoomList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C871B11A1F2002EEC6F /* HNPlatformRoomList.cpp */; };
+		BC9E6C961B11A1F2002EEC6F /* HNGameLogicBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C8A1B11A1F2002EEC6F /* HNGameLogicBase.cpp */; };
+		BC9E6C971B11A1F2002EEC6F /* HNRoomDeskLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C8C1B11A1F2002EEC6F /* HNRoomDeskLogic.cpp */; };
+		BC9E6C981B11A1F2002EEC6F /* HNRoomLogicBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC9E6C8E1B11A1F2002EEC6F /* HNRoomLogicBase.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0DFDCDA1A450A9D00FAD800 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F3E97E41BC8B144007757CD /* HNPlatformSpreadLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformSpreadLogic.h; sourceTree = "<group>"; };
+		7F3E97E51BC8B144007757CD /* HNPlatformSpreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformSpreadManager.h; sourceTree = "<group>"; };
+		7F3E97E61BC8B144007757CD /* HNPlatformSpreadLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformSpreadLogic.cpp; sourceTree = "<group>"; };
+		7F3E97E71BC8B144007757CD /* HNPlatformSpreadManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformSpreadManager.cpp; sourceTree = "<group>"; };
+		BC9E6C7A1B11A1E2002EEC6F /* HNLogicExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNLogicExport.h; path = ../HNLogicExport.h; sourceTree = "<group>"; };
+		BC9E6C7C1B11A1F2002EEC6F /* HNLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNLogicBase.cpp; sourceTree = "<group>"; };
+		BC9E6C7D1B11A1F2002EEC6F /* HNLogicBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNLogicBase.h; sourceTree = "<group>"; };
+		BC9E6C7F1B11A1F2002EEC6F /* HNPlatformGameList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformGameList.cpp; sourceTree = "<group>"; };
+		BC9E6C801B11A1F2002EEC6F /* HNPlatformGameList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformGameList.h; sourceTree = "<group>"; };
+		BC9E6C811B11A1F2002EEC6F /* HNPlatformLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformLogicBase.cpp; sourceTree = "<group>"; };
+		BC9E6C821B11A1F2002EEC6F /* HNPlatformLogicBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformLogicBase.h; sourceTree = "<group>"; };
+		BC9E6C831B11A1F2002EEC6F /* HNPlatformLogin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformLogin.cpp; sourceTree = "<group>"; };
+		BC9E6C841B11A1F2002EEC6F /* HNPlatformLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformLogin.h; sourceTree = "<group>"; };
+		BC9E6C851B11A1F2002EEC6F /* HNPlatformRegist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformRegist.cpp; sourceTree = "<group>"; };
+		BC9E6C861B11A1F2002EEC6F /* HNPlatformRegist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformRegist.h; sourceTree = "<group>"; };
+		BC9E6C871B11A1F2002EEC6F /* HNPlatformRoomList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformRoomList.cpp; sourceTree = "<group>"; };
+		BC9E6C881B11A1F2002EEC6F /* HNPlatformRoomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformRoomList.h; sourceTree = "<group>"; };
+		BC9E6C8A1B11A1F2002EEC6F /* HNGameLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNGameLogicBase.cpp; sourceTree = "<group>"; };
+		BC9E6C8B1B11A1F2002EEC6F /* HNGameLogicBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGameLogicBase.h; sourceTree = "<group>"; };
+		BC9E6C8C1B11A1F2002EEC6F /* HNRoomDeskLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNRoomDeskLogic.cpp; sourceTree = "<group>"; };
+		BC9E6C8D1B11A1F2002EEC6F /* HNRoomDeskLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomDeskLogic.h; sourceTree = "<group>"; };
+		BC9E6C8E1B11A1F2002EEC6F /* HNRoomLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNRoomLogicBase.cpp; sourceTree = "<group>"; };
+		BC9E6C8F1B11A1F2002EEC6F /* HNRoomLogicBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomLogicBase.h; sourceTree = "<group>"; };
+		D0DFDCDC1A450A9D00FAD800 /* libLibHNLogic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibHNLogic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0DFDCD91A450A9D00FAD800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC9E6C7B1B11A1F2002EEC6F /* HNLogic */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C7C1B11A1F2002EEC6F /* HNLogicBase.cpp */,
+				BC9E6C7D1B11A1F2002EEC6F /* HNLogicBase.h */,
+			);
+			name = HNLogic;
+			path = ../HNLogic;
+			sourceTree = "<group>";
+		};
+		BC9E6C7E1B11A1F2002EEC6F /* HNPlatformLogic */ = {
+			isa = PBXGroup;
+			children = (
+				7F3E97E41BC8B144007757CD /* HNPlatformSpreadLogic.h */,
+				7F3E97E51BC8B144007757CD /* HNPlatformSpreadManager.h */,
+				7F3E97E61BC8B144007757CD /* HNPlatformSpreadLogic.cpp */,
+				7F3E97E71BC8B144007757CD /* HNPlatformSpreadManager.cpp */,
+				BC9E6C7F1B11A1F2002EEC6F /* HNPlatformGameList.cpp */,
+				BC9E6C801B11A1F2002EEC6F /* HNPlatformGameList.h */,
+				BC9E6C811B11A1F2002EEC6F /* HNPlatformLogicBase.cpp */,
+				BC9E6C821B11A1F2002EEC6F /* HNPlatformLogicBase.h */,
+				BC9E6C831B11A1F2002EEC6F /* HNPlatformLogin.cpp */,
+				BC9E6C841B11A1F2002EEC6F /* HNPlatformLogin.h */,
+				BC9E6C851B11A1F2002EEC6F /* HNPlatformRegist.cpp */,
+				BC9E6C861B11A1F2002EEC6F /* HNPlatformRegist.h */,
+				BC9E6C871B11A1F2002EEC6F /* HNPlatformRoomList.cpp */,
+				BC9E6C881B11A1F2002EEC6F /* HNPlatformRoomList.h */,
+			);
+			name = HNPlatformLogic;
+			path = ../HNPlatformLogic;
+			sourceTree = "<group>";
+		};
+		BC9E6C891B11A1F2002EEC6F /* HNRoomLogic */ = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C8A1B11A1F2002EEC6F /* HNGameLogicBase.cpp */,
+				BC9E6C8B1B11A1F2002EEC6F /* HNGameLogicBase.h */,
+				BC9E6C8C1B11A1F2002EEC6F /* HNRoomDeskLogic.cpp */,
+				BC9E6C8D1B11A1F2002EEC6F /* HNRoomDeskLogic.h */,
+				BC9E6C8E1B11A1F2002EEC6F /* HNRoomLogicBase.cpp */,
+				BC9E6C8F1B11A1F2002EEC6F /* HNRoomLogicBase.h */,
+			);
+			name = HNRoomLogic;
+			path = ../HNRoomLogic;
+			sourceTree = "<group>";
+		};
+		D0DFDCD31A450A9D00FAD800 = {
+			isa = PBXGroup;
+			children = (
+				BC9E6C7B1B11A1F2002EEC6F /* HNLogic */,
+				BC9E6C7E1B11A1F2002EEC6F /* HNPlatformLogic */,
+				BC9E6C891B11A1F2002EEC6F /* HNRoomLogic */,
+				BC9E6C7A1B11A1E2002EEC6F /* HNLogicExport.h */,
+				D0DFDCDD1A450A9D00FAD800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0DFDCDD1A450A9D00FAD800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0DFDCDC1A450A9D00FAD800 /* libLibHNLogic.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0DFDCDB1A450A9D00FAD800 /* LibHNLogic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNLogic" */;
+			buildPhases = (
+				D0DFDCD81A450A9D00FAD800 /* Sources */,
+				D0DFDCD91A450A9D00FAD800 /* Frameworks */,
+				D0DFDCDA1A450A9D00FAD800 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibHNLogic;
+			productName = LibHNNet;
+			productReference = D0DFDCDC1A450A9D00FAD800 /* libLibHNLogic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0DFDCD41A450A9D00FAD800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = redbird;
+				TargetAttributes = {
+					D0DFDCDB1A450A9D00FAD800 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNLogic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0DFDCD31A450A9D00FAD800;
+			productRefGroup = D0DFDCDD1A450A9D00FAD800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0DFDCDB1A450A9D00FAD800 /* LibHNLogic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0DFDCD81A450A9D00FAD800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3E97E91BC8B144007757CD /* HNPlatformSpreadManager.cpp in Sources */,
+				7F3E97E81BC8B144007757CD /* HNPlatformSpreadLogic.cpp in Sources */,
+				BC9E6C931B11A1F2002EEC6F /* HNPlatformLogin.cpp in Sources */,
+				BC9E6C911B11A1F2002EEC6F /* HNPlatformGameList.cpp in Sources */,
+				BC9E6C921B11A1F2002EEC6F /* HNPlatformLogicBase.cpp in Sources */,
+				BC9E6C961B11A1F2002EEC6F /* HNGameLogicBase.cpp in Sources */,
+				BC9E6C971B11A1F2002EEC6F /* HNRoomDeskLogic.cpp in Sources */,
+				BC9E6C981B11A1F2002EEC6F /* HNRoomLogicBase.cpp in Sources */,
+				BC9E6C901B11A1F2002EEC6F /* HNLogicBase.cpp in Sources */,
+				BC9E6C941B11A1F2002EEC6F /* HNPlatformRegist.cpp in Sources */,
+				BC9E6C951B11A1F2002EEC6F /* HNPlatformRoomList.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0DFDCEE1A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../cocos2d",
+					"$(SRCROOT)/../../cocos2d/cocos",
+					"$(SRCROOT)/../../cocos2d/external",
+					"$(SRCROOT)/../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios/Simulation",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0DFDCEF1A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../cocos2d",
+					"$(SRCROOT)/../../cocos2d/cocos",
+					"$(SRCROOT)/../../cocos2d/external",
+					"$(SRCROOT)/../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../cocos2d/cocos/platform/ios/Simulation",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0DFDCF11A450A9D00FAD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNNet",
+					"$(SRCROOT)/../../LibHNUI",
+					"$(SRCROOT)/../../LibHNMarket",
+					"$(SRCROOT)/../../LibHNOpen",
+					"$(SRCROOT)/../../LibHNLobby",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LibHNLogic;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D0DFDCF21A450A9D00FAD800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = ../../libs;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../cocos2d",
+					"$(SRCROOT)/../../../../cocos2d/cocos",
+					"$(SRCROOT)/../../../../cocos2d/external",
+					"$(SRCROOT)/../../../../cocos2d/extensions",
+					"$(SRCROOT)/../../../../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../../../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios",
+					"$(SRCROOT)/../../../../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../../../../cocos2d/cocos/platform/ios/Simulation",
+					"$(SRCROOT)/../",
+					"$(SRCROOT)/../../LibHNNet",
+					"$(SRCROOT)/../../LibHNUI",
+					"$(SRCROOT)/../../LibHNMarket",
+					"$(SRCROOT)/../../LibHNOpen",
+					"$(SRCROOT)/../../LibHNLobby",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LibHNLogic;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0DFDCD71A450A9D00FAD800 /* Build configuration list for PBXProject "LibHNLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCEE1A450A9D00FAD800 /* Debug */,
+				D0DFDCEF1A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0DFDCF01A450A9D00FAD800 /* Build configuration list for PBXNativeTarget "LibHNLogic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0DFDCF11A450A9D00FAD800 /* Debug */,
+				D0DFDCF21A450A9D00FAD800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0DFDCD41A450A9D00FAD800 /* Project object */;
+}

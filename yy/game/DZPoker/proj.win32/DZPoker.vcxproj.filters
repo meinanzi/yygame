@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games">
+      <UniqueIdentifier>{7a89e08a-1a34-4365-8e9a-7819ca4ccae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameMessage">
+      <UniqueIdentifier>{aa3e8a33-fbde-41c8-8f0d-d165a441d07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable">
+      <UniqueIdentifier>{42bcdada-d09a-48e6-8902-05a18a3b073d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerBuyDialog.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameCardType.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameChipUI.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameDealerUI.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameNotice.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGamePlayer.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameTableLogic.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameTableUI.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerGameUserMessageBox.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\DZPokerPokerCard.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\GameLogic.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMessage\DZPokerGameClientMessage.h">
+      <Filter>src\Games\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMessage\DZPokerUpgradeMessage.h">
+      <Filter>src\Games\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerBuyDialog.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameCardType.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameChipUI.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameDealerUI.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameNotice.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGamePlayer.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameTableLogic.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameTableUI.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameTableUICallback.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerGameUserMessageBox.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\DZPokerPokerCard.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\GameLogic.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

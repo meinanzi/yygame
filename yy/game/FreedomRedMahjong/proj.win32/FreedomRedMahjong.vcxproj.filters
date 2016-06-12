@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games">
+      <UniqueIdentifier>{7a89e08a-1a34-4365-8e9a-7819ca4ccae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameMessage">
+      <UniqueIdentifier>{aa3e8a33-fbde-41c8-8f0d-d165a441d07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable">
+      <UniqueIdentifier>{42bcdada-d09a-48e6-8902-05a18a3b073d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable\poolAction">
+      <UniqueIdentifier>{7cf9eb20-2c85-4051-92f2-273268c9300f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable\card">
+      <UniqueIdentifier>{5f4c431a-bbd9-496f-9c93-c4b0da457f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable\cardPool">
+      <UniqueIdentifier>{6e6294c3-e2a4-4a15-9e39-ad8bd12f1bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable\cardPool\poolUser">
+      <UniqueIdentifier>{e61467fa-0682-40cd-9823-f8b3600a263d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Games\GameTable\FactoryManager">
+      <UniqueIdentifier>{2505378c-0a33-4870-8187-f48468e4a0e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_GameTableLogic.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_GameTableUI.cpp">
+      <Filter>src\Games\GameTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_HuCard.cpp">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_PoolAction.cpp">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_TouchKong.cpp">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_TouchCard.cpp">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_MeldedKong.cpp">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_Card.cpp">
+      <Filter>src\Games\GameTable\card</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_MahjongCard.cpp">
+      <Filter>src\Games\GameTable\card</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_CardPool.cpp">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_EastMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_WestMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_SouthMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_NorthMahjongCardPool.cpp">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_ConcealedKong.cpp">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_Factory.cpp">
+      <Filter>src\Games\GameTable\FactoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_CardPoolUser.cpp">
+      <Filter>src\Games\GameTable\cardPool\poolUser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_MahjongCardPoolUser.cpp">
+      <Filter>src\Games\GameTable\cardPool\poolUser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_GameManager.cpp">
+      <Filter>src\Games\GameTable\FactoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_MahjongCardPool.cpp">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameTable\ZYHZ_ResourceLoader.cpp">
+      <Filter>src\Games\GameTable\FactoryManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMessage\ZYHZ_MessageHead.h">
+      <Filter>src\Games\GameMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_GameTableLogic.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_GameTableUI.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_GameTableUICallback.h">
+      <Filter>src\Games\GameTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_HuCard.h">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_PoolAction.h">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_TouchKong.h">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_TouchCard.h">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_MeldedKong.h">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_Card.h">
+      <Filter>src\Games\GameTable\card</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_MahjongCard.h">
+      <Filter>src\Games\GameTable\card</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_CardPool.h">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_EastMahjongCardPool.h">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_WestMahjongCardPool.h">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_SouthMahjongCardPool.h">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_NorthMahjongCardPool.h">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_ConcealedKong.h">
+      <Filter>src\Games\GameTable\poolAction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_Factory.h">
+      <Filter>src\Games\GameTable\FactoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_CardPoolUser.h">
+      <Filter>src\Games\GameTable\cardPool\poolUser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_MahjongCardPoolUser.h">
+      <Filter>src\Games\GameTable\cardPool\poolUser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_GameManager.h">
+      <Filter>src\Games\GameTable\FactoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_MahjongCardPool.h">
+      <Filter>src\Games\GameTable\cardPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameTable\ZYHZ_ResourceLoader.h">
+      <Filter>src\Games\GameTable\FactoryManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="HNLobby">
+      <UniqueIdentifier>{e9c0b21d-741d-49bb-a48d-800cddddbb21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNLobby\ChildLayer">
+      <UniqueIdentifier>{b3719f05-5c6b-4f56-bdb4-cc3725b07565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNLobby\GameMenu">
+      <UniqueIdentifier>{09e6c63a-fe8b-4b6c-8fa9-ef093b45a454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNLobby\PersionalCenter">
+      <UniqueIdentifier>{eb36081b-8785-41cd-912f-a77f61ce9aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNLobby\Shop">
+      <UniqueIdentifier>{6aa76b65-cd43-4e34-95da-175f045f806e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNLobby\Popularise">
+      <UniqueIdentifier>{62af1e92-4fca-4d65-b233-b5d8a5c3efcd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameBankLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameExitChangeLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GamePayLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameRankingList.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameSetLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameStoreLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\ServiceLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameMenu\GameLandLayer.h">
+      <Filter>HNLobby\GameMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameMenu\GameMenu.h">
+      <Filter>HNLobby\GameMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameMenu\GameRegisterLayer.h">
+      <Filter>HNLobby\GameMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\PersionalCenter\BindPhone.h">
+      <Filter>HNLobby\PersionalCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\PersionalCenter\GameUserDataLayer.h">
+      <Filter>HNLobby\PersionalCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\PersionalCenter\ModifyPassword.h">
+      <Filter>HNLobby\PersionalCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\Shop\ProductInfo.h">
+      <Filter>HNLobby\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\Shop\ShopManager.h">
+      <Filter>HNLobby\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\FontConfig.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameDesk.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameExitLayer.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameInitial.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameLists.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameMatch.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameNotice.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GamePlatform.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GamePrompt.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameRoom.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\LayerManger.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\PlatformConfig.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\PlatformDefine.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobbyExport.h" />
+    <ClInclude Include="..\HNLobby\ChildLayer\GameSignLayer.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameOnlineReward.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameRechargeRebate.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\HNUpdate.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GamePasswordInput.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\NoticeList.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\GameWebView.h">
+      <Filter>HNLobby</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\Popularise\SpreadEditLayer.h">
+      <Filter>HNLobby\Popularise</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNLobby\ChildLayer\GameGiftShop.h">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameBankLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameExitChangeLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GamePayLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameRankingList.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameSetLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameStoreLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\ServiceLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameMenu\GameLandLayer.cpp">
+      <Filter>HNLobby\GameMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameMenu\GameMenu.cpp">
+      <Filter>HNLobby\GameMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameMenu\GameRegisterLayer.cpp">
+      <Filter>HNLobby\GameMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\PersionalCenter\BindPhone.cpp">
+      <Filter>HNLobby\PersionalCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\PersionalCenter\GameUserDataLayer.cpp">
+      <Filter>HNLobby\PersionalCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\PersionalCenter\ModifyPassword.cpp">
+      <Filter>HNLobby\PersionalCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\Shop\ProductInfo.cpp">
+      <Filter>HNLobby\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\Shop\ShopManager.cpp">
+      <Filter>HNLobby\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\FontConfig.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameDesk.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameExitLayer.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameInitial.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameLists.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameMatch.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameNotice.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GamePlatform.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GamePrompt.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameRoom.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\LayerManger.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\PlatformConfig.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameSignLayer.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameOnlineReward.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameRechargeRebate.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\HNUpdate.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GamePasswordInput.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\NoticeList.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\GameWebView.cpp">
+      <Filter>HNLobby</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\Popularise\SpreadEditLayer.cpp">
+      <Filter>HNLobby\Popularise</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNLobby\ChildLayer\GameGiftShop.cpp">
+      <Filter>HNLobby\ChildLayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

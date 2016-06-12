@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HNPlatform">
+      <UniqueIdentifier>{f27e537d-a183-4275-8191-0746b438c7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNSocket">
+      <UniqueIdentifier>{79639fcd-a427-4f29-82e9-d12f19f8a718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNGame">
+      <UniqueIdentifier>{c2757f9c-4ca9-438d-a265-54718d9a6cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNCommon">
+      <UniqueIdentifier>{64734f48-8490-424e-9aed-e9aa09a60573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNData">
+      <UniqueIdentifier>{b095ee5e-7d09-4009-a34f-6803779836f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNRoom">
+      <UniqueIdentifier>{2708aa6b-59a5-480f-bbc2-2fe0059b9870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNExternal">
+      <UniqueIdentifier>{00febf21-9a2d-49b2-8328-71dcfd70f5be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNExternal\MD5">
+      <UniqueIdentifier>{a9ffbc1b-437a-439b-9a5e-57cb7b8c1fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNNetProtocol">
+      <UniqueIdentifier>{6ab2e58d-c42e-412c-b531-5244ac091d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HNHttp">
+      <UniqueIdentifier>{02665d46-39c5-4048-99a1-c5029ecb8809}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\HNExternal\MD5\MD5.h">
+      <Filter>HNExternal\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNPlatform\HNPlatformLogic.h">
+      <Filter>HNPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNPlatform\HNPlatformNotifyDelegate.h">
+      <Filter>HNPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocket.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketEventDelegate.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketExport.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketLogic.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketMessage.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketProtocolData.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketSelector.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketThread.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNBaseType.h" />
+    <ClInclude Include="..\HNPlatform\HNPlatformBase.h">
+      <Filter>HNPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNGame\HNGameUIBase.h">
+      <Filter>HNGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNLog.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNSingleAutoPtr.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNThread.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNUIDelegateQueue.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNData\HNRoomInfoModule.h">
+      <Filter>HNData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNData\HNUserInfoModule.h">
+      <Filter>HNData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNGame\HNGameTableUsersData.h">
+      <Filter>HNGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNGame\HNGameMessageDelegate.h">
+      <Filter>HNGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNRoom\HNRoomLogic.h">
+      <Filter>HNRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNConverCode.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNMemoryPool.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNRoom\HNRoomExport.h">
+      <Filter>HNRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNPlatform\HNPlatformExport.h">
+      <Filter>HNPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetExport.h" />
+    <ClInclude Include="..\HNNetProtocol\HNBaseCommand.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNComStruct.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNNetMessageHead.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNPlatformMessage.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNRoomMessage.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNProtocolExport.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNSocket\HNSocketMessageDelegate.h">
+      <Filter>HNSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNRoom\HNRoomMessageDelegate.h">
+      <Filter>HNRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNData\HNGamesInfoModule.h">
+      <Filter>HNData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNBankMessage.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNPlatform\HNGameCreator.h">
+      <Filter>HNPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetProtocol\HNMatchMessage.h">
+      <Filter>HNNetProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNCommon\HNCommonMarco.h">
+      <Filter>HNCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNData\HNMatchInfoCache.h">
+      <Filter>HNData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNHttp\HNHttp.h">
+      <Filter>HNHttp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\HNExternal\MD5\MD5.cpp">
+      <Filter>HNExternal\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNPlatform\HNPlatformLogic.cpp">
+      <Filter>HNPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNSocket\HNSocket.cpp">
+      <Filter>HNSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNSocket\HNSocketLogic.cpp">
+      <Filter>HNSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNSocket\HNSocketProtocolData.cpp">
+      <Filter>HNSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNSocket\HNSocketThread.cpp">
+      <Filter>HNSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNPlatform\HNPlatformBase.cpp">
+      <Filter>HNPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNGame\HNGameUIBase.cpp">
+      <Filter>HNGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNCommon\HNLog.cpp">
+      <Filter>HNCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNCommon\HNThread.cpp">
+      <Filter>HNCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNData\HNRoomInfoModule.cpp">
+      <Filter>HNData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNData\HNUserInfoModule.cpp">
+      <Filter>HNData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNGame\HNGameTableUsersData.cpp">
+      <Filter>HNGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNRoom\HNRoomLogic.cpp">
+      <Filter>HNRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNCommon\HNConverCode.cpp">
+      <Filter>HNCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNSocket\HNSocketMessage.cpp">
+      <Filter>HNSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNCommon\HNMemoryPool.cpp">
+      <Filter>HNCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNData\HNGamesInfoModule.cpp">
+      <Filter>HNData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNPlatform\HNGameCreator.cpp">
+      <Filter>HNPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNNetProtocol\HNBaseCommand.cpp">
+      <Filter>HNNetProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNData\HNMatchInfoCache.cpp">
+      <Filter>HNData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HNHttp\HNHttp.cpp">
+      <Filter>HNHttp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="../HNOperator.cpp" />
+    <ClCompile Include="../platform\win32\HNMarket.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="../platform\win32\adapter\HNMarketModule.cpp">
+      <Filter>platform\win32\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="../platform\win32\adapter\HNSysModule.cpp">
+      <Filter>platform\win32\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="../HNModule.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../HNOperator.h" />
+    <ClInclude Include="../platform\win32\HNMarket.h">
+      <Filter>platform\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="../platform\win32\adapter\HNMarketModule.h">
+      <Filter>platform\win32\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="../platform\win32\adapter\HNSysModule.h">
+      <Filter>platform\win32\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="../HNModule.h" />
+    <ClInclude Include="../HNPayCallBack.h" />
+    <ClInclude Include="../HNMarketExport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="platform">
+      <UniqueIdentifier>{8fa9b76e-2e6b-470a-b979-1e0448126a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\win32">
+      <UniqueIdentifier>{12026ab6-79f2-456c-bb1d-c7096f77f53e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\win32\adapter">
+      <UniqueIdentifier>{5196f42a-e36a-443c-8668-9f8bcf76a428}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
