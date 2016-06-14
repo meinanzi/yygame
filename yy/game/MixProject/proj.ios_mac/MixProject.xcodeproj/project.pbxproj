@@ -61,51 +61,6 @@
 		7FB4D3B81BFDEDB700BD0311 /* LandlordGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3A61BFDEDB700BD0311 /* LandlordGameUserMessageBox.cpp */; };
 		7FB4D3B91BFDEDB700BD0311 /* LandlordPokerCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3A81BFDEDB700BD0311 /* LandlordPokerCard.cpp */; };
 		7FB4D3BA1BFDEDB700BD0311 /* LandlordToolbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4D3AA1BFDEDB700BD0311 /* LandlordToolbar.cpp */; };
-		BC69B48A1C28DD9A00FE759D /* FKLCGameImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B47D1C28DD9A00FE759D /* FKLCGameImage.cpp */; };
-		BC69B48B1C28DD9A00FE759D /* FKLCGameTableAnimi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B47F1C28DD9A00FE759D /* FKLCGameTableAnimi.cpp */; };
-		BC69B48C1C28DD9A00FE759D /* FKLCGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4811C28DD9A00FE759D /* FKLCGameTableLogic.cpp */; };
-		BC69B48D1C28DD9A00FE759D /* FKLCGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4831C28DD9A00FE759D /* FKLCGameTableUI.cpp */; };
-		BC69B48E1C28DD9A00FE759D /* FKLCSmallGameImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4861C28DD9A00FE759D /* FKLCSmallGameImage.cpp */; };
-		BC69B48F1C28DD9A00FE759D /* FKLCSmallGameUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4881C28DD9A00FE759D /* FKLCSmallGameUI.cpp */; };
-		BC69B4AE1C28DDA900FE759D /* FishLKBulletSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4931C28DDA900FE759D /* FishLKBulletSprite.cpp */; };
-		BC69B4AF1C28DDA900FE759D /* FishLKCannonUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4951C28DDA900FE759D /* FishLKCannonUI.cpp */; };
-		BC69B4B01C28DDA900FE759D /* FishLKFishManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4971C28DDA900FE759D /* FishLKFishManager.cpp */; };
-		BC69B4B11C28DDA900FE759D /* FishLKFishSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4991C28DDA900FE759D /* FishLKFishSprite.cpp */; };
-		BC69B4B21C28DDA900FE759D /* FishLKGameLoading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B49B1C28DDA900FE759D /* FishLKGameLoading.cpp */; };
-		BC69B4B31C28DDA900FE759D /* FishLKGameMenuLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B49D1C28DDA900FE759D /* FishLKGameMenuLayer.cpp */; };
-		BC69B4B41C28DDA900FE759D /* FishLKGameResulte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B49F1C28DDA900FE759D /* FishLKGameResulte.cpp */; };
-		BC69B4B51C28DDA900FE759D /* FishLKGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4A11C28DDA900FE759D /* FishLKGameTableLogic.cpp */; };
-		BC69B4B61C28DDA900FE759D /* FishLKGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4A31C28DDA900FE759D /* FishLKGameTableUI.cpp */; };
-		BC69B4B71C28DDA900FE759D /* FishLKGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4A61C28DDA900FE759D /* FishLKGameUserMessageBox.cpp */; };
-		BC69B4B81C28DDA900FE759D /* FishLKGumSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4A81C28DDA900FE759D /* FishLKGumSprite.cpp */; };
-		BC69B4B91C28DDA900FE759D /* FishLKmath_aide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4AA1C28DDA900FE759D /* FishLKmath_aide.cpp */; };
-		BC69B4BA1C28DDA900FE759D /* FishLKscene_fish_trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4AC1C28DDA900FE759D /* FishLKscene_fish_trace.cpp */; };
-		BC69B4DB1C28DDB700FE759D /* FishKingGameAdmin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4BE1C28DDB700FE759D /* FishKingGameAdmin.cpp */; };
-		BC69B4DC1C28DDB700FE759D /* FishKingGameAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4C01C28DDB700FE759D /* FishKingGameAudio.cpp */; };
-		BC69B4DD1C28DDB700FE759D /* FishKingGameBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4C21C28DDB700FE759D /* FishKingGameBullet.cpp */; };
-		BC69B4DE1C28DDB700FE759D /* FishKingGameFishManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4C41C28DDB700FE759D /* FishKingGameFishManager.cpp */; };
-		BC69B4DF1C28DDB700FE759D /* FishKingGameFishObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4C61C28DDB700FE759D /* FishKingGameFishObject.cpp */; };
-		BC69B4E01C28DDB700FE759D /* FishKingGameLoading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4C81C28DDB700FE759D /* FishKingGameLoading.cpp */; };
-		BC69B4E11C28DDB700FE759D /* FishKingGameMathAide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4CA1C28DDB700FE759D /* FishKingGameMathAide.cpp */; };
-		BC69B4E21C28DDB700FE759D /* FishKingGamePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4CC1C28DDB700FE759D /* FishKingGamePlayer.cpp */; };
-		BC69B4E31C28DDB700FE759D /* FishKingGameSceneFishTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4CE1C28DDB700FE759D /* FishKingGameSceneFishTrace.cpp */; };
-		BC69B4E41C28DDB700FE759D /* FishKingGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4D01C28DDB700FE759D /* FishKingGameTableLogic.cpp */; };
-		BC69B4E51C28DDB700FE759D /* FishKingGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4D21C28DDB700FE759D /* FishKingGameTableUI.cpp */; };
-		BC69B4E61C28DDB700FE759D /* FishKingGameToolbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4D51C28DDB700FE759D /* FishKingGameToolbar.cpp */; };
-		BC69B4E71C28DDB700FE759D /* FishKingGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4D71C28DDB700FE759D /* FishKingGameUserMessageBox.cpp */; };
-		BC69B4E81C28DDB700FE759D /* FishKingGameVortexLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4D91C28DDB700FE759D /* FishKingGameVortexLayer.cpp */; };
-		BC69B4F91C28DDC200FE759D /* GemStormGameAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4EC1C28DDC200FE759D /* GemStormGameAudio.cpp */; };
-		BC69B4FA1C28DDC200FE759D /* GemStormGameHelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4EE1C28DDC200FE759D /* GemStormGameHelp.cpp */; };
-		BC69B4FB1C28DDC200FE759D /* GemStormGameSetLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4F01C28DDC200FE759D /* GemStormGameSetLayer.cpp */; };
-		BC69B4FC1C28DDC200FE759D /* GemStormGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4F21C28DDC200FE759D /* GemStormGameTableLogic.cpp */; };
-		BC69B4FD1C28DDC200FE759D /* GemStormGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4F41C28DDC200FE759D /* GemStormGameTableUI.cpp */; };
-		BC69B4FE1C28DDC200FE759D /* GemStormGameTreasureHunt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B4F71C28DDC200FE759D /* GemStormGameTreasureHunt.cpp */; };
-		BC69B5101C28DDCF00FE759D /* JLBDGameConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B5031C28DDCF00FE759D /* JLBDGameConfig.cpp */; };
-		BC69B5111C28DDCF00FE759D /* JLBDGameImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B5051C28DDCF00FE759D /* JLBDGameImage.cpp */; };
-		BC69B5121C28DDCF00FE759D /* JLBDGameLuckyList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B5071C28DDCF00FE759D /* JLBDGameLuckyList.cpp */; };
-		BC69B5131C28DDCF00FE759D /* JLBDGameTableAnimi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B5091C28DDCF00FE759D /* JLBDGameTableAnimi.cpp */; };
-		BC69B5141C28DDCF00FE759D /* JLBDGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B50B1C28DDCF00FE759D /* JLBDGameTableLogic.cpp */; };
-		BC69B5151C28DDCF00FE759D /* JLBDGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC69B50D1C28DDCF00FE759D /* JLBDGameTableUI.cpp */; };
 		BC69B5171C28DDEB00FE759D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC69B5161C28DDEB00FE759D /* MessageUI.framework */; };
 		BCB7CE101BF82A1900BD28FE /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB7CE0F1BF828D400BD28FE /* libcocos2d iOS.a */; };
 		BCB7CE1C1BF82CA700BD28FE /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB7CE1B1BF82CA700BD28FE /* libiconv.tbd */; };
@@ -163,6 +118,24 @@
 		BCB7D4361BF8619200BD28FE /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB7D4351BF8619200BD28FE /* libstdc++.tbd */; };
 		BCB7D4381BF8619A00BD28FE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB7D4371BF8619A00BD28FE /* Social.framework */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		CB668D8D1D10699C0016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D8B1D10699C0016E4AD /* GameMessage */; };
+		CB668D8E1D10699C0016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D8C1D10699C0016E4AD /* GameTable */; };
+		CB668D911D1069C80016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D8F1D1069C80016E4AD /* GameMessage */; };
+		CB668D921D1069C80016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D901D1069C80016E4AD /* GameTable */; };
+		CB668D951D1069E70016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D931D1069E70016E4AD /* GameMessage */; };
+		CB668D961D1069E70016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D941D1069E70016E4AD /* GameTable */; };
+		CB668D991D106A190016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D971D106A190016E4AD /* GameMessage */; };
+		CB668D9A1D106A190016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D981D106A190016E4AD /* GameTable */; };
+		CB668D9D1D106A360016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D9B1D106A350016E4AD /* GameMessage */; };
+		CB668D9E1D106A360016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D9C1D106A360016E4AD /* GameTable */; };
+		CB668DA21D106A5B0016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA01D106A5B0016E4AD /* GameMessage */; };
+		CB668DA31D106A5B0016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA11D106A5B0016E4AD /* GameTable */; };
+		CB668DA71D106A810016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA51D106A810016E4AD /* GameMessage */; };
+		CB668DA81D106A810016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA61D106A810016E4AD /* GameTable */; };
+		CB668DAE1D106B110016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DAC1D106B110016E4AD /* GameMessage */; };
+		CB668DAF1D106B110016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DAD1D106B110016E4AD /* GameTable */; };
+		CB668DB31D106B300016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DB11D106B300016E4AD /* GameMessage */; };
+		CB668DB41D106B300016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DB21D106B300016E4AD /* GameTable */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -306,107 +279,6 @@
 		7FB4D3A91BFDEDB700BD0311 /* LandlordPokerCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordPokerCard.h; sourceTree = "<group>"; };
 		7FB4D3AA1BFDEDB700BD0311 /* LandlordToolbar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordToolbar.cpp; sourceTree = "<group>"; };
 		7FB4D3AB1BFDEDB700BD0311 /* LandlordToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordToolbar.h; sourceTree = "<group>"; };
-		BC69B47B1C28DD9A00FE759D /* FKLCMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCMessageHead.h; sourceTree = "<group>"; };
-		BC69B47D1C28DD9A00FE759D /* FKLCGameImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FKLCGameImage.cpp; sourceTree = "<group>"; };
-		BC69B47E1C28DD9A00FE759D /* FKLCGameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCGameImage.h; sourceTree = "<group>"; };
-		BC69B47F1C28DD9A00FE759D /* FKLCGameTableAnimi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FKLCGameTableAnimi.cpp; sourceTree = "<group>"; };
-		BC69B4801C28DD9A00FE759D /* FKLCGameTableAnimi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCGameTableAnimi.h; sourceTree = "<group>"; };
-		BC69B4811C28DD9A00FE759D /* FKLCGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FKLCGameTableLogic.cpp; sourceTree = "<group>"; };
-		BC69B4821C28DD9A00FE759D /* FKLCGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCGameTableLogic.h; sourceTree = "<group>"; };
-		BC69B4831C28DD9A00FE759D /* FKLCGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FKLCGameTableUI.cpp; sourceTree = "<group>"; };
-		BC69B4841C28DD9A00FE759D /* FKLCGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCGameTableUI.h; sourceTree = "<group>"; };
-		BC69B4851C28DD9A00FE759D /* FKLCGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCGameTableUICallback.h; sourceTree = "<group>"; };
-		BC69B4861C28DD9A00FE759D /* FKLCSmallGameImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FKLCSmallGameImage.cpp; sourceTree = "<group>"; };
-		BC69B4871C28DD9A00FE759D /* FKLCSmallGameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCSmallGameImage.h; sourceTree = "<group>"; };
-		BC69B4881C28DD9A00FE759D /* FKLCSmallGameUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FKLCSmallGameUI.cpp; sourceTree = "<group>"; };
-		BC69B4891C28DD9A00FE759D /* FKLCSmallGameUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKLCSmallGameUI.h; sourceTree = "<group>"; };
-		BC69B4911C28DDA900FE759D /* FishLKGameClientMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameClientMessage.h; sourceTree = "<group>"; };
-		BC69B4931C28DDA900FE759D /* FishLKBulletSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKBulletSprite.cpp; sourceTree = "<group>"; };
-		BC69B4941C28DDA900FE759D /* FishLKBulletSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKBulletSprite.h; sourceTree = "<group>"; };
-		BC69B4951C28DDA900FE759D /* FishLKCannonUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKCannonUI.cpp; sourceTree = "<group>"; };
-		BC69B4961C28DDA900FE759D /* FishLKCannonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKCannonUI.h; sourceTree = "<group>"; };
-		BC69B4971C28DDA900FE759D /* FishLKFishManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKFishManager.cpp; sourceTree = "<group>"; };
-		BC69B4981C28DDA900FE759D /* FishLKFishManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKFishManager.h; sourceTree = "<group>"; };
-		BC69B4991C28DDA900FE759D /* FishLKFishSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKFishSprite.cpp; sourceTree = "<group>"; };
-		BC69B49A1C28DDA900FE759D /* FishLKFishSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKFishSprite.h; sourceTree = "<group>"; };
-		BC69B49B1C28DDA900FE759D /* FishLKGameLoading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGameLoading.cpp; sourceTree = "<group>"; };
-		BC69B49C1C28DDA900FE759D /* FishLKGameLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameLoading.h; sourceTree = "<group>"; };
-		BC69B49D1C28DDA900FE759D /* FishLKGameMenuLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGameMenuLayer.cpp; sourceTree = "<group>"; };
-		BC69B49E1C28DDA900FE759D /* FishLKGameMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameMenuLayer.h; sourceTree = "<group>"; };
-		BC69B49F1C28DDA900FE759D /* FishLKGameResulte.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGameResulte.cpp; sourceTree = "<group>"; };
-		BC69B4A01C28DDA900FE759D /* FishLKGameResulte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameResulte.h; sourceTree = "<group>"; };
-		BC69B4A11C28DDA900FE759D /* FishLKGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGameTableLogic.cpp; sourceTree = "<group>"; };
-		BC69B4A21C28DDA900FE759D /* FishLKGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameTableLogic.h; sourceTree = "<group>"; };
-		BC69B4A31C28DDA900FE759D /* FishLKGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGameTableUI.cpp; sourceTree = "<group>"; };
-		BC69B4A41C28DDA900FE759D /* FishLKGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameTableUI.h; sourceTree = "<group>"; };
-		BC69B4A51C28DDA900FE759D /* FishLKGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameTableUICallback.h; sourceTree = "<group>"; };
-		BC69B4A61C28DDA900FE759D /* FishLKGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGameUserMessageBox.cpp; sourceTree = "<group>"; };
-		BC69B4A71C28DDA900FE759D /* FishLKGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGameUserMessageBox.h; sourceTree = "<group>"; };
-		BC69B4A81C28DDA900FE759D /* FishLKGumSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKGumSprite.cpp; sourceTree = "<group>"; };
-		BC69B4A91C28DDA900FE759D /* FishLKGumSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKGumSprite.h; sourceTree = "<group>"; };
-		BC69B4AA1C28DDA900FE759D /* FishLKmath_aide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKmath_aide.cpp; sourceTree = "<group>"; };
-		BC69B4AB1C28DDA900FE759D /* FishLKmath_aide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKmath_aide.h; sourceTree = "<group>"; };
-		BC69B4AC1C28DDA900FE759D /* FishLKscene_fish_trace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishLKscene_fish_trace.cpp; sourceTree = "<group>"; };
-		BC69B4AD1C28DDA900FE759D /* FishLKscene_fish_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLKscene_fish_trace.h; sourceTree = "<group>"; };
-		BC69B4BC1C28DDB700FE759D /* FishKingMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingMessageHead.h; sourceTree = "<group>"; };
-		BC69B4BE1C28DDB700FE759D /* FishKingGameAdmin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameAdmin.cpp; sourceTree = "<group>"; };
-		BC69B4BF1C28DDB700FE759D /* FishKingGameAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameAdmin.h; sourceTree = "<group>"; };
-		BC69B4C01C28DDB700FE759D /* FishKingGameAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameAudio.cpp; sourceTree = "<group>"; };
-		BC69B4C11C28DDB700FE759D /* FishKingGameAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameAudio.h; sourceTree = "<group>"; };
-		BC69B4C21C28DDB700FE759D /* FishKingGameBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameBullet.cpp; sourceTree = "<group>"; };
-		BC69B4C31C28DDB700FE759D /* FishKingGameBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameBullet.h; sourceTree = "<group>"; };
-		BC69B4C41C28DDB700FE759D /* FishKingGameFishManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameFishManager.cpp; sourceTree = "<group>"; };
-		BC69B4C51C28DDB700FE759D /* FishKingGameFishManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameFishManager.h; sourceTree = "<group>"; };
-		BC69B4C61C28DDB700FE759D /* FishKingGameFishObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameFishObject.cpp; sourceTree = "<group>"; };
-		BC69B4C71C28DDB700FE759D /* FishKingGameFishObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameFishObject.h; sourceTree = "<group>"; };
-		BC69B4C81C28DDB700FE759D /* FishKingGameLoading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameLoading.cpp; sourceTree = "<group>"; };
-		BC69B4C91C28DDB700FE759D /* FishKingGameLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameLoading.h; sourceTree = "<group>"; };
-		BC69B4CA1C28DDB700FE759D /* FishKingGameMathAide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameMathAide.cpp; sourceTree = "<group>"; };
-		BC69B4CB1C28DDB700FE759D /* FishKingGameMathAide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameMathAide.h; sourceTree = "<group>"; };
-		BC69B4CC1C28DDB700FE759D /* FishKingGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGamePlayer.cpp; sourceTree = "<group>"; };
-		BC69B4CD1C28DDB700FE759D /* FishKingGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGamePlayer.h; sourceTree = "<group>"; };
-		BC69B4CE1C28DDB700FE759D /* FishKingGameSceneFishTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameSceneFishTrace.cpp; sourceTree = "<group>"; };
-		BC69B4CF1C28DDB700FE759D /* FishKingGameSceneFishTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameSceneFishTrace.h; sourceTree = "<group>"; };
-		BC69B4D01C28DDB700FE759D /* FishKingGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameTableLogic.cpp; sourceTree = "<group>"; };
-		BC69B4D11C28DDB700FE759D /* FishKingGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameTableLogic.h; sourceTree = "<group>"; };
-		BC69B4D21C28DDB700FE759D /* FishKingGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameTableUI.cpp; sourceTree = "<group>"; };
-		BC69B4D31C28DDB700FE759D /* FishKingGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameTableUI.h; sourceTree = "<group>"; };
-		BC69B4D41C28DDB700FE759D /* FishKingGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameTableUICallback.h; sourceTree = "<group>"; };
-		BC69B4D51C28DDB700FE759D /* FishKingGameToolbar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameToolbar.cpp; sourceTree = "<group>"; };
-		BC69B4D61C28DDB700FE759D /* FishKingGameToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameToolbar.h; sourceTree = "<group>"; };
-		BC69B4D71C28DDB700FE759D /* FishKingGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameUserMessageBox.cpp; sourceTree = "<group>"; };
-		BC69B4D81C28DDB700FE759D /* FishKingGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameUserMessageBox.h; sourceTree = "<group>"; };
-		BC69B4D91C28DDB700FE759D /* FishKingGameVortexLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FishKingGameVortexLayer.cpp; sourceTree = "<group>"; };
-		BC69B4DA1C28DDB700FE759D /* FishKingGameVortexLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishKingGameVortexLayer.h; sourceTree = "<group>"; };
-		BC69B4EA1C28DDC200FE759D /* GemStormMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormMessageHead.h; sourceTree = "<group>"; };
-		BC69B4EC1C28DDC200FE759D /* GemStormGameAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GemStormGameAudio.cpp; sourceTree = "<group>"; };
-		BC69B4ED1C28DDC200FE759D /* GemStormGameAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameAudio.h; sourceTree = "<group>"; };
-		BC69B4EE1C28DDC200FE759D /* GemStormGameHelp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GemStormGameHelp.cpp; sourceTree = "<group>"; };
-		BC69B4EF1C28DDC200FE759D /* GemStormGameHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameHelp.h; sourceTree = "<group>"; };
-		BC69B4F01C28DDC200FE759D /* GemStormGameSetLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GemStormGameSetLayer.cpp; sourceTree = "<group>"; };
-		BC69B4F11C28DDC200FE759D /* GemStormGameSetLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameSetLayer.h; sourceTree = "<group>"; };
-		BC69B4F21C28DDC200FE759D /* GemStormGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GemStormGameTableLogic.cpp; sourceTree = "<group>"; };
-		BC69B4F31C28DDC200FE759D /* GemStormGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameTableLogic.h; sourceTree = "<group>"; };
-		BC69B4F41C28DDC200FE759D /* GemStormGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GemStormGameTableUI.cpp; sourceTree = "<group>"; };
-		BC69B4F51C28DDC200FE759D /* GemStormGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameTableUI.h; sourceTree = "<group>"; };
-		BC69B4F61C28DDC200FE759D /* GemStormGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameTableUICallback.h; sourceTree = "<group>"; };
-		BC69B4F71C28DDC200FE759D /* GemStormGameTreasureHunt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GemStormGameTreasureHunt.cpp; sourceTree = "<group>"; };
-		BC69B4F81C28DDC200FE759D /* GemStormGameTreasureHunt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GemStormGameTreasureHunt.h; sourceTree = "<group>"; };
-		BC69B5001C28DDCF00FE759D /* JLBDCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDCommonDefine.h; sourceTree = "<group>"; };
-		BC69B5011C28DDCF00FE759D /* JLBDMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDMessageHead.h; sourceTree = "<group>"; };
-		BC69B5031C28DDCF00FE759D /* JLBDGameConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JLBDGameConfig.cpp; sourceTree = "<group>"; };
-		BC69B5041C28DDCF00FE759D /* JLBDGameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameConfig.h; sourceTree = "<group>"; };
-		BC69B5051C28DDCF00FE759D /* JLBDGameImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JLBDGameImage.cpp; sourceTree = "<group>"; };
-		BC69B5061C28DDCF00FE759D /* JLBDGameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameImage.h; sourceTree = "<group>"; };
-		BC69B5071C28DDCF00FE759D /* JLBDGameLuckyList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JLBDGameLuckyList.cpp; sourceTree = "<group>"; };
-		BC69B5081C28DDCF00FE759D /* JLBDGameLuckyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameLuckyList.h; sourceTree = "<group>"; };
-		BC69B5091C28DDCF00FE759D /* JLBDGameTableAnimi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JLBDGameTableAnimi.cpp; sourceTree = "<group>"; };
-		BC69B50A1C28DDCF00FE759D /* JLBDGameTableAnimi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameTableAnimi.h; sourceTree = "<group>"; };
-		BC69B50B1C28DDCF00FE759D /* JLBDGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JLBDGameTableLogic.cpp; sourceTree = "<group>"; };
-		BC69B50C1C28DDCF00FE759D /* JLBDGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameTableLogic.h; sourceTree = "<group>"; };
-		BC69B50D1C28DDCF00FE759D /* JLBDGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JLBDGameTableUI.cpp; sourceTree = "<group>"; };
-		BC69B50E1C28DDCF00FE759D /* JLBDGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameTableUI.h; sourceTree = "<group>"; };
-		BC69B50F1C28DDCF00FE759D /* JLBDGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBDGameTableUICallback.h; sourceTree = "<group>"; };
 		BC69B5161C28DDEB00FE759D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		BCB7CE071BF828D400BD28FE /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../../../../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		BCB7CE1B1BF82CA700BD28FE /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
@@ -496,6 +368,24 @@
 		BCB7D4351BF8619200BD28FE /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libstdc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		BCB7D4371BF8619A00BD28FE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CB668D8B1D10699C0016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../BJL/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668D8C1D10699C0016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../BJL/Classes/GameTable; sourceTree = "<group>"; };
+		CB668D8F1D1069C80016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../BloodyMahjong/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668D901D1069C80016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../BloodyMahjong/Classes/GameTable; sourceTree = "<group>"; };
+		CB668D931D1069E70016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../DriftingCar/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668D941D1069E70016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../DriftingCar/Classes/GameTable; sourceTree = "<group>"; };
+		CB668D971D106A190016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../DZPoker/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668D981D106A190016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../DZPoker/Classes/GameTable; sourceTree = "<group>"; };
+		CB668D9B1D106A350016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../FreedomRedMahjong/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668D9C1D106A360016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../FreedomRedMahjong/Classes/GameTable; sourceTree = "<group>"; };
+		CB668DA01D106A5B0016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../GoldenToad/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668DA11D106A5B0016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../GoldenToad/Classes/GameTable; sourceTree = "<group>"; };
+		CB668DA51D106A810016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../HappyGoldenFlower/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668DA61D106A810016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../HappyGoldenFlower/Classes/GameTable; sourceTree = "<group>"; };
+		CB668DAC1D106B110016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../Tractor/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668DAD1D106B110016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../Tractor/Classes/GameTable; sourceTree = "<group>"; };
+		CB668DB11D106B300016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../WaterMargin/Classes/GameMessage; sourceTree = "<group>"; };
+		CB668DB21D106B300016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../WaterMargin/Classes/GameTable; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -669,8 +559,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BCB7D32D1BF85C5B00BD28FE /* UMeng */,
 				BCB7CE2C1BF858D400BD28FE /* Games */,
+				BCB7D32D1BF85C5B00BD28FE /* UMeng */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -780,230 +670,49 @@
 			path = ../../Landlord/Classes/GameTable;
 			sourceTree = "<group>";
 		};
-		BC69B46D1C28DCBA00FE759D /* SlotMachine */ = {
+		BC69B46D1C28DCBA00FE759D /* FreedomRedMahjong */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B4FF1C28DDCF00FE759D /* GameMessage */,
-				BC69B5021C28DDCF00FE759D /* GameTable */,
+				CB668D9B1D106A350016E4AD /* GameMessage */,
+				CB668D9C1D106A360016E4AD /* GameTable */,
 			);
-			name = SlotMachine;
+			name = FreedomRedMahjong;
 			sourceTree = "<group>";
 		};
-		BC69B4761C28DCBD00FE759D /* GemStorm */ = {
+		BC69B4761C28DCBD00FE759D /* DZPoker */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B4E91C28DDC200FE759D /* GameMessage */,
-				BC69B4EB1C28DDC200FE759D /* GameTable */,
+				CB668D971D106A190016E4AD /* GameMessage */,
+				CB668D981D106A190016E4AD /* GameTable */,
 			);
-			name = GemStorm;
+			name = DZPoker;
 			sourceTree = "<group>";
 		};
-		BC69B4771C28DCC000FE759D /* FishKing */ = {
+		BC69B4771C28DCC000FE759D /* DriftingCar */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B4BB1C28DDB700FE759D /* GameMessage */,
-				BC69B4BD1C28DDB700FE759D /* GameTable */,
+				CB668D931D1069E70016E4AD /* GameMessage */,
+				CB668D941D1069E70016E4AD /* GameTable */,
 			);
-			name = FishKing;
+			name = DriftingCar;
 			sourceTree = "<group>";
 		};
-		BC69B4781C28DCEE00FE759D /* FishMaster */ = {
+		BC69B4781C28DCEE00FE759D /* BloodyMahjong */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B4901C28DDA900FE759D /* GameMessage */,
-				BC69B4921C28DDA900FE759D /* GameTable */,
+				CB668D8F1D1069C80016E4AD /* GameMessage */,
+				CB668D901D1069C80016E4AD /* GameTable */,
 			);
-			name = FishMaster;
+			name = BloodyMahjong;
 			sourceTree = "<group>";
 		};
-		BC69B4791C28DCF200FE759D /* FarmFrenzy */ = {
+		BC69B4791C28DCF200FE759D /* BJL */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B47A1C28DD9A00FE759D /* GameMessage */,
-				BC69B47C1C28DD9A00FE759D /* GameTable */,
+				CB668D8B1D10699C0016E4AD /* GameMessage */,
+				CB668D8C1D10699C0016E4AD /* GameTable */,
 			);
-			name = FarmFrenzy;
-			sourceTree = "<group>";
-		};
-		BC69B47A1C28DD9A00FE759D /* GameMessage */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B47B1C28DD9A00FE759D /* FKLCMessageHead.h */,
-			);
-			name = GameMessage;
-			path = ../../FarmFrenzy/Classes/GameMessage;
-			sourceTree = "<group>";
-		};
-		BC69B47C1C28DD9A00FE759D /* GameTable */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B47D1C28DD9A00FE759D /* FKLCGameImage.cpp */,
-				BC69B47E1C28DD9A00FE759D /* FKLCGameImage.h */,
-				BC69B47F1C28DD9A00FE759D /* FKLCGameTableAnimi.cpp */,
-				BC69B4801C28DD9A00FE759D /* FKLCGameTableAnimi.h */,
-				BC69B4811C28DD9A00FE759D /* FKLCGameTableLogic.cpp */,
-				BC69B4821C28DD9A00FE759D /* FKLCGameTableLogic.h */,
-				BC69B4831C28DD9A00FE759D /* FKLCGameTableUI.cpp */,
-				BC69B4841C28DD9A00FE759D /* FKLCGameTableUI.h */,
-				BC69B4851C28DD9A00FE759D /* FKLCGameTableUICallback.h */,
-				BC69B4861C28DD9A00FE759D /* FKLCSmallGameImage.cpp */,
-				BC69B4871C28DD9A00FE759D /* FKLCSmallGameImage.h */,
-				BC69B4881C28DD9A00FE759D /* FKLCSmallGameUI.cpp */,
-				BC69B4891C28DD9A00FE759D /* FKLCSmallGameUI.h */,
-			);
-			name = GameTable;
-			path = ../../FarmFrenzy/Classes/GameTable;
-			sourceTree = "<group>";
-		};
-		BC69B4901C28DDA900FE759D /* GameMessage */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B4911C28DDA900FE759D /* FishLKGameClientMessage.h */,
-			);
-			name = GameMessage;
-			path = ../../FishMaster/Classes/GameMessage;
-			sourceTree = "<group>";
-		};
-		BC69B4921C28DDA900FE759D /* GameTable */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B4931C28DDA900FE759D /* FishLKBulletSprite.cpp */,
-				BC69B4941C28DDA900FE759D /* FishLKBulletSprite.h */,
-				BC69B4951C28DDA900FE759D /* FishLKCannonUI.cpp */,
-				BC69B4961C28DDA900FE759D /* FishLKCannonUI.h */,
-				BC69B4971C28DDA900FE759D /* FishLKFishManager.cpp */,
-				BC69B4981C28DDA900FE759D /* FishLKFishManager.h */,
-				BC69B4991C28DDA900FE759D /* FishLKFishSprite.cpp */,
-				BC69B49A1C28DDA900FE759D /* FishLKFishSprite.h */,
-				BC69B49B1C28DDA900FE759D /* FishLKGameLoading.cpp */,
-				BC69B49C1C28DDA900FE759D /* FishLKGameLoading.h */,
-				BC69B49D1C28DDA900FE759D /* FishLKGameMenuLayer.cpp */,
-				BC69B49E1C28DDA900FE759D /* FishLKGameMenuLayer.h */,
-				BC69B49F1C28DDA900FE759D /* FishLKGameResulte.cpp */,
-				BC69B4A01C28DDA900FE759D /* FishLKGameResulte.h */,
-				BC69B4A11C28DDA900FE759D /* FishLKGameTableLogic.cpp */,
-				BC69B4A21C28DDA900FE759D /* FishLKGameTableLogic.h */,
-				BC69B4A31C28DDA900FE759D /* FishLKGameTableUI.cpp */,
-				BC69B4A41C28DDA900FE759D /* FishLKGameTableUI.h */,
-				BC69B4A51C28DDA900FE759D /* FishLKGameTableUICallback.h */,
-				BC69B4A61C28DDA900FE759D /* FishLKGameUserMessageBox.cpp */,
-				BC69B4A71C28DDA900FE759D /* FishLKGameUserMessageBox.h */,
-				BC69B4A81C28DDA900FE759D /* FishLKGumSprite.cpp */,
-				BC69B4A91C28DDA900FE759D /* FishLKGumSprite.h */,
-				BC69B4AA1C28DDA900FE759D /* FishLKmath_aide.cpp */,
-				BC69B4AB1C28DDA900FE759D /* FishLKmath_aide.h */,
-				BC69B4AC1C28DDA900FE759D /* FishLKscene_fish_trace.cpp */,
-				BC69B4AD1C28DDA900FE759D /* FishLKscene_fish_trace.h */,
-			);
-			name = GameTable;
-			path = ../../FishMaster/Classes/GameTable;
-			sourceTree = "<group>";
-		};
-		BC69B4BB1C28DDB700FE759D /* GameMessage */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B4BC1C28DDB700FE759D /* FishKingMessageHead.h */,
-			);
-			name = GameMessage;
-			path = ../../FishKing/Classes/GameMessage;
-			sourceTree = "<group>";
-		};
-		BC69B4BD1C28DDB700FE759D /* GameTable */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B4BE1C28DDB700FE759D /* FishKingGameAdmin.cpp */,
-				BC69B4BF1C28DDB700FE759D /* FishKingGameAdmin.h */,
-				BC69B4C01C28DDB700FE759D /* FishKingGameAudio.cpp */,
-				BC69B4C11C28DDB700FE759D /* FishKingGameAudio.h */,
-				BC69B4C21C28DDB700FE759D /* FishKingGameBullet.cpp */,
-				BC69B4C31C28DDB700FE759D /* FishKingGameBullet.h */,
-				BC69B4C41C28DDB700FE759D /* FishKingGameFishManager.cpp */,
-				BC69B4C51C28DDB700FE759D /* FishKingGameFishManager.h */,
-				BC69B4C61C28DDB700FE759D /* FishKingGameFishObject.cpp */,
-				BC69B4C71C28DDB700FE759D /* FishKingGameFishObject.h */,
-				BC69B4C81C28DDB700FE759D /* FishKingGameLoading.cpp */,
-				BC69B4C91C28DDB700FE759D /* FishKingGameLoading.h */,
-				BC69B4CA1C28DDB700FE759D /* FishKingGameMathAide.cpp */,
-				BC69B4CB1C28DDB700FE759D /* FishKingGameMathAide.h */,
-				BC69B4CC1C28DDB700FE759D /* FishKingGamePlayer.cpp */,
-				BC69B4CD1C28DDB700FE759D /* FishKingGamePlayer.h */,
-				BC69B4CE1C28DDB700FE759D /* FishKingGameSceneFishTrace.cpp */,
-				BC69B4CF1C28DDB700FE759D /* FishKingGameSceneFishTrace.h */,
-				BC69B4D01C28DDB700FE759D /* FishKingGameTableLogic.cpp */,
-				BC69B4D11C28DDB700FE759D /* FishKingGameTableLogic.h */,
-				BC69B4D21C28DDB700FE759D /* FishKingGameTableUI.cpp */,
-				BC69B4D31C28DDB700FE759D /* FishKingGameTableUI.h */,
-				BC69B4D41C28DDB700FE759D /* FishKingGameTableUICallback.h */,
-				BC69B4D51C28DDB700FE759D /* FishKingGameToolbar.cpp */,
-				BC69B4D61C28DDB700FE759D /* FishKingGameToolbar.h */,
-				BC69B4D71C28DDB700FE759D /* FishKingGameUserMessageBox.cpp */,
-				BC69B4D81C28DDB700FE759D /* FishKingGameUserMessageBox.h */,
-				BC69B4D91C28DDB700FE759D /* FishKingGameVortexLayer.cpp */,
-				BC69B4DA1C28DDB700FE759D /* FishKingGameVortexLayer.h */,
-			);
-			name = GameTable;
-			path = ../../FishKing/Classes/GameTable;
-			sourceTree = "<group>";
-		};
-		BC69B4E91C28DDC200FE759D /* GameMessage */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B4EA1C28DDC200FE759D /* GemStormMessageHead.h */,
-			);
-			name = GameMessage;
-			path = ../../GemStorm/Classes/GameMessage;
-			sourceTree = "<group>";
-		};
-		BC69B4EB1C28DDC200FE759D /* GameTable */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B4EC1C28DDC200FE759D /* GemStormGameAudio.cpp */,
-				BC69B4ED1C28DDC200FE759D /* GemStormGameAudio.h */,
-				BC69B4EE1C28DDC200FE759D /* GemStormGameHelp.cpp */,
-				BC69B4EF1C28DDC200FE759D /* GemStormGameHelp.h */,
-				BC69B4F01C28DDC200FE759D /* GemStormGameSetLayer.cpp */,
-				BC69B4F11C28DDC200FE759D /* GemStormGameSetLayer.h */,
-				BC69B4F21C28DDC200FE759D /* GemStormGameTableLogic.cpp */,
-				BC69B4F31C28DDC200FE759D /* GemStormGameTableLogic.h */,
-				BC69B4F41C28DDC200FE759D /* GemStormGameTableUI.cpp */,
-				BC69B4F51C28DDC200FE759D /* GemStormGameTableUI.h */,
-				BC69B4F61C28DDC200FE759D /* GemStormGameTableUICallback.h */,
-				BC69B4F71C28DDC200FE759D /* GemStormGameTreasureHunt.cpp */,
-				BC69B4F81C28DDC200FE759D /* GemStormGameTreasureHunt.h */,
-			);
-			name = GameTable;
-			path = ../../GemStorm/Classes/GameTable;
-			sourceTree = "<group>";
-		};
-		BC69B4FF1C28DDCF00FE759D /* GameMessage */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B5001C28DDCF00FE759D /* JLBDCommonDefine.h */,
-				BC69B5011C28DDCF00FE759D /* JLBDMessageHead.h */,
-			);
-			name = GameMessage;
-			path = ../../SlotMachine/Classes/GameMessage;
-			sourceTree = "<group>";
-		};
-		BC69B5021C28DDCF00FE759D /* GameTable */ = {
-			isa = PBXGroup;
-			children = (
-				BC69B5031C28DDCF00FE759D /* JLBDGameConfig.cpp */,
-				BC69B5041C28DDCF00FE759D /* JLBDGameConfig.h */,
-				BC69B5051C28DDCF00FE759D /* JLBDGameImage.cpp */,
-				BC69B5061C28DDCF00FE759D /* JLBDGameImage.h */,
-				BC69B5071C28DDCF00FE759D /* JLBDGameLuckyList.cpp */,
-				BC69B5081C28DDCF00FE759D /* JLBDGameLuckyList.h */,
-				BC69B5091C28DDCF00FE759D /* JLBDGameTableAnimi.cpp */,
-				BC69B50A1C28DDCF00FE759D /* JLBDGameTableAnimi.h */,
-				BC69B50B1C28DDCF00FE759D /* JLBDGameTableLogic.cpp */,
-				BC69B50C1C28DDCF00FE759D /* JLBDGameTableLogic.h */,
-				BC69B50D1C28DDCF00FE759D /* JLBDGameTableUI.cpp */,
-				BC69B50E1C28DDCF00FE759D /* JLBDGameTableUI.h */,
-				BC69B50F1C28DDCF00FE759D /* JLBDGameTableUICallback.h */,
-			);
-			name = GameTable;
-			path = ../../SlotMachine/Classes/GameTable;
+			name = BJL;
 			sourceTree = "<group>";
 		};
 		BCB7CE081BF828D400BD28FE /* Products */ = {
@@ -1018,11 +727,15 @@
 		BCB7CE2C1BF858D400BD28FE /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				BC69B4791C28DCF200FE759D /* FarmFrenzy */,
-				BC69B4781C28DCEE00FE759D /* FishMaster */,
-				BC69B4771C28DCC000FE759D /* FishKing */,
-				BC69B4761C28DCBD00FE759D /* GemStorm */,
-				BC69B46D1C28DCBA00FE759D /* SlotMachine */,
+				CB668DB01D106B1E0016E4AD /* WaterMargin */,
+				CB668DAB1D106B000016E4AD /* Tractor */,
+				CB668DA41D106A6F0016E4AD /* HappyGoldenFlower */,
+				CB668D9F1D106A4C0016E4AD /* GoldenToad */,
+				BC69B4791C28DCF200FE759D /* BJL */,
+				BC69B4781C28DCEE00FE759D /* BloodyMahjong */,
+				BC69B4771C28DCC000FE759D /* DriftingCar */,
+				BC69B4761C28DCBD00FE759D /* DZPoker */,
+				BC69B46D1C28DCBA00FE759D /* FreedomRedMahjong */,
 				7FB4D3891BFDEDA100BD0311 /* Landlord */,
 				7FB4D3821BFDED7A00BD0311 /* AppDelegate.cpp */,
 				7FB4D3831BFDED7A00BD0311 /* AppDelegate.h */,
@@ -1318,6 +1031,42 @@
 			path = YiXin;
 			sourceTree = "<group>";
 		};
+		CB668D9F1D106A4C0016E4AD /* GoldenToad */ = {
+			isa = PBXGroup;
+			children = (
+				CB668DA01D106A5B0016E4AD /* GameMessage */,
+				CB668DA11D106A5B0016E4AD /* GameTable */,
+			);
+			name = GoldenToad;
+			sourceTree = "<group>";
+		};
+		CB668DA41D106A6F0016E4AD /* HappyGoldenFlower */ = {
+			isa = PBXGroup;
+			children = (
+				CB668DA51D106A810016E4AD /* GameMessage */,
+				CB668DA61D106A810016E4AD /* GameTable */,
+			);
+			name = HappyGoldenFlower;
+			sourceTree = "<group>";
+		};
+		CB668DAB1D106B000016E4AD /* Tractor */ = {
+			isa = PBXGroup;
+			children = (
+				CB668DAC1D106B110016E4AD /* GameMessage */,
+				CB668DAD1D106B110016E4AD /* GameTable */,
+			);
+			name = Tractor;
+			sourceTree = "<group>";
+		};
+		CB668DB01D106B1E0016E4AD /* WaterMargin */ = {
+			isa = PBXGroup;
+			children = (
+				CB668DB11D106B300016E4AD /* GameMessage */,
+				CB668DB21D106B300016E4AD /* GameTable */,
+			);
+			name = WaterMargin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1492,17 +1241,27 @@
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				BCB7D3941BF85C5B00BD28FE /* UMShareEditViewController.xib in Resources */,
 				BCB7D3951BF85C5B00BD28FE /* UMShareEditViewControlleriPad.xib in Resources */,
+				CB668D951D1069E70016E4AD /* GameMessage in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				CB668DAE1D106B110016E4AD /* GameMessage in Resources */,
 				BCB7D3911BF85C5B00BD28FE /* UMSCommentDetailController.xib in Resources */,
 				BCB7D3991BF85C5B00BD28FE /* UMSocialSDKResourcesNew.bundle in Resources */,
 				BCB7D3981BF85C5B00BD28FE /* UMSShareListController.xib in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
+				CB668D9D1D106A360016E4AD /* GameMessage in Resources */,
 				BCB7D2F91BF8597B00BD28FE /* config.json in Resources */,
+				CB668DA21D106A5B0016E4AD /* GameMessage in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				CB668D991D106A190016E4AD /* GameMessage in Resources */,
 				BCB7D38E1BF85C5B00BD28FE /* UMSocialLocalizable.strings in Resources */,
+				CB668DB41D106B300016E4AD /* GameTable in Resources */,
+				CB668D8D1D10699C0016E4AD /* GameMessage in Resources */,
 				BCB7D3A01BF85C5B00BD28FE /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				CB668D8E1D10699C0016E4AD /* GameTable in Resources */,
+				CB668D9A1D106A190016E4AD /* GameTable in Resources */,
+				CB668DA71D106A810016E4AD /* GameMessage in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				BCB7D2FB1BF8597B00BD28FE /* Games in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
@@ -1512,11 +1271,19 @@
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
+				CB668DA31D106A5B0016E4AD /* GameTable in Resources */,
+				CB668D9E1D106A360016E4AD /* GameTable in Resources */,
 				BCB7D3971BF85C5B00BD28FE /* UMSnsAccountViewController.xib in Resources */,
+				CB668DA81D106A810016E4AD /* GameTable in Resources */,
+				CB668DAF1D106B110016E4AD /* GameTable in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				BCB7D3921BF85C5B00BD28FE /* UMSCommentInputController.xib in Resources */,
 				BCB7D3931BF85C5B00BD28FE /* UMSCommentInputControlleriPad.xib in Resources */,
+				CB668D911D1069C80016E4AD /* GameMessage in Resources */,
 				BCB7D2FC1BF8597B00BD28FE /* platform in Resources */,
+				CB668D921D1069C80016E4AD /* GameTable in Resources */,
+				CB668DB31D106B300016E4AD /* GameMessage in Resources */,
+				CB668D961D1069E70016E4AD /* GameTable in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1535,75 +1302,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC69B4FD1C28DDC200FE759D /* GemStormGameTableUI.cpp in Sources */,
 				7FB4D3B41BFDEDB700BD0311 /* LandlordGameNotice.cpp in Sources */,
 				7FB4D3B81BFDEDB700BD0311 /* LandlordGameUserMessageBox.cpp in Sources */,
-				BC69B4F91C28DDC200FE759D /* GemStormGameAudio.cpp in Sources */,
-				BC69B4E81C28DDB700FE759D /* FishKingGameVortexLayer.cpp in Sources */,
-				BC69B5151C28DDCF00FE759D /* JLBDGameTableUI.cpp in Sources */,
-				BC69B5111C28DDCF00FE759D /* JLBDGameImage.cpp in Sources */,
-				BC69B4DD1C28DDB700FE759D /* FishKingGameBullet.cpp in Sources */,
-				BC69B4B01C28DDA900FE759D /* FishLKFishManager.cpp in Sources */,
 				7FB4D3B61BFDEDB700BD0311 /* LandlordGameTableLogic.cpp in Sources */,
-				BC69B4DB1C28DDB700FE759D /* FishKingGameAdmin.cpp in Sources */,
-				BC69B48C1C28DD9A00FE759D /* FKLCGameTableLogic.cpp in Sources */,
-				BC69B4B31C28DDA900FE759D /* FishLKGameMenuLayer.cpp in Sources */,
 				7FB4D3AD1BFDEDB700BD0311 /* LandlordCardOutList.cpp in Sources */,
 				7FB4D3B91BFDEDB700BD0311 /* LandlordPokerCard.cpp in Sources */,
 				7FB4D3871BFDED7A00BD0311 /* HelloWorldScene.cpp in Sources */,
-				BC69B4E11C28DDB700FE759D /* FishKingGameMathAide.cpp in Sources */,
-				BC69B4FB1C28DDC200FE759D /* GemStormGameSetLayer.cpp in Sources */,
 				BCB7D38A1BF85C5B00BD28FE /* UMShareButton.cpp in Sources */,
 				BCB7D3881BF85C5B00BD28FE /* UmSocialControllerIOS.mm in Sources */,
 				7FB4D3AC1BFDEDB700BD0311 /* LandlordCardListBoard.cpp in Sources */,
 				7FB4D3B11BFDEDB700BD0311 /* LandlordGameCardType.cpp in Sources */,
-				BC69B48F1C28DD9A00FE759D /* FKLCSmallGameUI.cpp in Sources */,
 				7FB4D3B31BFDEDB700BD0311 /* LandlordGameLogic.cpp in Sources */,
 				7FB4D3861BFDED7A00BD0311 /* AppDelegate.cpp in Sources */,
-				BC69B4E31C28DDB700FE759D /* FishKingGameSceneFishTrace.cpp in Sources */,
-				BC69B4B41C28DDA900FE759D /* FishLKGameResulte.cpp in Sources */,
 				7FB4D3B21BFDEDB700BD0311 /* LandlordGameChatDlg.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				BCB7D3891BF85C5B00BD28FE /* UMSocialUIObject.mm in Sources */,
-				BC69B48E1C28DD9A00FE759D /* FKLCSmallGameImage.cpp in Sources */,
-				BC69B4E61C28DDB700FE759D /* FishKingGameToolbar.cpp in Sources */,
-				BC69B5141C28DDCF00FE759D /* JLBDGameTableLogic.cpp in Sources */,
 				7FB4D3B51BFDEDB700BD0311 /* LandlordGamePlayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
-				BC69B4DF1C28DDB700FE759D /* FishKingGameFishObject.cpp in Sources */,
-				BC69B4B11C28DDA900FE759D /* FishLKFishSprite.cpp in Sources */,
-				BC69B4B21C28DDA900FE759D /* FishLKGameLoading.cpp in Sources */,
-				BC69B4B81C28DDA900FE759D /* FishLKGumSprite.cpp in Sources */,
 				7FB4D3B71BFDEDB700BD0311 /* LandlordGameTableUI.cpp in Sources */,
-				BC69B4E71C28DDB700FE759D /* FishKingGameUserMessageBox.cpp in Sources */,
 				7FB4D3AF1BFDEDB700BD0311 /* LandlordExitPrompt.cpp in Sources */,
-				BC69B4DC1C28DDB700FE759D /* FishKingGameAudio.cpp in Sources */,
-				BC69B48B1C28DD9A00FE759D /* FKLCGameTableAnimi.cpp in Sources */,
-				BC69B5121C28DDCF00FE759D /* JLBDGameLuckyList.cpp in Sources */,
-				BC69B48A1C28DD9A00FE759D /* FKLCGameImage.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				BC69B4E51C28DDB700FE759D /* FishKingGameTableUI.cpp in Sources */,
 				7FB4D3AE1BFDEDB700BD0311 /* LandlordCardTypeAnimation.cpp in Sources */,
-				BC69B4FE1C28DDC200FE759D /* GemStormGameTreasureHunt.cpp in Sources */,
-				BC69B48D1C28DD9A00FE759D /* FKLCGameTableUI.cpp in Sources */,
-				BC69B5101C28DDCF00FE759D /* JLBDGameConfig.cpp in Sources */,
-				BC69B4B51C28DDA900FE759D /* FishLKGameTableLogic.cpp in Sources */,
-				BC69B4E41C28DDB700FE759D /* FishKingGameTableLogic.cpp in Sources */,
 				7FB4D3B01BFDEDB700BD0311 /* LandlordGameAudio.cpp in Sources */,
-				BC69B4FA1C28DDC200FE759D /* GemStormGameHelp.cpp in Sources */,
-				BC69B4DE1C28DDB700FE759D /* FishKingGameFishManager.cpp in Sources */,
-				BC69B4AE1C28DDA900FE759D /* FishLKBulletSprite.cpp in Sources */,
-				BC69B4E01C28DDB700FE759D /* FishKingGameLoading.cpp in Sources */,
-				BC69B5131C28DDCF00FE759D /* JLBDGameTableAnimi.cpp in Sources */,
 				7FB4D3BA1BFDEDB700BD0311 /* LandlordToolbar.cpp in Sources */,
-				BC69B4B91C28DDA900FE759D /* FishLKmath_aide.cpp in Sources */,
-				BC69B4E21C28DDB700FE759D /* FishKingGamePlayer.cpp in Sources */,
-				BC69B4BA1C28DDA900FE759D /* FishLKscene_fish_trace.cpp in Sources */,
-				BC69B4B61C28DDA900FE759D /* FishLKGameTableUI.cpp in Sources */,
-				BC69B4B71C28DDA900FE759D /* FishLKGameUserMessageBox.cpp in Sources */,
-				BC69B4FC1C28DDC200FE759D /* GemStormGameTableLogic.cpp in Sources */,
 				BCB7D3871BF85C5B00BD28FE /* CCUMSocialSDK.cpp in Sources */,
-				BC69B4AF1C28DDA900FE759D /* FishLKCannonUI.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
