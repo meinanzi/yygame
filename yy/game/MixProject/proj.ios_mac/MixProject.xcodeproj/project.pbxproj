@@ -118,24 +118,121 @@
 		BCB7D4361BF8619200BD28FE /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB7D4351BF8619200BD28FE /* libstdc++.tbd */; };
 		BCB7D4381BF8619A00BD28FE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB7D4371BF8619A00BD28FE /* Social.framework */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
-		CB668D8D1D10699C0016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D8B1D10699C0016E4AD /* GameMessage */; };
-		CB668D8E1D10699C0016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D8C1D10699C0016E4AD /* GameTable */; };
-		CB668D911D1069C80016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D8F1D1069C80016E4AD /* GameMessage */; };
-		CB668D921D1069C80016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D901D1069C80016E4AD /* GameTable */; };
-		CB668D951D1069E70016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D931D1069E70016E4AD /* GameMessage */; };
-		CB668D961D1069E70016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D941D1069E70016E4AD /* GameTable */; };
-		CB668D991D106A190016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D971D106A190016E4AD /* GameMessage */; };
-		CB668D9A1D106A190016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D981D106A190016E4AD /* GameTable */; };
-		CB668D9D1D106A360016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668D9B1D106A350016E4AD /* GameMessage */; };
-		CB668D9E1D106A360016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668D9C1D106A360016E4AD /* GameTable */; };
-		CB668DA21D106A5B0016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA01D106A5B0016E4AD /* GameMessage */; };
-		CB668DA31D106A5B0016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA11D106A5B0016E4AD /* GameTable */; };
-		CB668DA71D106A810016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA51D106A810016E4AD /* GameMessage */; };
-		CB668DA81D106A810016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DA61D106A810016E4AD /* GameTable */; };
-		CB668DAE1D106B110016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DAC1D106B110016E4AD /* GameMessage */; };
-		CB668DAF1D106B110016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DAD1D106B110016E4AD /* GameTable */; };
-		CB668DB31D106B300016E4AD /* GameMessage in Resources */ = {isa = PBXBuildFile; fileRef = CB668DB11D106B300016E4AD /* GameMessage */; };
-		CB668DB41D106B300016E4AD /* GameTable in Resources */ = {isa = PBXBuildFile; fileRef = CB668DB21D106B300016E4AD /* GameTable */; };
+		C227B5E91D10F2BE00903468 /* WaterMarginGameAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5D51D10F2BE00903468 /* WaterMarginGameAnimation.cpp */; };
+		C227B5EA1D10F2BE00903468 /* WaterMarginGameAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5D71D10F2BE00903468 /* WaterMarginGameAudio.cpp */; };
+		C227B5EB1D10F2BE00903468 /* WaterMarginGameBDBtn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5D91D10F2BE00903468 /* WaterMarginGameBDBtn.cpp */; };
+		C227B5EC1D10F2BE00903468 /* WaterMarginGameBiBei.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5DB1D10F2BE00903468 /* WaterMarginGameBiBei.cpp */; };
+		C227B5ED1D10F2BE00903468 /* WaterMarginGameMaLi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5DD1D10F2BE00903468 /* WaterMarginGameMaLi.cpp */; };
+		C227B5EE1D10F2BE00903468 /* WaterMarginGameRollImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5DF1D10F2BE00903468 /* WaterMarginGameRollImage.cpp */; };
+		C227B5EF1D10F2BE00903468 /* WaterMarginGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5E21D10F2BE00903468 /* WaterMarginGameTableLogic.cpp */; };
+		C227B5F01D10F2BE00903468 /* WaterMarginGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5E41D10F2BE00903468 /* WaterMarginGameTableUI.cpp */; };
+		C227B5F11D10F2BE00903468 /* WaterMarginGameUserBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5E71D10F2BE00903468 /* WaterMarginGameUserBox.cpp */; };
+		C227B6111D10F2D600903468 /* TRACTORDrawEllipse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5F61D10F2D600903468 /* TRACTORDrawEllipse.cpp */; };
+		C227B6121D10F2D600903468 /* TRACTORGameCardType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5F81D10F2D600903468 /* TRACTORGameCardType.cpp */; };
+		C227B6131D10F2D600903468 /* TRACTORGameChipUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5FA1D10F2D600903468 /* TRACTORGameChipUI.cpp */; };
+		C227B6141D10F2D600903468 /* TRACTORGameDashboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5FC1D10F2D600903468 /* TRACTORGameDashboard.cpp */; };
+		C227B6151D10F2D600903468 /* TRACTORGameDealerUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B5FE1D10F2D600903468 /* TRACTORGameDealerUI.cpp */; };
+		C227B6161D10F2D600903468 /* TRACTORGameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6001D10F2D600903468 /* TRACTORGameLogic.cpp */; };
+		C227B6171D10F2D600903468 /* TRACTORGameNotice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6021D10F2D600903468 /* TRACTORGameNotice.cpp */; };
+		C227B6181D10F2D600903468 /* TRACTORGamePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6041D10F2D600903468 /* TRACTORGamePlayer.cpp */; };
+		C227B6191D10F2D600903468 /* TRACTORGameResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6061D10F2D600903468 /* TRACTORGameResult.cpp */; };
+		C227B61A1D10F2D600903468 /* TRACTORGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6081D10F2D600903468 /* TRACTORGameTableLogic.cpp */; };
+		C227B61B1D10F2D600903468 /* TRACTORGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B60A1D10F2D600903468 /* TRACTORGameTableUI.cpp */; };
+		C227B61C1D10F2D600903468 /* TRACTORGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B60D1D10F2D600903468 /* TRACTORGameUserMessageBox.cpp */; };
+		C227B61D1D10F2D600903468 /* TRACTORPokerCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B60F1D10F2D600903468 /* TRACTORPokerCard.cpp */; };
+		C227B63A1D10F2E900903468 /* GoldenFlowerDrawEllipse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6211D10F2E900903468 /* GoldenFlowerDrawEllipse.cpp */; };
+		C227B63B1D10F2E900903468 /* GoldenFlowerGameCardType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6231D10F2E900903468 /* GoldenFlowerGameCardType.cpp */; };
+		C227B63C1D10F2E900903468 /* GoldenFlowerGameChipUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6251D10F2E900903468 /* GoldenFlowerGameChipUI.cpp */; };
+		C227B63D1D10F2E900903468 /* GoldenFlowerGameDashboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6271D10F2E900903468 /* GoldenFlowerGameDashboard.cpp */; };
+		C227B63E1D10F2E900903468 /* GoldenFlowerGameDealerUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6291D10F2E900903468 /* GoldenFlowerGameDealerUI.cpp */; };
+		C227B63F1D10F2E900903468 /* GoldenFlowerGameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B62B1D10F2E900903468 /* GoldenFlowerGameLogic.cpp */; };
+		C227B6401D10F2E900903468 /* GoldenFlowerGameNotice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B62D1D10F2E900903468 /* GoldenFlowerGameNotice.cpp */; };
+		C227B6411D10F2E900903468 /* GoldenFlowerGamePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B62F1D10F2E900903468 /* GoldenFlowerGamePlayer.cpp */; };
+		C227B6421D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6311D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp */; };
+		C227B6431D10F2E900903468 /* GoldenFlowerGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6331D10F2E900903468 /* GoldenFlowerGameTableUI.cpp */; };
+		C227B6441D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6361D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp */; };
+		C227B6451D10F2E900903468 /* GoldenFlowerPokerCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6381D10F2E900903468 /* GoldenFlowerPokerCard.cpp */; };
+		C227B6661D10F2FC00903468 /* GoldenToadGameAdmin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6491D10F2FC00903468 /* GoldenToadGameAdmin.cpp */; };
+		C227B6671D10F2FC00903468 /* GoldenToadGameAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B64B1D10F2FC00903468 /* GoldenToadGameAudio.cpp */; };
+		C227B6681D10F2FC00903468 /* GoldenToadGameBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B64D1D10F2FC00903468 /* GoldenToadGameBullet.cpp */; };
+		C227B6691D10F2FC00903468 /* GoldenToadGameChatDlg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B64F1D10F2FC00903468 /* GoldenToadGameChatDlg.cpp */; };
+		C227B66A1D10F2FC00903468 /* GoldenToadGameFishManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6511D10F2FC00903468 /* GoldenToadGameFishManager.cpp */; };
+		C227B66B1D10F2FC00903468 /* GoldenToadGameFishObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6531D10F2FC00903468 /* GoldenToadGameFishObject.cpp */; };
+		C227B66C1D10F2FC00903468 /* GoldenToadGameLoading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6551D10F2FC00903468 /* GoldenToadGameLoading.cpp */; };
+		C227B66D1D10F2FC00903468 /* GoldenToadGameMathAide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6571D10F2FC00903468 /* GoldenToadGameMathAide.cpp */; };
+		C227B66E1D10F2FC00903468 /* GoldenToadGamePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6591D10F2FC00903468 /* GoldenToadGamePlayer.cpp */; };
+		C227B66F1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B65B1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.cpp */; };
+		C227B6701D10F2FC00903468 /* GoldenToadGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B65D1D10F2FC00903468 /* GoldenToadGameTableLogic.cpp */; };
+		C227B6711D10F2FC00903468 /* GoldenToadGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B65F1D10F2FC00903468 /* GoldenToadGameTableUI.cpp */; };
+		C227B6721D10F2FC00903468 /* GoldenToadGameToolbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6621D10F2FC00903468 /* GoldenToadGameToolbar.cpp */; };
+		C227B6731D10F2FC00903468 /* GoldenToadGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6641D10F2FC00903468 /* GoldenToadGameUserMessageBox.cpp */; };
+		C227B6891D10F30F00903468 /* BJLGameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6771D10F30F00903468 /* BJLGameLogic.cpp */; };
+		C227B68A1D10F30F00903468 /* BJLGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6791D10F30F00903468 /* BJLGameTableLogic.cpp */; };
+		C227B68B1D10F30F00903468 /* BJLGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B67B1D10F30F00903468 /* BJLGameTableUI.cpp */; };
+		C227B68C1D10F30F00903468 /* BJLHistoryDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B67F1D10F30F00903468 /* BJLHistoryDialog.cpp */; };
+		C227B68D1D10F30F00903468 /* BJLNotice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6811D10F30F00903468 /* BJLNotice.cpp */; };
+		C227B68E1D10F30F00903468 /* BJLPokerCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6831D10F30F00903468 /* BJLPokerCard.cpp */; };
+		C227B68F1D10F30F00903468 /* BJLResultCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6851D10F30F00903468 /* BJLResultCard.cpp */; };
+		C227B6901D10F30F00903468 /* BJLResultDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6871D10F30F00903468 /* BJLResultDialog.cpp */; };
+		C227B6BF1D10F32400903468 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6941D10F32400903468 /* Card.cpp */; };
+		C227B6C01D10F32400903468 /* CardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6961D10F32400903468 /* CardPool.cpp */; };
+		C227B6C11D10F32400903468 /* CardPoolUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6981D10F32400903468 /* CardPoolUser.cpp */; };
+		C227B6C21D10F32400903468 /* ConcealedKong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B69A1D10F32400903468 /* ConcealedKong.cpp */; };
+		C227B6C31D10F32400903468 /* EastMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B69C1D10F32400903468 /* EastMahjongCardPool.cpp */; };
+		C227B6C41D10F32400903468 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B69E1D10F32400903468 /* Factory.cpp */; };
+		C227B6C51D10F32400903468 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6A01D10F32400903468 /* GameManager.cpp */; };
+		C227B6C61D10F32400903468 /* HuCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6A21D10F32400903468 /* HuCard.cpp */; };
+		C227B6C71D10F32400903468 /* MahjongCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6A41D10F32400903468 /* MahjongCard.cpp */; };
+		C227B6C81D10F32400903468 /* MahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6A61D10F32400903468 /* MahjongCardPool.cpp */; };
+		C227B6C91D10F32400903468 /* MahjongCardPoolUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6A81D10F32400903468 /* MahjongCardPoolUser.cpp */; };
+		C227B6CA1D10F32400903468 /* MeldedKong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6AA1D10F32400903468 /* MeldedKong.cpp */; };
+		C227B6CB1D10F32400903468 /* NorthMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6AC1D10F32400903468 /* NorthMahjongCardPool.cpp */; };
+		C227B6CC1D10F32400903468 /* PoolAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6AE1D10F32400903468 /* PoolAction.cpp */; };
+		C227B6CD1D10F32400903468 /* ResourceLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6B01D10F32400903468 /* ResourceLoader.cpp */; };
+		C227B6CE1D10F32400903468 /* SouthMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6B21D10F32400903468 /* SouthMahjongCardPool.cpp */; };
+		C227B6CF1D10F32400903468 /* TouchCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6B41D10F32400903468 /* TouchCard.cpp */; };
+		C227B6D01D10F32400903468 /* TouchKong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6B61D10F32400903468 /* TouchKong.cpp */; };
+		C227B6D11D10F32400903468 /* WestMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6B81D10F32400903468 /* WestMahjongCardPool.cpp */; };
+		C227B6D21D10F32400903468 /* XZMJ_GameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6BA1D10F32400903468 /* XZMJ_GameTableLogic.cpp */; };
+		C227B6D31D10F32400903468 /* XZMJ_GameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6BC1D10F32400903468 /* XZMJ_GameTableUI.cpp */; };
+		C227B6E41D10F33D00903468 /* DriftingCarGameAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6D71D10F33D00903468 /* DriftingCarGameAudio.cpp */; };
+		C227B6E51D10F33D00903468 /* DriftingCarGameBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6D91D10F33D00903468 /* DriftingCarGameBoard.cpp */; };
+		C227B6E61D10F33D00903468 /* DriftingCarGameCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6DB1D10F33D00903468 /* DriftingCarGameCell.cpp */; };
+		C227B6E71D10F33D00903468 /* DriftingCarGameResultHistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6DD1D10F33D00903468 /* DriftingCarGameResultHistory.cpp */; };
+		C227B6E81D10F33D00903468 /* DriftingCarGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6DF1D10F33D00903468 /* DriftingCarGameTableLogic.cpp */; };
+		C227B6E91D10F33D00903468 /* DriftingCarGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6E11D10F33D00903468 /* DriftingCarGameTableUI.cpp */; };
+		C227B7051D10F34D00903468 /* DZPokerBuyDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6EE1D10F34D00903468 /* DZPokerBuyDialog.cpp */; };
+		C227B7061D10F34D00903468 /* DZPokerGameCardType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6F01D10F34D00903468 /* DZPokerGameCardType.cpp */; };
+		C227B7071D10F34D00903468 /* DZPokerGameChipUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6F21D10F34D00903468 /* DZPokerGameChipUI.cpp */; };
+		C227B7081D10F34D00903468 /* DZPokerGameDealerUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6F41D10F34D00903468 /* DZPokerGameDealerUI.cpp */; };
+		C227B7091D10F34D00903468 /* DZPokerGameNotice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6F61D10F34D00903468 /* DZPokerGameNotice.cpp */; };
+		C227B70A1D10F34D00903468 /* DZPokerGamePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6F81D10F34D00903468 /* DZPokerGamePlayer.cpp */; };
+		C227B70B1D10F34D00903468 /* DZPokerGameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6FA1D10F34D00903468 /* DZPokerGameTableLogic.cpp */; };
+		C227B70C1D10F34D00903468 /* DZPokerGameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6FC1D10F34D00903468 /* DZPokerGameTableUI.cpp */; };
+		C227B70D1D10F34D00903468 /* DZPokerGameUserMessageBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B6FF1D10F34D00903468 /* DZPokerGameUserMessageBox.cpp */; };
+		C227B70E1D10F34D00903468 /* DZPokerPokerCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7011D10F34D00903468 /* DZPokerPokerCard.cpp */; };
+		C227B70F1D10F34D00903468 /* GameLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7031D10F34D00903468 /* GameLogic.cpp */; };
+		C227B73E1D10F35E00903468 /* ZYHZ_Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7131D10F35E00903468 /* ZYHZ_Card.cpp */; };
+		C227B73F1D10F35E00903468 /* ZYHZ_CardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7151D10F35E00903468 /* ZYHZ_CardPool.cpp */; };
+		C227B7401D10F35E00903468 /* ZYHZ_CardPoolUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7171D10F35E00903468 /* ZYHZ_CardPoolUser.cpp */; };
+		C227B7411D10F35E00903468 /* ZYHZ_ConcealedKong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7191D10F35E00903468 /* ZYHZ_ConcealedKong.cpp */; };
+		C227B7421D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B71B1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp */; };
+		C227B7431D10F35E00903468 /* ZYHZ_Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B71D1D10F35E00903468 /* ZYHZ_Factory.cpp */; };
+		C227B7441D10F35E00903468 /* ZYHZ_GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B71F1D10F35E00903468 /* ZYHZ_GameManager.cpp */; };
+		C227B7451D10F35E00903468 /* ZYHZ_GameTableLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7211D10F35E00903468 /* ZYHZ_GameTableLogic.cpp */; };
+		C227B7461D10F35E00903468 /* ZYHZ_GameTableUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7231D10F35E00903468 /* ZYHZ_GameTableUI.cpp */; };
+		C227B7471D10F35E00903468 /* ZYHZ_HuCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7261D10F35E00903468 /* ZYHZ_HuCard.cpp */; };
+		C227B7481D10F35E00903468 /* ZYHZ_MahjongCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7281D10F35E00903468 /* ZYHZ_MahjongCard.cpp */; };
+		C227B7491D10F35E00903468 /* ZYHZ_MahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B72A1D10F35E00903468 /* ZYHZ_MahjongCardPool.cpp */; };
+		C227B74A1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B72C1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.cpp */; };
+		C227B74B1D10F35E00903468 /* ZYHZ_MeldedKong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B72E1D10F35E00903468 /* ZYHZ_MeldedKong.cpp */; };
+		C227B74C1D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7301D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.cpp */; };
+		C227B74D1D10F35E00903468 /* ZYHZ_PoolAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7321D10F35E00903468 /* ZYHZ_PoolAction.cpp */; };
+		C227B74E1D10F35E00903468 /* ZYHZ_ResourceLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7341D10F35E00903468 /* ZYHZ_ResourceLoader.cpp */; };
+		C227B74F1D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7361D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp */; };
+		C227B7501D10F35E00903468 /* ZYHZ_TouchCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B7381D10F35E00903468 /* ZYHZ_TouchCard.cpp */; };
+		C227B7511D10F35E00903468 /* ZYHZ_TouchKong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B73A1D10F35E00903468 /* ZYHZ_TouchKong.cpp */; };
+		C227B7521D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C227B73C1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -368,24 +465,258 @@
 		BCB7D4351BF8619200BD28FE /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libstdc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		BCB7D4371BF8619A00BD28FE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CB668D8B1D10699C0016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../BJL/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668D8C1D10699C0016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../BJL/Classes/GameTable; sourceTree = "<group>"; };
-		CB668D8F1D1069C80016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../BloodyMahjong/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668D901D1069C80016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../BloodyMahjong/Classes/GameTable; sourceTree = "<group>"; };
-		CB668D931D1069E70016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../DriftingCar/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668D941D1069E70016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../DriftingCar/Classes/GameTable; sourceTree = "<group>"; };
-		CB668D971D106A190016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../DZPoker/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668D981D106A190016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../DZPoker/Classes/GameTable; sourceTree = "<group>"; };
-		CB668D9B1D106A350016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../FreedomRedMahjong/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668D9C1D106A360016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../FreedomRedMahjong/Classes/GameTable; sourceTree = "<group>"; };
-		CB668DA01D106A5B0016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../GoldenToad/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668DA11D106A5B0016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../GoldenToad/Classes/GameTable; sourceTree = "<group>"; };
-		CB668DA51D106A810016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../HappyGoldenFlower/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668DA61D106A810016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../HappyGoldenFlower/Classes/GameTable; sourceTree = "<group>"; };
-		CB668DAC1D106B110016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../Tractor/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668DAD1D106B110016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../Tractor/Classes/GameTable; sourceTree = "<group>"; };
-		CB668DB11D106B300016E4AD /* GameMessage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameMessage; path = ../../WaterMargin/Classes/GameMessage; sourceTree = "<group>"; };
-		CB668DB21D106B300016E4AD /* GameTable */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameTable; path = ../../WaterMargin/Classes/GameTable; sourceTree = "<group>"; };
+		C227B5D31D10F2BE00903468 /* WaterMarginMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginMessageHead.h; sourceTree = "<group>"; };
+		C227B5D51D10F2BE00903468 /* WaterMarginGameAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameAnimation.cpp; sourceTree = "<group>"; };
+		C227B5D61D10F2BE00903468 /* WaterMarginGameAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameAnimation.h; sourceTree = "<group>"; };
+		C227B5D71D10F2BE00903468 /* WaterMarginGameAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameAudio.cpp; sourceTree = "<group>"; };
+		C227B5D81D10F2BE00903468 /* WaterMarginGameAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameAudio.h; sourceTree = "<group>"; };
+		C227B5D91D10F2BE00903468 /* WaterMarginGameBDBtn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameBDBtn.cpp; sourceTree = "<group>"; };
+		C227B5DA1D10F2BE00903468 /* WaterMarginGameBDBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameBDBtn.h; sourceTree = "<group>"; };
+		C227B5DB1D10F2BE00903468 /* WaterMarginGameBiBei.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameBiBei.cpp; sourceTree = "<group>"; };
+		C227B5DC1D10F2BE00903468 /* WaterMarginGameBiBei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameBiBei.h; sourceTree = "<group>"; };
+		C227B5DD1D10F2BE00903468 /* WaterMarginGameMaLi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameMaLi.cpp; sourceTree = "<group>"; };
+		C227B5DE1D10F2BE00903468 /* WaterMarginGameMaLi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameMaLi.h; sourceTree = "<group>"; };
+		C227B5DF1D10F2BE00903468 /* WaterMarginGameRollImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameRollImage.cpp; sourceTree = "<group>"; };
+		C227B5E01D10F2BE00903468 /* WaterMarginGameRollImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameRollImage.h; sourceTree = "<group>"; };
+		C227B5E11D10F2BE00903468 /* WaterMarginGameRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameRule.h; sourceTree = "<group>"; };
+		C227B5E21D10F2BE00903468 /* WaterMarginGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B5E31D10F2BE00903468 /* WaterMarginGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameTableLogic.h; sourceTree = "<group>"; };
+		C227B5E41D10F2BE00903468 /* WaterMarginGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B5E51D10F2BE00903468 /* WaterMarginGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameTableUI.h; sourceTree = "<group>"; };
+		C227B5E61D10F2BE00903468 /* WaterMarginGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B5E71D10F2BE00903468 /* WaterMarginGameUserBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaterMarginGameUserBox.cpp; sourceTree = "<group>"; };
+		C227B5E81D10F2BE00903468 /* WaterMarginGameUserBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterMarginGameUserBox.h; sourceTree = "<group>"; };
+		C227B5F31D10F2D600903468 /* TRACTORGameClientMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameClientMessage.h; sourceTree = "<group>"; };
+		C227B5F41D10F2D600903468 /* TRACTORMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORMessageHead.h; sourceTree = "<group>"; };
+		C227B5F61D10F2D600903468 /* TRACTORDrawEllipse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORDrawEllipse.cpp; sourceTree = "<group>"; };
+		C227B5F71D10F2D600903468 /* TRACTORDrawEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORDrawEllipse.h; sourceTree = "<group>"; };
+		C227B5F81D10F2D600903468 /* TRACTORGameCardType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameCardType.cpp; sourceTree = "<group>"; };
+		C227B5F91D10F2D600903468 /* TRACTORGameCardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameCardType.h; sourceTree = "<group>"; };
+		C227B5FA1D10F2D600903468 /* TRACTORGameChipUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameChipUI.cpp; sourceTree = "<group>"; };
+		C227B5FB1D10F2D600903468 /* TRACTORGameChipUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameChipUI.h; sourceTree = "<group>"; };
+		C227B5FC1D10F2D600903468 /* TRACTORGameDashboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameDashboard.cpp; sourceTree = "<group>"; };
+		C227B5FD1D10F2D600903468 /* TRACTORGameDashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameDashboard.h; sourceTree = "<group>"; };
+		C227B5FE1D10F2D600903468 /* TRACTORGameDealerUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameDealerUI.cpp; sourceTree = "<group>"; };
+		C227B5FF1D10F2D600903468 /* TRACTORGameDealerUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameDealerUI.h; sourceTree = "<group>"; };
+		C227B6001D10F2D600903468 /* TRACTORGameLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameLogic.cpp; sourceTree = "<group>"; };
+		C227B6011D10F2D600903468 /* TRACTORGameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameLogic.h; sourceTree = "<group>"; };
+		C227B6021D10F2D600903468 /* TRACTORGameNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameNotice.cpp; sourceTree = "<group>"; };
+		C227B6031D10F2D600903468 /* TRACTORGameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameNotice.h; sourceTree = "<group>"; };
+		C227B6041D10F2D600903468 /* TRACTORGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGamePlayer.cpp; sourceTree = "<group>"; };
+		C227B6051D10F2D600903468 /* TRACTORGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGamePlayer.h; sourceTree = "<group>"; };
+		C227B6061D10F2D600903468 /* TRACTORGameResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameResult.cpp; sourceTree = "<group>"; };
+		C227B6071D10F2D600903468 /* TRACTORGameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameResult.h; sourceTree = "<group>"; };
+		C227B6081D10F2D600903468 /* TRACTORGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6091D10F2D600903468 /* TRACTORGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameTableLogic.h; sourceTree = "<group>"; };
+		C227B60A1D10F2D600903468 /* TRACTORGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B60B1D10F2D600903468 /* TRACTORGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameTableUI.h; sourceTree = "<group>"; };
+		C227B60C1D10F2D600903468 /* TRACTORGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B60D1D10F2D600903468 /* TRACTORGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORGameUserMessageBox.cpp; sourceTree = "<group>"; };
+		C227B60E1D10F2D600903468 /* TRACTORGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORGameUserMessageBox.h; sourceTree = "<group>"; };
+		C227B60F1D10F2D600903468 /* TRACTORPokerCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TRACTORPokerCard.cpp; sourceTree = "<group>"; };
+		C227B6101D10F2D600903468 /* TRACTORPokerCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRACTORPokerCard.h; sourceTree = "<group>"; };
+		C227B61F1D10F2E900903468 /* GoldenFlowerMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerMessageHead.h; sourceTree = "<group>"; };
+		C227B6211D10F2E900903468 /* GoldenFlowerDrawEllipse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerDrawEllipse.cpp; sourceTree = "<group>"; };
+		C227B6221D10F2E900903468 /* GoldenFlowerDrawEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerDrawEllipse.h; sourceTree = "<group>"; };
+		C227B6231D10F2E900903468 /* GoldenFlowerGameCardType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameCardType.cpp; sourceTree = "<group>"; };
+		C227B6241D10F2E900903468 /* GoldenFlowerGameCardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameCardType.h; sourceTree = "<group>"; };
+		C227B6251D10F2E900903468 /* GoldenFlowerGameChipUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameChipUI.cpp; sourceTree = "<group>"; };
+		C227B6261D10F2E900903468 /* GoldenFlowerGameChipUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameChipUI.h; sourceTree = "<group>"; };
+		C227B6271D10F2E900903468 /* GoldenFlowerGameDashboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameDashboard.cpp; sourceTree = "<group>"; };
+		C227B6281D10F2E900903468 /* GoldenFlowerGameDashboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameDashboard.h; sourceTree = "<group>"; };
+		C227B6291D10F2E900903468 /* GoldenFlowerGameDealerUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameDealerUI.cpp; sourceTree = "<group>"; };
+		C227B62A1D10F2E900903468 /* GoldenFlowerGameDealerUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameDealerUI.h; sourceTree = "<group>"; };
+		C227B62B1D10F2E900903468 /* GoldenFlowerGameLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameLogic.cpp; sourceTree = "<group>"; };
+		C227B62C1D10F2E900903468 /* GoldenFlowerGameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameLogic.h; sourceTree = "<group>"; };
+		C227B62D1D10F2E900903468 /* GoldenFlowerGameNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameNotice.cpp; sourceTree = "<group>"; };
+		C227B62E1D10F2E900903468 /* GoldenFlowerGameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameNotice.h; sourceTree = "<group>"; };
+		C227B62F1D10F2E900903468 /* GoldenFlowerGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGamePlayer.cpp; sourceTree = "<group>"; };
+		C227B6301D10F2E900903468 /* GoldenFlowerGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGamePlayer.h; sourceTree = "<group>"; };
+		C227B6311D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6321D10F2E900903468 /* GoldenFlowerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableLogic.h; sourceTree = "<group>"; };
+		C227B6331D10F2E900903468 /* GoldenFlowerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6341D10F2E900903468 /* GoldenFlowerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUI.h; sourceTree = "<group>"; };
+		C227B6351D10F2E900903468 /* GoldenFlowerGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B6361D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameUserMessageBox.cpp; sourceTree = "<group>"; };
+		C227B6371D10F2E900903468 /* GoldenFlowerGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameUserMessageBox.h; sourceTree = "<group>"; };
+		C227B6381D10F2E900903468 /* GoldenFlowerPokerCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerPokerCard.cpp; sourceTree = "<group>"; };
+		C227B6391D10F2E900903468 /* GoldenFlowerPokerCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerPokerCard.h; sourceTree = "<group>"; };
+		C227B6471D10F2FC00903468 /* GoldenToadMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadMessageHead.h; sourceTree = "<group>"; };
+		C227B6491D10F2FC00903468 /* GoldenToadGameAdmin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameAdmin.cpp; sourceTree = "<group>"; };
+		C227B64A1D10F2FC00903468 /* GoldenToadGameAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameAdmin.h; sourceTree = "<group>"; };
+		C227B64B1D10F2FC00903468 /* GoldenToadGameAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameAudio.cpp; sourceTree = "<group>"; };
+		C227B64C1D10F2FC00903468 /* GoldenToadGameAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameAudio.h; sourceTree = "<group>"; };
+		C227B64D1D10F2FC00903468 /* GoldenToadGameBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameBullet.cpp; sourceTree = "<group>"; };
+		C227B64E1D10F2FC00903468 /* GoldenToadGameBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameBullet.h; sourceTree = "<group>"; };
+		C227B64F1D10F2FC00903468 /* GoldenToadGameChatDlg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameChatDlg.cpp; sourceTree = "<group>"; };
+		C227B6501D10F2FC00903468 /* GoldenToadGameChatDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameChatDlg.h; sourceTree = "<group>"; };
+		C227B6511D10F2FC00903468 /* GoldenToadGameFishManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameFishManager.cpp; sourceTree = "<group>"; };
+		C227B6521D10F2FC00903468 /* GoldenToadGameFishManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameFishManager.h; sourceTree = "<group>"; };
+		C227B6531D10F2FC00903468 /* GoldenToadGameFishObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameFishObject.cpp; sourceTree = "<group>"; };
+		C227B6541D10F2FC00903468 /* GoldenToadGameFishObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameFishObject.h; sourceTree = "<group>"; };
+		C227B6551D10F2FC00903468 /* GoldenToadGameLoading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameLoading.cpp; sourceTree = "<group>"; };
+		C227B6561D10F2FC00903468 /* GoldenToadGameLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameLoading.h; sourceTree = "<group>"; };
+		C227B6571D10F2FC00903468 /* GoldenToadGameMathAide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameMathAide.cpp; sourceTree = "<group>"; };
+		C227B6581D10F2FC00903468 /* GoldenToadGameMathAide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameMathAide.h; sourceTree = "<group>"; };
+		C227B6591D10F2FC00903468 /* GoldenToadGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGamePlayer.cpp; sourceTree = "<group>"; };
+		C227B65A1D10F2FC00903468 /* GoldenToadGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGamePlayer.h; sourceTree = "<group>"; };
+		C227B65B1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameSceneFishTrace.cpp; sourceTree = "<group>"; };
+		C227B65C1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameSceneFishTrace.h; sourceTree = "<group>"; };
+		C227B65D1D10F2FC00903468 /* GoldenToadGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B65E1D10F2FC00903468 /* GoldenToadGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameTableLogic.h; sourceTree = "<group>"; };
+		C227B65F1D10F2FC00903468 /* GoldenToadGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6601D10F2FC00903468 /* GoldenToadGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameTableUI.h; sourceTree = "<group>"; };
+		C227B6611D10F2FC00903468 /* GoldenToadGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B6621D10F2FC00903468 /* GoldenToadGameToolbar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameToolbar.cpp; sourceTree = "<group>"; };
+		C227B6631D10F2FC00903468 /* GoldenToadGameToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameToolbar.h; sourceTree = "<group>"; };
+		C227B6641D10F2FC00903468 /* GoldenToadGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenToadGameUserMessageBox.cpp; sourceTree = "<group>"; };
+		C227B6651D10F2FC00903468 /* GoldenToadGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenToadGameUserMessageBox.h; sourceTree = "<group>"; };
+		C227B6751D10F30F00903468 /* BJLMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLMessageHead.h; sourceTree = "<group>"; };
+		C227B6771D10F30F00903468 /* BJLGameLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLGameLogic.cpp; sourceTree = "<group>"; };
+		C227B6781D10F30F00903468 /* BJLGameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLGameLogic.h; sourceTree = "<group>"; };
+		C227B6791D10F30F00903468 /* BJLGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B67A1D10F30F00903468 /* BJLGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLGameTableLogic.h; sourceTree = "<group>"; };
+		C227B67B1D10F30F00903468 /* BJLGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B67C1D10F30F00903468 /* BJLGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLGameTableUI.h; sourceTree = "<group>"; };
+		C227B67D1D10F30F00903468 /* BJLGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B67E1D10F30F00903468 /* BJLGameTableUIData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLGameTableUIData.h; sourceTree = "<group>"; };
+		C227B67F1D10F30F00903468 /* BJLHistoryDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLHistoryDialog.cpp; sourceTree = "<group>"; };
+		C227B6801D10F30F00903468 /* BJLHistoryDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLHistoryDialog.h; sourceTree = "<group>"; };
+		C227B6811D10F30F00903468 /* BJLNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLNotice.cpp; sourceTree = "<group>"; };
+		C227B6821D10F30F00903468 /* BJLNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLNotice.h; sourceTree = "<group>"; };
+		C227B6831D10F30F00903468 /* BJLPokerCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLPokerCard.cpp; sourceTree = "<group>"; };
+		C227B6841D10F30F00903468 /* BJLPokerCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLPokerCard.h; sourceTree = "<group>"; };
+		C227B6851D10F30F00903468 /* BJLResultCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLResultCard.cpp; sourceTree = "<group>"; };
+		C227B6861D10F30F00903468 /* BJLResultCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLResultCard.h; sourceTree = "<group>"; };
+		C227B6871D10F30F00903468 /* BJLResultDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BJLResultDialog.cpp; sourceTree = "<group>"; };
+		C227B6881D10F30F00903468 /* BJLResultDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLResultDialog.h; sourceTree = "<group>"; };
+		C227B6921D10F32400903468 /* XZMJ_MessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMJ_MessageHead.h; sourceTree = "<group>"; };
+		C227B6941D10F32400903468 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		C227B6951D10F32400903468 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		C227B6961D10F32400903468 /* CardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardPool.cpp; sourceTree = "<group>"; };
+		C227B6971D10F32400903468 /* CardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPool.h; sourceTree = "<group>"; };
+		C227B6981D10F32400903468 /* CardPoolUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardPoolUser.cpp; sourceTree = "<group>"; };
+		C227B6991D10F32400903468 /* CardPoolUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPoolUser.h; sourceTree = "<group>"; };
+		C227B69A1D10F32400903468 /* ConcealedKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConcealedKong.cpp; sourceTree = "<group>"; };
+		C227B69B1D10F32400903468 /* ConcealedKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcealedKong.h; sourceTree = "<group>"; };
+		C227B69C1D10F32400903468 /* EastMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EastMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B69D1D10F32400903468 /* EastMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EastMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B69E1D10F32400903468 /* Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+		C227B69F1D10F32400903468 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		C227B6A01D10F32400903468 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		C227B6A11D10F32400903468 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		C227B6A21D10F32400903468 /* HuCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HuCard.cpp; sourceTree = "<group>"; };
+		C227B6A31D10F32400903468 /* HuCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuCard.h; sourceTree = "<group>"; };
+		C227B6A41D10F32400903468 /* MahjongCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MahjongCard.cpp; sourceTree = "<group>"; };
+		C227B6A51D10F32400903468 /* MahjongCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MahjongCard.h; sourceTree = "<group>"; };
+		C227B6A61D10F32400903468 /* MahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B6A71D10F32400903468 /* MahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MahjongCardPool.h; sourceTree = "<group>"; };
+		C227B6A81D10F32400903468 /* MahjongCardPoolUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MahjongCardPoolUser.cpp; sourceTree = "<group>"; };
+		C227B6A91D10F32400903468 /* MahjongCardPoolUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MahjongCardPoolUser.h; sourceTree = "<group>"; };
+		C227B6AA1D10F32400903468 /* MeldedKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeldedKong.cpp; sourceTree = "<group>"; };
+		C227B6AB1D10F32400903468 /* MeldedKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeldedKong.h; sourceTree = "<group>"; };
+		C227B6AC1D10F32400903468 /* NorthMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NorthMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B6AD1D10F32400903468 /* NorthMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NorthMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B6AE1D10F32400903468 /* PoolAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PoolAction.cpp; sourceTree = "<group>"; };
+		C227B6AF1D10F32400903468 /* PoolAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolAction.h; sourceTree = "<group>"; };
+		C227B6B01D10F32400903468 /* ResourceLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceLoader.cpp; sourceTree = "<group>"; };
+		C227B6B11D10F32400903468 /* ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceLoader.h; sourceTree = "<group>"; };
+		C227B6B21D10F32400903468 /* SouthMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SouthMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B6B31D10F32400903468 /* SouthMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SouthMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B6B41D10F32400903468 /* TouchCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchCard.cpp; sourceTree = "<group>"; };
+		C227B6B51D10F32400903468 /* TouchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchCard.h; sourceTree = "<group>"; };
+		C227B6B61D10F32400903468 /* TouchKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TouchKong.cpp; sourceTree = "<group>"; };
+		C227B6B71D10F32400903468 /* TouchKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchKong.h; sourceTree = "<group>"; };
+		C227B6B81D10F32400903468 /* WestMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WestMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B6B91D10F32400903468 /* WestMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WestMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B6BA1D10F32400903468 /* XZMJ_GameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XZMJ_GameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6BB1D10F32400903468 /* XZMJ_GameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMJ_GameTableLogic.h; sourceTree = "<group>"; };
+		C227B6BC1D10F32400903468 /* XZMJ_GameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XZMJ_GameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6BD1D10F32400903468 /* XZMJ_GameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMJ_GameTableUI.h; sourceTree = "<group>"; };
+		C227B6BE1D10F32400903468 /* XZMJ_GameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMJ_GameTableUICallback.h; sourceTree = "<group>"; };
+		C227B6D51D10F33D00903468 /* DriftingCarMessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarMessageHead.h; sourceTree = "<group>"; };
+		C227B6D71D10F33D00903468 /* DriftingCarGameAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriftingCarGameAudio.cpp; sourceTree = "<group>"; };
+		C227B6D81D10F33D00903468 /* DriftingCarGameAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameAudio.h; sourceTree = "<group>"; };
+		C227B6D91D10F33D00903468 /* DriftingCarGameBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriftingCarGameBoard.cpp; sourceTree = "<group>"; };
+		C227B6DA1D10F33D00903468 /* DriftingCarGameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameBoard.h; sourceTree = "<group>"; };
+		C227B6DB1D10F33D00903468 /* DriftingCarGameCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriftingCarGameCell.cpp; sourceTree = "<group>"; };
+		C227B6DC1D10F33D00903468 /* DriftingCarGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameCell.h; sourceTree = "<group>"; };
+		C227B6DD1D10F33D00903468 /* DriftingCarGameResultHistory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriftingCarGameResultHistory.cpp; sourceTree = "<group>"; };
+		C227B6DE1D10F33D00903468 /* DriftingCarGameResultHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameResultHistory.h; sourceTree = "<group>"; };
+		C227B6DF1D10F33D00903468 /* DriftingCarGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriftingCarGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6E01D10F33D00903468 /* DriftingCarGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameTableLogic.h; sourceTree = "<group>"; };
+		C227B6E11D10F33D00903468 /* DriftingCarGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriftingCarGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6E21D10F33D00903468 /* DriftingCarGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameTableUI.h; sourceTree = "<group>"; };
+		C227B6E31D10F33D00903468 /* DriftingCarGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriftingCarGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B6EB1D10F34D00903468 /* DZPokerGameClientMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameClientMessage.h; sourceTree = "<group>"; };
+		C227B6EC1D10F34D00903468 /* DZPokerUpgradeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerUpgradeMessage.h; sourceTree = "<group>"; };
+		C227B6EE1D10F34D00903468 /* DZPokerBuyDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerBuyDialog.cpp; sourceTree = "<group>"; };
+		C227B6EF1D10F34D00903468 /* DZPokerBuyDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerBuyDialog.h; sourceTree = "<group>"; };
+		C227B6F01D10F34D00903468 /* DZPokerGameCardType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameCardType.cpp; sourceTree = "<group>"; };
+		C227B6F11D10F34D00903468 /* DZPokerGameCardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameCardType.h; sourceTree = "<group>"; };
+		C227B6F21D10F34D00903468 /* DZPokerGameChipUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameChipUI.cpp; sourceTree = "<group>"; };
+		C227B6F31D10F34D00903468 /* DZPokerGameChipUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameChipUI.h; sourceTree = "<group>"; };
+		C227B6F41D10F34D00903468 /* DZPokerGameDealerUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameDealerUI.cpp; sourceTree = "<group>"; };
+		C227B6F51D10F34D00903468 /* DZPokerGameDealerUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameDealerUI.h; sourceTree = "<group>"; };
+		C227B6F61D10F34D00903468 /* DZPokerGameNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameNotice.cpp; sourceTree = "<group>"; };
+		C227B6F71D10F34D00903468 /* DZPokerGameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameNotice.h; sourceTree = "<group>"; };
+		C227B6F81D10F34D00903468 /* DZPokerGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGamePlayer.cpp; sourceTree = "<group>"; };
+		C227B6F91D10F34D00903468 /* DZPokerGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGamePlayer.h; sourceTree = "<group>"; };
+		C227B6FA1D10F34D00903468 /* DZPokerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6FB1D10F34D00903468 /* DZPokerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableLogic.h; sourceTree = "<group>"; };
+		C227B6FC1D10F34D00903468 /* DZPokerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6FD1D10F34D00903468 /* DZPokerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableUI.h; sourceTree = "<group>"; };
+		C227B6FE1D10F34D00903468 /* DZPokerGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B6FF1D10F34D00903468 /* DZPokerGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameUserMessageBox.cpp; sourceTree = "<group>"; };
+		C227B7001D10F34D00903468 /* DZPokerGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameUserMessageBox.h; sourceTree = "<group>"; };
+		C227B7011D10F34D00903468 /* DZPokerPokerCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerPokerCard.cpp; sourceTree = "<group>"; };
+		C227B7021D10F34D00903468 /* DZPokerPokerCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerPokerCard.h; sourceTree = "<group>"; };
+		C227B7031D10F34D00903468 /* GameLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLogic.cpp; sourceTree = "<group>"; };
+		C227B7041D10F34D00903468 /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
+		C227B7111D10F35E00903468 /* ZYHZ_MessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MessageHead.h; sourceTree = "<group>"; };
+		C227B7131D10F35E00903468 /* ZYHZ_Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_Card.cpp; sourceTree = "<group>"; };
+		C227B7141D10F35E00903468 /* ZYHZ_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_Card.h; sourceTree = "<group>"; };
+		C227B7151D10F35E00903468 /* ZYHZ_CardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_CardPool.cpp; sourceTree = "<group>"; };
+		C227B7161D10F35E00903468 /* ZYHZ_CardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_CardPool.h; sourceTree = "<group>"; };
+		C227B7171D10F35E00903468 /* ZYHZ_CardPoolUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_CardPoolUser.cpp; sourceTree = "<group>"; };
+		C227B7181D10F35E00903468 /* ZYHZ_CardPoolUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_CardPoolUser.h; sourceTree = "<group>"; };
+		C227B7191D10F35E00903468 /* ZYHZ_ConcealedKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_ConcealedKong.cpp; sourceTree = "<group>"; };
+		C227B71A1D10F35E00903468 /* ZYHZ_ConcealedKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_ConcealedKong.h; sourceTree = "<group>"; };
+		C227B71B1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_EastMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B71C1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_EastMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B71D1D10F35E00903468 /* ZYHZ_Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_Factory.cpp; sourceTree = "<group>"; };
+		C227B71E1D10F35E00903468 /* ZYHZ_Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_Factory.h; sourceTree = "<group>"; };
+		C227B71F1D10F35E00903468 /* ZYHZ_GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_GameManager.cpp; sourceTree = "<group>"; };
+		C227B7201D10F35E00903468 /* ZYHZ_GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameManager.h; sourceTree = "<group>"; };
+		C227B7211D10F35E00903468 /* ZYHZ_GameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_GameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B7221D10F35E00903468 /* ZYHZ_GameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameTableLogic.h; sourceTree = "<group>"; };
+		C227B7231D10F35E00903468 /* ZYHZ_GameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_GameTableUI.cpp; sourceTree = "<group>"; };
+		C227B7241D10F35E00903468 /* ZYHZ_GameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameTableUI.h; sourceTree = "<group>"; };
+		C227B7251D10F35E00903468 /* ZYHZ_GameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameTableUICallback.h; sourceTree = "<group>"; };
+		C227B7261D10F35E00903468 /* ZYHZ_HuCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_HuCard.cpp; sourceTree = "<group>"; };
+		C227B7271D10F35E00903468 /* ZYHZ_HuCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_HuCard.h; sourceTree = "<group>"; };
+		C227B7281D10F35E00903468 /* ZYHZ_MahjongCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MahjongCard.cpp; sourceTree = "<group>"; };
+		C227B7291D10F35E00903468 /* ZYHZ_MahjongCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MahjongCard.h; sourceTree = "<group>"; };
+		C227B72A1D10F35E00903468 /* ZYHZ_MahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B72B1D10F35E00903468 /* ZYHZ_MahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MahjongCardPool.h; sourceTree = "<group>"; };
+		C227B72C1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MahjongCardPoolUser.cpp; sourceTree = "<group>"; };
+		C227B72D1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MahjongCardPoolUser.h; sourceTree = "<group>"; };
+		C227B72E1D10F35E00903468 /* ZYHZ_MeldedKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MeldedKong.cpp; sourceTree = "<group>"; };
+		C227B72F1D10F35E00903468 /* ZYHZ_MeldedKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MeldedKong.h; sourceTree = "<group>"; };
+		C227B7301D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_NorthMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B7311D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_NorthMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B7321D10F35E00903468 /* ZYHZ_PoolAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_PoolAction.cpp; sourceTree = "<group>"; };
+		C227B7331D10F35E00903468 /* ZYHZ_PoolAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_PoolAction.h; sourceTree = "<group>"; };
+		C227B7341D10F35E00903468 /* ZYHZ_ResourceLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_ResourceLoader.cpp; sourceTree = "<group>"; };
+		C227B7351D10F35E00903468 /* ZYHZ_ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_ResourceLoader.h; sourceTree = "<group>"; };
+		C227B7361D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_SouthMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B7371D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_SouthMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B7381D10F35E00903468 /* ZYHZ_TouchCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_TouchCard.cpp; sourceTree = "<group>"; };
+		C227B7391D10F35E00903468 /* ZYHZ_TouchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_TouchCard.h; sourceTree = "<group>"; };
+		C227B73A1D10F35E00903468 /* ZYHZ_TouchKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_TouchKong.cpp; sourceTree = "<group>"; };
+		C227B73B1D10F35E00903468 /* ZYHZ_TouchKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_TouchKong.h; sourceTree = "<group>"; };
+		C227B73C1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_WestMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B73D1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_WestMahjongCardPool.h; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -673,8 +1004,8 @@
 		BC69B46D1C28DCBA00FE759D /* FreedomRedMahjong */ = {
 			isa = PBXGroup;
 			children = (
-				CB668D9B1D106A350016E4AD /* GameMessage */,
-				CB668D9C1D106A360016E4AD /* GameTable */,
+				C227B7101D10F35E00903468 /* GameMessage */,
+				C227B7121D10F35E00903468 /* GameTable */,
 			);
 			name = FreedomRedMahjong;
 			sourceTree = "<group>";
@@ -682,8 +1013,8 @@
 		BC69B4761C28DCBD00FE759D /* DZPoker */ = {
 			isa = PBXGroup;
 			children = (
-				CB668D971D106A190016E4AD /* GameMessage */,
-				CB668D981D106A190016E4AD /* GameTable */,
+				C227B6EA1D10F34D00903468 /* GameMessage */,
+				C227B6ED1D10F34D00903468 /* GameTable */,
 			);
 			name = DZPoker;
 			sourceTree = "<group>";
@@ -691,8 +1022,8 @@
 		BC69B4771C28DCC000FE759D /* DriftingCar */ = {
 			isa = PBXGroup;
 			children = (
-				CB668D931D1069E70016E4AD /* GameMessage */,
-				CB668D941D1069E70016E4AD /* GameTable */,
+				C227B6D41D10F33D00903468 /* GameMessage */,
+				C227B6D61D10F33D00903468 /* GameTable */,
 			);
 			name = DriftingCar;
 			sourceTree = "<group>";
@@ -700,8 +1031,8 @@
 		BC69B4781C28DCEE00FE759D /* BloodyMahjong */ = {
 			isa = PBXGroup;
 			children = (
-				CB668D8F1D1069C80016E4AD /* GameMessage */,
-				CB668D901D1069C80016E4AD /* GameTable */,
+				C227B6911D10F32400903468 /* GameMessage */,
+				C227B6931D10F32400903468 /* GameTable */,
 			);
 			name = BloodyMahjong;
 			sourceTree = "<group>";
@@ -709,8 +1040,8 @@
 		BC69B4791C28DCF200FE759D /* BJL */ = {
 			isa = PBXGroup;
 			children = (
-				CB668D8B1D10699C0016E4AD /* GameMessage */,
-				CB668D8C1D10699C0016E4AD /* GameTable */,
+				C227B6741D10F30F00903468 /* GameMessage */,
+				C227B6761D10F30F00903468 /* GameTable */,
 			);
 			name = BJL;
 			sourceTree = "<group>";
@@ -1031,11 +1362,407 @@
 			path = YiXin;
 			sourceTree = "<group>";
 		};
+		C227B5D21D10F2BE00903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B5D31D10F2BE00903468 /* WaterMarginMessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../WaterMargin/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B5D41D10F2BE00903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B5D51D10F2BE00903468 /* WaterMarginGameAnimation.cpp */,
+				C227B5D61D10F2BE00903468 /* WaterMarginGameAnimation.h */,
+				C227B5D71D10F2BE00903468 /* WaterMarginGameAudio.cpp */,
+				C227B5D81D10F2BE00903468 /* WaterMarginGameAudio.h */,
+				C227B5D91D10F2BE00903468 /* WaterMarginGameBDBtn.cpp */,
+				C227B5DA1D10F2BE00903468 /* WaterMarginGameBDBtn.h */,
+				C227B5DB1D10F2BE00903468 /* WaterMarginGameBiBei.cpp */,
+				C227B5DC1D10F2BE00903468 /* WaterMarginGameBiBei.h */,
+				C227B5DD1D10F2BE00903468 /* WaterMarginGameMaLi.cpp */,
+				C227B5DE1D10F2BE00903468 /* WaterMarginGameMaLi.h */,
+				C227B5DF1D10F2BE00903468 /* WaterMarginGameRollImage.cpp */,
+				C227B5E01D10F2BE00903468 /* WaterMarginGameRollImage.h */,
+				C227B5E11D10F2BE00903468 /* WaterMarginGameRule.h */,
+				C227B5E21D10F2BE00903468 /* WaterMarginGameTableLogic.cpp */,
+				C227B5E31D10F2BE00903468 /* WaterMarginGameTableLogic.h */,
+				C227B5E41D10F2BE00903468 /* WaterMarginGameTableUI.cpp */,
+				C227B5E51D10F2BE00903468 /* WaterMarginGameTableUI.h */,
+				C227B5E61D10F2BE00903468 /* WaterMarginGameTableUICallback.h */,
+				C227B5E71D10F2BE00903468 /* WaterMarginGameUserBox.cpp */,
+				C227B5E81D10F2BE00903468 /* WaterMarginGameUserBox.h */,
+			);
+			name = GameTable;
+			path = ../../WaterMargin/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B5F21D10F2D600903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B5F31D10F2D600903468 /* TRACTORGameClientMessage.h */,
+				C227B5F41D10F2D600903468 /* TRACTORMessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../Tractor/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B5F51D10F2D600903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B5F61D10F2D600903468 /* TRACTORDrawEllipse.cpp */,
+				C227B5F71D10F2D600903468 /* TRACTORDrawEllipse.h */,
+				C227B5F81D10F2D600903468 /* TRACTORGameCardType.cpp */,
+				C227B5F91D10F2D600903468 /* TRACTORGameCardType.h */,
+				C227B5FA1D10F2D600903468 /* TRACTORGameChipUI.cpp */,
+				C227B5FB1D10F2D600903468 /* TRACTORGameChipUI.h */,
+				C227B5FC1D10F2D600903468 /* TRACTORGameDashboard.cpp */,
+				C227B5FD1D10F2D600903468 /* TRACTORGameDashboard.h */,
+				C227B5FE1D10F2D600903468 /* TRACTORGameDealerUI.cpp */,
+				C227B5FF1D10F2D600903468 /* TRACTORGameDealerUI.h */,
+				C227B6001D10F2D600903468 /* TRACTORGameLogic.cpp */,
+				C227B6011D10F2D600903468 /* TRACTORGameLogic.h */,
+				C227B6021D10F2D600903468 /* TRACTORGameNotice.cpp */,
+				C227B6031D10F2D600903468 /* TRACTORGameNotice.h */,
+				C227B6041D10F2D600903468 /* TRACTORGamePlayer.cpp */,
+				C227B6051D10F2D600903468 /* TRACTORGamePlayer.h */,
+				C227B6061D10F2D600903468 /* TRACTORGameResult.cpp */,
+				C227B6071D10F2D600903468 /* TRACTORGameResult.h */,
+				C227B6081D10F2D600903468 /* TRACTORGameTableLogic.cpp */,
+				C227B6091D10F2D600903468 /* TRACTORGameTableLogic.h */,
+				C227B60A1D10F2D600903468 /* TRACTORGameTableUI.cpp */,
+				C227B60B1D10F2D600903468 /* TRACTORGameTableUI.h */,
+				C227B60C1D10F2D600903468 /* TRACTORGameTableUICallback.h */,
+				C227B60D1D10F2D600903468 /* TRACTORGameUserMessageBox.cpp */,
+				C227B60E1D10F2D600903468 /* TRACTORGameUserMessageBox.h */,
+				C227B60F1D10F2D600903468 /* TRACTORPokerCard.cpp */,
+				C227B6101D10F2D600903468 /* TRACTORPokerCard.h */,
+			);
+			name = GameTable;
+			path = ../../Tractor/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B61E1D10F2E900903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B61F1D10F2E900903468 /* GoldenFlowerMessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../HappyGoldenFlower/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B6201D10F2E900903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6211D10F2E900903468 /* GoldenFlowerDrawEllipse.cpp */,
+				C227B6221D10F2E900903468 /* GoldenFlowerDrawEllipse.h */,
+				C227B6231D10F2E900903468 /* GoldenFlowerGameCardType.cpp */,
+				C227B6241D10F2E900903468 /* GoldenFlowerGameCardType.h */,
+				C227B6251D10F2E900903468 /* GoldenFlowerGameChipUI.cpp */,
+				C227B6261D10F2E900903468 /* GoldenFlowerGameChipUI.h */,
+				C227B6271D10F2E900903468 /* GoldenFlowerGameDashboard.cpp */,
+				C227B6281D10F2E900903468 /* GoldenFlowerGameDashboard.h */,
+				C227B6291D10F2E900903468 /* GoldenFlowerGameDealerUI.cpp */,
+				C227B62A1D10F2E900903468 /* GoldenFlowerGameDealerUI.h */,
+				C227B62B1D10F2E900903468 /* GoldenFlowerGameLogic.cpp */,
+				C227B62C1D10F2E900903468 /* GoldenFlowerGameLogic.h */,
+				C227B62D1D10F2E900903468 /* GoldenFlowerGameNotice.cpp */,
+				C227B62E1D10F2E900903468 /* GoldenFlowerGameNotice.h */,
+				C227B62F1D10F2E900903468 /* GoldenFlowerGamePlayer.cpp */,
+				C227B6301D10F2E900903468 /* GoldenFlowerGamePlayer.h */,
+				C227B6311D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp */,
+				C227B6321D10F2E900903468 /* GoldenFlowerGameTableLogic.h */,
+				C227B6331D10F2E900903468 /* GoldenFlowerGameTableUI.cpp */,
+				C227B6341D10F2E900903468 /* GoldenFlowerGameTableUI.h */,
+				C227B6351D10F2E900903468 /* GoldenFlowerGameTableUICallback.h */,
+				C227B6361D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp */,
+				C227B6371D10F2E900903468 /* GoldenFlowerGameUserMessageBox.h */,
+				C227B6381D10F2E900903468 /* GoldenFlowerPokerCard.cpp */,
+				C227B6391D10F2E900903468 /* GoldenFlowerPokerCard.h */,
+			);
+			name = GameTable;
+			path = ../../HappyGoldenFlower/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B6461D10F2FC00903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6471D10F2FC00903468 /* GoldenToadMessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../GoldenToad/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B6481D10F2FC00903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6491D10F2FC00903468 /* GoldenToadGameAdmin.cpp */,
+				C227B64A1D10F2FC00903468 /* GoldenToadGameAdmin.h */,
+				C227B64B1D10F2FC00903468 /* GoldenToadGameAudio.cpp */,
+				C227B64C1D10F2FC00903468 /* GoldenToadGameAudio.h */,
+				C227B64D1D10F2FC00903468 /* GoldenToadGameBullet.cpp */,
+				C227B64E1D10F2FC00903468 /* GoldenToadGameBullet.h */,
+				C227B64F1D10F2FC00903468 /* GoldenToadGameChatDlg.cpp */,
+				C227B6501D10F2FC00903468 /* GoldenToadGameChatDlg.h */,
+				C227B6511D10F2FC00903468 /* GoldenToadGameFishManager.cpp */,
+				C227B6521D10F2FC00903468 /* GoldenToadGameFishManager.h */,
+				C227B6531D10F2FC00903468 /* GoldenToadGameFishObject.cpp */,
+				C227B6541D10F2FC00903468 /* GoldenToadGameFishObject.h */,
+				C227B6551D10F2FC00903468 /* GoldenToadGameLoading.cpp */,
+				C227B6561D10F2FC00903468 /* GoldenToadGameLoading.h */,
+				C227B6571D10F2FC00903468 /* GoldenToadGameMathAide.cpp */,
+				C227B6581D10F2FC00903468 /* GoldenToadGameMathAide.h */,
+				C227B6591D10F2FC00903468 /* GoldenToadGamePlayer.cpp */,
+				C227B65A1D10F2FC00903468 /* GoldenToadGamePlayer.h */,
+				C227B65B1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.cpp */,
+				C227B65C1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.h */,
+				C227B65D1D10F2FC00903468 /* GoldenToadGameTableLogic.cpp */,
+				C227B65E1D10F2FC00903468 /* GoldenToadGameTableLogic.h */,
+				C227B65F1D10F2FC00903468 /* GoldenToadGameTableUI.cpp */,
+				C227B6601D10F2FC00903468 /* GoldenToadGameTableUI.h */,
+				C227B6611D10F2FC00903468 /* GoldenToadGameTableUICallback.h */,
+				C227B6621D10F2FC00903468 /* GoldenToadGameToolbar.cpp */,
+				C227B6631D10F2FC00903468 /* GoldenToadGameToolbar.h */,
+				C227B6641D10F2FC00903468 /* GoldenToadGameUserMessageBox.cpp */,
+				C227B6651D10F2FC00903468 /* GoldenToadGameUserMessageBox.h */,
+			);
+			name = GameTable;
+			path = ../../GoldenToad/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B6741D10F30F00903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6751D10F30F00903468 /* BJLMessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../BJL/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B6761D10F30F00903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6771D10F30F00903468 /* BJLGameLogic.cpp */,
+				C227B6781D10F30F00903468 /* BJLGameLogic.h */,
+				C227B6791D10F30F00903468 /* BJLGameTableLogic.cpp */,
+				C227B67A1D10F30F00903468 /* BJLGameTableLogic.h */,
+				C227B67B1D10F30F00903468 /* BJLGameTableUI.cpp */,
+				C227B67C1D10F30F00903468 /* BJLGameTableUI.h */,
+				C227B67D1D10F30F00903468 /* BJLGameTableUICallback.h */,
+				C227B67E1D10F30F00903468 /* BJLGameTableUIData.h */,
+				C227B67F1D10F30F00903468 /* BJLHistoryDialog.cpp */,
+				C227B6801D10F30F00903468 /* BJLHistoryDialog.h */,
+				C227B6811D10F30F00903468 /* BJLNotice.cpp */,
+				C227B6821D10F30F00903468 /* BJLNotice.h */,
+				C227B6831D10F30F00903468 /* BJLPokerCard.cpp */,
+				C227B6841D10F30F00903468 /* BJLPokerCard.h */,
+				C227B6851D10F30F00903468 /* BJLResultCard.cpp */,
+				C227B6861D10F30F00903468 /* BJLResultCard.h */,
+				C227B6871D10F30F00903468 /* BJLResultDialog.cpp */,
+				C227B6881D10F30F00903468 /* BJLResultDialog.h */,
+			);
+			name = GameTable;
+			path = ../../BJL/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B6911D10F32400903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6921D10F32400903468 /* XZMJ_MessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../BloodyMahjong/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B6931D10F32400903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6941D10F32400903468 /* Card.cpp */,
+				C227B6951D10F32400903468 /* Card.h */,
+				C227B6961D10F32400903468 /* CardPool.cpp */,
+				C227B6971D10F32400903468 /* CardPool.h */,
+				C227B6981D10F32400903468 /* CardPoolUser.cpp */,
+				C227B6991D10F32400903468 /* CardPoolUser.h */,
+				C227B69A1D10F32400903468 /* ConcealedKong.cpp */,
+				C227B69B1D10F32400903468 /* ConcealedKong.h */,
+				C227B69C1D10F32400903468 /* EastMahjongCardPool.cpp */,
+				C227B69D1D10F32400903468 /* EastMahjongCardPool.h */,
+				C227B69E1D10F32400903468 /* Factory.cpp */,
+				C227B69F1D10F32400903468 /* Factory.h */,
+				C227B6A01D10F32400903468 /* GameManager.cpp */,
+				C227B6A11D10F32400903468 /* GameManager.h */,
+				C227B6A21D10F32400903468 /* HuCard.cpp */,
+				C227B6A31D10F32400903468 /* HuCard.h */,
+				C227B6A41D10F32400903468 /* MahjongCard.cpp */,
+				C227B6A51D10F32400903468 /* MahjongCard.h */,
+				C227B6A61D10F32400903468 /* MahjongCardPool.cpp */,
+				C227B6A71D10F32400903468 /* MahjongCardPool.h */,
+				C227B6A81D10F32400903468 /* MahjongCardPoolUser.cpp */,
+				C227B6A91D10F32400903468 /* MahjongCardPoolUser.h */,
+				C227B6AA1D10F32400903468 /* MeldedKong.cpp */,
+				C227B6AB1D10F32400903468 /* MeldedKong.h */,
+				C227B6AC1D10F32400903468 /* NorthMahjongCardPool.cpp */,
+				C227B6AD1D10F32400903468 /* NorthMahjongCardPool.h */,
+				C227B6AE1D10F32400903468 /* PoolAction.cpp */,
+				C227B6AF1D10F32400903468 /* PoolAction.h */,
+				C227B6B01D10F32400903468 /* ResourceLoader.cpp */,
+				C227B6B11D10F32400903468 /* ResourceLoader.h */,
+				C227B6B21D10F32400903468 /* SouthMahjongCardPool.cpp */,
+				C227B6B31D10F32400903468 /* SouthMahjongCardPool.h */,
+				C227B6B41D10F32400903468 /* TouchCard.cpp */,
+				C227B6B51D10F32400903468 /* TouchCard.h */,
+				C227B6B61D10F32400903468 /* TouchKong.cpp */,
+				C227B6B71D10F32400903468 /* TouchKong.h */,
+				C227B6B81D10F32400903468 /* WestMahjongCardPool.cpp */,
+				C227B6B91D10F32400903468 /* WestMahjongCardPool.h */,
+				C227B6BA1D10F32400903468 /* XZMJ_GameTableLogic.cpp */,
+				C227B6BB1D10F32400903468 /* XZMJ_GameTableLogic.h */,
+				C227B6BC1D10F32400903468 /* XZMJ_GameTableUI.cpp */,
+				C227B6BD1D10F32400903468 /* XZMJ_GameTableUI.h */,
+				C227B6BE1D10F32400903468 /* XZMJ_GameTableUICallback.h */,
+			);
+			name = GameTable;
+			path = ../../BloodyMahjong/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B6D41D10F33D00903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6D51D10F33D00903468 /* DriftingCarMessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../DriftingCar/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B6D61D10F33D00903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6D71D10F33D00903468 /* DriftingCarGameAudio.cpp */,
+				C227B6D81D10F33D00903468 /* DriftingCarGameAudio.h */,
+				C227B6D91D10F33D00903468 /* DriftingCarGameBoard.cpp */,
+				C227B6DA1D10F33D00903468 /* DriftingCarGameBoard.h */,
+				C227B6DB1D10F33D00903468 /* DriftingCarGameCell.cpp */,
+				C227B6DC1D10F33D00903468 /* DriftingCarGameCell.h */,
+				C227B6DD1D10F33D00903468 /* DriftingCarGameResultHistory.cpp */,
+				C227B6DE1D10F33D00903468 /* DriftingCarGameResultHistory.h */,
+				C227B6DF1D10F33D00903468 /* DriftingCarGameTableLogic.cpp */,
+				C227B6E01D10F33D00903468 /* DriftingCarGameTableLogic.h */,
+				C227B6E11D10F33D00903468 /* DriftingCarGameTableUI.cpp */,
+				C227B6E21D10F33D00903468 /* DriftingCarGameTableUI.h */,
+				C227B6E31D10F33D00903468 /* DriftingCarGameTableUICallback.h */,
+			);
+			name = GameTable;
+			path = ../../DriftingCar/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B6EA1D10F34D00903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6EB1D10F34D00903468 /* DZPokerGameClientMessage.h */,
+				C227B6EC1D10F34D00903468 /* DZPokerUpgradeMessage.h */,
+			);
+			name = GameMessage;
+			path = ../../DZPoker/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B6ED1D10F34D00903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B6EE1D10F34D00903468 /* DZPokerBuyDialog.cpp */,
+				C227B6EF1D10F34D00903468 /* DZPokerBuyDialog.h */,
+				C227B6F01D10F34D00903468 /* DZPokerGameCardType.cpp */,
+				C227B6F11D10F34D00903468 /* DZPokerGameCardType.h */,
+				C227B6F21D10F34D00903468 /* DZPokerGameChipUI.cpp */,
+				C227B6F31D10F34D00903468 /* DZPokerGameChipUI.h */,
+				C227B6F41D10F34D00903468 /* DZPokerGameDealerUI.cpp */,
+				C227B6F51D10F34D00903468 /* DZPokerGameDealerUI.h */,
+				C227B6F61D10F34D00903468 /* DZPokerGameNotice.cpp */,
+				C227B6F71D10F34D00903468 /* DZPokerGameNotice.h */,
+				C227B6F81D10F34D00903468 /* DZPokerGamePlayer.cpp */,
+				C227B6F91D10F34D00903468 /* DZPokerGamePlayer.h */,
+				C227B6FA1D10F34D00903468 /* DZPokerGameTableLogic.cpp */,
+				C227B6FB1D10F34D00903468 /* DZPokerGameTableLogic.h */,
+				C227B6FC1D10F34D00903468 /* DZPokerGameTableUI.cpp */,
+				C227B6FD1D10F34D00903468 /* DZPokerGameTableUI.h */,
+				C227B6FE1D10F34D00903468 /* DZPokerGameTableUICallback.h */,
+				C227B6FF1D10F34D00903468 /* DZPokerGameUserMessageBox.cpp */,
+				C227B7001D10F34D00903468 /* DZPokerGameUserMessageBox.h */,
+				C227B7011D10F34D00903468 /* DZPokerPokerCard.cpp */,
+				C227B7021D10F34D00903468 /* DZPokerPokerCard.h */,
+				C227B7031D10F34D00903468 /* GameLogic.cpp */,
+				C227B7041D10F34D00903468 /* GameLogic.h */,
+			);
+			name = GameTable;
+			path = ../../DZPoker/Classes/GameTable;
+			sourceTree = "<group>";
+		};
+		C227B7101D10F35E00903468 /* GameMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C227B7111D10F35E00903468 /* ZYHZ_MessageHead.h */,
+			);
+			name = GameMessage;
+			path = ../../FreedomRedMahjong/Classes/GameMessage;
+			sourceTree = "<group>";
+		};
+		C227B7121D10F35E00903468 /* GameTable */ = {
+			isa = PBXGroup;
+			children = (
+				C227B7131D10F35E00903468 /* ZYHZ_Card.cpp */,
+				C227B7141D10F35E00903468 /* ZYHZ_Card.h */,
+				C227B7151D10F35E00903468 /* ZYHZ_CardPool.cpp */,
+				C227B7161D10F35E00903468 /* ZYHZ_CardPool.h */,
+				C227B7171D10F35E00903468 /* ZYHZ_CardPoolUser.cpp */,
+				C227B7181D10F35E00903468 /* ZYHZ_CardPoolUser.h */,
+				C227B7191D10F35E00903468 /* ZYHZ_ConcealedKong.cpp */,
+				C227B71A1D10F35E00903468 /* ZYHZ_ConcealedKong.h */,
+				C227B71B1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp */,
+				C227B71C1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.h */,
+				C227B71D1D10F35E00903468 /* ZYHZ_Factory.cpp */,
+				C227B71E1D10F35E00903468 /* ZYHZ_Factory.h */,
+				C227B71F1D10F35E00903468 /* ZYHZ_GameManager.cpp */,
+				C227B7201D10F35E00903468 /* ZYHZ_GameManager.h */,
+				C227B7211D10F35E00903468 /* ZYHZ_GameTableLogic.cpp */,
+				C227B7221D10F35E00903468 /* ZYHZ_GameTableLogic.h */,
+				C227B7231D10F35E00903468 /* ZYHZ_GameTableUI.cpp */,
+				C227B7241D10F35E00903468 /* ZYHZ_GameTableUI.h */,
+				C227B7251D10F35E00903468 /* ZYHZ_GameTableUICallback.h */,
+				C227B7261D10F35E00903468 /* ZYHZ_HuCard.cpp */,
+				C227B7271D10F35E00903468 /* ZYHZ_HuCard.h */,
+				C227B7281D10F35E00903468 /* ZYHZ_MahjongCard.cpp */,
+				C227B7291D10F35E00903468 /* ZYHZ_MahjongCard.h */,
+				C227B72A1D10F35E00903468 /* ZYHZ_MahjongCardPool.cpp */,
+				C227B72B1D10F35E00903468 /* ZYHZ_MahjongCardPool.h */,
+				C227B72C1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.cpp */,
+				C227B72D1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.h */,
+				C227B72E1D10F35E00903468 /* ZYHZ_MeldedKong.cpp */,
+				C227B72F1D10F35E00903468 /* ZYHZ_MeldedKong.h */,
+				C227B7301D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.cpp */,
+				C227B7311D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.h */,
+				C227B7321D10F35E00903468 /* ZYHZ_PoolAction.cpp */,
+				C227B7331D10F35E00903468 /* ZYHZ_PoolAction.h */,
+				C227B7341D10F35E00903468 /* ZYHZ_ResourceLoader.cpp */,
+				C227B7351D10F35E00903468 /* ZYHZ_ResourceLoader.h */,
+				C227B7361D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp */,
+				C227B7371D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.h */,
+				C227B7381D10F35E00903468 /* ZYHZ_TouchCard.cpp */,
+				C227B7391D10F35E00903468 /* ZYHZ_TouchCard.h */,
+				C227B73A1D10F35E00903468 /* ZYHZ_TouchKong.cpp */,
+				C227B73B1D10F35E00903468 /* ZYHZ_TouchKong.h */,
+				C227B73C1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp */,
+				C227B73D1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.h */,
+			);
+			name = GameTable;
+			path = ../../FreedomRedMahjong/Classes/GameTable;
+			sourceTree = "<group>";
+		};
 		CB668D9F1D106A4C0016E4AD /* GoldenToad */ = {
 			isa = PBXGroup;
 			children = (
-				CB668DA01D106A5B0016E4AD /* GameMessage */,
-				CB668DA11D106A5B0016E4AD /* GameTable */,
+				C227B6461D10F2FC00903468 /* GameMessage */,
+				C227B6481D10F2FC00903468 /* GameTable */,
 			);
 			name = GoldenToad;
 			sourceTree = "<group>";
@@ -1043,8 +1770,8 @@
 		CB668DA41D106A6F0016E4AD /* HappyGoldenFlower */ = {
 			isa = PBXGroup;
 			children = (
-				CB668DA51D106A810016E4AD /* GameMessage */,
-				CB668DA61D106A810016E4AD /* GameTable */,
+				C227B61E1D10F2E900903468 /* GameMessage */,
+				C227B6201D10F2E900903468 /* GameTable */,
 			);
 			name = HappyGoldenFlower;
 			sourceTree = "<group>";
@@ -1052,8 +1779,8 @@
 		CB668DAB1D106B000016E4AD /* Tractor */ = {
 			isa = PBXGroup;
 			children = (
-				CB668DAC1D106B110016E4AD /* GameMessage */,
-				CB668DAD1D106B110016E4AD /* GameTable */,
+				C227B5F21D10F2D600903468 /* GameMessage */,
+				C227B5F51D10F2D600903468 /* GameTable */,
 			);
 			name = Tractor;
 			sourceTree = "<group>";
@@ -1061,8 +1788,8 @@
 		CB668DB01D106B1E0016E4AD /* WaterMargin */ = {
 			isa = PBXGroup;
 			children = (
-				CB668DB11D106B300016E4AD /* GameMessage */,
-				CB668DB21D106B300016E4AD /* GameTable */,
+				C227B5D21D10F2BE00903468 /* GameMessage */,
+				C227B5D41D10F2BE00903468 /* GameTable */,
 			);
 			name = WaterMargin;
 			sourceTree = "<group>";
@@ -1241,27 +1968,17 @@
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				BCB7D3941BF85C5B00BD28FE /* UMShareEditViewController.xib in Resources */,
 				BCB7D3951BF85C5B00BD28FE /* UMShareEditViewControlleriPad.xib in Resources */,
-				CB668D951D1069E70016E4AD /* GameMessage in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
-				CB668DAE1D106B110016E4AD /* GameMessage in Resources */,
 				BCB7D3911BF85C5B00BD28FE /* UMSCommentDetailController.xib in Resources */,
 				BCB7D3991BF85C5B00BD28FE /* UMSocialSDKResourcesNew.bundle in Resources */,
 				BCB7D3981BF85C5B00BD28FE /* UMSShareListController.xib in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
-				CB668D9D1D106A360016E4AD /* GameMessage in Resources */,
 				BCB7D2F91BF8597B00BD28FE /* config.json in Resources */,
-				CB668DA21D106A5B0016E4AD /* GameMessage in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
-				CB668D991D106A190016E4AD /* GameMessage in Resources */,
 				BCB7D38E1BF85C5B00BD28FE /* UMSocialLocalizable.strings in Resources */,
-				CB668DB41D106B300016E4AD /* GameTable in Resources */,
-				CB668D8D1D10699C0016E4AD /* GameMessage in Resources */,
 				BCB7D3A01BF85C5B00BD28FE /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
-				CB668D8E1D10699C0016E4AD /* GameTable in Resources */,
-				CB668D9A1D106A190016E4AD /* GameTable in Resources */,
-				CB668DA71D106A810016E4AD /* GameMessage in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				BCB7D2FB1BF8597B00BD28FE /* Games in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
@@ -1271,19 +1988,11 @@
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
-				CB668DA31D106A5B0016E4AD /* GameTable in Resources */,
-				CB668D9E1D106A360016E4AD /* GameTable in Resources */,
 				BCB7D3971BF85C5B00BD28FE /* UMSnsAccountViewController.xib in Resources */,
-				CB668DA81D106A810016E4AD /* GameTable in Resources */,
-				CB668DAF1D106B110016E4AD /* GameTable in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				BCB7D3921BF85C5B00BD28FE /* UMSCommentInputController.xib in Resources */,
 				BCB7D3931BF85C5B00BD28FE /* UMSCommentInputControlleriPad.xib in Resources */,
-				CB668D911D1069C80016E4AD /* GameMessage in Resources */,
 				BCB7D2FC1BF8597B00BD28FE /* platform in Resources */,
-				CB668D921D1069C80016E4AD /* GameTable in Resources */,
-				CB668DB31D106B300016E4AD /* GameMessage in Resources */,
-				CB668D961D1069E70016E4AD /* GameTable in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1302,30 +2011,145 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C227B70D1D10F34D00903468 /* DZPokerGameUserMessageBox.cpp in Sources */,
+				C227B74E1D10F35E00903468 /* ZYHZ_ResourceLoader.cpp in Sources */,
+				C227B6C31D10F32400903468 /* EastMahjongCardPool.cpp in Sources */,
 				7FB4D3B41BFDEDB700BD0311 /* LandlordGameNotice.cpp in Sources */,
+				C227B6711D10F2FC00903468 /* GoldenToadGameTableUI.cpp in Sources */,
+				C227B6171D10F2D600903468 /* TRACTORGameNotice.cpp in Sources */,
+				C227B73E1D10F35E00903468 /* ZYHZ_Card.cpp in Sources */,
+				C227B61B1D10F2D600903468 /* TRACTORGameTableUI.cpp in Sources */,
+				C227B6401D10F2E900903468 /* GoldenFlowerGameNotice.cpp in Sources */,
 				7FB4D3B81BFDEDB700BD0311 /* LandlordGameUserMessageBox.cpp in Sources */,
+				C227B70E1D10F34D00903468 /* DZPokerPokerCard.cpp in Sources */,
+				C227B68B1D10F30F00903468 /* BJLGameTableUI.cpp in Sources */,
 				7FB4D3B61BFDEDB700BD0311 /* LandlordGameTableLogic.cpp in Sources */,
+				C227B68E1D10F30F00903468 /* BJLPokerCard.cpp in Sources */,
+				C227B6C81D10F32400903468 /* MahjongCardPool.cpp in Sources */,
 				7FB4D3AD1BFDEDB700BD0311 /* LandlordCardOutList.cpp in Sources */,
+				C227B7481D10F35E00903468 /* ZYHZ_MahjongCard.cpp in Sources */,
+				C227B7401D10F35E00903468 /* ZYHZ_CardPoolUser.cpp in Sources */,
+				C227B70F1D10F34D00903468 /* GameLogic.cpp in Sources */,
+				C227B6C71D10F32400903468 /* MahjongCard.cpp in Sources */,
+				C227B5ED1D10F2BE00903468 /* WaterMarginGameMaLi.cpp in Sources */,
+				C227B74C1D10F35E00903468 /* ZYHZ_NorthMahjongCardPool.cpp in Sources */,
+				C227B6901D10F30F00903468 /* BJLResultDialog.cpp in Sources */,
+				C227B6E91D10F33D00903468 /* DriftingCarGameTableUI.cpp in Sources */,
 				7FB4D3B91BFDEDB700BD0311 /* LandlordPokerCard.cpp in Sources */,
+				C227B7091D10F34D00903468 /* DZPokerGameNotice.cpp in Sources */,
+				C227B7081D10F34D00903468 /* DZPokerGameDealerUI.cpp in Sources */,
+				C227B6E71D10F33D00903468 /* DriftingCarGameResultHistory.cpp in Sources */,
+				C227B70A1D10F34D00903468 /* DZPokerGamePlayer.cpp in Sources */,
+				C227B74D1D10F35E00903468 /* ZYHZ_PoolAction.cpp in Sources */,
+				C227B7451D10F35E00903468 /* ZYHZ_GameTableLogic.cpp in Sources */,
+				C227B66B1D10F2FC00903468 /* GoldenToadGameFishObject.cpp in Sources */,
 				7FB4D3871BFDED7A00BD0311 /* HelloWorldScene.cpp in Sources */,
+				C227B6411D10F2E900903468 /* GoldenFlowerGamePlayer.cpp in Sources */,
 				BCB7D38A1BF85C5B00BD28FE /* UMShareButton.cpp in Sources */,
 				BCB7D3881BF85C5B00BD28FE /* UmSocialControllerIOS.mm in Sources */,
 				7FB4D3AC1BFDEDB700BD0311 /* LandlordCardListBoard.cpp in Sources */,
+				C227B74F1D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp in Sources */,
 				7FB4D3B11BFDEDB700BD0311 /* LandlordGameCardType.cpp in Sources */,
+				C227B7431D10F35E00903468 /* ZYHZ_Factory.cpp in Sources */,
 				7FB4D3B31BFDEDB700BD0311 /* LandlordGameLogic.cpp in Sources */,
+				C227B6151D10F2D600903468 /* TRACTORGameDealerUI.cpp in Sources */,
+				C227B7061D10F34D00903468 /* DZPokerGameCardType.cpp in Sources */,
+				C227B74A1D10F35E00903468 /* ZYHZ_MahjongCardPoolUser.cpp in Sources */,
+				C227B66F1D10F2FC00903468 /* GoldenToadGameSceneFishTrace.cpp in Sources */,
+				C227B5F01D10F2BE00903468 /* WaterMarginGameTableUI.cpp in Sources */,
+				C227B7441D10F35E00903468 /* ZYHZ_GameManager.cpp in Sources */,
 				7FB4D3861BFDED7A00BD0311 /* AppDelegate.cpp in Sources */,
+				C227B6D21D10F32400903468 /* XZMJ_GameTableLogic.cpp in Sources */,
+				C227B6661D10F2FC00903468 /* GoldenToadGameAdmin.cpp in Sources */,
+				C227B6CA1D10F32400903468 /* MeldedKong.cpp in Sources */,
+				C227B6E61D10F33D00903468 /* DriftingCarGameCell.cpp in Sources */,
 				7FB4D3B21BFDEDB700BD0311 /* LandlordGameChatDlg.cpp in Sources */,
+				C227B6BF1D10F32400903468 /* Card.cpp in Sources */,
+				C227B6D01D10F32400903468 /* TouchKong.cpp in Sources */,
+				C227B70C1D10F34D00903468 /* DZPokerGameTableUI.cpp in Sources */,
+				C227B6431D10F2E900903468 /* GoldenFlowerGameTableUI.cpp in Sources */,
+				C227B7461D10F35E00903468 /* ZYHZ_GameTableUI.cpp in Sources */,
+				C227B6701D10F2FC00903468 /* GoldenToadGameTableLogic.cpp in Sources */,
+				C227B6121D10F2D600903468 /* TRACTORGameCardType.cpp in Sources */,
+				C227B7071D10F34D00903468 /* DZPokerGameChipUI.cpp in Sources */,
+				C227B63E1D10F2E900903468 /* GoldenFlowerGameDealerUI.cpp in Sources */,
+				C227B6CB1D10F32400903468 /* NorthMahjongCardPool.cpp in Sources */,
+				C227B6E81D10F33D00903468 /* DriftingCarGameTableLogic.cpp in Sources */,
+				C227B6CC1D10F32400903468 /* PoolAction.cpp in Sources */,
+				C227B6681D10F2FC00903468 /* GoldenToadGameBullet.cpp in Sources */,
+				C227B7521D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp in Sources */,
+				C227B5F11D10F2BE00903468 /* WaterMarginGameUserBox.cpp in Sources */,
+				C227B68F1D10F30F00903468 /* BJLResultCard.cpp in Sources */,
+				C227B6C21D10F32400903468 /* ConcealedKong.cpp in Sources */,
+				C227B73F1D10F35E00903468 /* ZYHZ_CardPool.cpp in Sources */,
+				C227B74B1D10F35E00903468 /* ZYHZ_MeldedKong.cpp in Sources */,
+				C227B7411D10F35E00903468 /* ZYHZ_ConcealedKong.cpp in Sources */,
+				C227B70B1D10F34D00903468 /* DZPokerGameTableLogic.cpp in Sources */,
+				C227B6C51D10F32400903468 /* GameManager.cpp in Sources */,
+				C227B6441D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp in Sources */,
+				C227B6451D10F2E900903468 /* GoldenFlowerPokerCard.cpp in Sources */,
+				C227B6D31D10F32400903468 /* XZMJ_GameTableUI.cpp in Sources */,
+				C227B6691D10F2FC00903468 /* GoldenToadGameChatDlg.cpp in Sources */,
+				C227B66C1D10F2FC00903468 /* GoldenToadGameLoading.cpp in Sources */,
+				C227B7491D10F35E00903468 /* ZYHZ_MahjongCardPool.cpp in Sources */,
+				C227B6C01D10F32400903468 /* CardPool.cpp in Sources */,
+				C227B68D1D10F30F00903468 /* BJLNotice.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				C227B6141D10F2D600903468 /* TRACTORGameDashboard.cpp in Sources */,
+				C227B6C91D10F32400903468 /* MahjongCardPoolUser.cpp in Sources */,
+				C227B6CE1D10F32400903468 /* SouthMahjongCardPool.cpp in Sources */,
+				C227B7051D10F34D00903468 /* DZPokerBuyDialog.cpp in Sources */,
 				BCB7D3891BF85C5B00BD28FE /* UMSocialUIObject.mm in Sources */,
+				C227B6191D10F2D600903468 /* TRACTORGameResult.cpp in Sources */,
 				7FB4D3B51BFDEDB700BD0311 /* LandlordGamePlayer.cpp in Sources */,
+				C227B6891D10F30F00903468 /* BJLGameLogic.cpp in Sources */,
+				C227B6C61D10F32400903468 /* HuCard.cpp in Sources */,
+				C227B6D11D10F32400903468 /* WestMahjongCardPool.cpp in Sources */,
+				C227B63A1D10F2E900903468 /* GoldenFlowerDrawEllipse.cpp in Sources */,
+				C227B66E1D10F2FC00903468 /* GoldenToadGamePlayer.cpp in Sources */,
+				C227B66D1D10F2FC00903468 /* GoldenToadGameMathAide.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				C227B7501D10F35E00903468 /* ZYHZ_TouchCard.cpp in Sources */,
+				C227B6CF1D10F32400903468 /* TouchCard.cpp in Sources */,
+				C227B61A1D10F2D600903468 /* TRACTORGameTableLogic.cpp in Sources */,
+				C227B6131D10F2D600903468 /* TRACTORGameChipUI.cpp in Sources */,
 				7FB4D3B71BFDEDB700BD0311 /* LandlordGameTableUI.cpp in Sources */,
+				C227B6161D10F2D600903468 /* TRACTORGameLogic.cpp in Sources */,
+				C227B5EF1D10F2BE00903468 /* WaterMarginGameTableLogic.cpp in Sources */,
+				C227B6C41D10F32400903468 /* Factory.cpp in Sources */,
+				C227B7511D10F35E00903468 /* ZYHZ_TouchKong.cpp in Sources */,
+				C227B63D1D10F2E900903468 /* GoldenFlowerGameDashboard.cpp in Sources */,
+				C227B61C1D10F2D600903468 /* TRACTORGameUserMessageBox.cpp in Sources */,
+				C227B7421D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp in Sources */,
+				C227B6421D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp in Sources */,
+				C227B5EA1D10F2BE00903468 /* WaterMarginGameAudio.cpp in Sources */,
+				C227B5EC1D10F2BE00903468 /* WaterMarginGameBiBei.cpp in Sources */,
+				C227B5EB1D10F2BE00903468 /* WaterMarginGameBDBtn.cpp in Sources */,
+				C227B66A1D10F2FC00903468 /* GoldenToadGameFishManager.cpp in Sources */,
+				C227B6E51D10F33D00903468 /* DriftingCarGameBoard.cpp in Sources */,
+				C227B6C11D10F32400903468 /* CardPoolUser.cpp in Sources */,
 				7FB4D3AF1BFDEDB700BD0311 /* LandlordExitPrompt.cpp in Sources */,
+				C227B7471D10F35E00903468 /* ZYHZ_HuCard.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				C227B63C1D10F2E900903468 /* GoldenFlowerGameChipUI.cpp in Sources */,
+				C227B6731D10F2FC00903468 /* GoldenToadGameUserMessageBox.cpp in Sources */,
+				C227B68A1D10F30F00903468 /* BJLGameTableLogic.cpp in Sources */,
+				C227B6E41D10F33D00903468 /* DriftingCarGameAudio.cpp in Sources */,
+				C227B6181D10F2D600903468 /* TRACTORGamePlayer.cpp in Sources */,
+				C227B68C1D10F30F00903468 /* BJLHistoryDialog.cpp in Sources */,
+				C227B5EE1D10F2BE00903468 /* WaterMarginGameRollImage.cpp in Sources */,
+				C227B61D1D10F2D600903468 /* TRACTORPokerCard.cpp in Sources */,
 				7FB4D3AE1BFDEDB700BD0311 /* LandlordCardTypeAnimation.cpp in Sources */,
 				7FB4D3B01BFDEDB700BD0311 /* LandlordGameAudio.cpp in Sources */,
+				C227B6671D10F2FC00903468 /* GoldenToadGameAudio.cpp in Sources */,
+				C227B63F1D10F2E900903468 /* GoldenFlowerGameLogic.cpp in Sources */,
+				C227B6CD1D10F32400903468 /* ResourceLoader.cpp in Sources */,
+				C227B63B1D10F2E900903468 /* GoldenFlowerGameCardType.cpp in Sources */,
 				7FB4D3BA1BFDEDB700BD0311 /* LandlordToolbar.cpp in Sources */,
 				BCB7D3871BF85C5B00BD28FE /* CCUMSocialSDK.cpp in Sources */,
+				C227B6111D10F2D600903468 /* TRACTORDrawEllipse.cpp in Sources */,
+				C227B6721D10F2FC00903468 /* GoldenToadGameToolbar.cpp in Sources */,
+				C227B5E91D10F2BE00903468 /* WaterMarginGameAnimation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
