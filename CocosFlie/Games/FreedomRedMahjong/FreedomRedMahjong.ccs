@@ -1,0 +1,122 @@
+<Solution>
+  <PropertyGroup Name="FreedomRedMahjong" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="Games">
+          <Folder Name="FreedomRedMahjong">
+            <Folder Name="cocos">
+              <Image Name="Image_dengdai.png" />
+              <Image Name="Image_naozhong.png" />
+              <Image Name="Image_Ready.png" />
+              <Project Name="MainScene.csd" Type="Scene" />
+              <Image Name="name_bk.png" />
+              <Image Name="number_87.png" />
+              <Image Name="number-10.png" />
+              <Image Name="Game_Logo.png" />
+              <Folder Name="Button">
+                <Image Name="chi1.png" />
+                <Image Name="chi2.png" />
+                <Image Name="chi3.png" />
+                <Image Name="chi4.png" />
+                <Image Name="gang1.png" />
+                <Image Name="gang2.png" />
+                <Image Name="gang3.png" />
+                <Image Name="gang4.png" />
+                <Image Name="hu1.png" />
+                <Image Name="hu2.png" />
+                <Image Name="hu3.png" />
+                <Image Name="hu4.png" />
+                <Image Name="peng1.png" />
+                <Image Name="peng2.png" />
+                <Image Name="peng3.png" />
+                <Image Name="peng4.png" />
+                <Image Name="qi1.png" />
+                <Image Name="qi2.png" />
+                <Image Name="qi3.png" />
+                <Image Name="qi4.png" />
+                <Image Name="start1.png" />
+                <Image Name="start2.png" />
+                <Image Name="start3.png" />
+                <Image Name="start4.png" />
+                <Image Name="timeNumber.png" />
+                <Image Name="timer1.png" />
+                <Image Name="timer2.png" />
+                <Image Name="timer3.png" />
+                <Image Name="timer4.png" />
+                <Image Name="ting1.png" />
+                <Image Name="ting2.png" />
+                <Image Name="ting3.png" />
+                <Image Name="ting4.png" />
+                <Image Name="trusteeshep1.png" />
+                <Image Name="trusteeshep2.png" />
+                <Image Name="trusteeshep3.png" />
+                <Image Name="trusteeshep4.png" />
+                <Image Name="returnLobby1.png" />
+                <Image Name="returnLobby2.png" />
+                <Image Name="returnLobby3.png" />
+                <Image Name="returnLobby4.png" />
+                <Image Name="quetiao.png" />
+                <Image Name="que_tong.png" />
+                <Image Name="que_wan.png" />
+                <Image Name="suo_bt_01.png" />
+                <Image Name="suo_bt_02.png" />
+                <Image Name="suo_bt_04.png" />
+                <Image Name="tong_bt_01.png" />
+                <Image Name="tong_bt_02.png" />
+                <Image Name="tong_bt_04.png" />
+                <Image Name="wan_bt_01.png" />
+                <Image Name="wan_bt_02.png" />
+                <Image Name="wan_bt_04.png" />
+                <Image Name="queding1.png" />
+                <Image Name="queding2.png" />
+                <Image Name="queding3.png" />
+                <Image Name="queding4.png" />
+                <Image Name="quxiao1.png" />
+                <Image Name="quxiao2.png" />
+                <Image Name="quxiao3.png" />
+                <Image Name="quxiao4.png" />
+                <Image Name="jixu1.png" />
+                <Image Name="jixu2.png" />
+                <Image Name="jixu3.png" />
+                <Image Name="jixu4.png" />
+                <Image Name="likai1.png" />
+                <Image Name="likai2.png" />
+                <Image Name="likai3.png" />
+                <Image Name="likai4.png" />
+              </Folder>
+              <Folder Name="Sprite">
+                <Image Name="tuoguang.png" />
+                <Image Name="zhuang.png" />
+                <Image Name="user.png" />
+                <Image Name="timeNumber.png" />
+                <Image Name="timer1.png" />
+                <Image Name="timer2.png" />
+                <Image Name="timer3.png" />
+                <Image Name="timer4.png" />
+                <Image Name="dingque.png" />
+                <Image Name="DaoBeiEW.png" />
+                <Image Name="DaoBeiNS.png" />
+                <Image Name="liNorthxiao.png" />
+                <Image Name="2.png" />
+                <Image Name="3.png" />
+                <Image Name="4.png" />
+                <Image Name="5.png" />
+                <Image Name="dikuang.png" />
+                <Image Name="huangzhuang.png" />
+                <Image Name="Image_finish.png" />
+                <Image Name="result_logo_01.png" />
+                <Image Name="result_logo_02.png" />
+                <Image Name="result_logo_03.png" />
+                <Image Name="Image_chipai1.png" />
+                <Image Name="niaokuang.png" />
+                <Image Name="Image_Finish2.png" />
+                <Image Name="Image_Finish3.png" />
+              </Folder>
+            </Folder>
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

@@ -1,0 +1,19 @@
+<Solution>
+  <PropertyGroup Name="gameItemUi" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="gameList">
+            <Folder Name="gameItemRes">
+              <Image Name="MainButton_game.png" />
+              <Image Name="10100003.png" />
+              <Image Name="31000000.png" />
+            </Folder>
+            <Project Name="gameItem.csd" Type="Node" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

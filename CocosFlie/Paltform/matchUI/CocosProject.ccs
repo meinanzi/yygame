@@ -1,0 +1,24 @@
+<Solution>
+  <PropertyGroup Name="CocosProject" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="match">
+            <Image Name="3.png" />
+            <Image Name="666.png" />
+            <Image Name="7.png" />
+            <Image Name="duoguang.png" />
+            <Image Name="join_mathch_d.png" />
+            <Image Name="join_mathch_n.png" />
+            <Image Name="match_bg.png" />
+            <Project Name="MatchUI_1.csd" Type="Layer" />
+            <Project Name="MatchUI_2.csd" Type="Layer" />
+            <Image Name="unjoin_mathch_d.png" />
+            <Image Name="unjoin_mathch_n.png" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

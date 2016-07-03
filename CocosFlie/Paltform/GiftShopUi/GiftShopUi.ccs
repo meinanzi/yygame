@@ -1,0 +1,40 @@
+<Solution>
+  <PropertyGroup Name="GiftShopUi" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="GiftShopUi">
+            <Project Name="giftShopNode.csd" Type="Node" />
+            <Folder Name="Res">
+              <Image Name="EntityGiftPage.png" />
+              <Image Name="gift_01.png" />
+              <Image Name="gift_02.png" />
+              <Image Name="gift_03.png" />
+              <Image Name="gift_04.png" />
+              <Image Name="gift_05.png" />
+              <Image Name="gift_06.png" />
+              <Image Name="gift_07.png" />
+              <Image Name="gift_box.png" />
+              <Image Name="giftShop_BG.png" />
+              <Image Name="lottery_box.png" />
+              <Image Name="money_box.png" />
+              <Image Name="record_d.png" />
+              <Image Name="record_n.png" />
+              <Image Name="return_n.png" />
+              <Image Name="shop_d.png" />
+              <Image Name="shop_n.png" />
+              <Image Name="top.png" />
+              <Image Name="true.png" />
+              <Image Name="VirtualGiftPage.png" />
+              <Image Name="common_opaque.png" />
+              <Image Name="tangk.png" />
+              <Image Name="name.png" />
+            </Folder>
+            <Project Name="giftNode.csd" Type="Node" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

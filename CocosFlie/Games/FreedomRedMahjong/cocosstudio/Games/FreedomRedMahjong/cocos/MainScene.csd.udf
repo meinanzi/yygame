@@ -1,0 +1,35 @@
+<UserData Version="2.3.2.3">
+  <Properties>
+    <Item Key="GuidesList">
+      <Value ctype="GuidesData">
+        <HorizontalList>
+          <Guides Direction="Horizontal" Position="56.7361" />
+          <Guides Direction="Horizontal" Position="97.0986" />
+          <Guides Direction="Horizontal" Position="134.6525" />
+          <Guides Direction="Horizontal" Position="161.0700" />
+          <Guides Direction="Horizontal" Position="181.1903" />
+          <Guides Direction="Horizontal" Position="202.3227" />
+          <Guides Direction="Horizontal" Position="215.2884" />
+          <Guides Direction="Horizontal" Position="233.4499" />
+          <Guides Direction="Horizontal" Position="265.1066" />
+          <Guides Direction="Horizontal" Position="289.8976" />
+          <Guides Direction="Horizontal" Position="334.5629" />
+          <Guides Direction="Horizontal" Position="362.3915" />
+          <Guides Direction="Horizontal" Position="388.0794" />
+          <Guides Direction="Horizontal" Position="408.4156" />
+          <Guides Direction="Horizontal" Position="820.1054" />
+        </HorizontalList>
+        <VerticalList>
+          <Guides Position="64.2902" />
+          <Guides Position="456.1557" />
+          <Guides Position="518.1785" />
+          <Guides Position="558.0299" />
+          <Guides Position="639.1743" />
+          <Guides Position="834.7584" />
+          <Guides Position="915.0790" />
+          <Guides Position="1130.8479" />
+        </VerticalList>
+      </Value>
+    </Item>
+  </Properties>
+</UserData>

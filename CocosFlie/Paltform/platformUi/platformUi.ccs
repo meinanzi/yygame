@@ -1,0 +1,39 @@
+<Solution>
+  <PropertyGroup Name="platformUi" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="lobbyUi">
+            <Folder Name="PlatformUi_BOTTOM">
+              <Project Name="PlatformUi_BOTTOM.csd" Type="Node" />
+              <Image Name="LobbyCenter_downbar.png" />
+              <Image Name="LobbyCenter_Activity.png" />
+              <Image Name="LobbyCenter_friend.png" />
+              <Image Name="LobbyCenter_store.png" />
+              <Image Name="LobbyCenter_task.png" />
+              <Image Name="LobbyCenter_bank.png" />
+              <Image Name="LobbyCenter_rank.png" />
+            </Folder>
+            <Folder Name="PlatformUi_TOP">
+              <Image Name="subViewReturn.png" />
+              <Project Name="PlatformUi_TOP.csd" Type="Node" />
+              <Image Name="LobbyCenter_coins.png" />
+              <Image Name="moneyBg.png" />
+              <Image Name="Account.png" />
+              <Image Name="out.png" />
+              <Image Name="LobbyCente_Prompt.png" />
+              <Image Name="announcement.png" />
+              <Image Name="service.png" />
+              <Image Name="set.png" />
+              <Image Name="Sign.png" />
+              <Image Name="popularize_icon.png" />
+              <Image Name="shop.png" />
+              <Image Name="Top_bg.png" />
+            </Folder>
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

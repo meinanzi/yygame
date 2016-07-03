@@ -1,0 +1,20 @@
+<Solution>
+  <PropertyGroup Name="spread" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="popularise">
+            <Project Name="SpreadEditLayer.csd" Type="Layer" />
+            <Image Name="applyBtn1.png" />
+            <Image Name="Sprite.png" />
+            <Image Name="edit.png" />
+            <Image Name="populariseTitle_apply.png" />
+            <Image Name="populariseTitle_info.png" />
+            <Image Name="second_back.png" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

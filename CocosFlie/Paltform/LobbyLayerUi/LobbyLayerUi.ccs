@@ -1,0 +1,145 @@
+<Solution>
+  <PropertyGroup Name="LobbyLayerUi" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="bankUi">
+            <Folder Name="bankUiRes">
+              <Image Name="bankBtn1.png" />
+              <Image Name="bankBtn2.png" />
+              <Image Name="caozuo.png" />
+              <Image Name="cunMoney.png" />
+              <Image Name="data1.png" />
+              <Image Name="data2.png" />
+              <Image Name="gou.png" />
+              <Image Name="kuang.png" />
+              <Image Name="rightFrame.png" />
+              <Image Name="second_back.png" />
+              <Image Name="second_payBg.png" />
+              <Image Name="zhuanzhang1.png" />
+              <Image Name="zhuanzhang2.png" />
+              <Image Name="LobbyCenter_line.png" />
+              <Image Name="frame.png" />
+              <Image Name="bankmesg.png" />
+              <Image Name="bankMoney.png" />
+              <Image Name="cunCoin.png" />
+              <Image Name="kuangkuang.png" />
+              <Image Name="nowCoin.png" />
+              <Image Name="quCoin.png" />
+              <Image Name="quPass.png" />
+              <Image Name="xiugaiMesg.png" />
+              <Image Name="zhuanzhangMesg.png" />
+              <Image Name="name.png" />
+              <Image Name="ID.png" />
+              <Image Name="newPass.png" />
+              <Image Name="oldPass.png" />
+              <Image Name="surePass.png" />
+              <Image Name="pass.png" />
+              <Image Name="songCoin.png" />
+              <Image Name="bank.png" />
+              <Image Name="yuanbao.png" />
+            </Folder>
+            <Image Name="bankTitle.png" />
+            <Project Name="bankNode.csd" Type="Node" />
+            <Project Name="bankTitleNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="bindPhone">
+            <Folder Name="bindPhoneRes">
+              <Image Name="bindBg.png" />
+              <Image Name="code_d.png" />
+              <Image Name="windowsClose.png" />
+            </Folder>
+            <Project Name="bindPhoneNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="exitChange">
+            <Folder Name="exitChangeRes">
+              <Image Name="wenxintishi.png" />
+              <Image Name="btn_change.png" />
+              <Image Name="btn_exit.png" />
+            </Folder>
+            <Project Name="exitNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="modifyPassWord">
+            <Folder Name="modifyPassWordRes">
+              <Image Name="modifyBg.png" />
+              <Image Name="btn_ok.png" />
+              <Image Name="windowsClose.png" />
+            </Folder>
+            <Project Name="modifyPassWordNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="prompt">
+            <Folder Name="promptRes">
+              <Image Name="wenxintishi.png" />
+            </Folder>
+            <Project Name="promptNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="serviceUi">
+            <Folder Name="serviceUiRes">
+              <Image Name="email.png" />
+              <Image Name="message.png" />
+              <Image Name="phone.png" />
+            </Folder>
+            <Project Name="ServiceNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="setting">
+            <Folder Name="settingRes">
+              <Image Name="item_bg.png" />
+              <Image Name="progress_bar.png" />
+              <Image Name="progress_bar_bg.png" />
+              <Image Name="slider1.png" />
+              <Image Name="split.png" />
+              <Image Name="volumeBig.png" />
+              <Image Name="volumeSmall.png" />
+              <Image Name="Set.png" />
+            </Folder>
+            <Project Name="settingNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="userData">
+            <Folder Name="userDataRes">
+              <Image Name="coinMid.png" />
+              <Image Name="default_man.png" />
+              <Image Name="default_woman.png" />
+              <Image Name="female.png" />
+              <Image Name="male.png" />
+              <Image Name="subViewBambooLeft.png" />
+              <Image Name="subViewBambooRight.png" />
+              <Image Name="subViewEdit.png" />
+              <Image Name="subViewFrame.png" />
+              <Image Name="subViewInnerBg.png" />
+              <Image Name="subViewReturn.png" />
+              <Image Name="subViewSplite.png" />
+              <Image Name="userDataBG.png" />
+              <Image Name="windowsFrame.png" />
+            </Folder>
+            <Project Name="userDataNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="exitUi">
+            <Project Name="ExitGameNode.csd" Type="Node" />
+            <Image Name="continue.png" />
+            <Image Name="quit.png" />
+            <Image Name="exit_bg.png" />
+          </Folder>
+          <Folder Name="publicBox">
+            <Folder Name="publicBoxUi">
+              <Image Name="wenxintishi.png" />
+            </Folder>
+            <Project Name="publicBoxNode.csd" Type="Node" />
+          </Folder>
+          <Folder Name="common">
+            <Image Name="close_btn.png" />
+            <Image Name="dialog_bg.png" />
+            <Image Name="edit_bg.png" />
+            <Image Name="frame.png" />
+            <Image Name="gray_btn.png" />
+            <Image Name="line.png" />
+            <Image Name="dialog_frame.png" />
+            <Image Name="red_btn.png" />
+            <Image Name="common_bg.png" />
+            <Image Name="gree_btn.png" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

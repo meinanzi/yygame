@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<AnimationProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>C:\Users\Administrator\Desktop\Speaker</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>C:\Users\Administrator\Desktop\Speaker\Resources</Resources>
+  <Name>Speaker</Name>
+  <JsonFileName>Speaker.json</JsonFileName>
+  <JsonFolder>C:\Users\Administrator\Desktop\Speaker\Json</JsonFolder>
+  <JsonList />
+  <CanvasSize>
+    <Width>0</Width>
+    <Height>0</Height>
+  </CanvasSize>
+  <filePath>C:\Users\Administrator\Desktop\Speaker\Speaker.xml.animation</filePath>
+  <ProjectType>AnimationProject</ProjectType>
+  <ResRelativePath />
+  <ResourceFileList />
+  <bBatchImage>false</bBatchImage>
+</AnimationProject>

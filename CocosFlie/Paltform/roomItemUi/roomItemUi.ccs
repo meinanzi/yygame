@@ -1,0 +1,19 @@
+<Solution>
+  <PropertyGroup Name="roomItemUi" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="room">
+            <Project Name="roomItem.csd" Type="Node" />
+            <Folder Name="roomItemRes">
+              <Image Name="LobbyGame_man.png" />
+              <Image Name="LobbyGame_money.png" />
+              <Image Name="LobbyGameRoomItem.png" />
+            </Folder>
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

@@ -1,0 +1,20 @@
+<Solution>
+  <PropertyGroup Name="DeskItemUi" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="platform">
+          <Folder Name="DeskList">
+            <Project Name="deskListUi.csd" Type="Node" />
+            <Image Name="progress_bar.png" />
+            <Image Name="progress_bar_bg.png" />
+            <Image Name="roomBoard.png" />
+            <Image Name="diImg.png" />
+            <Image Name="peopleImg.png" />
+            <Image Name="tagXL.png" />
+          </Folder>
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
