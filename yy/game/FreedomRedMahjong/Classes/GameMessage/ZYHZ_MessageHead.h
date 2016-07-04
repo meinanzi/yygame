@@ -1542,6 +1542,7 @@ enum MJTHINGS
 
     //糊牌及糊牌后事件
     THING_HU_PAI			,			//糊事件		DWJ
+    THING_MAI_MA			,			//买码事件
 	THING_ZHONG_NIAO		,           //中鸟事件      LLJ
     THING_COUNT_FEN			,			//算分事件		DWJ
     THING_ENG_HANDLE		,			//结束处理事件	DWJ
@@ -3141,7 +3142,23 @@ typedef struct tagZhongNiao
 	}
 }ZhongNiao;
 
-
+    typedef struct MaiMa
+    {
+        BYTE byUser;	//买码的玩家
+        BYTE byCount;	//买码的个数
+        BYTE byCard[4];	//中鸟数据
+        
+        MaiMa()
+        {
+            clear();
+        }
+        
+        void clear()
+        {
+            memset(this, 255 ,sizeof(MaiMa));
+        }
+    }tagMaiMa;
+    
 #pragma pack()
 
 

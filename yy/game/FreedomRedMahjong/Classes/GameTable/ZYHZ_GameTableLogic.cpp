@@ -3,7 +3,7 @@
 #include "ZYHZ_GameTableUICallback.h"
 #include "ZYHZ_GameManager.h"
 #include "ZYHZ_Card.h"
-#include "tinyxml2/tinyxml2.h"
+//#include "tinyxml2/tinyxml2.h"
 
 namespace ZYHZ
 {
@@ -33,12 +33,12 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 
 	void GameTableLogic::dealGameStartResp(BYTE bDeskNO)
 	{
-		int m = 0;
+//		int m = 0;
 	}
 
 	void GameTableLogic::dealGameEndResp(BYTE bDeskNO)
 	{
-		int n = 0;
+//		int n = 0;
 	}
 
 	void GameTableLogic::dealUserAgreeResp(MSG_GR_R_UserAgree* agree)
@@ -188,6 +188,12 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 				assert(sizeof(tagHuPaiEx) == objectSize);
 				dealOnNotifyHuPaiResp(*((tagHuPaiEx*)object));
 			}break;
+        case THING_MAI_MA://			,			//买码事件:
+            {
+//                assert(sizeof(tagMaiMa)==objectSize);
+                deal_THING_MAI_MA(object, objectSize);
+                break;
+            }
 		case THING_ZHONG_NIAO:
 			{
 				assert(sizeof(ZhongNiao) == objectSize);
@@ -426,8 +432,8 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 	{
 		log("dealOnNotifyOutCardResp :");
 		_msgtagOutPaiEx = msg;
-		auto number = msg.byPs % 10;
-		auto color = msg.byPs / 10;
+//		auto number = msg.byPs % 10;
+//		auto color = msg.byPs / 10;
 
 		GameManager::getInstance()->playSexNumberSound(msg.byUser, msg.byPs);
 		auto dir = getUserDir(msg.byUser);
@@ -1073,5 +1079,11 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
  		_callBack->reconnected(vvHandCard,  vvOutCard,  vvvActionCard, vvMenPai, vTrusteeshep, vQueMen, ntDir);
 	}
 
+    void GameTableLogic::deal_THING_MAI_MA(void* object, int objectsize)
+    {
+        assert(sizeof(tagMaiMa)==objectsize);
+        auto data = (tagMaiMa*)object;
+        
+    }
 
 }

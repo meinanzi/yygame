@@ -56,7 +56,8 @@ namespace ZYHZ
 		virtual void dealOnNotifyCanCelBlockResp();																				// 取消拦牌
 		virtual void dealOnNotifyZhongNiaoResp(const ZhongNiao& msg);											// 中鸟
 
-		
+        // 买码
+        void deal_THING_MAI_MA(void* object, int objectsize);
 	public:			// 
 		void safeQuit();
 		const GameStationDataEx& getGameStation() { return _msgGameStationDataEx; }
