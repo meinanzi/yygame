@@ -1,12 +1,12 @@
-<GameProjectFile>
-  <PropertyGroup Type="Scene" Name="MainScene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="2.3.2.3" />
+<GameFile>
+  <PropertyGroup Name="MainScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="RootPanel" ActionTag="1073326268" Tag="122" IconVisible="False" LeftMargin="-0.4100" RightMargin="0.4100" TopMargin="-0.5948" BottomMargin="0.5948" TouchEnable="True" BackColorAlpha="108" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1280" Scale9Height="720" ctype="PanelObjectData">
+          <AbstractNodeData Name="RootPanel" ActionTag="1073326268" Tag="122" IconVisible="False" LeftMargin="-0.4100" RightMargin="0.4100" TopMargin="-0.5948" BottomMargin="0.5948" TouchEnable="True" ClipAble="False" BackColorAlpha="108" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1280" Scale9Height="720" ctype="PanelObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <Children>
               <AbstractNodeData Name="waiting" ActionTag="1088462147" VisibleForFrame="False" Tag="127" IconVisible="False" LeftMargin="541.9529" RightMargin="556.0471" TopMargin="347.3398" BottomMargin="329.6602" ctype="SpriteObjectData">
@@ -555,7 +555,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="handPanel1" ActionTag="945483122" Tag="57" IconVisible="False" LeftMargin="65.9859" RightMargin="494.0141" TopMargin="582.8587" BottomMargin="56.1413" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="handPanel1" ActionTag="945483122" Tag="57" IconVisible="False" LeftMargin="65.9859" RightMargin="494.0141" TopMargin="582.8587" BottomMargin="56.1413" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="720.0000" Y="81.0000" />
                 <AnchorPoint />
                 <Position X="65.9859" Y="56.1413" />
@@ -568,7 +568,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="handPanel4" ActionTag="-837769495" Tag="58" IconVisible="False" LeftMargin="1014.9917" RightMargin="245.0083" TopMargin="167.0170" BottomMargin="152.9830" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="handPanel4" ActionTag="-837769495" Tag="58" IconVisible="False" LeftMargin="1014.9917" RightMargin="245.0083" TopMargin="167.0170" BottomMargin="152.9830" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="20.0000" Y="400.0000" />
                 <AnchorPoint />
                 <Position X="1014.9917" Y="152.9830" />
@@ -581,7 +581,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="handPanel3" ActionTag="-658796711" Tag="59" IconVisible="False" LeftMargin="418.4149" RightMargin="425.5851" TopMargin="29.2314" BottomMargin="644.7686" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="handPanel3" ActionTag="-658796711" Tag="59" IconVisible="False" LeftMargin="418.4149" RightMargin="425.5851" TopMargin="29.2314" BottomMargin="644.7686" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="436.0000" Y="46.0000" />
                 <AnchorPoint />
                 <Position X="418.4149" Y="644.7686" />
@@ -594,7 +594,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="handPanel2" ActionTag="335789300" Tag="154" IconVisible="False" LeftMargin="247.8130" RightMargin="1013.1870" TopMargin="105.3064" BottomMargin="214.6936" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="handPanel2" ActionTag="335789300" Tag="154" IconVisible="False" LeftMargin="247.8130" RightMargin="1013.1870" TopMargin="105.3064" BottomMargin="214.6936" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="19.0000" Y="400.0000" />
                 <AnchorPoint />
                 <Position X="247.8130" Y="214.6936" />
@@ -607,7 +607,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="bottomPanel1" ActionTag="-1505891053" Tag="169" IconVisible="False" LeftMargin="425.2168" RightMargin="424.7832" TopMargin="529.9423" BottomMargin="134.0577" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="bottomPanel1" ActionTag="-1505891053" Tag="169" IconVisible="False" LeftMargin="425.2168" RightMargin="424.7832" TopMargin="529.9423" BottomMargin="134.0577" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="430.0000" Y="56.0000" />
                 <AnchorPoint />
                 <Position X="425.2168" Y="134.0577" />
@@ -620,7 +620,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="bottomPanel4" ActionTag="1516680648" Tag="227" IconVisible="False" LeftMargin="896.3522" RightMargin="345.6478" TopMargin="174.3064" BottomMargin="214.6936" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="bottomPanel4" ActionTag="1516680648" Tag="227" IconVisible="False" LeftMargin="896.3522" RightMargin="345.6478" TopMargin="174.3064" BottomMargin="214.6936" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="38.0000" Y="331.0000" />
                 <AnchorPoint />
                 <Position X="896.3522" Y="214.6936" />
@@ -633,7 +633,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="bottomPanel2" ActionTag="1068012963" Tag="266" IconVisible="False" LeftMargin="359.2105" RightMargin="882.7895" TopMargin="208.4045" BottomMargin="180.5955" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="bottomPanel2" ActionTag="1068012963" Tag="266" IconVisible="False" LeftMargin="359.2105" RightMargin="882.7895" TopMargin="208.4045" BottomMargin="180.5955" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="38.0000" Y="331.0000" />
                 <AnchorPoint />
                 <Position X="359.2105" Y="180.5955" />
@@ -646,7 +646,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="bottomPanel3" ActionTag="-1967610213" Tag="265" IconVisible="False" LeftMargin="423.8361" RightMargin="426.1639" TopMargin="112.3942" BottomMargin="551.6058" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="bottomPanel3" ActionTag="-1967610213" Tag="265" IconVisible="False" LeftMargin="423.8361" RightMargin="426.1639" TopMargin="112.3942" BottomMargin="551.6058" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="430.0000" Y="56.0000" />
                 <AnchorPoint />
                 <Position X="423.8361" Y="551.6058" />
@@ -659,7 +659,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="outCardPanel" ActionTag="-529942245" VisibleForFrame="False" Tag="300" IconVisible="False" LeftMargin="422.4962" RightMargin="407.5038" TopMargin="187.7657" BottomMargin="247.2343" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="outCardPanel" ActionTag="-529942245" VisibleForFrame="False" Tag="300" IconVisible="False" LeftMargin="422.4962" RightMargin="407.5038" TopMargin="187.7657" BottomMargin="247.2343" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Size X="450.0000" Y="285.0000" />
                 <AnchorPoint />
                 <Position X="422.4962" Y="247.2343" />
@@ -2536,4 +2536,4 @@
       </ObjectData>
     </Content>
   </Content>
-</GameProjectFile>
+</GameFile>
