@@ -113,6 +113,7 @@
               <Image Name="name_bk.png" />
               <Image Name="number_87.png" />
               <Image Name="number-10.png" />
+              <Project Name="maima.csd" Type="Scene" />
             </Folder>
           </Folder>
         </Folder>
