@@ -47,7 +47,13 @@ namespace ZYHZ
 			std::vector<bool>& vTrusteeshep,
 			std::vector<INT>& vQueMen,
 			sitDir& ntDir) override;   // 断线重连
+        
+        // 买码
+        virtual void showMaimaOption(BYTE timer, tagMaiMa* data) override;
 private:
+        int _maimaCount;
+        tagMaiMa _maimaData;
+        
 	bool _autoBegin;	
 
 	std::vector<std::vector<INT>> _vecStartSendCard;

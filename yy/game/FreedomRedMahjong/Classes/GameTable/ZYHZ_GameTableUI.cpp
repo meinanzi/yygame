@@ -125,4 +125,18 @@ namespace ZYHZ
 	}
 
 	/******************************************************************/
+    
+    void GameTableUI::showMaimaOption(BYTE timer, tagMaiMa* data)
+    {
+        auto node = CSLoader::createNode(COCOS_PATH + "maima.csb");
+        
+        auto maimacall = [this]()
+        {
+            if( _maimaCount < _maimaData.byCount )
+            {
+                _maimaCount++;
+            }
+        };
+        
+    }
 };

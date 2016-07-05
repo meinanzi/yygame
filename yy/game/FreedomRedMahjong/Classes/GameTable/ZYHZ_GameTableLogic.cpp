@@ -1084,6 +1084,7 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
         assert(sizeof(tagMaiMa)==objectsize);
         auto data = (tagMaiMa*)object;
         
+        _tableUICallBack->showMaimaOption(30, data);
     }
 
 }

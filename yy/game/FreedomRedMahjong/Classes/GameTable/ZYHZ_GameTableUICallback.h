@@ -32,6 +32,9 @@ namespace ZYHZ
 			std::vector<bool>& vTrusteeshep,
 			std::vector<INT>& vQueMen,
 			sitDir& ntDir) = 0;   // 断线重连
+        
+        // 买码
+        virtual void showMaimaOption(BYTE timer, tagMaiMa* data) = 0;
 	};
 }
 
