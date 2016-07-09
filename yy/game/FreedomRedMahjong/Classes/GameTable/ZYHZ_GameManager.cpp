@@ -2751,7 +2751,7 @@ namespace ZYHZ
 			card->getCardSprite()->setGlobalZOrder(topZorder);
 			_vecNiao.push_back(card);
 
-			if (card->getCardNumber() == 1 || card->getCardNumber() == 9 || (card->getCardNumber() == 5 && card->getCardColor() != mahjongColor::FENG))
+			if (card->getCardNumber() == 2 || card->getCardNumber() == 3 || (card->getCardNumber() == CMjEnum::MJ_TYPE_ZHONG/*5 && card->getCardColor() != mahjongColor::FENG*/))
 			{
 				//Á£×ÓÐ§¹û
 				ParticleSystem *partic = ParticleSystemQuad::create("FreedomRedMahjong/particle/majiang.plist");

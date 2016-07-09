@@ -3,7 +3,7 @@
 #include "ZYHZ_GameTableUICallback.h"
 #include "ZYHZ_GameManager.h"
 #include "ZYHZ_Card.h"
-//#include "tinyxml2/tinyxml2.h"
+#include "tinyxml2/tinyxml2.h"
 
 namespace ZYHZ
 {
