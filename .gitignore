@@ -4,3 +4,4 @@ project.xcworkspace/
 libs/
 ~$*
 *.udf
+*.Dir
