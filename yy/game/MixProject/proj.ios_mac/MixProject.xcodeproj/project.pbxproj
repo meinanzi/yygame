@@ -674,20 +674,20 @@
 		C227B7031D10F34D00903468 /* GameLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLogic.cpp; sourceTree = "<group>"; };
 		C227B7041D10F34D00903468 /* GameLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
 		C227B7111D10F35E00903468 /* ZYHZ_MessageHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MessageHead.h; sourceTree = "<group>"; };
-		C227B7131D10F35E00903468 /* ZYHZ_Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_Card.cpp; sourceTree = "<group>"; };
-		C227B7141D10F35E00903468 /* ZYHZ_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_Card.h; sourceTree = "<group>"; };
-		C227B7151D10F35E00903468 /* ZYHZ_CardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_CardPool.cpp; sourceTree = "<group>"; };
-		C227B7161D10F35E00903468 /* ZYHZ_CardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_CardPool.h; sourceTree = "<group>"; };
+		C227B7131D10F35E00903468 /* ZYHZ_Card.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_Card.cpp; sourceTree = "<group>"; };
+		C227B7141D10F35E00903468 /* ZYHZ_Card.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = ZYHZ_Card.h; sourceTree = "<group>"; };
+		C227B7151D10F35E00903468 /* ZYHZ_CardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_CardPool.cpp; sourceTree = "<group>"; };
+		C227B7161D10F35E00903468 /* ZYHZ_CardPool.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = ZYHZ_CardPool.h; sourceTree = "<group>"; };
 		C227B7171D10F35E00903468 /* ZYHZ_CardPoolUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_CardPoolUser.cpp; sourceTree = "<group>"; };
 		C227B7181D10F35E00903468 /* ZYHZ_CardPoolUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_CardPoolUser.h; sourceTree = "<group>"; };
 		C227B7191D10F35E00903468 /* ZYHZ_ConcealedKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_ConcealedKong.cpp; sourceTree = "<group>"; };
 		C227B71A1D10F35E00903468 /* ZYHZ_ConcealedKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_ConcealedKong.h; sourceTree = "<group>"; };
-		C227B71B1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_EastMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B71B1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_EastMahjongCardPool.cpp; sourceTree = "<group>"; };
 		C227B71C1D10F35E00903468 /* ZYHZ_EastMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_EastMahjongCardPool.h; sourceTree = "<group>"; };
 		C227B71D1D10F35E00903468 /* ZYHZ_Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_Factory.cpp; sourceTree = "<group>"; };
 		C227B71E1D10F35E00903468 /* ZYHZ_Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_Factory.h; sourceTree = "<group>"; };
 		C227B71F1D10F35E00903468 /* ZYHZ_GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_GameManager.cpp; sourceTree = "<group>"; };
-		C227B7201D10F35E00903468 /* ZYHZ_GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameManager.h; sourceTree = "<group>"; };
+		C227B7201D10F35E00903468 /* ZYHZ_GameManager.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameManager.h; sourceTree = "<group>"; };
 		C227B7211D10F35E00903468 /* ZYHZ_GameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_GameTableLogic.cpp; sourceTree = "<group>"; };
 		C227B7221D10F35E00903468 /* ZYHZ_GameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameTableLogic.h; sourceTree = "<group>"; };
 		C227B7231D10F35E00903468 /* ZYHZ_GameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_GameTableUI.cpp; sourceTree = "<group>"; };
@@ -695,7 +695,7 @@
 		C227B7251D10F35E00903468 /* ZYHZ_GameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_GameTableUICallback.h; sourceTree = "<group>"; };
 		C227B7261D10F35E00903468 /* ZYHZ_HuCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_HuCard.cpp; sourceTree = "<group>"; };
 		C227B7271D10F35E00903468 /* ZYHZ_HuCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_HuCard.h; sourceTree = "<group>"; };
-		C227B7281D10F35E00903468 /* ZYHZ_MahjongCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MahjongCard.cpp; sourceTree = "<group>"; };
+		C227B7281D10F35E00903468 /* ZYHZ_MahjongCard.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MahjongCard.cpp; sourceTree = "<group>"; };
 		C227B7291D10F35E00903468 /* ZYHZ_MahjongCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MahjongCard.h; sourceTree = "<group>"; };
 		C227B72A1D10F35E00903468 /* ZYHZ_MahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_MahjongCardPool.cpp; sourceTree = "<group>"; };
 		C227B72B1D10F35E00903468 /* ZYHZ_MahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_MahjongCardPool.h; sourceTree = "<group>"; };
@@ -709,13 +709,13 @@
 		C227B7331D10F35E00903468 /* ZYHZ_PoolAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_PoolAction.h; sourceTree = "<group>"; };
 		C227B7341D10F35E00903468 /* ZYHZ_ResourceLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_ResourceLoader.cpp; sourceTree = "<group>"; };
 		C227B7351D10F35E00903468 /* ZYHZ_ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_ResourceLoader.h; sourceTree = "<group>"; };
-		C227B7361D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_SouthMahjongCardPool.cpp; sourceTree = "<group>"; };
-		C227B7371D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_SouthMahjongCardPool.h; sourceTree = "<group>"; };
-		C227B7381D10F35E00903468 /* ZYHZ_TouchCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_TouchCard.cpp; sourceTree = "<group>"; };
+		C227B7361D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_SouthMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B7371D10F35E00903468 /* ZYHZ_SouthMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = ZYHZ_SouthMahjongCardPool.h; sourceTree = "<group>"; };
+		C227B7381D10F35E00903468 /* ZYHZ_TouchCard.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_TouchCard.cpp; sourceTree = "<group>"; };
 		C227B7391D10F35E00903468 /* ZYHZ_TouchCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_TouchCard.h; sourceTree = "<group>"; };
-		C227B73A1D10F35E00903468 /* ZYHZ_TouchKong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_TouchKong.cpp; sourceTree = "<group>"; };
+		C227B73A1D10F35E00903468 /* ZYHZ_TouchKong.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_TouchKong.cpp; sourceTree = "<group>"; };
 		C227B73B1D10F35E00903468 /* ZYHZ_TouchKong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_TouchKong.h; sourceTree = "<group>"; };
-		C227B73C1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_WestMahjongCardPool.cpp; sourceTree = "<group>"; };
+		C227B73C1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = ZYHZ_WestMahjongCardPool.cpp; sourceTree = "<group>"; };
 		C227B73D1D10F35E00903468 /* ZYHZ_WestMahjongCardPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHZ_WestMahjongCardPool.h; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -2230,7 +2230,7 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.MixProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.MixProject;
 				PRODUCT_NAME = "MixProject-mobile";
 				PROVISIONING_PROFILE = "ce17c70e-8f26-4a46-9f06-142ffefa89e7";
 				SDKROOT = iphoneos;
@@ -2292,7 +2292,7 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.MixProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.MixProject;
 				PRODUCT_NAME = "MixProject-mobile";
 				PROVISIONING_PROFILE = "ce17c70e-8f26-4a46-9f06-142ffefa89e7";
 				SDKROOT = iphoneos;

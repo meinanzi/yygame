@@ -15,6 +15,11 @@ namespace ZYHZ
 
 		CREATE_CARD(MahjongCard);
 		virtual bool init(mahjongCreateType type, sitDir sitNo, INT number) override;
+        
+        std::string getSpriteframename() {return _spriteframename;};
+        
+    private:
+        std::string _spriteframename;
 	};
 
 

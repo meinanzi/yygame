@@ -35,6 +35,7 @@ namespace ZYHZ
         
         // 买码
         virtual void showMaimaOption(BYTE timer, tagMaiMa* data) = 0;
+        virtual void hideMaimaOption() = 0;
 	};
 }
 

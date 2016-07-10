@@ -330,6 +330,7 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 		default:
 			break;
 		}
+
 	}
 
 	void GameTableLogic::dealOnUserTuoguanResp(const UserTouGuan& msg)
@@ -469,9 +470,9 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 
 		GameManager::getInstance()->setHandCardFormServer(vvNum);
 
-		log("byPs  %d ", msg.byPs);
-		log("byUser  %d ", msg.byUser);
-		log("_msgtagZhuaPaiEx.byNext  %d ", _msgtagZhuaPaiEx.byNext);
+//		log("byPs  %d ", msg.byPs);
+//		log("byUser  %d ", msg.byUser);
+//		log("_msgtagZhuaPaiEx.byNext  %d ", _msgtagZhuaPaiEx.byNext);
 		auto dir = getUserDir(msg.byUser);                // 取方向
 		_callBack->catchCard(dir, msg.byPs, msg.bHead);                // 抓牌
 		// 开始出牌
@@ -639,6 +640,9 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 	void GameTableLogic::dealOnNotifyFinishResp(const tagCountFenEx& msg)
 	{
 		log("dealOnNotifyFinishResp : ");
+        
+        // 隐藏买码窗体
+        _callBack->hideMaimaOption();
 
 		_msgtagCountFenEx = msg;
 		GameManager::getInstance()->setPlayGame(false);
@@ -876,6 +880,9 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 
 	void GameTableLogic::dealOnNotifyZhongNiaoResp(const ZhongNiao& msg)
 	{
+        // 隐藏买码窗体
+        _callBack->hideMaimaOption();
+        
 		log("dealOnNotifyZhongNiaoResp : ");
 		std::vector<INT> vNiao;
 		for (auto i = 0; i < PLAY_COUNT; i++)
@@ -1084,7 +1091,7 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
         assert(sizeof(tagMaiMa)==objectsize);
         auto data = (tagMaiMa*)object;
         
-        _tableUICallBack->showMaimaOption(30, data);
+        _tableUICallBack->showMaimaOption(_msgGameStationDataEx.byThinkTime, data);
     }
 
 }

@@ -6,21 +6,10 @@
       <ObjectData Name="Scene" Tag="221" ctype="GameNodeObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="Game_Logo_3" CanEdit="False" ActionTag="1803899729" Tag="250" IconVisible="False" LeftMargin="-1.8316" RightMargin="1.8315" TopMargin="-4.2316" BottomMargin="4.2315" ctype="SpriteObjectData">
-            <Size X="1280.0000" Y="720.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="638.1684" Y="364.2315" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4986" Y="0.5059" />
-            <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="Games/FreedomRedMahjong/cocos/Game_Logo.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
-          </AbstractNodeData>
           <AbstractNodeData Name="Image_bg" CanEdit="False" ActionTag="725540627" Tag="222" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="110.0000" BottomMargin="110.0000" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="20" BottomEage="20" Scale9OriginX="22" Scale9OriginY="20" Scale9Width="24" Scale9Height="10" ctype="ImageViewObjectData">
             <Size X="900.0000" Y="500.0000" />
             <Children>
-              <AbstractNodeData Name="Image_3" ActionTag="891694418" Tag="226" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4138" TopMargin="85.6772" BottomMargin="336.3228" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3" ActionTag="891694418" Tag="226" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4137" TopMargin="85.6772" BottomMargin="336.3228" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="51.0000" Y="78.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="181.0863" Y="375.3228" />
@@ -100,7 +89,7 @@
                 <PreSize X="0.0567" Y="0.1560" />
                 <FileData Type="Normal" Path="Games/FreedomRedMahjong/cocos/mjbg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3_7" ActionTag="170751883" Tag="234" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4138" TopMargin="212.4005" BottomMargin="209.5995" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3_7" ActionTag="170751883" Tag="234" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4137" TopMargin="212.4005" BottomMargin="209.5995" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="51.0000" Y="78.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="181.0863" Y="248.5995" />
@@ -180,7 +169,7 @@
                 <PreSize X="0.0567" Y="0.1560" />
                 <FileData Type="Normal" Path="Games/FreedomRedMahjong/cocos/mjbg.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3_8" ActionTag="2095039892" Tag="242" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4138" TopMargin="341.2076" BottomMargin="80.7924" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3_8" ActionTag="2095039892" Tag="242" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4137" TopMargin="341.2076" BottomMargin="80.7924" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="51.0000" Y="78.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="181.0863" Y="119.7924" />
@@ -269,7 +258,7 @@
             <PreSize X="0.7031" Y="0.6944" />
             <FileData Type="Normal" Path="Games/FreedomRedMahjong/cocos/Image_naozhong.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_chance" ActionTag="1529207451" Tag="251" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="488.5000" RightMargin="488.5000" TopMargin="127.7059" BottomMargin="547.2941" FontSize="40" LabelText="您有4次买码机会" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_title" ActionTag="1529207451" Tag="251" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="488.5000" RightMargin="488.5000" TopMargin="127.7059" BottomMargin="547.2941" FontSize="40" LabelText="您有4次买码机会" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="303.0000" Y="45.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="640.0000" Y="569.7941" />

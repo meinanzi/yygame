@@ -54,10 +54,12 @@ namespace ZYHZ
 		virtual void dealOnAllBuHuaResp(const tagAllBuHuaEx& msg);													// 补花
 		virtual void dealOnNotifyOneBuHuaResp(const tagOneBuHuaEx& msg);									// 单人补花
 		virtual void dealOnNotifyCanCelBlockResp();																				// 取消拦牌
+//		virtual void dealOnNotifyMaiMaResp(const tagMaiMa &msg);													//买码
 		virtual void dealOnNotifyZhongNiaoResp(const ZhongNiao& msg);											// 中鸟
 
         // 买码
         void deal_THING_MAI_MA(void* object, int objectsize);
+
 	public:			// 
 		void safeQuit();
 		const GameStationDataEx& getGameStation() { return _msgGameStationDataEx; }
@@ -88,6 +90,7 @@ namespace ZYHZ
 		tagHuPaiEx _msgtagHuPaiEx;																/// 胡
 		tagDingQueEx _msgtagDingQueEx;														/// 定缺事件
 	    SuperStruct _msgSuperStruct;																/// 发牌器发牌
+		tagMaiMa	 _msgMaiMa;																		/// 买码数据包
 		tagCountFenEx _msgtagCountFenEx;													/// 算分：游戏结束		/// 强退结束游戏				
 
 	private:

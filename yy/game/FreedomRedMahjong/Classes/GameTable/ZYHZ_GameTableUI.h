@@ -1,4 +1,4 @@
-﻿#ifndef _ZYHZ_GAMETABLE_H
+#ifndef _ZYHZ_GAMETABLE_H
 #define _ZYHZ_GAMETABLE_H
 
 /*****************************************************/
@@ -50,9 +50,13 @@ namespace ZYHZ
         
         // 买码
         virtual void showMaimaOption(BYTE timer, tagMaiMa* data) override;
+        virtual void hideMaimaOption() override;
+        std::string getMjSpriteframeName(mahjongCreateType, sitDir, int);
 private:
         int _maimaCount;
         tagMaiMa _maimaData;
+        int _timer;
+        Node* _maimaNode;
         
 	bool _autoBegin;	
 

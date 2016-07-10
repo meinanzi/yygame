@@ -1312,7 +1312,7 @@ namespace ZYHZ
 		{
 			return;
 		}
-		log("catch begin : _lastCardIndex = %d _currCardIndex = %d", _lastCardIndex, _currCardIndex);
+//		log("catch begin : _lastCardIndex = %d _currCardIndex = %d", _lastCardIndex, _currCardIndex);
 		//resetDiKuang();
 		//_vecUser.at(INT(dir)-INT(sitDir::SOUTH_DIR))->getOwnPool()->setCanCheckAction(); // 重置可做动作
 		setCurrOperDir(dir);
@@ -1330,7 +1330,7 @@ namespace ZYHZ
 		{
 			card = tailCatchCard(dir, number);
 		}
-		log("catch end : _lastCardIndex = %d _currCardIndex = %d", _lastCardIndex, _currCardIndex);
+//		log("catch end : _lastCardIndex = %d _currCardIndex = %d", _lastCardIndex, _currCardIndex);
 	}
 
 	void GameManager::outCard(const sitDir& dir, const INT& number)

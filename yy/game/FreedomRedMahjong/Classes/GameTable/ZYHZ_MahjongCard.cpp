@@ -91,6 +91,8 @@ namespace ZYHZ
 		default:
 			break;
 		}
+        
+        _spriteframename = head;
 
 		_uiSp = PLIST_MAKE_A_NODE(head);
 		_uiSp->setVisible(true);
