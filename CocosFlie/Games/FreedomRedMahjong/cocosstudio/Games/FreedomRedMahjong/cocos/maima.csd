@@ -6,7 +6,17 @@
       <ObjectData Name="Scene" Tag="221" ctype="GameNodeObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="Image_bg" CanEdit="False" ActionTag="725540627" Tag="222" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="110.0000" BottomMargin="110.0000" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="20" BottomEage="20" Scale9OriginX="22" Scale9OriginY="20" Scale9Width="24" Scale9Height="10" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="524070782" Tag="30" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="110.0000" BottomMargin="110.0000" LeftEage="422" RightEage="422" TopEage="237" BottomEage="237" Scale9OriginX="422" Scale9OriginY="237" Scale9Width="436" Scale9Height="246" ctype="ImageViewObjectData">
+            <Size X="900.0000" Y="500.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="640.0000" Y="360.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5000" Y="0.5000" />
+            <PreSize X="0.7031" Y="0.6944" />
+            <FileData Type="Normal" Path="Games/FreedomRedMahjong/cocos/Game_Logo.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Image_bg" ActionTag="725540627" Tag="222" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="190.0000" RightMargin="190.0000" TopMargin="110.0000" BottomMargin="110.0000" Scale9Enable="True" LeftEage="22" RightEage="22" TopEage="20" BottomEage="20" Scale9OriginX="22" Scale9OriginY="20" Scale9Width="24" Scale9Height="10" ctype="ImageViewObjectData">
             <Size X="900.0000" Y="500.0000" />
             <Children>
               <AbstractNodeData Name="Image_3" ActionTag="891694418" Tag="226" IconVisible="False" LeftMargin="155.5863" RightMargin="693.4137" TopMargin="85.6772" BottomMargin="336.3228" LeftEage="16" RightEage="16" TopEage="25" BottomEage="25" Scale9OriginX="16" Scale9OriginY="25" Scale9Width="19" Scale9Height="28" ctype="ImageViewObjectData">
