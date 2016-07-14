@@ -1234,10 +1234,14 @@ namespace DZPoker
 			_uiCallback->noticeMessage(GBKToUtf8("买入成功才能进入牌局。"));
 		}
 
-		if(_tableInfo.bAutoCreate)
-		{
-			sendGameInfo();
-		}
+//		if(_tableInfo.bAutoCreate)
+//		{
+        if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME))
+        {
+            RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
+        }
+        sendGameInfo();
+//		}
 
 		// 显示牌桌信息
 		_uiCallback->showTableInfo(RoomLogic()->getSelectedRoom()->szGameRoomName);

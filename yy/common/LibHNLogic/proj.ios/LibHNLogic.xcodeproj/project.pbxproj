@@ -50,8 +50,8 @@
 		BC9E6C861B11A1F2002EEC6F /* HNPlatformRegist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformRegist.h; sourceTree = "<group>"; };
 		BC9E6C871B11A1F2002EEC6F /* HNPlatformRoomList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNPlatformRoomList.cpp; sourceTree = "<group>"; };
 		BC9E6C881B11A1F2002EEC6F /* HNPlatformRoomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlatformRoomList.h; sourceTree = "<group>"; };
-		BC9E6C8A1B11A1F2002EEC6F /* HNGameLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNGameLogicBase.cpp; sourceTree = "<group>"; };
-		BC9E6C8B1B11A1F2002EEC6F /* HNGameLogicBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNGameLogicBase.h; sourceTree = "<group>"; };
+		BC9E6C8A1B11A1F2002EEC6F /* HNGameLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = HNGameLogicBase.cpp; sourceTree = "<group>"; };
+		BC9E6C8B1B11A1F2002EEC6F /* HNGameLogicBase.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = HNGameLogicBase.h; sourceTree = "<group>"; };
 		BC9E6C8C1B11A1F2002EEC6F /* HNRoomDeskLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNRoomDeskLogic.cpp; sourceTree = "<group>"; };
 		BC9E6C8D1B11A1F2002EEC6F /* HNRoomDeskLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNRoomDeskLogic.h; sourceTree = "<group>"; };
 		BC9E6C8E1B11A1F2002EEC6F /* HNRoomLogicBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HNRoomLogicBase.cpp; sourceTree = "<group>"; };

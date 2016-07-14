@@ -365,9 +365,9 @@
 		7FB4D39E1BFDEDB700BD0311 /* LandlordGameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameNotice.h; sourceTree = "<group>"; };
 		7FB4D39F1BFDEDB700BD0311 /* LandlordGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGamePlayer.cpp; sourceTree = "<group>"; };
 		7FB4D3A01BFDEDB700BD0311 /* LandlordGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGamePlayer.h; sourceTree = "<group>"; };
-		7FB4D3A11BFDEDB700BD0311 /* LandlordGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableLogic.cpp; sourceTree = "<group>"; };
+		7FB4D3A11BFDEDB700BD0311 /* LandlordGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableLogic.cpp; sourceTree = "<group>"; };
 		7FB4D3A21BFDEDB700BD0311 /* LandlordGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableLogic.h; sourceTree = "<group>"; };
-		7FB4D3A31BFDEDB700BD0311 /* LandlordGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableUI.cpp; sourceTree = "<group>"; };
+		7FB4D3A31BFDEDB700BD0311 /* LandlordGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableUI.cpp; sourceTree = "<group>"; };
 		7FB4D3A41BFDEDB700BD0311 /* LandlordGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUI.h; sourceTree = "<group>"; };
 		7FB4D3A51BFDEDB700BD0311 /* LandlordGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUICallback.h; sourceTree = "<group>"; };
 		7FB4D3A61BFDEDB700BD0311 /* LandlordGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameUserMessageBox.cpp; sourceTree = "<group>"; };
@@ -662,10 +662,10 @@
 		C227B6F71D10F34D00903468 /* DZPokerGameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameNotice.h; sourceTree = "<group>"; };
 		C227B6F81D10F34D00903468 /* DZPokerGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGamePlayer.cpp; sourceTree = "<group>"; };
 		C227B6F91D10F34D00903468 /* DZPokerGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGamePlayer.h; sourceTree = "<group>"; };
-		C227B6FA1D10F34D00903468 /* DZPokerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameTableLogic.cpp; sourceTree = "<group>"; };
-		C227B6FB1D10F34D00903468 /* DZPokerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableLogic.h; sourceTree = "<group>"; };
-		C227B6FC1D10F34D00903468 /* DZPokerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameTableUI.cpp; sourceTree = "<group>"; };
-		C227B6FD1D10F34D00903468 /* DZPokerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableUI.h; sourceTree = "<group>"; };
+		C227B6FA1D10F34D00903468 /* DZPokerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6FB1D10F34D00903468 /* DZPokerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableLogic.h; sourceTree = "<group>"; };
+		C227B6FC1D10F34D00903468 /* DZPokerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6FD1D10F34D00903468 /* DZPokerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableUI.h; sourceTree = "<group>"; };
 		C227B6FE1D10F34D00903468 /* DZPokerGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameTableUICallback.h; sourceTree = "<group>"; };
 		C227B6FF1D10F34D00903468 /* DZPokerGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DZPokerGameUserMessageBox.cpp; sourceTree = "<group>"; };
 		C227B7001D10F34D00903468 /* DZPokerGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPokerGameUserMessageBox.h; sourceTree = "<group>"; };
