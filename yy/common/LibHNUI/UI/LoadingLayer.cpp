@@ -119,14 +119,15 @@ namespace HN
 		return true;
 	}
     
-    void LoadingLayer::setRemoveTimer(int timer)
+    void LoadingLayer::setRemoveTimer(int timer, std::function<void()> removecall)
     {
         this->runAction(Sequence::create(
             DelayTime::create(timer),
-            CallFunc::create([this]()
+            CallFunc::create([this, removecall]()
             {
-                _listener->onTouchBegan = [&](Touch* touch, Event* event)
+                _listener->onTouchBegan = [this, removecall](Touch* touch, Event* event)
                 {
+                    removecall();
                     this->removeFromParent();
                     return true;
                 };

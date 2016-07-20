@@ -19,7 +19,7 @@ namespace HN
 		void setText(const std::string& text);
 		CREATE_FUNC(LoadingLayer);
         
-        void setRemoveTimer(int timer);
+        void setRemoveTimer(int timer, std::function<void()> removecall = nullptr);
 	protected:
 		// 创建界面
 		void createDialog(const std::string& text, float fontSize, const std::string& image);	
