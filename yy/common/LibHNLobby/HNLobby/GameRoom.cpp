@@ -399,7 +399,9 @@ void GameRoom::onRoomLoginCallback(bool success, const std::string& message, UIN
 		}
 		else if (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME)		// 单排队机或者排队机+防作弊
 		{
-			LoadingLayer::createLoading(this, GBKToUtf8(allocation_table_please_wait_text), 22, LOADING);
+			auto loadlayer = LoadingLayer::createLoading(this, GBKToUtf8(allocation_table_please_wait_text), 22, LOADING);
+            loadlayer->setRemoveTimer(5);
+            
 			// 进入排队游戏
 			_roomLogic->requestJoinQueue();
 		}
