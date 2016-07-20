@@ -941,7 +941,8 @@ namespace HN
 		auto queueData = (int*)object;										
 		auto deskNo = (BYTE)queueData[0];
 		bool isFind = false;
-		for (int i = 0; i < 3; i++)
+        auto playcount = RoomLogic()->getSelectedRoom()->uDeskPeople;
+		for (int i = 0; i < playcount; i++)
 		{
 			if (PlatformLogic()->loginResult.dwUserID == queueData[3*i+1])
 			{
@@ -951,7 +952,7 @@ namespace HN
 		std::vector<QUEUE_USER_SIT_RESULT *> queueUsers;
 		if (isFind)
 		{
-			for (int i = 0; i < 3; i++)
+			for (int i = 0; i < playcount; i++)
 			{
 				QUEUE_USER_SIT_RESULT * tmp = new QUEUE_USER_SIT_RESULT;
 				tmp->dwUserID = queueData[3*i+1];
