@@ -47,7 +47,8 @@ public:
 	virtual void showLoading(bool bVisible) = 0;
 	virtual void rotateSeat(int offset) = 0;
 	virtual void alertDialog(const std::string& title, const std::string& message) = 0;
-	virtual void showNotice(const std::string &message) = 0;
+	virtual void showNotice(const std::string &message, bool bAction = true) = 0;
+	virtual void showQueNotice(const std::string &message, bool bAction = true) = 0;
 	virtual void showUserProfit(BYTE seatNo, LLONG money) = 0;
 	virtual void showTableInfo(const std::string& tableName) = 0;
 	// 启动倒计时
@@ -96,6 +97,9 @@ public:
 	 */
 	virtual void showCompareResult(BYTE winSeatNo, BYTE loseSeatNo) = 0;
 	virtual void showCompareOption(const std::vector<bool> seats) = 0;
+
+
+	virtual void addContestUI() = 0;															//添加比赛局数、排名UI
 };
 }
 

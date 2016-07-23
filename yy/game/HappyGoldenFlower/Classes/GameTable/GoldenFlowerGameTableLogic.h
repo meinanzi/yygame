@@ -74,6 +74,9 @@ namespace goldenflower
 
 		// 玩家坐下（平台消息）
 		virtual void dealUserSitResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user);
+		
+		//玩家排队坐下
+		virtual void dealQueueUserSitMessage(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& user);
 
 		// 玩家站起（平台消息）
 		virtual void dealUserUpResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user);
@@ -92,8 +95,24 @@ namespace goldenflower
 
 		// 游戏状态信息（游戏中）
 		void dealPlayGameResp(S_C_GameStation_PlayGame* pData);
-	public:
+
+		//--------------------------比赛接口---------------------
+		//比赛信息广播
+		virtual void dealGameContestNotic(MSG_GR_I_ContestInfo* contestInfo) override;
+		//用户比赛信息
+		virtual void dealGameUserContset(MSG_GR_ContestChange* contestChange) override;
+		 //比赛淘汰
+		virtual void dealGameContestKick() override;
+		 //等待比赛结束
+		virtual void dealGameContestWaitOver() override;
+		 //比赛结束
+		virtual void dealGameContestOver(MSG_GR_ContestAward* contestAward) override;
+
 	
+
+	public:
+		//加入排队
+		void sendQueue();
 		// 站起
 		void sendStandUp();
 	
@@ -102,6 +121,9 @@ namespace goldenflower
 
 		// 准备
 		void sendUserReady();
+
+		//进入游戏
+		void enterGame();
 
 		// 加载用户
 		void loadUsers();
@@ -254,6 +276,14 @@ namespace goldenflower
 
 		public:
 			std::string _userName[PLAY_COUNT];                                     //玩家昵称
+		public:
+			//记录是否为比赛场准备
+			bool _isReadyQueue;
+			// 是否比赛场
+			bool	_bContestRoom;
+			//是否比赛结束 
+			bool	_bContestEnd;
+
 	};
 }
 

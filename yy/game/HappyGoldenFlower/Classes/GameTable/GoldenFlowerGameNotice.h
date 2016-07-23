@@ -21,7 +21,8 @@ public:
 	 */
 	static GameNotice* create(cocos2d::Node* parent, std::string noticeMsg);
 	bool init(cocos2d::Node* parent, std::string& noticeMsg);
-	void show();
+	void show(bool bAction = true);
+	void hide();
 private:
 	HNSprite* _bg;
 	cocos2d::Node* _parent;

@@ -1,6 +1,5 @@
 #include "GoldenFlowerGameTableUI.h"
 #include "GoldenFlowerGameTableLogic.h"
-#include "GoldenFlowerGameNotice.h"
 #include "GoldenFlowerGameDashboard.h"
 #include "GoldenFlowerGameUserMessageBox.h"
 
@@ -88,7 +87,11 @@ bool GameTableUI::init(BYTE bDeskIndex, bool bAutoCreate)
 	//牌桌逻辑类
 	_tableLogic = new GameTableLogic(this, bDeskIndex, bAutoCreate);
 	_tableLogic->clearDesk();
-	_tableLogic->loadUsers();
+	
+
+	_tableLogic->enterGame();
+
+	_QueIngNotice = nullptr;
 
 	return true;
 }
@@ -154,9 +157,18 @@ void GameTableUI::menuClickCallback(cocos2d::Ref* pSender, Widget::TouchEventTyp
 	std::string name = ptr->getName();
 	if (name.compare("btn_start") == 0)
 	{
-		ptr->setVisible(false);
-		_tableLogic->sendAgreeGame();
-		IStartTimer(0);
+		// 排队机 就加入排队
+		if ( RoomLogic()->getRoomRule() & GRR_QUEUE_GAME)
+		{
+			// 进入排队游戏
+			_tableLogic->sendQueue();
+		}
+		else
+		{
+			ptr->setVisible(false);
+			_tableLogic->sendAgreeGame();
+			IStartTimer(0);
+		}
 	}
 	else if(name.compare("btn_cardtype") == 0)
 	{
@@ -491,6 +503,7 @@ void GameTableUI::showUser(BYTE seatNo, bool bMe, bool sex)
 		}
 	}
 }
+
 
 void GameTableUI::showUserUp(BYTE seatNo, bool bMe)
 {
@@ -853,7 +866,15 @@ void GameTableUI::clearInvalidUser()
 
 void GameTableUI::leaveDesk()
 {
-	GamePlatform::returnPlatform(LayerType::DESKLIST);
+	if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME) || RoomLogic()->getRoomRule() & GRR_CONTEST || (RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST))
+	{
+		RoomLogic()->close();
+		GamePlatform::returnPlatform(LayerType::ROOMLIST);
+	}
+	else
+	{
+		GamePlatform::returnPlatform(LayerType::DESKLIST);
+	}
 }
 
 //显示牌桌准备
@@ -952,11 +973,36 @@ void GameTableUI::alertDialog(const std::string& title, const std::string& messa
 
 }
 
-void GameTableUI::showNotice(const std::string &message)
+void GameTableUI::showNotice(const std::string &message, bool bAction)
 {
 	GameNotice* notice = GameNotice::create(this, message);
 	this->reorderChild(notice, MAX_ZORDER);
-	notice->show();
+	notice->show(bAction);
+}
+
+void GameTableUI::showQueNotice(const std::string &message, bool bShow)
+{
+	if (bShow)
+	{
+		if (nullptr == _QueIngNotice)
+		{
+			_QueIngNotice = GameNotice::create(this, message);
+			this->reorderChild(_QueIngNotice, MAX_ZORDER);
+			_QueIngNotice->show(false);
+		}
+		else
+		{
+			_QueIngNotice->show(false);
+		}
+	}
+	else
+	{
+		if (_QueIngNotice)
+		{
+			_QueIngNotice->hide();
+			_QueIngNotice = nullptr;
+		}
+	}
 }
 
 void GameTableUI::showUserProfit(BYTE seatNo, LLONG money)
@@ -1740,6 +1786,30 @@ Vec2 GameTableUI::getCardPosition(BYTE seatNo)
 {
 	return _tableUI.iCard[seatNo]->getPosition();
 }
+
+
+/*--------------------------------比赛系列-------------------------------*/
+void GameTableUI::addContestUI()
+{
+	ArmatureDataManager::getInstance()->addArmatureFileInfo("landlord/game/animation/huPaiAnimation.ExportJson");
+
+	auto size = Director::getInstance()->getWinSize();
+	auto contestIndex = Text::create();
+	contestIndex->setAnchorPoint(Vec2(1.0, 0.5));
+	contestIndex->setPosition(Vec2(size.width - 10, size.height - 20));
+	addChild(contestIndex);
+	contestIndex->setFontSize(23);
+	contestIndex->setName("TextJu");
+	contestIndex->setString(GBKToUtf8("第 1 局"));
+
+	auto PaiMing = Text::create();
+	PaiMing->setAnchorPoint(Vec2(1.0, 0.5));
+	PaiMing->setPosition(Vec2(size.width - 10, size.height - 50));
+	addChild(PaiMing);
+	PaiMing->setFontSize(23);
+	PaiMing->setName("PaiMing");
+}
+
 
 
 }

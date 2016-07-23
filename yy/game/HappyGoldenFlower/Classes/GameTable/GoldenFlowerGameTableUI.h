@@ -6,6 +6,7 @@
 #include "GoldenFlowerPokerCard.h"
 #include "GoldenFlowerGameDealerUI.h"
 #include "GoldenFlowerGameCardType.h"
+#include "GoldenFlowerGameNotice.h"
 
 #include "HNNetExport.h"
 #include "cocos2d.h"
@@ -105,6 +106,8 @@ private:
 	TTableUI _tableUI;
 	std::vector<PokerCard *> _vecCard;
 	int _visibleWidth, _visibleHeight;
+
+	GameNotice* _QueIngNotice;			//排队提示
 private:
 	virtual bool onTouchBegan(Touch *touch, Event *unused_event);
 private:
@@ -131,6 +134,11 @@ public:
 	void addNote(LLONG money);
 	void addBet(int multiple);
 	void getReady();
+
+public:	//比赛系列
+	virtual void addContestUI() override;											//添加比赛局数、排名UI
+
+	
 public:
 	/*
 	 * dispatch user hand card.
@@ -179,7 +187,8 @@ public:
 	virtual void showLoading(bool bVisible);
 	virtual void rotateSeat(int offset);
 	virtual void alertDialog(const std::string& title, const std::string& message);
-	virtual void showNotice(const std::string &message);
+	virtual void showNotice(const std::string &message, bool bAction = true);
+	virtual void showQueNotice(const std::string &message, bool bAction = true);
 	virtual void showUserProfit(BYTE seatNo, LLONG money);
 	virtual void showTableInfo(const std::string& tableName);
 	// 启动倒计时

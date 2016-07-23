@@ -63,17 +63,27 @@ namespace goldenflower
 		return true;
 	}
 
-	void GameNotice::show()
+	void GameNotice::show(bool bAction)
 	{
 		auto winSize = Director::getInstance()->getWinSize();
 		this->setPosition(winSize.width * 0.5f, winSize.height * 0.62f);
-		this->setScale(0);
+		this->setScale(bAction?0.0f:1.5f);
 		_parent->addChild(this);
+	
 
-		auto come  = ScaleTo::create(0.3f, 1.0f);
-		auto leave = ScaleTo::create(0.3f, 0.0f);
-		auto seq = Sequence::create(come, DelayTime::create(2.0f), leave, RemoveSelf::create(true), nullptr);
-		this->runAction(seq);
+		if (bAction)
+		{
+			auto come = ScaleTo::create(0.3f, 1.0f);
+			auto leave = ScaleTo::create(0.3f, 0.0f);
+			auto seq = Sequence::create(come, DelayTime::create(2.0f), leave, RemoveSelf::create(true), nullptr);
+			this->runAction(seq);
+		}
+	}
+
+	void GameNotice::hide()
+	{
+		this->setVisible(false);
+		_parent->removeChild(this);
 	}
 }
 
