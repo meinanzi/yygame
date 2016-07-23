@@ -127,7 +127,8 @@ namespace HN
             {
                 _listener->onTouchBegan = [this, removecall](Touch* touch, Event* event)
                 {
-                    removecall();
+                    if(removecall)
+                        removecall();
                     this->removeFromParent();
                     return true;
                 };
