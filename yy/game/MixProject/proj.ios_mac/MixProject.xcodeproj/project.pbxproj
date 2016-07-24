@@ -532,9 +532,9 @@
 		C227B62E1D10F2E900903468 /* GoldenFlowerGameNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameNotice.h; sourceTree = "<group>"; };
 		C227B62F1D10F2E900903468 /* GoldenFlowerGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGamePlayer.cpp; sourceTree = "<group>"; };
 		C227B6301D10F2E900903468 /* GoldenFlowerGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGamePlayer.h; sourceTree = "<group>"; };
-		C227B6311D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableLogic.cpp; sourceTree = "<group>"; };
+		C227B6311D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableLogic.cpp; sourceTree = "<group>"; };
 		C227B6321D10F2E900903468 /* GoldenFlowerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableLogic.h; sourceTree = "<group>"; };
-		C227B6331D10F2E900903468 /* GoldenFlowerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableUI.cpp; sourceTree = "<group>"; };
+		C227B6331D10F2E900903468 /* GoldenFlowerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableUI.cpp; sourceTree = "<group>"; };
 		C227B6341D10F2E900903468 /* GoldenFlowerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUI.h; sourceTree = "<group>"; };
 		C227B6351D10F2E900903468 /* GoldenFlowerGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUICallback.h; sourceTree = "<group>"; };
 		C227B6361D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameUserMessageBox.cpp; sourceTree = "<group>"; };
@@ -1840,7 +1840,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 94L6PJUC39;
+						DevelopmentTeam = XFA9C6XUR7;
 					};
 				};
 			};
@@ -2180,7 +2180,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: huihui zheng (Z98AX3ZA4T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2230,9 +2230,9 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.MixProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.yygame;
 				PRODUCT_NAME = "MixProject-mobile";
-				PROVISIONING_PROFILE = "ce17c70e-8f26-4a46-9f06-142ffefa89e7";
+				PROVISIONING_PROFILE = "55e9e489-6bc3-4900-bb8e-6cd470f15175";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -2244,7 +2244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: huihui zheng (Z98AX3ZA4T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2292,9 +2292,9 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.MixProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.yygame;
 				PRODUCT_NAME = "MixProject-mobile";
-				PROVISIONING_PROFILE = "ce17c70e-8f26-4a46-9f06-142ffefa89e7";
+				PROVISIONING_PROFILE = "55e9e489-6bc3-4900-bb8e-6cd470f15175";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
