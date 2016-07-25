@@ -240,4 +240,9 @@ namespace ZYHZ
         }
         return sfname;
     }
+    
+    void GameTableUI::showStartBtn(bool visible)
+    {
+        
+    }
 };

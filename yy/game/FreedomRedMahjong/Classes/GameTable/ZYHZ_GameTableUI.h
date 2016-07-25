@@ -52,6 +52,8 @@ namespace ZYHZ
         virtual void showMaimaOption(BYTE timer, tagMaiMa* data) override;
         virtual void hideMaimaOption() override;
         std::string getMjSpriteframeName(mahjongCreateType, sitDir, int);
+        
+        virtual void showStartBtn(bool visible) override;
 private:
         int _maimaCount;
         tagMaiMa _maimaData;
