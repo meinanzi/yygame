@@ -1236,10 +1236,6 @@ namespace DZPoker
 
 //		if(_tableInfo.bAutoCreate)
 //		{
-        if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME))
-        {
-            RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
-        }
         sendGameInfo();
 //		}
 
