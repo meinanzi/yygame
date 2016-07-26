@@ -13,6 +13,10 @@ namespace ZYHZ
 		GameTableLogic(GameTableUICallBack* tableUICallBack, BYTE deskNo, bool bAutoCreate);
 		virtual ~GameTableLogic();
 
+    public:
+        bool isQueueGame();
+        void continueQueueGame();
+        
 	public:
 		virtual void dealGameStartResp(BYTE bDeskNO) override;
 		virtual void dealGameEndResp(BYTE bDeskNO) override;
@@ -107,6 +111,9 @@ namespace ZYHZ
 
 	private:
 		static GameTableLogic* _instance;
+        
+        // 排队标志, true表示排队中
+        bool _queueflag;
 		
 	};
 

@@ -400,11 +400,16 @@ namespace ZYHZ
 	{
 		switch (type)
 		{
-		case cocos2d::ui::Widget::TouchEventType::BEGAN:
+            case cocos2d::ui::Widget::TouchEventType::ENDED:
 			{
 				COCOS_NODE(Sprite, "finish")->setVisible(false);
 				COCOS_NODE(Sprite, "finish")->stopAllActions();
-				GTLogic()->sendAgreeGame();
+                
+                if(GameTableLogic::getInstance()->isQueueGame())
+                    ;
+                else
+                    GTLogic()->sendAgreeGame();
+                
 				break;
 			}
 		default:

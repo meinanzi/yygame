@@ -19,6 +19,7 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 	GameTableLogic::GameTableLogic(GameTableUICallBack* tableUICallBack, BYTE deskNo, bool bAutoCreate) 
 		: HNGameLogicBase(deskNo, PLAY_COUNT, bAutoCreate, tableUICallBack)
 		, _tableUICallBack(tableUICallBack)
+        , _queueflag(false)
 	{
 		_callBack = (GameTableUI *)_tableUICallBack;
 		_instance = this;
@@ -70,10 +71,18 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 		{
 			COCOS_NODE(Sprite, StringUtils::format("zhuang%d", i))->setVisible(false);          // 庄家
 		}
+        
 		// 清除本地界面的ui显示
 		if (userSit->dwUserID == _userInfo.dwUserID)
 		{
-			_callBack->dealLeaveDesk();
+            if(isQueueGame())
+            {
+                RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
+            }
+            else
+            {
+                _callBack->dealLeaveDesk();
+            }
 		}
 		else
 		{
@@ -83,11 +92,17 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 		}
 	}
 
+    
 
 	// 游戏状态
 	void GameTableLogic::dealGameStationResp(void* object, INT objectSize)
 	{
 		setGameStation(object, objectSize);
+        
+        if(isQueueGame())
+        {
+            _callBack->showStartBtn(false);
+        }
 	}
 
 	// 游戏消息（游戏的主体消息来自这里）
@@ -1092,6 +1107,17 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
         auto data = (tagMaiMa*)object;
         
         _tableUICallBack->showMaimaOption(_msgGameStationDataEx.byThinkTime, data);
+    }
+    
+    bool GameTableLogic::isQueueGame()
+    {
+        return (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME);
+    }
+    
+    void GameTableLogic::continueQueueGame()
+    {
+        _queueflag = true;
+        sendUserUp();
     }
 
 }

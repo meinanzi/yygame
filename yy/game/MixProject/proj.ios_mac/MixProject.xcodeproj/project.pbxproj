@@ -366,7 +366,7 @@
 		7FB4D39F1BFDEDB700BD0311 /* LandlordGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGamePlayer.cpp; sourceTree = "<group>"; };
 		7FB4D3A01BFDEDB700BD0311 /* LandlordGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGamePlayer.h; sourceTree = "<group>"; };
 		7FB4D3A11BFDEDB700BD0311 /* LandlordGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableLogic.cpp; sourceTree = "<group>"; };
-		7FB4D3A21BFDEDB700BD0311 /* LandlordGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableLogic.h; sourceTree = "<group>"; };
+		7FB4D3A21BFDEDB700BD0311 /* LandlordGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableLogic.h; sourceTree = "<group>"; };
 		7FB4D3A31BFDEDB700BD0311 /* LandlordGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableUI.cpp; sourceTree = "<group>"; };
 		7FB4D3A41BFDEDB700BD0311 /* LandlordGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUI.h; sourceTree = "<group>"; };
 		7FB4D3A51BFDEDB700BD0311 /* LandlordGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUICallback.h; sourceTree = "<group>"; };

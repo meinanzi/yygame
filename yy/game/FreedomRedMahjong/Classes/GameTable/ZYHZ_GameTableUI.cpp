@@ -243,6 +243,6 @@ namespace ZYHZ
     
     void GameTableUI::showStartBtn(bool visible)
     {
-        
+        COCOS_NODE(Button, "start")->setVisible(visible);
     }
 };
