@@ -368,8 +368,8 @@
 		7FB4D3A11BFDEDB700BD0311 /* LandlordGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableLogic.cpp; sourceTree = "<group>"; };
 		7FB4D3A21BFDEDB700BD0311 /* LandlordGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableLogic.h; sourceTree = "<group>"; };
 		7FB4D3A31BFDEDB700BD0311 /* LandlordGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameTableUI.cpp; sourceTree = "<group>"; };
-		7FB4D3A41BFDEDB700BD0311 /* LandlordGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUI.h; sourceTree = "<group>"; };
-		7FB4D3A51BFDEDB700BD0311 /* LandlordGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUICallback.h; sourceTree = "<group>"; };
+		7FB4D3A41BFDEDB700BD0311 /* LandlordGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUI.h; sourceTree = "<group>"; };
+		7FB4D3A51BFDEDB700BD0311 /* LandlordGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = LandlordGameTableUICallback.h; sourceTree = "<group>"; };
 		7FB4D3A61BFDEDB700BD0311 /* LandlordGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordGameUserMessageBox.cpp; sourceTree = "<group>"; };
 		7FB4D3A71BFDEDB700BD0311 /* LandlordGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandlordGameUserMessageBox.h; sourceTree = "<group>"; };
 		7FB4D3A81BFDEDB700BD0311 /* LandlordPokerCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LandlordPokerCard.cpp; sourceTree = "<group>"; };
@@ -533,10 +533,10 @@
 		C227B62F1D10F2E900903468 /* GoldenFlowerGamePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGamePlayer.cpp; sourceTree = "<group>"; };
 		C227B6301D10F2E900903468 /* GoldenFlowerGamePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGamePlayer.h; sourceTree = "<group>"; };
 		C227B6311D10F2E900903468 /* GoldenFlowerGameTableLogic.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableLogic.cpp; sourceTree = "<group>"; };
-		C227B6321D10F2E900903468 /* GoldenFlowerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableLogic.h; sourceTree = "<group>"; };
+		C227B6321D10F2E900903468 /* GoldenFlowerGameTableLogic.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableLogic.h; sourceTree = "<group>"; };
 		C227B6331D10F2E900903468 /* GoldenFlowerGameTableUI.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameTableUI.cpp; sourceTree = "<group>"; };
-		C227B6341D10F2E900903468 /* GoldenFlowerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUI.h; sourceTree = "<group>"; };
-		C227B6351D10F2E900903468 /* GoldenFlowerGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUICallback.h; sourceTree = "<group>"; };
+		C227B6341D10F2E900903468 /* GoldenFlowerGameTableUI.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUI.h; sourceTree = "<group>"; };
+		C227B6351D10F2E900903468 /* GoldenFlowerGameTableUICallback.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameTableUICallback.h; sourceTree = "<group>"; };
 		C227B6361D10F2E900903468 /* GoldenFlowerGameUserMessageBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerGameUserMessageBox.cpp; sourceTree = "<group>"; };
 		C227B6371D10F2E900903468 /* GoldenFlowerGameUserMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoldenFlowerGameUserMessageBox.h; sourceTree = "<group>"; };
 		C227B6381D10F2E900903468 /* GoldenFlowerPokerCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoldenFlowerPokerCard.cpp; sourceTree = "<group>"; };

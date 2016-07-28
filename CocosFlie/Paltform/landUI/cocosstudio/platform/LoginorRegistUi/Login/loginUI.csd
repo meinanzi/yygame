@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="loginUI" Type="Node" ID="d0a05441-104d-42ad-8252-a0cd2b4d1178" Version="2.3.3.0" />
+  <PropertyGroup Name="loginUI" Type="Node" ID="d0a05441-104d-42ad-8252-a0cd2b4d1178" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Node" Tag="36" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="1335862320" Tag="18" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-342.5000" RightMargin="-342.5000" TopMargin="-244.0000" BottomMargin="-244.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="1335862320" Tag="18" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-342.5000" RightMargin="-342.5000" TopMargin="-244.0000" BottomMargin="-244.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="685.0000" Y="488.0000" />
             <Children>
               <AbstractNodeData Name="Image_BG" ActionTag="-503660030" Tag="22" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftEage="226" RightEage="226" TopEage="161" BottomEage="161" Scale9OriginX="226" Scale9OriginY="161" Scale9Width="233" Scale9Height="166" ctype="ImageViewObjectData">
