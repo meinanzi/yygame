@@ -111,7 +111,7 @@
 		BC9E6C411B11A19A002EEC6F /* GamePrompt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePrompt.cpp; sourceTree = "<group>"; };
 		BC9E6C421B11A19A002EEC6F /* GamePrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePrompt.h; sourceTree = "<group>"; };
 		BC9E6C431B11A19A002EEC6F /* GameRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoom.cpp; sourceTree = "<group>"; };
-		BC9E6C441B11A19A002EEC6F /* GameRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoom.h; sourceTree = "<group>"; };
+		BC9E6C441B11A19A002EEC6F /* GameRoom.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GameRoom.h; sourceTree = "<group>"; };
 		BC9E6C451B11A19A002EEC6F /* LayerManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerManger.cpp; sourceTree = "<group>"; };
 		BC9E6C461B11A19A002EEC6F /* LayerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerManger.h; sourceTree = "<group>"; };
 		BC9E6C481B11A19A002EEC6F /* BindPhone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BindPhone.cpp; sourceTree = "<group>"; };
