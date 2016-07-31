@@ -1001,8 +1001,11 @@ namespace DZPoker
 			break;
 		}
 
-		//test send ready.
-		sendUserReady();
+        if(!isContestGame())
+        {
+            //test send ready.
+            sendUserReady();
+        }
 	}
 
 
@@ -1057,10 +1060,14 @@ namespace DZPoker
 
 			//_uiCallback->clearDesk();
 
-			if(_tableInfo.byMeStation != INVALID_DESKNO && _tableInfo.bHaveUser[_tableInfo.byMeStation])
-			{
-				sendUserReady();
-			}
+            if(!isContestGame())
+            {
+                if(_tableInfo.byMeStation != INVALID_DESKNO && _tableInfo.bHaveUser[_tableInfo.byMeStation])
+                {
+                    sendUserReady();
+                }                
+            }
+
 		}
 	}
 
@@ -1781,6 +1788,43 @@ namespace DZPoker
 
 		return false;
 	}
-
-
+    
+    /*----------------------比赛接口----------------------------*/
+    //比赛信息广播
+    void GameTableLogic::dealGameContestNotic(MSG_GR_I_ContestInfo* contestInfo)
+    {
+        char message[64] = { 0 };
+        sprintf(message, "比赛场报名人数已有%d人，高手在这里！", contestInfo->iContestNum);
+        _uiCallback->noticeMessage(GBKToUtf8(message));
+    }
+    //用户比赛信息
+    void GameTableLogic::dealGameUserContset(MSG_GR_ContestChange* contestChange)
+    {
+        //显示正在为您配桌提示
+        _uiCallback->noticeMessage(GBKToUtf8("更新排名..."));//, true);
+    }
+    //比赛淘汰
+    void GameTableLogic::dealGameContestKick()
+    {
+        //显示正在为您配桌提示
+        _uiCallback->noticeMessage(GBKToUtf8("很遗憾，您已被淘汰..."));//, true);
+    }
+    //等待比赛结束
+    void GameTableLogic::dealGameContestWaitOver()
+    {
+        //显示正在为您配桌提示
+        _uiCallback->noticeMessage(GBKToUtf8("等待比赛结束"));//, true);
+    }
+    //比赛结束
+    void GameTableLogic::dealGameContestOver(MSG_GR_ContestAward* contestAward)
+    {
+        //标记比赛结束
+//        _bContestEnd = true;
+        //显示正在为您配桌提示
+        _uiCallback->noticeMessage(GBKToUtf8("比赛结束"));//, true);
+    }
+    
+    
+    
+    
 }

@@ -76,7 +76,20 @@ protected:
 	virtual void dealUserUpResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user);
 	virtual void dealGameInfoResp(MSG_GM_S_GameInfo* pGameInfo);
 	virtual void dealGameStationResp(void* object, INT objectSize);
-
+    
+    //--------------------------比赛接口---------------------
+    //比赛信息广播
+    virtual void dealGameContestNotic(MSG_GR_I_ContestInfo* contestInfo) override;
+    //用户比赛信息
+    virtual void dealGameUserContset(MSG_GR_ContestChange* contestChange) override;
+    //比赛淘汰
+    virtual void dealGameContestKick() override;
+    //等待比赛结束
+    virtual void dealGameContestWaitOver() override;
+    //比赛结束
+    virtual void dealGameContestOver(MSG_GR_ContestAward* contestAward) override;
+    
+    
 public:
 	virtual void sendUserUp();
 	void loadDeskUsersUI();
