@@ -81,6 +81,11 @@ bool RegisterLayer::init()
 	textField_PassWord->setVisible(false);
 	_registUI.editBoxPassWord = HNEditBox::createEditBox(textField_PassWord, this);
 	_registUI.editBoxPassWord->setPasswordEnabled(true);
+    
+    // 账号输入框
+    auto TextField_agent = (TextField*)_registUI.registBG->getChildByName("TextField_agent");
+    TextField_agent->setVisible(false);
+    _registUI.editBoxAgentid = HNEditBox::createEditBox(TextField_agent, this);
 
 	// 同意复选框
 	_registUI.agree = (CheckBox*)_registUI.registBG->getChildByName("CheckBox_agree");

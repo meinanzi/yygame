@@ -28,6 +28,7 @@ private:
 		ImageView*  registBG;
 		HNEditBox*	editBoxUserName;
 		HNEditBox*	editBoxPassWord;
+        HNEditBox*  editBoxAgentid;
 		CheckBox*   agree;
 		CheckBox*   showPass;
 		Node*		registUI;

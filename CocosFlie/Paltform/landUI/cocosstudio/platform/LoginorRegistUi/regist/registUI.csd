@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Panel_1" CanEdit="False" ActionTag="1097925474" Tag="22" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-342.5000" RightMargin="-342.5000" TopMargin="-244.0000" BottomMargin="-244.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="685.0000" Y="488.0000" />
             <Children>
-              <AbstractNodeData Name="Image_registBG" CanEdit="False" ActionTag="688635418" Tag="29" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-0.5303" RightMargin="0.5303" TopMargin="-32.1034" BottomMargin="32.1034" LeftEage="220" RightEage="220" TopEage="146" BottomEage="146" Scale9OriginX="220" Scale9OriginY="146" Scale9Width="245" Scale9Height="196" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_registBG" CanEdit="False" ActionTag="688635418" Tag="29" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-0.5480" RightMargin="0.5480" TopMargin="-32.1104" BottomMargin="32.1104" LeftEage="220" RightEage="220" TopEage="146" BottomEage="146" Scale9OriginX="220" Scale9OriginY="146" Scale9Width="245" Scale9Height="196" ctype="ImageViewObjectData">
                 <Size X="685.0000" Y="488.0000" />
                 <Children>
                   <AbstractNodeData Name="Button_close" CanEdit="False" ActionTag="1346805151" Tag="30" IconVisible="False" LeftMargin="606.0000" RightMargin="1.0000" TopMargin="1.0000" BottomMargin="409.0000" TouchEnable="True" FontSize="14" LeftEage="25" RightEage="25" TopEage="25" BottomEage="25" Scale9OriginX="25" Scale9OriginY="25" Scale9Width="28" Scale9Height="28" OutlineSize="0" ShadowOffsetX="0.0000" ShadowOffsetY="0.0000" ctype="ButtonObjectData">
@@ -73,7 +73,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="255" G="127" B="80" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="CheckBox_agree" ActionTag="-985306533" Tag="35" IconVisible="False" LeftMargin="147.4998" RightMargin="492.5002" TopMargin="382.2371" BottomMargin="60.7630" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="CheckBox_agree" ActionTag="-985306533" Tag="35" IconVisible="False" LeftMargin="147.4998" RightMargin="492.5002" TopMargin="382.2370" BottomMargin="60.7630" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
                     <Size X="45.0000" Y="45.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="169.9998" Y="83.2630" />
@@ -87,7 +87,7 @@
                     <NodeNormalFileData Type="Normal" Path="platform/LoginorRegistUi/gou.png" Plist="" />
                     <NodeDisableFileData Type="Normal" Path="platform/LoginorRegistUi/kuang.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="CheckBox_showPass" ActionTag="-1081420261" Tag="21" IconVisible="False" LeftMargin="362.5008" RightMargin="277.4992" TopMargin="382.2371" BottomMargin="60.7630" TouchEnable="True" ctype="CheckBoxObjectData">
+                  <AbstractNodeData Name="CheckBox_showPass" ActionTag="-1081420261" Tag="21" IconVisible="False" LeftMargin="362.5008" RightMargin="277.4992" TopMargin="382.2370" BottomMargin="60.7630" TouchEnable="True" ctype="CheckBoxObjectData">
                     <Size X="45.0000" Y="45.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="385.0008" Y="83.2630" />
@@ -101,7 +101,7 @@
                     <NodeNormalFileData Type="Normal" Path="platform/LoginorRegistUi/gou.png" Plist="" />
                     <NodeDisableFileData Type="Normal" Path="platform/LoginorRegistUi/kuang.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="showPass_1" ActionTag="-48088658" Tag="23" IconVisible="False" LeftMargin="413.5000" RightMargin="148.5000" TopMargin="388.7371" BottomMargin="67.2630" ctype="SpriteObjectData">
+                  <AbstractNodeData Name="showPass_1" ActionTag="-48088658" Tag="23" IconVisible="False" LeftMargin="413.5000" RightMargin="148.5000" TopMargin="388.7370" BottomMargin="67.2630" ctype="SpriteObjectData">
                     <Size X="123.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="475.0000" Y="83.2630" />
@@ -112,7 +112,7 @@
                     <FileData Type="Normal" Path="platform/LoginorRegistUi/regist/showPass.png" Plist="" />
                     <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Button_agree" ActionTag="-1674455083" Tag="25" IconVisible="False" LeftMargin="199.5003" RightMargin="364.4997" TopMargin="388.7371" BottomMargin="67.2630" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="10" BottomEage="10" Scale9OriginX="15" Scale9OriginY="10" Scale9Width="91" Scale9Height="12" OutlineSize="0" ShadowOffsetX="0.0000" ShadowOffsetY="0.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="Button_agree" ActionTag="-1674455083" Tag="25" IconVisible="False" LeftMargin="199.5003" RightMargin="364.4997" TopMargin="388.7370" BottomMargin="67.2630" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="10" BottomEage="10" Scale9OriginX="15" Scale9OriginY="10" Scale9Width="91" Scale9Height="12" OutlineSize="0" ShadowOffsetX="0.0000" ShadowOffsetY="0.0000" ctype="ButtonObjectData">
                     <Size X="121.0000" Y="32.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="260.0003" Y="83.2630" />
@@ -158,7 +158,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="TextField_agent" ActionTag="-220944035" Alpha="166" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="197.5000" RightMargin="197.5000" TopMargin="307.5823" BottomMargin="136.4176" TouchEnable="True" FontSize="25" IsCustomSize="True" LabelText="" PlaceHolderText="请输入代理商id" MaxLengthText="10" PasswordEnable="True" ctype="TextFieldObjectData">
+                  <AbstractNodeData Name="TextField_agent" ActionTag="-220944035" Alpha="166" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="197.5000" RightMargin="197.5000" TopMargin="307.5824" BottomMargin="136.4176" TouchEnable="True" FontSize="25" IsCustomSize="True" LabelText="" PlaceHolderText="请输入代理商id" MaxLengthText="10" ctype="TextFieldObjectData">
                     <Size X="290.0000" Y="44.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="342.5000" Y="158.4176" />
@@ -169,7 +169,7 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="341.9697" Y="276.1034" />
+                <Position X="341.9520" Y="276.1104" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4992" Y="0.5658" />
