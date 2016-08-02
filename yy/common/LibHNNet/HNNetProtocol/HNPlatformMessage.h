@@ -283,8 +283,8 @@ typedef struct tagMSG_GP_SR_Register
 	CHAR								szHardID[64];	// 硬件ID
 	CHAR								szName[64];		// 用户名
 	CHAR								szPswd[64];		// 密码
-	UINT								LogonTimes;		// 登陆次数
     CHAR szAgentId[64];//代理商账号
+	UINT								LogonTimes;		// 登陆次数
 }  MSG_GP_S_Register;
 
 //////////////////////////////////////////////////////////////////////////

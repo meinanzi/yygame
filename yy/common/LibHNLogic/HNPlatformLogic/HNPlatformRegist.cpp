@@ -51,6 +51,9 @@ namespace HN
 		case eSENSITIVE:
 			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("包含敏感词汇"), _name, _pwd, "", registerStruct->LogonTimes);
 			break;
+        case eNOEGENCY:
+            _callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("代理商不存在"), _name, _pwd, "", registerStruct->LogonTimes);
+            break;
 		default:
 			break;
 		}

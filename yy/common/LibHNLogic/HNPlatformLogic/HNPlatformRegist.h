@@ -61,6 +61,7 @@ namespace HN
 			eSUCCESS   = 1, // 注册成功
 			eEXIST     = 2, // 相同名称
 			eSENSITIVE = 3, // 敏感词汇
+            eNOEGENCY,// 代理商不存在
 		};
 	};
 }
