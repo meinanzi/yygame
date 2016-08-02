@@ -82,7 +82,7 @@ bool RegisterLayer::init()
 	_registUI.editBoxPassWord = HNEditBox::createEditBox(textField_PassWord, this);
 	_registUI.editBoxPassWord->setPasswordEnabled(true);
     
-    // 账号输入框
+    // 代理商输入框
     auto TextField_agent = (TextField*)_registUI.registBG->getChildByName("TextField_agent");
     TextField_agent->setVisible(false);
     _registUI.editBoxAgentid = HNEditBox::createEditBox(TextField_agent, this);
@@ -155,7 +155,7 @@ void RegisterLayer::registerClickCallback(Ref* pSender, Widget::TouchEventType t
 			break;
 		}
         
-        // 获取输入框账号
+        // 代理商
         std::string agentid = _registUI.editBoxAgentid->getString();
         if (agentid.empty())
         {

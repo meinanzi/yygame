@@ -8,10 +8,10 @@
 
 // 线上地址
 static const std::string PLATFORM_SERVER_ADDRESS("222.189.228.167");  // 游戏服务器地址
-static const std::string API_SERVER_URL("www.dzpk886.com:8080");              // Web接口地址
+static const std::string API_SERVER_URL("www.dzpk886.com:80");              // Web接口地址
 
 // app更新专用地址（iOS需要SSL证书）
-static const std::string WEB_SERVER_URL("www.dzpk886.com:8080");
+static const std::string WEB_SERVER_URL("www.dzpk886.com:80");
 
 LLONG getSecrectKey()
 {

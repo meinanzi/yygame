@@ -76,14 +76,14 @@ namespace HN
 	{
 		if(PlatformLogic()->isConnect())
 		{
+            std::string onlyString = Operator::requestChannel("sysmodule", "GetSerialNumber");
 			if(_fastRegist)
 			{
-				std::string onlyString = Operator::requestChannel("sysmodule", "GetSerialNumber");
 				PlatformLogic()->regist(0, GameCreator()->getCurrentGameNameID(), onlyString);
 			}
 			else
 			{
-				PlatformLogic()->regist(1, GameCreator()->getCurrentGameNameID(), _name, _pwd, _agentid);
+				PlatformLogic()->regist(1, GameCreator()->getCurrentGameNameID(), onlyString, _name, _pwd, _agentid);
 			}
 		}
 		else

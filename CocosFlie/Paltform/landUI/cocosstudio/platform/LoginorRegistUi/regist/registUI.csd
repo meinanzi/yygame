@@ -43,6 +43,36 @@
                     <PrePosition X="0.5000" Y="0.4713" />
                     <PreSize X="0.4234" Y="0.0902" />
                   </AbstractNodeData>
+                  <AbstractNodeData Name="TextField_agent" ActionTag="-220944035" Alpha="166" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="197.5000" RightMargin="197.5000" TopMargin="307.5824" BottomMargin="136.4176" TouchEnable="True" FontSize="25" IsCustomSize="True" LabelText="" PlaceHolderText="请输入代理商id" MaxLengthText="10" ctype="TextFieldObjectData">
+                    <Size X="290.0000" Y="44.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="342.5000" Y="158.4176" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5000" Y="0.3246" />
+                    <PreSize X="0.4234" Y="0.0902" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Image_2" CanEdit="False" ActionTag="-1291532041" Tag="47" IconVisible="False" LeftMargin="61.6908" RightMargin="57.3092" TopMargin="296.3815" BottomMargin="121.6185" LeftEage="186" RightEage="186" TopEage="23" BottomEage="23" Scale9OriginX="186" Scale9OriginY="23" Scale9Width="194" Scale9Height="24" ctype="ImageViewObjectData">
+                    <Size X="566.0000" Y="70.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="344.6908" Y="156.6185" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5032" Y="0.3209" />
+                    <PreSize X="0.8263" Y="0.1434" />
+                    <FileData Type="Normal" Path="platform/LoginorRegistUi/regist/inputbg.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Text_1" CanEdit="False" ActionTag="1449272914" Tag="14" IconVisible="False" LeftMargin="93.5158" RightMargin="471.4842" TopMargin="315.4134" BottomMargin="138.5866" FontSize="30" LabelText="代理商：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="120.0000" Y="34.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="153.5158" Y="155.5866" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="236" B="171" />
+                    <PrePosition X="0.2241" Y="0.3188" />
+                    <PreSize X="0.1752" Y="0.0697" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
                   <AbstractNodeData Name="Button_registOK" ActionTag="-1134057662" Tag="33" IconVisible="False" LeftMargin="371.1250" RightMargin="103.8750" TopMargin="486.3201" BottomMargin="-67.3201" TouchEnable="True" FontSize="14" Scale9Width="210" Scale9Height="69" OutlineSize="0" ShadowOffsetX="0.0000" ShadowOffsetY="0.0000" ctype="ButtonObjectData">
                     <Size X="210.0000" Y="69.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -136,36 +166,6 @@
                     <PrePosition X="0.4964" Y="0.9119" />
                     <PreSize X="0.3869" Y="0.1025" />
                     <FileData Type="Normal" Path="platform/LoginorRegistUi/regist/regist_title.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Image_2" CanEdit="False" ActionTag="-1291532041" Tag="47" IconVisible="False" LeftMargin="61.6908" RightMargin="57.3092" TopMargin="296.3815" BottomMargin="121.6185" LeftEage="186" RightEage="186" TopEage="23" BottomEage="23" Scale9OriginX="186" Scale9OriginY="23" Scale9Width="194" Scale9Height="24" ctype="ImageViewObjectData">
-                    <Size X="566.0000" Y="70.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="344.6908" Y="156.6185" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5032" Y="0.3209" />
-                    <PreSize X="0.8263" Y="0.1434" />
-                    <FileData Type="Normal" Path="platform/LoginorRegistUi/regist/inputbg.png" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Text_1" CanEdit="False" ActionTag="1449272914" Tag="14" IconVisible="False" LeftMargin="93.5158" RightMargin="471.4842" TopMargin="315.4134" BottomMargin="138.5866" FontSize="30" LabelText="代理商：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="120.0000" Y="34.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="153.5158" Y="155.5866" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="236" B="171" />
-                    <PrePosition X="0.2241" Y="0.3188" />
-                    <PreSize X="0.1752" Y="0.0697" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="TextField_agent" ActionTag="-220944035" Alpha="166" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="197.5000" RightMargin="197.5000" TopMargin="307.5824" BottomMargin="136.4176" TouchEnable="True" FontSize="25" IsCustomSize="True" LabelText="" PlaceHolderText="请输入代理商id" MaxLengthText="10" ctype="TextFieldObjectData">
-                    <Size X="290.0000" Y="44.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="342.5000" Y="158.4176" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.3246" />
-                    <PreSize X="0.4234" Y="0.0902" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
