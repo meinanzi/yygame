@@ -18,7 +18,7 @@ class RegisterLayer : public HNLayer, public ui::EditBoxDelegate
 {
 
 public:
-	typedef std::function<void (const std::string& name, const std::string& psd)> RegisterCallBack;
+    typedef std::function<void (const std::string& name, const std::string& psd, const std::string& agentid)> RegisterCallBack;
 	typedef std::function<void ()> CloseCallBack;
 
 private:

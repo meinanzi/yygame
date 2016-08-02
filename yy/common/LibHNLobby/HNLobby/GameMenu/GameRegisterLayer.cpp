@@ -154,10 +154,18 @@ void RegisterLayer::registerClickCallback(Ref* pSender, Widget::TouchEventType t
 			_registUI.editBoxPassWord->setString("");
 			break;
 		}
+        
+        // 获取输入框账号
+        std::string agentid = _registUI.editBoxAgentid->getString();
+        if (agentid.empty())
+        {
+            GamePromptLayer::create()->showPrompt(GBKToUtf8("代理商账号不能为空！"));
+            break;
+        }
 
 		if (nullptr != onRegisterCallBack)
 		{
-			onRegisterCallBack(userName, passWord);
+			onRegisterCallBack(userName, passWord, agentid);
 		}
 
 	} while (0);

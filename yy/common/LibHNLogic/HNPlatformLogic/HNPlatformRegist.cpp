@@ -3,13 +3,13 @@
 
 namespace HN
 {
-	bool HNPlatformRegist::requestRegist(const std::string &name, const std::string pwd, bool fastRegist)
+    bool HNPlatformRegist::requestRegist(const std::string &name, const std::string pwd, const std::string& agentid, bool fastRegist)
 	{
 		if(!fastRegist)
 		{
 			if(name.empty() || pwd.empty())
 			{
-				_callback->onPlatformRegistCallback(false, fastRegist, GBKToUtf8("名称或密码为空"), name, pwd, 0);
+				_callback->onPlatformRegistCallback(false, fastRegist, GBKToUtf8("名称或密码为空"), name, pwd, "", 0);
 				return false;
 			}
 		}
@@ -17,6 +17,7 @@ namespace HN
 		_fastRegist = fastRegist;
 		_name       = name;
 		_pwd        = pwd;
+        _agentid = agentid;
 		platformRegist();
 		return true;
 	}
@@ -25,7 +26,7 @@ namespace HN
 	{
 		if(!result)
 		{
-			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("平台网络连接失败"), _name, _pwd, 0);
+			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("平台网络连接失败"), _name, _pwd, "", 0);
 			return;
 		}
 		platformRegist();
@@ -39,16 +40,16 @@ namespace HN
 		switch (ErrorCode)
 		{
 		case eFAILE:
-			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("注册失败"), _name, _pwd, registerStruct->LogonTimes);
+			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("注册失败"), _name, _pwd, "", registerStruct->LogonTimes);
 			break;
 		case eSUCCESS:
-			_callback->onPlatformRegistCallback(true, _fastRegist, GBKToUtf8("注册成功"), _name, _pwd, registerStruct->LogonTimes);
+			_callback->onPlatformRegistCallback(true, _fastRegist, GBKToUtf8("注册成功"), _name, _pwd, "", registerStruct->LogonTimes);
 			break;
 		case eEXIST:
-			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("用户名已存在"), _name, _pwd, registerStruct->LogonTimes);
+			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("用户名已存在"), _name, _pwd, "", registerStruct->LogonTimes);
 			break;
 		case eSENSITIVE:
-			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("包含敏感词汇"), _name, _pwd, registerStruct->LogonTimes);
+			_callback->onPlatformRegistCallback(false, _fastRegist, GBKToUtf8("包含敏感词汇"), _name, _pwd, "", registerStruct->LogonTimes);
 			break;
 		default:
 			break;
@@ -79,7 +80,7 @@ namespace HN
 			}
 			else
 			{
-				PlatformLogic()->regist(1, GameCreator()->getCurrentGameNameID(), "", _name, _pwd);
+				PlatformLogic()->regist(1, GameCreator()->getCurrentGameNameID(), _name, _pwd, _agentid);
 			}
 		}
 		else
