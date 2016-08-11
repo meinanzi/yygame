@@ -5,8 +5,8 @@
 	<classpathentry kind="lib" path="libs/alipaysdk.jar"/>
 	<classpathentry kind="lib" path="libs/alipaysecsdk.jar"/>
 	<classpathentry kind="lib" path="libs/alipayutdid.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
