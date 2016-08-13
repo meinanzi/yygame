@@ -209,11 +209,11 @@ namespace HN
 
 	void HNGameLogicBase::I_R_M_GameStation(void* object, INT objectSize)
 	{
+        dealGameStationResp(object, objectSize);
         if(isContestGame() || isTimeContest() || isQueueGame())
         {
             sendAgreeGame();
         }
-        dealGameStationResp(object, objectSize);
 	}
 
 	bool HNGameLogicBase::onGameMessage(NetMessageHead* messageHead, void* object, INT objectSize)
