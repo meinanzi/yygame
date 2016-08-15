@@ -76,7 +76,8 @@ namespace DZPoker
 		char str[128];
 
 		// Íæ¼ÒêÇ³Æ
-		std::string text = StringUtils::format("%s", LogonResult->nickName);
+		sprintf(str, "%s", LogonResult->nickName);
+		//std::string text = StringUtils::format("%s", LogonResult->nickName);
 		auto uNickName = createLabel(GBKToUtf8(str), 20.0f, colorGold);
 		uNickName->setAnchorPoint(Vec2(0, 0.5));
 		uNickName->setPosition(Vec2(userDataBox->getContentSize().width*0.4f, userDataBox->getContentSize().height*0.89f));

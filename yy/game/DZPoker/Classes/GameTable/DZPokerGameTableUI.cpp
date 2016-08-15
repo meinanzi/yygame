@@ -129,7 +129,8 @@ namespace DZPoker
 		//牌桌逻辑类
 		_tableLogic = new GameTableLogic(this, bDeskIndex, bAutoCreate);
 		_tableLogic->clearDesk();
-		_tableLogic->loadDeskUsersUI();
+
+		_tableLogic->enterGame();
 
 		return true;
 	}
@@ -407,7 +408,7 @@ namespace DZPoker
 			money_dichi_jetton[i]->setVisible(false);
 			this->addChild(money_dichi_jetton[i],10);
 		}
-
+		_iContestNum = -1;
 		//_gameanimation = new GameAnimation();
 		//this->addChild(_gameanimation,10);
 	}
@@ -551,6 +552,8 @@ namespace DZPoker
 	GameTableUI::GameTableUI():_firstOnEnter(true)
 		, _lPlayerMoney(nullptr)
 		, _lTableName(nullptr)
+		, _lConstJuShu(nullptr)
+		, _lConstRank(nullptr)
 		, _waitTime(30)
 	{
 		memset(_players, 0 , sizeof(_players));
@@ -994,10 +997,29 @@ namespace DZPoker
 		initNewturn();
 	}
 
+	//清空所有数据
+	void GameTableUI::clearDeskCard()
+	{
+		for (BYTE i = 0; i < NUM_PUBLIC_CARD; ++i)
+		{
+			_publicCard[i]->setVisible(false);
+		}
+	}
+
+
 	//离开牌桌
 	void GameTableUI::leaveDesk()
 	{
-		GamePlatform::returnPlatform(LayerType::DESKLIST);
+		//防作弊场||比赛场
+		if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME) || RoomLogic()->getRoomRule() & GRR_CONTEST || (RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST))
+		{
+			RoomLogic()->close();
+			GamePlatform::returnPlatform(LayerType::ROOMLIST);
+		}
+		else
+		{
+			GamePlatform::returnPlatform(LayerType::DESKLIST);
+		}
 	}
 
 	//显示牌桌准备
@@ -1131,9 +1153,147 @@ namespace DZPoker
 
 	void GameTableUI::showMyMoney(LLONG money)
 	{
-		char str[100] = {0};
-		sprintf(str, "总额:%lld", money);
-		_lPlayerMoney->setString(GBKToUtf8(str));
+		//不是比赛场才显示
+		if (!_tableLogic->isContestGame())
+		{
+			char str[100] = { 0 };
+			sprintf(str, "总额:%lld", money);
+			_lPlayerMoney->setString(GBKToUtf8(str));
+		}
+	}
+
+	//比赛被淘汰
+	void GameTableUI::showGameContestKick()
+	{
+		auto size = Director::getInstance()->getWinSize();
+		auto kickImg = Sprite::create("landlord/game/contest/ContestKick.png");
+		kickImg->setPosition(Vec2(size.width / 2, size.height / 2));
+		kickImg->setName("kickPtr");
+		kickImg->setScale(0.0f);
+		addChild(kickImg, 3);
+
+		kickImg->runAction(Sequence::create(DelayTime::create(3.7f),
+			Spawn::create(ScaleTo::create(1.0f, 1.0f),
+			RotateBy::create(1.0f, 360.0f), nullptr), DelayTime::create(3.0f),
+			CallFunc::create([=](){leaveDesk(); }), nullptr));
+	}
+
+	//等待比赛结束
+
+	void GameTableUI::showGameContestWaitOver()
+	{
+		auto size = Director::getInstance()->getWinSize();
+		auto waitPtr = Sprite::create("landlord/game/contest/ContestWait.png");
+		waitPtr->setPosition(Vec2(size.width / 2, size.height / 2));
+		waitPtr->setName("waitPtr");
+		addChild(waitPtr, 25);
+	}
+
+
+	void GameTableUI::showGameContestOver(MSG_GR_ContestAward* contestAward) //比赛结束
+	{
+		
+		//先全部清空一下
+		clearDesk();
+		for (BYTE i = 0; i < PLAY_COUNT; i++)
+		{
+			showUserUp(i, false);
+		}
+		//移除等待排名
+		auto waitPtr = dynamic_cast<Sprite*>(this->getChildByName("waitPtr"));
+		if (waitPtr != nullptr)
+		{
+			waitPtr->removeFromParent();
+		}
+
+		//没有奖励 那就是被淘汰了
+		if (!contestAward->iAward)
+		{
+			showGameContestKick();
+			return;
+		}
+		Sprite* awardDlg = nullptr;
+		if (contestAward->iAwardType)
+		{
+			awardDlg = Sprite::create("landlord/game/contest/ContestAwardsX.png");
+		}
+		else
+		{
+			awardDlg = Sprite::create("landlord/game/contest/ContestAwards.png");
+		}
+		auto size = Director::getInstance()->getWinSize();
+		awardDlg->setPosition(Vec2(size.width / 2, size.height / 2));
+		addChild(awardDlg, 3);
+
+		awardDlg->setName("awardDlg");
+		ParticleSystem *meteor = ParticleSystemQuad::create("landlord/game/contest/huoyan00.plist");
+		meteor->setPosition(Vec2(awardDlg->getContentSize().width / 2, 10));
+		meteor->setAutoRemoveOnFinish(true);
+		awardDlg->addChild(meteor);
+
+		awardDlg->setScale(0.0f);
+		awardDlg->runAction(Sequence::create(DelayTime::create(3.7f), ScaleTo::create(0.2f, 1.0f), nullptr));
+
+		char str[64] = { 0 };
+		sprintf(str, "%d", _iContestNum);
+		auto rankText = TextAtlas::create(str, "landlord/game/contest/js_win_num.png", 23, 28, "0");
+		rankText->setPosition(Vec2(awardDlg->getContentSize().width * 0.73, awardDlg->getContentSize().height * 0.555));
+		awardDlg->addChild(rankText);
+
+		sprintf(str, "%d", contestAward->iAward);
+		auto awardText = TextAtlas::create(str, "landlord/game/contest/js_win_num.png", 23, 28, "0");
+		awardText->setPosition(Vec2(awardDlg->getContentSize().width * 0.45, awardDlg->getContentSize().height * 0.345));
+		awardText->setAnchorPoint(Vec2(0, 0.5));
+		awardDlg->addChild(awardText);
+
+		auto MyListener = EventListenerTouchOneByOne::create();
+		MyListener->setSwallowTouches(true);
+		MyListener->onTouchBegan = [&](Touch* touch, Event* event)
+		{
+			auto awardDlg = (Sprite*)getChildByName("awardDlg");
+			auto dlgSize = awardDlg->getBoundingBox();
+			Size s = this->getContentSize();
+			Rect rect = Rect(0, 0, s.width, s.height);
+			if (rect.containsPoint(touch->getLocation()))
+			{
+				if (dlgSize.containsPoint(touch->getLocation())) return true;
+				awardDlg->runAction(Sequence::create(ScaleTo::create(0.2f, 0.0f), CallFunc::create([&](){leaveDesk(); }), RemoveSelf::create(true), nullptr));
+				return true;
+			}
+			else
+				return false;
+		};
+
+		_eventDispatcher->addEventListenerWithSceneGraphPriority(MyListener, awardDlg);
+	}
+
+	//比赛局数
+	void GameTableUI::showConstJuShu(int Index)
+	{
+		//比赛场才显示
+		if (_tableLogic->isContestGame())
+		{
+			char str[100] = { 0 };
+			sprintf(str, "第%d局", Index);
+			_lConstJuShu->setString(GBKToUtf8(str));
+		}
+	}
+
+	//显示排名
+	void GameTableUI::ShowConstRank(int iRankNum, int iRemainPeople)					
+	{
+		//比赛场才显示
+		if (_tableLogic->isContestGame())
+		{
+			char str[100] = { 0 };
+			sprintf(str, "排名：%d/%d", iRankNum, iRemainPeople);
+			_lConstRank->setString(GBKToUtf8(str));
+		}
+	}
+	//更新自己的排名	
+	void GameTableUI::updateMyRankNum(int iValue) 						
+	{
+		_iContestNum = iValue;
 	}
 
 	/************************分割线*********************************/
@@ -1187,6 +1347,20 @@ namespace DZPoker
 		_lPlayerMoney->setAnchorPoint(Vec2(1, 0.5f));
 		_lPlayerMoney->setPosition(winSize.width - 10, winSize.height - 10 - 9 - 18);
 		this->addChild(_lPlayerMoney, 3);
+
+		//比赛局数
+		_lConstJuShu = createLabel("", 18);
+		_lConstJuShu->setAnchorPoint(Vec2(1, 0.5f));
+		_lConstJuShu->setPosition(winSize.width - 20, winSize.height - 10 - 9 - 18);
+		this->addChild(_lConstJuShu, 3);
+
+		//比赛排名
+		_lConstRank = createLabel("", 18);
+		_lConstRank->setAnchorPoint(Vec2(1, 0.5f));
+		_lConstRank->setPosition(winSize.width - 10, winSize.height - 10 - 9 - 18-18);
+		this->addChild(_lConstRank, 3);
+		
+		
 		
 		auto root_dashboard = CSLoader::createNode(DASHBOARD_CSB);
 		root_dashboard->setAnchorPoint(Vec2(0.5, 0));

@@ -90,6 +90,8 @@ namespace DZPoker
 		virtual void showUserLackMoney(BYTE byDeskStation) = 0;
 		//清理牌桌
 		virtual void clearDesk() = 0;
+		//清空所有数据
+		virtual void clearDeskCard() = 0;
 		//离开牌桌
 		virtual void leaveDesk() = 0;
 		//显示牌桌准备
@@ -108,6 +110,20 @@ namespace DZPoker
 
 		//记录倒计时
 		virtual void isWaitTime(bool isWait) = 0;
+
+	public:	//比赛系列
+		//比赛淘汰
+		virtual void showGameContestKick() =0;       
+		//等待比赛结束
+		virtual void showGameContestWaitOver() = 0;
+		//比赛结束
+		virtual void showGameContestOver(MSG_GR_ContestAward* contestAward) = 0;
+		//显示比赛局数
+		virtual void showConstJuShu(int Index) = 0;
+		//显示排名
+		virtual void ShowConstRank(int iRankNum, int iRemainPeople) = 0;					
+		//更新自己的排名	
+		virtual void updateMyRankNum(int iValue) = 0;
 	};
 
 }

@@ -27,6 +27,7 @@ private:
 	{
 		Button*		Button_JoinMatch;
 		Button*		Button_UnJoinMatch;
+		Button*		Button_BuyTicket;
 		Text*				Label_SignedCount;
 		Text*				Label_NeedCount;
 

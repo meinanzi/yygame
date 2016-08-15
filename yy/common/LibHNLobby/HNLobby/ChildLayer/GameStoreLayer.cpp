@@ -170,7 +170,7 @@ bool GameStoreLayer::init()
 	//财富
 	char bufferCoin[128];
 	auto moneyLoader = CSLoader::createNode("platform/store/moneyNode.csb");
-	moneyLoader->setPosition(winSize.width/2, 30);
+	moneyLoader->setPosition(winSize.width/2, 40);
 	addChild(moneyLoader, 10);
 	auto moneyLayout = (Layout*)moneyLoader->getChildByName("Panel_1");
 	auto imageBg= (ImageView*)moneyLayout->getChildByName("Image_bg");
@@ -183,18 +183,18 @@ bool GameStoreLayer::init()
 
 	auto selfQuan= (Text*)moneyLayout->getChildByName("Text_quan");
 	selfQuan->setColor(colorGold);
-	sprintf(bufferCoin, GBKToUtf8("%lld"), PlatformLogic()->loginResult.i64Bank);
+	sprintf(bufferCoin, GBKToUtf8("%d"), PlatformLogic()->loginResult.iLotteries);
 	selfQuan->setString(bufferCoin);
 
 	auto promptText = (Text* ) moneyLayout->getChildByName("Text_3");
 	promptText->setString("");
 
-	//不显示奖券数量
+	//不显示元亨卡数量
 	auto lotteryBg = (ImageView* ) moneyLayout->getChildByName("moneyBg_3");
 	auto lotteryBtn = (Button* ) moneyLayout->getChildByName("Button_addQuan");
-	selfQuan->setVisible(false);
-	lotteryBg->setVisible(false);
-	lotteryBtn->setVisible(false);
+	//selfQuan->setVisible(false);
+	//lotteryBg->setVisible(false);
+	//lotteryBtn->setVisible(false);
 
 	return true;
 }

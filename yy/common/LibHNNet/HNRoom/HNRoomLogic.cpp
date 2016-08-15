@@ -251,6 +251,11 @@ namespace HN
 		else if(ASS_GM_GAME_STATION == messageHead->bAssistantID)
 		{
 			H_R_M_GameStation(messageHead, object, objectSize);
+			//如果是防作弊房||比赛场 就主动发送准备消息
+			if (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME || RoomLogic()->getRoomRule() & GRR_CONTEST || (RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST))
+			{
+				RoomLogic()->sendData(MDM_GM_GAME_NOTIFY, ASS_GM_AGREE_GAME);
+			}
 		}
 
 		// 普通聊天
@@ -941,8 +946,8 @@ namespace HN
 		auto queueData = (int*)object;										
 		auto deskNo = (BYTE)queueData[0];
 		bool isFind = false;
-        auto playcount = RoomLogic()->getSelectedRoom()->uDeskPeople;
-		for (int i = 0; i < playcount; i++)
+		ComRoomInfo* roomInfo = RoomLogic()->getSelectedRoom();
+		for (int i = 0; i < roomInfo->uDeskPeople; i++)
 		{
 			if (PlatformLogic()->loginResult.dwUserID == queueData[3*i+1])
 			{
@@ -952,7 +957,7 @@ namespace HN
 		std::vector<QUEUE_USER_SIT_RESULT *> queueUsers;
 		if (isFind)
 		{
-			for (int i = 0; i < playcount; i++)
+			for (int i = 0; i < roomInfo->uDeskPeople; i++)
 			{
 				QUEUE_USER_SIT_RESULT * tmp = new QUEUE_USER_SIT_RESULT;
 				tmp->dwUserID = queueData[3*i+1];
@@ -973,27 +978,26 @@ namespace HN
 				//CC_SAFE_DELETE(tmp);
 			}
 		}
-
 		// 分发游戏消息
 		dispatchGameMessage([&deskNo, &queueUsers](IGameMessageDelegate* delegate) -> bool
 		{
 			delegate->I_R_M_QueueUserSit(deskNo, queueUsers);
 			return false;
 		});
-
+	
 		// 分发房间消息
 		dispatchFrameMessage([&deskNo, &queueUsers](IRoomMessageDelegate* delegate) -> bool
 		{
 			delegate->I_R_M_QueueUserSit(deskNo, queueUsers);
 			return false;
 		});
-
+	
 		for (auto sit : queueUsers)
 		{
 			CC_SAFE_DELETE(sit);
 		}
 		queueUsers.clear();
-
+	
 	}
 
 	void HNRoomLogic::H_R_M_UserCome(const NetMessageHead* messageHead, void* object, INT objectSize)

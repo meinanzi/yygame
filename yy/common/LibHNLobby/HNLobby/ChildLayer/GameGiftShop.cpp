@@ -590,17 +590,17 @@ void GameGiftShop::onHttpDownloadPicCompleted(const std::string& tag, const std:
 			LLONG value = _gifts.at(i).lotteryNum;
 			if (value < 10000)
 			{
-				sprintf(str, "%lld½±È¯", value);
+				sprintf(str, "%lldÔªºà¿¨", value);
 			}
 			else if (value >= 10000 && value < 100000000)
 			{
 				int money = (int)value / 10000;
-				sprintf(str, "%dÍò½±È¯", money);
+				sprintf(str, "%dÍòÔªºà¿¨", money);
 			}
 			else
 			{
 				float money = (float)value / 100000000;
-				sprintf(str, "%.2fÒÚ½±È¯", money);
+				sprintf(str, "%.2fÒÚÔªºà¿¨", money);
 			}
 			auto textLottery = dynamic_cast<Text*>(giftBtn->getChildByName("Text_Lottery"));
 			textLottery->setString(GBKToUtf8(str));
@@ -741,7 +741,7 @@ void GameGiftShop::onHttpExchangeGiftCompleted(const std::string& data)
 			int statu = doc["status"].GetInt();
 			if (statu == -1)
 			{
-				GamePromptLayer::create()->showPrompt(GBKToUtf8("¶Ò»»Ê§°Ü£¬½±È¯ÊýÁ¿²»×ã£¡"));
+				GamePromptLayer::create()->showPrompt(GBKToUtf8("¶Ò»»Ê§°Ü£¬Ôªºà¿¨ÊýÁ¿²»×ã£¡"));
 				break;
 			}
 			else if (statu == 0)

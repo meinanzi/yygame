@@ -71,6 +71,10 @@ bool RegisterLayer::init()
 	Button * buttonReset = (Button*)_registUI.registBG->getChildByName("Button_reset");
 	buttonReset->addTouchEventListener(CC_CALLBACK_2(RegisterLayer::resetClickCallBack, this));
 
+	//获取代理商按钮
+	Button * buttonGetAgency = (Button*)_registUI.registBG->getChildByName("Button_GetAgency");
+	buttonGetAgency->addTouchEventListener(CC_CALLBACK_2(RegisterLayer::getAgencyClickCallBack, this));
+
 	// 账号输入框
 	auto textField_UserName = (TextField*)_registUI.registBG->getChildByName("TextField_userName");
 	textField_UserName->setVisible(false);
@@ -81,11 +85,11 @@ bool RegisterLayer::init()
 	textField_PassWord->setVisible(false);
 	_registUI.editBoxPassWord = HNEditBox::createEditBox(textField_PassWord, this);
 	_registUI.editBoxPassWord->setPasswordEnabled(true);
-    
-    // 代理商输入框
-    auto TextField_agent = (TextField*)_registUI.registBG->getChildByName("TextField_agent");
-    TextField_agent->setVisible(false);
-    _registUI.editBoxAgentid = HNEditBox::createEditBox(TextField_agent, this);
+
+	//代理商输入框
+	auto textField_Agency = (TextField*)_registUI.registBG->getChildByName("TextField_angency");
+	textField_Agency->setVisible(false);
+	_registUI.editBoxAgency = HNEditBox::createEditBox(textField_Agency, this);
 
 	// 同意复选框
 	_registUI.agree = (CheckBox*)_registUI.registBG->getChildByName("CheckBox_agree");
@@ -154,18 +158,18 @@ void RegisterLayer::registerClickCallback(Ref* pSender, Widget::TouchEventType t
 			_registUI.editBoxPassWord->setString("");
 			break;
 		}
-        
-        // 代理商
-        std::string agentid = _registUI.editBoxAgentid->getString();
-        if (agentid.empty())
-        {
-            GamePromptLayer::create()->showPrompt(GBKToUtf8("代理商账号不能为空！"));
-            break;
-        }
 
+		//获取代理商
+		std::string agency = _registUI.editBoxAgency->getString();
+		if (agency.empty())
+		{
+			GamePromptLayer::create()->showPrompt(GBKToUtf8("代理商账号不能为空！"));
+			break;
+		}
+	
 		if (nullptr != onRegisterCallBack)
 		{
-			onRegisterCallBack(userName, passWord, agentid);
+			onRegisterCallBack(userName, passWord, agency);
 		}
 
 	} while (0);
@@ -179,6 +183,13 @@ void RegisterLayer::resetClickCallBack(Ref* pSender, Widget::TouchEventType type
 
 	_registUI.editBoxUserName->setText("");
 	_registUI.editBoxPassWord->setText("");
+	_registUI.editBoxAgency->setText("");
+}
+
+void RegisterLayer::getAgencyClickCallBack(Ref* pSender, Widget::TouchEventType type)
+{
+	if (Widget::TouchEventType::ENDED != type) return;
+	GamePromptLayer::create()->showPrompt(GBKToUtf8("代理商名见推广二维码下方!"));
 }
 
 void RegisterLayer::closeClickCallback(Ref* pSender, Widget::TouchEventType type)

@@ -73,6 +73,8 @@ protected:
 	virtual void dealGameEndResp(BYTE bDeskNO);
 	virtual void dealGamePointResp(void* object, INT objectSize);
 	virtual void dealUserSitResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user);
+	//玩家排队坐下
+	virtual void dealQueueUserSitMessage(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& user);
 	virtual void dealUserUpResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user);
 	virtual void dealGameInfoResp(MSG_GM_S_GameInfo* pGameInfo);
 	virtual void dealGameStationResp(void* object, INT objectSize);
@@ -91,12 +93,16 @@ protected:
     
     
 public:
+	//进入游戏
+	void enterGame();
 	virtual void sendUserUp();
 	void loadDeskUsersUI();
 	virtual void clearDesk();
 
 public:
 	//发送指令：客户端==>服务端
+	//加入排队
+	void sendQueue();
 	void sendUserRaise(LLONG money);
 	void sendUserBet(LLONG money);
 	void sendUserFold();
@@ -141,6 +147,17 @@ protected:
 	bool doUserAutoAction(void* object);
 	//设置滑动操作调的值
 	void setSliderValue();
+
+	//清空桌面信息玩家
+	void	ClearDeskUser();
+
+public:
+	//记录是否为比赛场准备
+	bool _isReadyQueue;
+	// 是否比赛场
+	bool	_bContestRoom;
+	//是否比赛结束 
+	bool	_bContestEnd;
 };
 
 

@@ -199,6 +199,11 @@ typedef struct tagUserInfoStruct
 	INT							iRemainPeople;		//比赛中还剩下的人数
 	INT							iAward;				//比赛获取的奖励
 	INT                         iAwardType;         //比赛获取的奖励类型
+
+	tagUserInfoStruct()
+	{
+		memset(nickName, 0,sizeof(nickName));
+	};
 }  UserInfoStruct;
 
 // 自动赠送添加的结构体

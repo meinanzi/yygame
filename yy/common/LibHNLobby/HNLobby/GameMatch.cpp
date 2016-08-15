@@ -99,6 +99,11 @@ bool GameMatch::init()
 		_operatorLayout.Button_UnJoinMatch = (Button*)Helper::seekWidgetByName(operatorLayout, "Button_UnJoinMatch");
 		_operatorLayout.Button_UnJoinMatch->addTouchEventListener(CC_CALLBACK_2(GameMatch::joinMatchCallBack, this));
 		_operatorLayout.Button_UnJoinMatch->setVisible(false);
+
+		//购买参赛卷
+		_operatorLayout.Button_BuyTicket = (Button*)Helper::seekWidgetByName(operatorLayout, "Button_BuyTicket");
+		_operatorLayout.Button_BuyTicket->addTouchEventListener(CC_CALLBACK_2(GameMatch::joinMatchCallBack, this));
+		_operatorLayout.Button_BuyTicket->setVisible(true);
 	}
 
 	// 返回按钮
@@ -349,7 +354,7 @@ bool GameMatch::contestInit()
 		}
 		else
 		{
-			sprintf(buffer, GBKToUtf8("第 %d 名:奖励%9d奖券"), i + 1, str[i]);
+			sprintf(buffer, GBKToUtf8("第 %d 名:奖励%9d元亨卡"), i + 1, str[i]);
 		}
 		Text * tmp = Text::create(GBKToUtf8(buffer), "", 25);
 		_matchLayout.ListView_Reward->pushBackCustomItem(tmp);

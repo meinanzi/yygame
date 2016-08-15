@@ -17,9 +17,7 @@ namespace HN
 		static void removeLoading(Node* parent);		
 		virtual bool init() override;
 		void setText(const std::string& text);
-		CREATE_FUNC(LoadingLayer);
-        
-        void setRemoveTimer(int timer, std::function<void()> removecall = nullptr);
+		CREATE_FUNC(LoadingLayer);	
 	protected:
 		// 创建界面
 		void createDialog(const std::string& text, float fontSize, const std::string& image);	
@@ -28,8 +26,6 @@ namespace HN
 		Label*	_label;
 		LoadingLayer();
 		virtual ~LoadingLayer();
-        
-        EventListenerTouchOneByOne* _listener;
 	};
 
 }
