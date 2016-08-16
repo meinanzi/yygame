@@ -117,6 +117,10 @@ namespace DZPoker
 		Label* _roomIdInFo;
 		Label* _lTableName;
 		Label* _lPlayerMoney;
+		Label* _lConstJuShu;			//比赛局数
+		Label* _lConstRank;			//比赛排名
+		
+
 	public:
 		Sprite* money_dichi_jetton[NUM_TABLE_JETTON];									//桌子上的游戏筹码
 	public://动画测试函数；仅用于测试动画效果和调用对应动画的方法  可以删除；
@@ -217,6 +221,8 @@ namespace DZPoker
 		virtual void showUserLackMoney(BYTE byDeskStation);
 		//清理牌桌
 		virtual void clearDesk();
+		//清空桌面的牌
+		virtual void clearDeskCard();
 		//离开牌桌
 		virtual void leaveDesk() ;
 		//显示牌桌准备
@@ -232,6 +238,20 @@ namespace DZPoker
 		//显示牌桌信息
 		virtual void showTableInfo(const std::string& tableName);
 		virtual void showMyMoney(LLONG money);
+
+	public://比赛系列
+		//比赛淘汰
+		virtual void showGameContestKick();       
+		//等待比赛结束
+		virtual void showGameContestWaitOver();
+		//比赛结束
+		virtual void showGameContestOver(MSG_GR_ContestAward* contestAward);
+		//比赛局数
+		virtual void showConstJuShu(int Index);
+		//显示排名
+		virtual void ShowConstRank(int iRankNum, int iRemainPeople) ;		
+		//更新自己的排名	
+		virtual void updateMyRankNum(int iValue);								
 	protected:
 		bool				_firstOnEnter;
 		GameTableLogic*		_tableLogic;
@@ -245,6 +265,8 @@ namespace DZPoker
 		int _waitTime;
 		void isWaitTime(bool isWait);
 		void updateTime(float dt);
+
+		int		_iContestNum;							//记录自己排名
 	};
 }
 

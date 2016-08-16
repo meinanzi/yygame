@@ -69,7 +69,7 @@ namespace HN
 		void login(const std::string& name, const std::string& password, UINT uNameID);
 
 		// 注册
-        void regist(BYTE byFastRegister, UINT uNameID, const std::string& usn, const std::string& name = "", const std::string& password = "", const std::string& agentid="");
+		void regist(BYTE byFastRegister, UINT uNameID, const std::string& usn, const std::string& name = "", const std::string& password = "", const std::string &agency = "");
 
 	public:
 		// 连接消息

@@ -104,35 +104,17 @@ namespace HN
 			return false;
 		}
 
-		_listener = EventListenerTouchOneByOne::create();
-		_listener->setSwallowTouches(true);
-		_listener->onTouchBegan = [&](Touch* touch, Event* event)
+		auto listener = EventListenerTouchOneByOne::create();
+		listener->setSwallowTouches(true);
+		listener->onTouchBegan = [&](Touch* touch, Event* event)
 		{
-            return true;
-//			auto target = static_cast<Sprite*>(event->getCurrentTarget());      
-//			Point locationInNode = target->convertToNodeSpace(touch->getLocation());
-//			Rect rect = Rect(0, 0, _winSize.width, _winSize.height);
-//			return rect.containsPoint(locationInNode);
+			auto target = static_cast<Sprite*>(event->getCurrentTarget());      
+			Point locationInNode = target->convertToNodeSpace(touch->getLocation());
+			Rect rect = Rect(0, 0, _winSize.width, _winSize.height);
+			return rect.containsPoint(locationInNode);
 		};
-		_eventDispatcher->addEventListenerWithSceneGraphPriority(_listener, this);
+		_eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
 
 		return true;
 	}
-    
-    void LoadingLayer::setRemoveTimer(int timer, std::function<void()> removecall)
-    {
-        this->runAction(Sequence::create(
-            DelayTime::create(timer),
-            CallFunc::create([this, removecall]()
-            {
-                _listener->onTouchBegan = [this, removecall](Touch* touch, Event* event)
-                {
-                    if(removecall)
-                        removecall();
-                    this->removeFromParent();
-                    return true;
-                };
-            }),
-            nullptr));
-    }
 }

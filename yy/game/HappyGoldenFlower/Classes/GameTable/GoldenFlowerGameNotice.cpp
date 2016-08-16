@@ -67,7 +67,7 @@ namespace goldenflower
 	{
 		auto winSize = Director::getInstance()->getWinSize();
 		this->setPosition(winSize.width * 0.5f, winSize.height * 0.62f);
-		this->setScale(bAction?0.0f:1.5f);
+		this->setScale(bAction?0.0f:1.2f);
 		_parent->addChild(this);
 	
 

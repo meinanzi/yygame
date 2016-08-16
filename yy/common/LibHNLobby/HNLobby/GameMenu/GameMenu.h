@@ -69,7 +69,7 @@ public:
 public:
 	//注册回调
 	virtual void onPlatformRegistCallback(bool success, bool fastRegist, const std::string& message,
-                                          const std::string&name, const std::string& pwd, const std::string& agentid, int loginTimes)  override;
+		const std::string&name, const std::string& pwd, int loginTimes)  override;
 
 	//登陆回调
 	virtual void onPlatformLoginCallback(bool success, const std::string& message,
@@ -88,8 +88,7 @@ public:
 	bool				_isAccountLogin;
 	std::string			_userName;
 	std::string			_userPsd;
-    std::string         _agentid;
-
+	std::string			_agency;
 	// 是否是游客
 	static bool			isVisitor;
 };

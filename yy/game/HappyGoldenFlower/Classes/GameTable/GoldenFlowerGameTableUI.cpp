@@ -405,6 +405,7 @@ GameTableUI::GameTableUI()
 : _dashboard(nullptr), _endLayer(nullptr)
 {
 	memset(_players, 0, sizeof(_players));
+	_iContestNum = -1;
 }
 
 GameTableUI::~GameTableUI()
@@ -1016,9 +1017,12 @@ void GameTableUI::showUserProfit(BYTE seatNo, LLONG money)
 
 void GameTableUI::showTableInfo(const std::string& tableName)
 {
+	if (_lRoomInfo)
+	{
+		removeChild(_lRoomInfo);
+	}
 	char str[50] = { 0 };
 	sprintf(str, "房间:%s", tableName.c_str());
-	//_lRoomInfo = Label::createWithTTF(gFontConfig_18, GBKToUtf8(str));
 	_lRoomInfo = Label::createWithSystemFont(GBKToUtf8(str), "", 18);
 	_lRoomInfo->setAnchorPoint(Vec2(1, 1));
 	auto size = Director::getInstance()->getWinSize();
@@ -1811,7 +1815,151 @@ void GameTableUI::addContestUI()
 }
 
 
+void GameTableUI::showGameContestKick()
+{
+	auto size = Director::getInstance()->getWinSize();
+	auto kickImg = Sprite::create("landlord/game/contest/ContestKick.png");
+	kickImg->setPosition(Vec2(size.width /2, size.height /2));
+	kickImg->setName("kickPtr");
+	kickImg->setScale(0.0f);
+	addChild(kickImg, 25);
 
+	kickImg->runAction(Sequence::create(DelayTime::create(3.7f),
+		Spawn::create(ScaleTo::create(1.0f, 1.0f),
+		RotateBy::create(1.0f, 360.0f), nullptr), DelayTime::create(3.0f),
+		CallFunc::create([=](){leaveDesk(); }), nullptr));
 }
+
+void GameTableUI::showGameContestWaitOver()
+{
+	auto size = Director::getInstance()->getWinSize();
+	auto waitPtr = Sprite::create("landlord/game/contest/ContestWait.png");
+	waitPtr->setPosition(Vec2(size.width / 2, size.height / 2));
+	waitPtr->setName("waitPtr");
+	addChild(waitPtr, 25);
+}
+
+void GameTableUI::updateMyRankNum(int iValue) 						//更新自己的排名	
+{
+	_iContestNum = iValue;
+}
+
+
+void GameTableUI::showContsetJuShu(int &Index) 					//显示排名
+{
+	if (_lConstJuShu)
+	{
+		removeChild(_lConstJuShu);
+	}
+	
+	char str[50] = { 0 };
+	sprintf(str, "第%d局", Index);
+	_lConstJuShu = Label::createWithSystemFont(GBKToUtf8(str), "", 18);
+	_lConstJuShu->setAnchorPoint(Vec2(1, 1));
+	auto size = Director::getInstance()->getWinSize();
+	_lConstJuShu->setPosition(Vec2(size.width - 30, size.height - 30));
+	this->addChild(_lConstJuShu, TableInfo_Zorder);
+	
+}
+
+void GameTableUI::ShowConstRank(int iRankNum, int iRemainPeople)					//显示排名
+{
+	if (_lConstRank)
+	{
+		removeChild(_lConstRank);
+	}
+	char str[50] = { 0 };
+	sprintf(str, "排名：%d/%d", iRankNum, iRemainPeople);
+	_lConstRank = Label::createWithSystemFont(GBKToUtf8(str), "", 18);
+	_lConstRank->setAnchorPoint(Vec2(1, 1));
+	auto size = Director::getInstance()->getWinSize();
+	_lConstRank->setPosition(Vec2(size.width - 10, size.height - 50));
+	this->addChild(_lConstRank, TableInfo_Zorder);
+}
+
+void GameTableUI::showGameContestOver(MSG_GR_ContestAward* contestAward) //比赛结束
+{
+	//隐藏开始按钮
+	showReady(false);
+	//隐藏倒计时
+	IStartTimer(0);
+	//全部清空座位 包括自己
+	for (BYTE i = 0; i < PLAY_COUNT; i++)
+	{
+		showUserUp(i, true);
+		showReadySign(i, false);
+		showWatchCard(i, false);
+		showGiveUpCard(i, false);
+	}
+	clearInvalidUser();
+	//移除等待排名
+	auto waitPtr = dynamic_cast<Sprite*>(this->getChildByName("waitPtr"));
+	if (waitPtr != nullptr)
+	{
+		waitPtr->removeFromParent();
+	}
+
+	//没有奖励 那就是被淘汰了
+	if (!contestAward->iAward)
+	{
+		showGameContestKick();
+		return;
+	}
+	Sprite* awardDlg = nullptr;
+	if (contestAward->iAwardType)
+	{
+		awardDlg = Sprite::create("landlord/game/contest/ContestAwardsX.png");
+	}
+	else
+	{
+		awardDlg = Sprite::create("landlord/game/contest/ContestAwards.png");
+	}
+	auto size = Director::getInstance()->getWinSize();
+	awardDlg->setPosition(Vec2(size.width/2, size.height/2));
+	addChild(awardDlg, TableInfo_Zorder);
+
+	awardDlg->setName("awardDlg");
+	ParticleSystem *meteor = ParticleSystemQuad::create("landlord/game/contest/huoyan00.plist");
+	meteor->setPosition(Vec2(awardDlg->getContentSize().width / 2, 10));
+	meteor->setAutoRemoveOnFinish(true);
+	awardDlg->addChild(meteor);
+
+	awardDlg->setScale(0.0f);
+	awardDlg->runAction(Sequence::create(DelayTime::create(3.7f), ScaleTo::create(0.2f, 1.0f), nullptr));
+
+	char str[64] = { 0 };
+	sprintf(str, "%d", _iContestNum);
+	auto rankText = TextAtlas::create(str, "landlord/game/contest/js_win_num.png", 23, 28, "0");
+	rankText->setPosition(Vec2(awardDlg->getContentSize().width * 0.73, awardDlg->getContentSize().height * 0.555));
+	awardDlg->addChild(rankText);
+
+	sprintf(str, "%d", contestAward->iAward);
+	auto awardText = TextAtlas::create(str, "landlord/game/contest/js_win_num.png", 23, 28, "0");
+	awardText->setPosition(Vec2(awardDlg->getContentSize().width * 0.45, awardDlg->getContentSize().height * 0.345));
+	awardText->setAnchorPoint(Vec2(0, 0.5));
+	awardDlg->addChild(awardText);
+
+	auto MyListener = EventListenerTouchOneByOne::create();
+	MyListener->setSwallowTouches(true);
+	MyListener->onTouchBegan = [&](Touch* touch, Event* event)
+	{
+		auto awardDlg = (Sprite*)getChildByName("awardDlg");
+		auto dlgSize = awardDlg->getBoundingBox();
+		Size s = this->getContentSize();
+		Rect rect = Rect(0, 0, s.width, s.height);
+		if (rect.containsPoint(touch->getLocation()))
+		{
+			if (dlgSize.containsPoint(touch->getLocation())) return true;
+			awardDlg->runAction(Sequence::create(ScaleTo::create(0.2f, 0.0f), CallFunc::create([&](){leaveDesk(); }), RemoveSelf::create(true), nullptr));
+			return true;
+		}
+		else
+			return false;
+	};
+
+	_eventDispatcher->addEventListenerWithSceneGraphPriority(MyListener, awardDlg);
+}
+}
+
 
 

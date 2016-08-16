@@ -74,11 +74,10 @@ namespace HN
 		 * @return: return user's info.
 		 */
 		UserInfoStruct* getUserBySeatNo(BYTE lSeatNo);
-        
-        bool isContestGame() { return RoomLogic()->getRoomRule() & GRR_CONTEST;}
-        bool isTimeContest() { return RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST;}
-        bool isQueueGame() { return RoomLogic()->getRoomRule() & GRR_QUEUE_GAME;}
-        
+
+		bool isContestGame() { return (RoomLogic()->getRoomRule() & GRR_CONTEST || RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST); }
+		bool isQueueGame() { return RoomLogic()->getRoomRule() & GRR_QUEUE_GAME; }
+
 	public:
 		HNGameLogicBase(BYTE deskNo, INT maxPlayers, bool autoCreate, IHNGameLogicBase* callback);
 		virtual ~HNGameLogicBase();

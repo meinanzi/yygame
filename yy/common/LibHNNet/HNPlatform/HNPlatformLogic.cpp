@@ -144,9 +144,9 @@ namespace HN
 		sendData(MDM_GP_LOGON, ASS_GP_LOGON_BY_NAME, &data, sizeof(data));		
 	} 
 
-    void HNPlatformLogic::regist(BYTE byFastRegister, UINT uNameID, const std::string& usn, const std::string& name, const std::string& password, const std::string& agentid)
+	void HNPlatformLogic::regist(BYTE byFastRegister, UINT uNameID, const std::string& usn, const std::string& name, const std::string& password, const std::string &agency)
 	{
-		MSG_GP_S_Register data = {0};
+		MSG_GP_S_Register data = { 0 };
 		data.byFromPhone = 1;
 		data.byFastRegister = byFastRegister;
 #if (HN_TAREGET_PLATFORM == HN_TARGET_PHONE_ONLY)
@@ -154,8 +154,8 @@ namespace HN
 #endif
 		strcpy(data.szName, name.c_str());
 		strcpy(data.szPswd, password.c_str());
+		strcpy(data.szAgency, agency.c_str());
 		strcpy(data.szHardID, usn.c_str());
-        strcpy(data.szAgentId, agentid.c_str());
 		PlatformLogic()->sendData(MDM_GP_REGISTER, ASS_GP_REGISTER, &data, sizeof(data));
 	}
 

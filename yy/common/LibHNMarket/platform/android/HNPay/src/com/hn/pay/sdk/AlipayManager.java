@@ -19,23 +19,23 @@ import com.hn.pay.base.PayResultCallBack;
 import com.hn.pay.base.PayResultCallBack.PAY_SDK;
 
 public class AlipayManager {
-	public static final String PARTNER = "2088011485506714";
-	public static final String SELLER = "2088011485506714";
-	public static final String RSA_PRIVATE = "MIICWwIBAAKBgQDOekn1N/UdqwgpkcR38wAC8E2qr5kfHj94Iqvghfeem+dhueVP"+
-			"rhPeo3yWKdQA1/BjmZRBszvmjq3h5Ob7fnt0IWHGUqGcSO338l452dWo7i7pKi7Y"+
-			"we8/Pz+o1LsUEE407zU7PbieFyXpNCCc12J7Crg2j9O2tD4dvtJtvFObfQIDAQAB"+
-			"AoGANc1NujUTjOCFJvfRvwO1zA473q8U8jPai/5U1RNze4PaXe+nngSZLtlg3GwX"+
-			"zwR1oi5hoGEIycIB8yvHOF8z4Y2/cj1mf4TwqyESwyPCPlmc4xK3VQRDVVdeJ7nA"+
-			"+ypkIlN8GftQavnlk7Nb42VDeivmD8wTMvnLCTSr8vcOS00CQQD10UaT3wue3YWR"+
-			"6BTXraE8zvOODFz/dVrJEsmmTwGdWpZXkMgrsDT/HMStvMkX7bVQvg8Gbi5t4bx6"+
-			"2HaY26AnAkEA1wfXiMgZEzzdJWJHRRXI0rYKwMgMFVc5b0WiqhJaQ9SnCbeGpHF2"+
-			"aoXA1hZ+HhDWGx1nFMhDBFNe046ixQHJuwJASkUdtuXIJAq4JZpiWbvbIH1CtyNj"+
-			"Icf6UxA7HuV2Dm3lSLW01QZbLM0rW3bTp0gp5ShXb9DwdECk6tTmGE8bNwJAQzqW"+
-			"bpNxE4yx76A8fCMFeKulzQQ+kuWEdX+mDdpTEmYIG4eftwYqab+LvOOnZqsI5c1Z"+
-			"jyvVmCKgwTAVP9cBRQJADe+cIHV4U2yPfHt4PYrNgKW8XMVZu0syqq02psgQA9tI"+
-			"eSoOJVMJxPWtyDtU297QMvSm64CfrkqXeEl5Lc5dKA==";
+	public static final String PARTNER = "2088421471797022";
+	public static final String SELLER = "2088421471797022";
+	public static final String RSA_PRIVATE = "MIICXAIBAAKBgQCwXb4hCkjOvTtiOO+5IzQDbBEVCKlt9/ZxKL8omrbZiNUnA3ye"+
+		"upD+EFH1m8vGaZCG5xfez8ZaCnh4tOHib3wM8HzFcPXZkugFCkZTDnyrpgjt8YNt"+
+		"L55AazJXckze7UmWGc/musXirI/7IZQZ8ukrLfASMbQ39X6yeHPEevDLEQIDAQAB"+
+		"AoGAYL37JgqLJ4Rbh6RtsuNhi6MCt8P5lE3ZC/dq7C35sNfC/FSITlVOZV60ZoJg"+
+		"Q+TyF126FUlpp0hpDuVBpsC6jUD9kx9K48UUt7pHldMuzh9uwlfvnJV/0JPjTPOn"+
+		"OFWbWCUnPx/bI2V4dGuvyx+kB7dlKTUrXujkU/4Mr7aKPKUCQQDg06z5A9OGGrpn"+
+		"Tzao/6DhLjbf4pEJGIv0Tdvk00rMIjbgQ64RZauOFRnhJrSUPWE8zWFWpRGOiiT/"+
+		"IycdIeCDAkEAyNHvUryvdqtYnZKCTW21PArvMXXfaUQ18bZzzEhdNkjhBPRzzW24"+
+		"8PoCIRXdESQ2gGhlXl628HTy3OLDyKBp2wJABUo1ua4zXeZnGGMuwA8zs9ioheAI"+
+		"1ZP0Rw1F7T5jdiYf8GrnP5WK0c8BSuDkQtCm5w1WCvnbTeVGNZKYKwFPDQJAUZXA"+
+		"dcuEOWDZSoLX/x7f7zm9/UkW74wvojhuiQKpI8Gt8TZiyYWXCgd3z/sy6aDdp4NC"+
+		"E3nFNqE8fXJ++cX52wJBALProEMAIVTylgQBL9P8MQAq15grei73DX8gMZ5BoUi8"+
+		"amuGFDdoLkmBnIDj8k06rPV6yYp3yRwPgBD3k3/iVBo=";
 	
-	public static final String NOTIFY_URL = "http://yc.kl78.com/manage/pay/alipay/alipay_mobile.aspx";
+	public static final String NOTIFY_URL = "https://mapi.alipay.com/gateway.do?";
 
 	private static final int SDK_PAY_FLAG = 1;
 

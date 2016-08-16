@@ -99,6 +99,8 @@ private:
 	
 	PlayerUI* _players[PLAY_COUNT];
 	Label* _lRoomInfo;
+	Label* _lConstJuShu;
+	Label* _lConstRank;
 	GameTableLogic* _tableLogic;
 	GameDelearUI* _dealer;
 	Dashboard* _dashboard;
@@ -108,6 +110,9 @@ private:
 	int _visibleWidth, _visibleHeight;
 
 	GameNotice* _QueIngNotice;			//排队提示
+
+
+	int					_iContestNum;							//记录自己排名
 private:
 	virtual bool onTouchBegan(Touch *touch, Event *unused_event);
 private:
@@ -137,7 +142,12 @@ public:
 
 public:	//比赛系列
 	virtual void addContestUI() override;											//添加比赛局数、排名UI
-
+	virtual void showGameContestKick() override;                                    //比赛淘汰
+	virtual void showGameContestWaitOver() override;
+	virtual void showContsetJuShu(int &_contestIndex) override;					//显示局数
+	virtual void updateMyRankNum(int iValue) override;								//更新自己的排名	
+	virtual void ShowConstRank(int iRankNum, int iRemainPeople) override;					//显示排名
+	virtual void showGameContestOver(MSG_GR_ContestAward* contestAward) override;//比赛结束
 	
 public:
 	/*

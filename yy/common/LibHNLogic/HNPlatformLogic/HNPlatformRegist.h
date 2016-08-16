@@ -12,7 +12,7 @@ namespace HN
 	{
 	public:
 		virtual void onPlatformRegistCallback(bool success, bool fastRegist, const std::string& message,
-                                              const std::string&name, const std::string& pwd, const std::string& agentid, int loginTimes){}
+			const std::string&name, const std::string& pwd, int loginTimes){}
 	};
 
 	/*
@@ -22,7 +22,7 @@ namespace HN
 	{
 	public:
 		// 注册请求
-        bool requestRegist(const std::string &name, const std::string pwd, const std::string& agentid, bool fastRegist);
+		bool requestRegist(const std::string &name, const std::string pwd, const std::string agency, bool fastRegist);
 
 		// 平台连接
 		virtual void I_P_M_Connect(bool result) override;
@@ -44,9 +44,9 @@ namespace HN
 
 		// 注册密码
 		std::string _pwd;
-        
-        // 代理商账号
-        std::string _agentid;
+
+		//代理商
+		std::string _agency;
 
 		// 回调
 		IHNPlatformRegist* _callback;
@@ -61,7 +61,7 @@ namespace HN
 			eSUCCESS   = 1, // 注册成功
 			eEXIST     = 2, // 相同名称
 			eSENSITIVE = 3, // 敏感词汇
-            eNOEGENCY,// 代理商不存在
+			eNOAGENCY = 4, //代理商不存在
 		};
 	};
 }

@@ -1114,11 +1114,41 @@ namespace DZPoker
 
 			}
 
+			if (_bContestRoom)
+			{
+				if (PlatformLogic()->loginResult.dwUserID == userSit->dwUserID)
+				{
+					//更新排名
+					_uiCallback->updateMyRankNum(user->iRankNum);
+					_uiCallback->ShowConstRank(user->iRankNum, user->iRemainPeople);
+					//显示第几局
+					if (!user->iContestCount)
+					{
+						user->iContestCount = 1;
+					}
+					_uiCallback->showConstJuShu(user->iContestCount);
+
+				}
+			}
 		}
 	}
 
+
+	void GameTableLogic::dealQueueUserSitMessage(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& user)
+	{
+		HNGameLogicBase::dealQueueUserSitMessage(deskNo, user);
+		if (_mySeatNo != INVALID_DESKSTATION)
+		{
+			loadDeskUsersUI();
+		}
+	}
+
+
 	void GameTableLogic::dealUserUpResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user)
 	{
+		HNGameLogicBase::dealUserUpResp(userSit, user);
+		//排队场就不清除自己的头像信息了
+
 		HNLOG("onUserUpMessage");
 		if(_tableInfo.bDeskIndex == userSit->bDeskIndex)
 		{
@@ -1128,7 +1158,22 @@ namespace DZPoker
 			if(userSit->dwUserID == PlatformLogic()->loginResult.dwUserID)
 			{
 				_tableInfo.byMeStation = INVALID_DESKNO;
-				_uiCallback->leaveDesk();
+				//准备排队
+				if (_isReadyQueue)
+				{
+					RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
+					_isReadyQueue = false;
+				
+					_uiCallback->clearDesk();
+
+					//显示正在为您配桌提示
+					_uiCallback->noticeMessage(GBKToUtf8("正在为您配桌，请耐心等待..."));
+				}
+				else
+				{
+					_uiCallback->leaveDesk();
+				}
+				
 			}
 		}
 	}
@@ -1175,6 +1220,15 @@ namespace DZPoker
 		sendUserBet(ET_CHECK,0);
 	}
 
+	//加入排队
+	void GameTableLogic::sendQueue()
+	{
+		_isReadyQueue = true;
+		//排队机准备，先发送站起，再开始游戏
+		RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_USER_UP);
+		_uiCallback->clearDesk();
+	}
+
 	void GameTableLogic::sendUserUp()
 	{
 		do 
@@ -1191,6 +1245,23 @@ namespace DZPoker
 				break;
 			}
 
+
+			//比赛场
+			if (_bContestRoom)
+			{
+				//游戏结束了
+				if (_bContestEnd)
+				{
+					_uiCallback->leaveDesk();
+					break;
+				}
+				else
+				{
+					_uiCallback->noticeMessage(GBKToUtf8("您正在比赛中，不能退出比赛"));
+					break;
+				}
+			}
+
 			UserInfoStruct* myInfo = _deskUserList->getUserByDeskStation(_tableInfo.byMeStation);
 			if(myInfo != nullptr && myInfo->bUserState == USER_PLAY_GAME)
 			{
@@ -1203,8 +1274,52 @@ namespace DZPoker
 		} while (0);
 	}
 
+
+	//进入游戏
+	void GameTableLogic::enterGame()
+	{
+		if (RoomLogic()->getRoomRule() & GRR_CONTEST || (RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST))	// 定时淘汰比赛场
+		{
+			_bContestRoom = true;
+		}
+		else if (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME)		// 排队机
+		{
+			_bContestRoom = false;
+		}
+		else					// 金币场不扣积分
+		{
+			_bContestRoom = false;
+		}
+
+		if (_mySeatNo == INVALID_DESKSTATION && !_autoCreate)
+		{
+			for (int i = 0; i < PLAY_COUNT; i++)
+			{
+				if (!_existPlayer[i])
+				{
+					sendUserSit(logicToViewSeatNo(i));
+					break;
+				}
+			}
+		}
+		else
+		{
+
+			loadDeskUsersUI();
+
+			if (_mySeatNo != INVALID_DESKSTATION && _autoCreate)
+			{
+				sendGameInfo();
+			}
+		}
+	}
+
 	void GameTableLogic::loadDeskUsersUI()
 	{		
+		//先全部清空一下
+		ClearDeskUser();
+	
+		
 		//自动创建的牌桌
 		if(_tableInfo.bAutoCreate)
 		{
@@ -1221,6 +1336,21 @@ namespace DZPoker
 				if(userInfo->dwUserID == RoomLogic()->loginResult.pUserInfoStruct.dwUserID)
 				{
 					_tableInfo.byMeStation = i;
+
+					//是比赛房
+					if (_bContestRoom)
+					{
+						//显示第几局
+						if (!userInfo->iContestCount)
+						{
+							userInfo->iContestCount = 1;
+						}
+				
+						_uiCallback->showConstJuShu(userInfo->iContestCount);
+						//排名
+						_uiCallback->updateMyRankNum(userInfo->iRankNum);
+						_uiCallback->ShowConstRank(userInfo->iRankNum, userInfo->iRemainPeople);
+					}
 				}
 				seatNo = logicToViewStation(i);
 				_uiCallback->showUser(seatNo, i == _tableInfo.byMeStation, userInfo->bBoy);
@@ -1243,7 +1373,7 @@ namespace DZPoker
 
 //		if(_tableInfo.bAutoCreate)
 //		{
-        sendGameInfo();
+		    sendGameInfo();
 //		}
 
 		// 显示牌桌信息
@@ -1343,7 +1473,8 @@ namespace DZPoker
 	void GameTableLogic::initData()
 	{
 		_tableInfo.bIsOffline = false;
-
+		_isReadyQueue = false;
+		_bContestEnd = false;
 		// 记录下注玩家
 		//m_iBetCounts = 0;
 
@@ -1793,38 +1924,68 @@ namespace DZPoker
     //比赛信息广播
     void GameTableLogic::dealGameContestNotic(MSG_GR_I_ContestInfo* contestInfo)
     {
-        char message[64] = { 0 };
-        sprintf(message, "比赛场报名人数已有%d人，高手在这里！", contestInfo->iContestNum);
-        _uiCallback->noticeMessage(GBKToUtf8(message));
+        //char message[64] = { 0 };
+        //sprintf(message, "比赛场报名人数已有%d人，高手在这里！", contestInfo->iContestNum);
+        //_uiCallback->noticeMessage(GBKToUtf8(message));
     }
     //用户比赛信息
     void GameTableLogic::dealGameUserContset(MSG_GR_ContestChange* contestChange)
     {
+		_uiCallback->clearDesk();
+		//更新自己的排名
+		if ((contestChange->dwUserID == PlatformLogic()->loginResult.dwUserID))
+		{
+			//更新排名
+			_uiCallback->updateMyRankNum(contestChange->iRankNum);
+			//显示自己的排名
+			_uiCallback->ShowConstRank(contestChange->iRankNum, contestChange->iRemainPeople);
+		}
+
         //显示正在为您配桌提示
         _uiCallback->noticeMessage(GBKToUtf8("更新排名..."));//, true);
     }
     //比赛淘汰
     void GameTableLogic::dealGameContestKick()
     {
-        //显示正在为您配桌提示
-        _uiCallback->noticeMessage(GBKToUtf8("很遗憾，您已被淘汰..."));//, true);
+		//显示正在为您配桌提示
+		_uiCallback->noticeMessage(GBKToUtf8("很遗憾，您已被淘汰..."));//, true);
+		//清空桌面
+		ClearDeskUser();
+		//比赛淘汰
+		_uiCallback->showGameContestKick();
     }
     //等待比赛结束
     void GameTableLogic::dealGameContestWaitOver()
     {
         //显示正在为您配桌提示
         _uiCallback->noticeMessage(GBKToUtf8("等待比赛结束"));//, true);
+		// 等待比赛结束
+		_uiCallback->showGameContestWaitOver();
     }
     //比赛结束
     void GameTableLogic::dealGameContestOver(MSG_GR_ContestAward* contestAward)
     {
         //标记比赛结束
-//        _bContestEnd = true;
+        _bContestEnd = true;
         //显示正在为您配桌提示
         _uiCallback->noticeMessage(GBKToUtf8("比赛结束"));//, true);
+		_uiCallback->showGameContestOver(contestAward);
     }
     
     
+	//清空桌面信息玩家
+	void	GameTableLogic::ClearDeskUser()
+	{
+		//先全部清空一下桌面
+		_uiCallback->clearDesk();
+		for (BYTE i = 0; i < PLAY_COUNT; i++)
+		{
+			_uiCallback->showUserUp(i, false);
+			_tableInfo.bHaveUser[i] = false;
+		}
+
+		_uiCallback->clearDeskCard();
+	}
     
     
 }

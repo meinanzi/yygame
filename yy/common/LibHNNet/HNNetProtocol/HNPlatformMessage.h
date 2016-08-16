@@ -143,7 +143,7 @@ typedef struct tagMSG_S_ConnectSuccess
 // 用户登陆（帐号）结构
 typedef struct tagMSG_GP_S_LogonByNameStruct 
 {
-	UINT								uRoomVer;						//大厅版本
+	UINT									uRoomVer;						//大厅版本
 	CHAR								szName[64];						//登陆名字
 	CHAR								TML_SN[128];					
 	CHAR								szMD5Pass[52];					//登陆密码
@@ -163,48 +163,48 @@ typedef struct tagMSG_GP_S_LogonByNameStruct
 typedef struct tagMSG_GP_R_LogonResult 
 {
 	INT									dwUserID;							//用户 ID 
-	INT									dwGamePower;						//游戏权限
-	INT									dwMasterPower;						//管理权限
-	INT									dwMobile;							//手机号码
+	INT									dwGamePower;				//游戏权限
+	INT									dwMasterPower;				//管理权限
+	INT									dwMobile;						//手机号码
 	INT									dwAccID;							//Acc 号码
-	UINT								dwLastLogonIP;						//上次登陆 IP
-	UINT								dwNowLogonIP;						//现在登陆 IP
-	UINT								bLogoID;							//用户头像
-	bool								bBoy;								//性别
-	CHAR								szName[61];							//用户登录名
-	CHAR								TML_SN[128];						//数字签名
-	CHAR								szMD5Pass[50];						//用户密码
-	CHAR								nickName[32];						//用户昵称
+	UINT									dwLastLogonIP;				//上次登陆 IP
+	UINT									dwNowLogonIP;				//现在登陆 IP
+	UINT									bLogoID;							//用户头像
+	bool									bBoy;								//性别
+	CHAR								szName[61];						//用户登录名
+	CHAR								TML_SN[128];					//数字签名
+	CHAR								szMD5Pass[50];					//用户密码
+	CHAR								nickName[32];					//用户昵称
 	LLONG								i64Money;							//用户金币
 	LLONG								i64Bank;							//用户财富
-	INT                                 iLotteries;                         //奖券
-	INT									dwFascination;						//魅力
+	INT									iLotteries;                         //奖券
+	INT									dwFascination;					//魅力
 
 	//新用户资料
-	CHAR								szSignDescr[128];					//个性签名
-	CHAR								szRealName[20];						//真实姓名
-	CHAR								szIDCardNo[36];						//证件号
-	CHAR								szMobileNo[50];						//移动电话
-	CHAR								szQQNum[20];						//QQ号码
-	CHAR								szAdrNation[50];					//玩家的国藉
-	CHAR								szAdrProvince[50];					//玩家所在的省份
-	CHAR								szAdrCity[50];						//玩家所在的城市
-	CHAR								szZipCode[10];						//邮政编码
+	CHAR								szSignDescr[128];				//个性签名
+	CHAR								szRealName[20];				//真实姓名
+	CHAR								szIDCardNo[36];				//证件号
+	CHAR								szMobileNo[50];				//移动电话
+	CHAR								szQQNum[20];					//QQ号码
+	CHAR								szAdrNation[50];				//玩家的国藉
+	CHAR								szAdrProvince[50];				//玩家所在的省份
+	CHAR								szAdrCity[50];					//玩家所在的城市
+	CHAR								szZipCode[10];					//邮政编码
 	CHAR								szEmail[50];						//电子邮件
-	CHAR								szAddress[128];						//联系地址
-	CHAR								szSchooling[20];					//文化程度
-	CHAR								szHomePage[128];					//个人主页
+	CHAR								szAddress[128];					//联系地址
+	CHAR								szSchooling[20];				//文化程度
+	CHAR								szHomePage[128];			//个人主页
 	CHAR								szTelNo[20];						//固定电话
-	CHAR								szMSNID[50];						//MSN帐号
+	CHAR								szMSNID[50];					//MSN帐号
 
-	INT									dwTimeIsMoney;						///上次登陆时长所换取的金币
+	INT									dwTimeIsMoney;				///上次登陆时长所换取的金币
 	INT									iVipTime;							///
-	INT									iDoublePointTime;					///双倍积分时间
-	INT									iProtectTime;						///护身符时间，保留
-	bool								bLoginBulletin;						///是否有登录公告
-	INT									iLockMathine;						///当前帐号是否锁定了某台机器，1为锁定，0为未锁定
+	INT									iDoublePointTime;			///双倍积分时间
+	INT									iProtectTime;					///护身符时间，保留
+	bool									bLoginBulletin;					///是否有登录公告
+	INT									iLockMathine;					///当前帐号是否锁定了某台机器，1为锁定，0为未锁定
 	INT									iBindMobile;						///当前帐号是否绑定手机号码，1为绑定，0为未绑定
-	INT									iAddFriendType;						///是否允许任何人加为好友
+	INT									iAddFriendType;				///是否允许任何人加为好友
 } MSG_GP_R_LogonResult;
 
 typedef MSG_GP_R_LogonResult MSG_GP_UserInfo;
@@ -283,7 +283,7 @@ typedef struct tagMSG_GP_SR_Register
 	CHAR								szHardID[64];	// 硬件ID
 	CHAR								szName[64];		// 用户名
 	CHAR								szPswd[64];		// 密码
-    CHAR                                szAgentId[64];//代理商账号
+	CHAR								szAgency[64];	//代理商
 	UINT								LogonTimes;		// 登陆次数
 }  MSG_GP_S_Register;
 
@@ -436,7 +436,7 @@ typedef struct NET_PROP_BUY_LOG_RESULT
 	CHAR	szPropName[50];						//道具名称 
 	BYTE	bPropID;							//道具ID
 	UINT	iPorpCount;							//购买数量
-	BYTE	bCostType;							//花费的类型（1-金币，2-奖券）
+	BYTE	bCostType;							//花费的类型（1-金币，2-元亨卡）
 	UINT	iCost;								//花费的数量
 	LLONG	llTime;								//购买的时间
 }  NET_PROP_BUY_LOG_RESULT;

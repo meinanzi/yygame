@@ -101,7 +101,7 @@
 		BC9E6C371B11A19A002EEC6F /* GameLandLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameLandLayer.cpp; sourceTree = "<group>"; };
 		BC9E6C381B11A19A002EEC6F /* GameLandLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLandLayer.h; sourceTree = "<group>"; };
 		BC9E6C391B11A19A002EEC6F /* GameMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameMenu.cpp; sourceTree = "<group>"; };
-		BC9E6C3A1B11A19A002EEC6F /* GameMenu.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GameMenu.h; sourceTree = "<group>"; };
+		BC9E6C3A1B11A19A002EEC6F /* GameMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenu.h; sourceTree = "<group>"; };
 		BC9E6C3B1B11A19A002EEC6F /* GameRegisterLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameRegisterLayer.cpp; sourceTree = "<group>"; };
 		BC9E6C3C1B11A19A002EEC6F /* GameRegisterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRegisterLayer.h; sourceTree = "<group>"; };
 		BC9E6C3D1B11A19A002EEC6F /* GameNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameNotice.cpp; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		BC9E6C401B11A19A002EEC6F /* GamePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlatform.h; sourceTree = "<group>"; };
 		BC9E6C411B11A19A002EEC6F /* GamePrompt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePrompt.cpp; sourceTree = "<group>"; };
 		BC9E6C421B11A19A002EEC6F /* GamePrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePrompt.h; sourceTree = "<group>"; };
-		BC9E6C431B11A19A002EEC6F /* GameRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoom.cpp; sourceTree = "<group>"; };
-		BC9E6C441B11A19A002EEC6F /* GameRoom.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GameRoom.h; sourceTree = "<group>"; };
+		BC9E6C431B11A19A002EEC6F /* GameRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameRoom.cpp; sourceTree = "<group>"; };
+		BC9E6C441B11A19A002EEC6F /* GameRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoom.h; sourceTree = "<group>"; };
 		BC9E6C451B11A19A002EEC6F /* LayerManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerManger.cpp; sourceTree = "<group>"; };
 		BC9E6C461B11A19A002EEC6F /* LayerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerManger.h; sourceTree = "<group>"; };
 		BC9E6C481B11A19A002EEC6F /* BindPhone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BindPhone.cpp; sourceTree = "<group>"; };

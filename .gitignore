@@ -5,3 +5,7 @@ libs/
 ~$*
 *.udf
 *.Dir
+bin/
+gen/
+.settings/
+.classpath

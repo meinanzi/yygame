@@ -18,7 +18,7 @@ class RegisterLayer : public HNLayer, public ui::EditBoxDelegate
 {
 
 public:
-    typedef std::function<void (const std::string& name, const std::string& psd, const std::string& agentid)> RegisterCallBack;
+	typedef std::function<void(const std::string& name, const std::string& psd, const std::string& agency)> RegisterCallBack;
 	typedef std::function<void ()> CloseCallBack;
 
 private:
@@ -28,7 +28,7 @@ private:
 		ImageView*  registBG;
 		HNEditBox*	editBoxUserName;
 		HNEditBox*	editBoxPassWord;
-        HNEditBox*  editBoxAgentid;
+		HNEditBox*	editBoxAgency;
 		CheckBox*   agree;
 		CheckBox*   showPass;
 		Node*		registUI;
@@ -58,6 +58,7 @@ private:
 	void closeClickCallback(Ref* pSender, Widget::TouchEventType type);
 	void registerClickCallback(Ref* pSender, Widget::TouchEventType type);
 	void resetClickCallBack(Ref* pSender, Widget::TouchEventType type);
+	void getAgencyClickCallBack(Ref* pSender, Widget::TouchEventType type);
 	// 复选框回调函数
 	void checkBoxCallback(Ref* pSender,CheckBox::EventType type);
 	//协议

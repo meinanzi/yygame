@@ -284,8 +284,11 @@ namespace goldenflower
 		_uiCallback->showWatchCard(INVALID_SEAT_NO, false);
 		showUserInfo();	
 
-		_uiCallback->showEndBox(pData, viewSeat, logicToViewSeatNo(pData->byWiner));
-		
+		//比赛场就不显示结算框了
+		if (false == _bContestRoom)
+		{
+			_uiCallback->showEndBox(pData, viewSeat, logicToViewSeatNo(pData->byWiner));
+		}
 	}
 
 
@@ -429,7 +432,7 @@ namespace goldenflower
 		{
 			_uiCallback->showNotice(GBKToUtf8(pGameInfo->szMessage));
 			//排队机不需要准备按钮
-			if ( RoomLogic()->getRoomRule() & GRR_QUEUE_GAME)		
+			if (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME || RoomLogic()->getRoomRule() & GRR_CONTEST || RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST)
 			{
 				_uiCallback->showReady(false);
 			}
@@ -724,9 +727,29 @@ namespace goldenflower
 		{		
 			_uiCallback->showUser(vSeatNo, PlatformLogic()->loginResult.dwUserID == userSit->dwUserID, user->bBoy);
 		}
-
 		_uiCallback->showUserName(vSeatNo, user->nickName);
-		_uiCallback->showUserMoney(vSeatNo, user->i64Money);
+		if (_bContestRoom)
+		{
+			if (PlatformLogic()->loginResult.dwUserID == userSit->dwUserID)
+			{
+				//更新排名
+				_uiCallback->updateMyRankNum(user->iRankNum);
+				_uiCallback->ShowConstRank(user->iRankNum, user->iRemainPeople);
+				//显示第几局
+				if (!user->iContestCount)
+				{
+					user->iContestCount = 1;
+				}
+				_uiCallback->showContsetJuShu(user->iContestCount);
+				//比赛金币
+				_uiCallback->showUserMoney(vSeatNo, user->i64ContestScore);
+
+			}
+		}
+		else
+		{
+			_uiCallback->showUserMoney(vSeatNo, user->i64Money);
+		}
 	}
 
 	void GameTableLogic::dealQueueUserSitMessage(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& user)
@@ -792,35 +815,63 @@ namespace goldenflower
 	//比赛信息广播
 	void GameTableLogic::dealGameContestNotic(MSG_GR_I_ContestInfo* contestInfo)
 	{
-		char message[64] = { 0 };
-		sprintf(message, "比赛场报名人数已有%d人，高手在这里！", contestInfo->iContestNum);
-		_uiCallback->showNotice(GBKToUtf8(message));
+		//char message[64] = { 0 };
+		//sprintf(message, "比赛场报名人数已有%d人，高手在这里！", contestInfo->iContestNum);
+		//_uiCallback->showNotice(GBKToUtf8(message));
 	}
 	//用户比赛信息
 	void GameTableLogic::dealGameUserContset(MSG_GR_ContestChange* contestChange)
 	{
+		
+		//隐藏开始按钮
+		_uiCallback->showReady(false);
+		//隐藏倒计时
+		_uiCallback->IStartTimer(0);
+
+		//全部清空座位 包括自己
+		for (BYTE i = 0; i < PLAY_COUNT; i++)
+		{
+			_uiCallback->showUserUp(i, true);
+			_uiCallback->showReadySign(i, false);
+			_uiCallback->showWatchCard(i, false);
+			_uiCallback->showGiveUpCard(i, false);
+		}
+		_uiCallback->clearInvalidUser();
+
+		
+		//更新自己的排名
+		if ((contestChange->dwUserID == PlatformLogic()->loginResult.dwUserID))
+		{
+			//更新排名
+			_uiCallback->updateMyRankNum(contestChange->iRankNum);
+			//显示自己的排名
+			_uiCallback->ShowConstRank(contestChange->iRankNum, contestChange->iRemainPeople);
+		}
+
 		//显示正在为您配桌提示
-		_uiCallback->showNotice(GBKToUtf8("更新排名..."), true);
+		_uiCallback->showQueNotice(GBKToUtf8("比赛系统正在配桌,请耐心等待..."), true);
 	}
 	//比赛淘汰
 	void GameTableLogic::dealGameContestKick()
 	{
-		//显示正在为您配桌提示
-		_uiCallback->showNotice(GBKToUtf8("很遗憾，您已被淘汰..."), true);
+		_uiCallback->showQueNotice(GBKToUtf8(""), false);
+		//比赛淘汰
+		_uiCallback->showGameContestKick();
 	}
 	//等待比赛结束
 	void GameTableLogic::dealGameContestWaitOver()
 	{
-		//显示正在为您配桌提示
-		_uiCallback->showNotice(GBKToUtf8("等待比赛结束"), true);
+		_uiCallback->showQueNotice(GBKToUtf8(""), false);
+		// 等待比赛结束
+		_uiCallback->showGameContestWaitOver();
 	}
 	//比赛结束
 	void GameTableLogic::dealGameContestOver(MSG_GR_ContestAward* contestAward)
 	{
 		//标记比赛结束
 		_bContestEnd = true;
-		//显示正在为您配桌提示
-		_uiCallback->showNotice(GBKToUtf8("比赛结束"), true);
+		_uiCallback->showQueNotice(GBKToUtf8(""), false);
+		_uiCallback->showGameContestOver(contestAward);
 	}
 
 
@@ -929,6 +980,16 @@ namespace goldenflower
 	void GameTableLogic::loadUsers()
 	{
 		
+		//先全部清空座位 包括自己
+		for (BYTE i = 0; i < PLAY_COUNT; i++)
+		{
+			_uiCallback->showUserUp(i, true);
+			_uiCallback->showReadySign(i, false);
+			_uiCallback->showWatchCard(i, false);
+			_uiCallback->showGiveUpCard(i, false);
+		}
+		_uiCallback->clearInvalidUser();
+
 		// 桌内玩家
 		BYTE seatNo = INVALID_DESKNO;
 		for(int i = 0; i < PLAY_COUNT; i++)
@@ -940,7 +1001,30 @@ namespace goldenflower
 				_uiCallback->showUser(seatNo, i == _mySeatNo, pUser->bBoy);
 
 				_uiCallback->showUserName(seatNo,pUser->nickName);
-				_uiCallback->showUserMoney(seatNo,pUser->i64Money);
+
+				//是比赛房
+				if (_bContestRoom)
+				{
+					if (i == _mySeatNo)
+					{
+						//比赛局数
+						if (!pUser->iContestCount)
+						{
+							pUser->iContestCount = 1;
+						}
+						_uiCallback->showContsetJuShu(pUser->iContestCount);
+						//排名
+						_uiCallback->updateMyRankNum(pUser->iRankNum);
+						_uiCallback->ShowConstRank(pUser->iRankNum, pUser->iRemainPeople);
+					}
+					
+					//比赛金币
+					_uiCallback->showUserMoney(seatNo, pUser->i64ContestScore);
+				}
+				else
+				{
+					_uiCallback->showUserMoney(seatNo, pUser->i64Money);
+				}
 			}
 			else
 			{
@@ -1101,9 +1185,14 @@ namespace goldenflower
 			_uiCallback->showWaitTime(logicToViewSeatNo(_mySeatNo), _beginTime, _beginTime);
 			_uiCallback->IStartTimer(_beginTime);
 		}
-		_uiCallback->showNotice(GBKToUtf8("点击开始进入下一局。"));
-		_uiCallback->showReady(true);
-		_uiCallback->showNextGame(false);
+		//不是比赛场才显示开始准备按钮
+		if (!(RoomLogic()->getRoomRule() & GRR_CONTEST) && !(RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST))	
+		{
+			_uiCallback->showNotice(GBKToUtf8("点击开始进入下一局。"));
+			_uiCallback->showReady(true);
+			_uiCallback->showNextGame(false);
+		}
+		
 	}
 
 
@@ -1163,7 +1252,16 @@ namespace goldenflower
 				if(pUser != nullptr)
 				{
 					_uiCallback->showUserName(vSeatNo, pUser->nickName);
-					_uiCallback->showUserMoney(vSeatNo, pUser->i64Money);
+					if (_bContestRoom)
+					{
+						//比赛金币
+						_uiCallback->showUserMoney(vSeatNo, pUser->i64ContestScore);
+					}
+					else
+					{
+						_uiCallback->showUserMoney(vSeatNo, pUser->i64Money);
+					}
+					
 				}
 			}
 		}

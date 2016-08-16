@@ -378,15 +378,15 @@ void GameMenu::registerActionCallBack()
 	isVisitor = false;
 	auto winSize = Director::getInstance()->getWinSize();
 	RegisterLayer* registerLayer = RegisterLayer::create();
-    registerLayer->onRegisterCallBack = [this](const std::string& name, const std::string& psd, const std::string& agentid)
+	registerLayer->onRegisterCallBack = [this](const std::string& name, const std::string& psd, const std::string &agency)
 	{
 		_userName = name;
 		_userPsd = psd;
-        _agentid = agentid;
+		_agency = agency;
 
 		//зЂВс
 		_gameRegist->start();
-		_gameRegist->requestRegist(_userName, MD5_CTX::MD5String(_userPsd), _agentid, false);
+		_gameRegist->requestRegist(_userName, MD5_CTX::MD5String(_userPsd), _agency, false);
 		LoadingLayer::createLoading(this, GBKToUtf8(Word_Register), 30, LOADING);
 	};
 
@@ -400,7 +400,7 @@ void GameMenu::registerActionCallBack()
 	registerLayer->setPosition(Vec2(winSize.width / 2, winSize.height / 2));
 }
 
-void GameMenu::onPlatformRegistCallback(bool success, bool fastRegist, const std::string& message,const std::string&name, const std::string& pwd, const std::string& agentid, int loginTimes)
+void GameMenu::onPlatformRegistCallback(bool success, bool fastRegist, const std::string& message,const std::string&name, const std::string& pwd, int loginTimes)
 {
 	LoadingLayer::removeLoading(this);
 	auto userDefault = UserDefault::getInstance();

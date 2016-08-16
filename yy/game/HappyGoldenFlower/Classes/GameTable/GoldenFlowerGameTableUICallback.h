@@ -100,6 +100,12 @@ public:
 
 
 	virtual void addContestUI() = 0;															//添加比赛局数、排名UI
+	virtual void showGameContestKick() = 0;                                                     //比赛淘汰
+	virtual void showGameContestWaitOver() = 0;
+	virtual void showContsetJuShu(int &_contestIndex) = 0;					//显示第几局
+	virtual void updateMyRankNum(int iValue) = 0;								//更新自己的排名	
+	virtual void ShowConstRank(int iRankNum, int iRemainPeople) = 0;					//显示排名
+	virtual void showGameContestOver(MSG_GR_ContestAward* contestAward) = 0;
 };
 }
 
