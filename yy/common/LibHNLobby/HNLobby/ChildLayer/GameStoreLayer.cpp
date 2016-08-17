@@ -698,7 +698,7 @@ void GameStoreLayer::closePayCallBack(Ref* pSender, Widget::TouchEventType type)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 			GamePromptLayer::create()->showPrompt(GBKToUtf8("支付只支持android和ios"));
 #else
-			//executePayment(_product);
+			executePayment(_product);
 #endif
 			break;
 		}
