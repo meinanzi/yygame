@@ -2331,7 +2331,9 @@
 					"$(_COCOS_LIB_MAC_BEGIN)",
 					"$(_COCOS_LIB_MAC_END)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ley.MixProject;
 				PRODUCT_NAME = "MixProject-mobile";
+				PROVISIONING_PROFILE = "70edbf66-9efa-442e-b7ac-1c6cd98abac8";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
 			name = Debug;
@@ -2363,7 +2365,9 @@
 					"$(_COCOS_LIB_MAC_BEGIN)",
 					"$(_COCOS_LIB_MAC_END)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ley.MixProject;
 				PRODUCT_NAME = "MixProject-mobile";
+				PROVISIONING_PROFILE = "70edbf66-9efa-442e-b7ac-1c6cd98abac8";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
 			name = Release;

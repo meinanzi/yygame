@@ -379,19 +379,19 @@ struct MSG_GR_RS_NormalTalk
 //////////////////////////////////////////////////////////////////////////
 // 道具获取以及兑换消息。
 
-#define		MDM_GP_PROP							140
-#define		ASS_PROP_BUY_NEW					0x0b
-#define		ASS_PROP_GETUSERPROP				0x01
-#define		DTK_GP_PROP_BUY_ERROR				10
+#define		MDM_GP_PROP										140
+#define		ASS_PROP_BUY_NEW								0x0b
+#define		ASS_PROP_GETUSERPROP							0x01
+#define		DTK_GP_PROP_BUY_ERROR						10
 #define		DTK_GP_PROP_BUY_NOMONEY				20
-#define		DTK_GP_PROP_BUY_SUCCEED				80		//购买成功
+#define		DTK_GP_PROP_BUY_SUCCEED					80		//购买成功
 #define		DTK_GP_PROP_BUYANDUSE_SUCCEED		81		//即买即用成功
 
 typedef struct _TAG_PROP_BUY
 {
-	INT		dwUserID;					//购买者ID
+	long	int	dwUserID;					//购买者ID
 	INT		nPropID;					//道具ID
-	INT		iPropPayMoney;				//总共的金币
+	long	int	iPropPayMoney;				//总共的金币
 	INT		nPropBuyCount;				//道具数量
 	/*
 	 * 这个字段意思是即买即用（1）还是买了等待被用（0），如果像等下管理员换成话费的应该填0，否则不会存在用户道具表里面

@@ -299,6 +299,7 @@ namespace HN
 		});
 	}
 
+
 	void HNRoomLogic::H_R_M_Room(const NetMessageHead* messageHead, void* object, INT objectSize)
 	{
 		// 游戏开始

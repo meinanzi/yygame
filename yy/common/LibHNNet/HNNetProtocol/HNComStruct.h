@@ -29,14 +29,18 @@
 #define		GRR_NOTCHEAT			0x00010000L							//防作弊
 
 /// 台费场
-#define		GRR_ALL_NEED_TAX		0x00020000L							//收台费场,所有人都需缴纳一定数额台费
-#define		GRR_QUEUE_GAME			0x00040000L							//排队机
+#define		GRR_ALL_NEED_TAX				0x00020000L							//收台费场,所有人都需缴纳一定数额台费
+#define		GRR_QUEUE_GAME				0x00040000L							//排队机
 
 #define		GRR_NOT_COST_POINT		0x00080000L							//金币场不扣积分
 
-#define		GRR_CONTEST				0x00100000L							//定时淘汰比赛场
+#define		GRR_CONTEST						0x00100000L							//定时淘汰比赛场
 
-#define		GRR_TIMINGCONTEST		0x00800000L							//定时赛		--RoomRule == 8388608
+#define		GRR_TIMINGCONTEST			0x00800000L							//定时赛		--RoomRule == 8388608
+
+#define		GRR_CONTEST_WEEK			0x01000000L		///周赛  
+#define		GRR_CONTEST_MONTH		0x02000000L		///月赛
+#define		GRR_CONTEST_YEAR				0x04000000L		///年赛
 
 
 

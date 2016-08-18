@@ -50,6 +50,7 @@ GameMatch::~GameMatch()
 	SpriteFrameCache::getInstance()->removeSpriteFramesFromFile("platform/match/timeImage.plist");
 
 	RoomLogic()->removeEventSelector(MDM_GR_ROOM, ASS_GR_CONTEST_APPLY);
+	PlatformLogic()->removeEventSelector(MDM_GP_PROP, ASS_PROP_BUY);
 	RoomLogic()->removeRoomObserver(this);
 }
 
@@ -102,8 +103,19 @@ bool GameMatch::init()
 
 		//购买参赛卷
 		_operatorLayout.Button_BuyTicket = (Button*)Helper::seekWidgetByName(operatorLayout, "Button_BuyTicket");
-		_operatorLayout.Button_BuyTicket->addTouchEventListener(CC_CALLBACK_2(GameMatch::joinMatchCallBack, this));
-		_operatorLayout.Button_BuyTicket->setVisible(true);
+		_operatorLayout.Button_BuyTicket->addTouchEventListener(CC_CALLBACK_2(GameMatch::buyMatchTicketCallBack, this));
+
+		//如果是周、月、年赛才显示
+		if (RoomLogic()->getRoomRule() & GRR_CONTEST_WEEK || 
+			RoomLogic()->getRoomRule() & GRR_CONTEST_MONTH || 
+			RoomLogic()->getRoomRule() & GRR_CONTEST_YEAR)
+		{
+			_operatorLayout.Button_BuyTicket->setVisible(true);
+		}
+		else
+		{
+			_operatorLayout.Button_BuyTicket->setVisible(false);
+		}
 	}
 
 	// 返回按钮
@@ -120,7 +132,8 @@ bool GameMatch::init()
 	this->scheduleOnce(schedule_selector(GameMatch::overdue), 0.5);
 	//报名、退赛消息回调
 	RoomLogic()->addEventSelector(MDM_GR_ROOM, ASS_GR_CONTEST_APPLY, HN_SOCKET_CALLBACK(GameMatch::contestRegistrationResult, this));
-
+	//购买道具消息
+	PlatformLogic()->addEventSelector(MDM_GP_PROP, ASS_PROP_BUY, HN_SOCKET_CALLBACK(GameMatch::constBuyPropResult, this));
 	return true;
 }
 
@@ -514,6 +527,18 @@ bool GameMatch::contestRegistrationResult(HNSocketMessage* socketMessage)
 		{
 			prompt = "金币不足，无法报名。";
 		} break;
+	case 10:
+	{
+		prompt = "周参赛卷不足，无法报名！";
+	} break;
+	case 11:
+	{
+		prompt = "月参赛卷不足，无法报名！";
+	} break;
+	case 12:
+	{
+		prompt = "年参赛卷不足，无法报名！";
+	} break;
 	default:
 		break;
 	}
@@ -529,6 +554,57 @@ bool GameMatch::contestRegistrationResult(HNSocketMessage* socketMessage)
 	}
 
 	return true;
+}
+
+//购买道具消息
+bool GameMatch::constBuyPropResult(HNSocketMessage* socketMessage)
+{
+	CHECK_SOCKET_DATA_RETURN(_TAG_USERPROP, socketMessage->objectSize, true, "_TAG_USERPROP size is error");
+	_TAG_USERPROP* pBuyPropResult = (_TAG_USERPROP*)socketMessage->object;
+
+	std::string prompt("");
+	switch (socketMessage->messageHead.bHandleCode)
+	{
+	case  DTK_GP_PROP_BUY_ERROR:	//
+	{
+		/*if (RoomLogic()->getRoomRule() & GRR_CONTEST_WEEK)
+		{
+			prompt = "购买周参赛卡失败";
+		}
+		else if (RoomLogic()->getRoomRule() & GRR_CONTEST_MONTH)
+		{
+			prompt = "购买月参赛卡失败";
+		}	
+		else if (RoomLogic()->getRoomRule() & GRR_CONTEST_YEAR)
+		{
+			prompt = "购买年参赛卡失败";
+		}
+		else*/
+		{
+			prompt = "购买参赛卡失败";
+		}
+		break;
+	}
+	case  DTK_GP_PROP_BUY_NOMONEY:	//
+	{
+		prompt = "银行金币不足,购买参赛卡失败";
+		break;
+	}
+	case  DTK_GP_PROP_BUY_SUCCEED:	//
+	{
+		prompt = "购买参赛卡成功";
+		break;
+	}
+	default:
+		break;
+	}
+
+	if (!prompt.empty())
+	{
+		GamePromptLayer::create()->showPrompt(GBKToUtf8(prompt.c_str()));
+	}
+    
+    return true;
 }
 
 void GameMatch::cleanTimeMatchData()
@@ -579,6 +655,25 @@ void GameMatch::joinMatchCallBack(Ref* pSender, Widget::TouchEventType type)
 
 	RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_CONTEST_APPLY, (void*)&registration, sizeof(registration));
 }
+
+void GameMatch::buyMatchTicketCallBack(Ref* pSender, Widget::TouchEventType type)
+{
+	if (Widget::TouchEventType::ENDED != type) return;
+
+	if (RoomLogic()->getRoomRule() & GRR_CONTEST_WEEK ||
+		RoomLogic()->getRoomRule() & GRR_CONTEST_MONTH ||
+		RoomLogic()->getRoomRule() & GRR_CONTEST_YEAR)
+	{
+		_TAG_PROP_BUY	TBuyProp;
+		TBuyProp.dwUserID = RoomLogic()->loginResult.pUserInfoStruct.dwUserID;
+		TBuyProp.nPropID = 10;						//道具ID
+		TBuyProp.iPropPayMoney = 0;				//总共的金币
+		TBuyProp.nPropBuyCount = 1;				//道具数量
+		PlatformLogic()->sendData(MDM_GP_PROP, ASS_PROP_BUY, (void*)&TBuyProp, sizeof(TBuyProp));
+	}
+}
+
+
 
 // 排队用户坐下
 void GameMatch::I_R_M_QueueUserSit(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& users)

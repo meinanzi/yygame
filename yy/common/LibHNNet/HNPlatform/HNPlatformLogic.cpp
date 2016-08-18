@@ -476,7 +476,7 @@ namespace HN
 
 	void HNPlatformLogic::H_P_M_Prop(const NetMessageHead* messageHead, void* object, INT objectSize)
 	{
-		CCAssert(ASS_PROP_GETUSERPROP == messageHead->bAssistantID, "size error.");
+		//CCAssert(ASS_PROP_GETUSERPROP == messageHead->bAssistantID, "size error.");
 	}
 
 	void HNPlatformLogic::H_P_M_Message(const NetMessageHead* messageHead, void* object, INT objectSize)

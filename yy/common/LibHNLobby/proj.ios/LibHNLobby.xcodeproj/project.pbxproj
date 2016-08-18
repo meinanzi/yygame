@@ -96,7 +96,7 @@
 		BC9E6C311B11A19A002EEC6F /* GameInitial.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = GameInitial.h; sourceTree = "<group>"; };
 		BC9E6C321B11A19A002EEC6F /* GameLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLists.cpp; sourceTree = "<group>"; };
 		BC9E6C331B11A19A002EEC6F /* GameLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLists.h; sourceTree = "<group>"; };
-		BC9E6C341B11A19A002EEC6F /* GameMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameMatch.cpp; sourceTree = "<group>"; };
+		BC9E6C341B11A19A002EEC6F /* GameMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameMatch.cpp; sourceTree = "<group>"; };
 		BC9E6C351B11A19A002EEC6F /* GameMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMatch.h; sourceTree = "<group>"; };
 		BC9E6C371B11A19A002EEC6F /* GameLandLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.cpp.cpp; path = GameLandLayer.cpp; sourceTree = "<group>"; };
 		BC9E6C381B11A19A002EEC6F /* GameLandLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLandLayer.h; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		BC9E6C4C1B11A19A002EEC6F /* ModifyPassword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModifyPassword.cpp; sourceTree = "<group>"; };
 		BC9E6C4D1B11A19A002EEC6F /* ModifyPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPassword.h; sourceTree = "<group>"; };
 		BC9E6C4E1B11A19A002EEC6F /* PlatformConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformConfig.cpp; sourceTree = "<group>"; };
-		BC9E6C4F1B11A19A002EEC6F /* PlatformConfig.h */ = {isa = PBXFileReference; fileEncoding = 2147484705; lastKnownFileType = sourcecode.c.h; path = PlatformConfig.h; sourceTree = "<group>"; };
+		BC9E6C4F1B11A19A002EEC6F /* PlatformConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformConfig.h; sourceTree = "<group>"; };
 		BC9E6C501B11A19A002EEC6F /* PlatformDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformDefine.h; sourceTree = "<group>"; };
 		BC9E6C521B11A19A002EEC6F /* ProductInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProductInfo.cpp; sourceTree = "<group>"; };
 		BC9E6C531B11A19A002EEC6F /* ProductInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductInfo.h; sourceTree = "<group>"; };

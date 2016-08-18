@@ -207,6 +207,7 @@ namespace HN
 		dealGameInfoResp(pGameInfo);
 	}
 
+
 	void HNGameLogicBase::I_R_M_GameStation(void* object, INT objectSize)
 	{
 		dealGameStationResp(object, objectSize);

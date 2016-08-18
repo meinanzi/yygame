@@ -21,19 +21,19 @@ import com.hn.pay.base.PayResultCallBack.PAY_SDK;
 public class AlipayManager {
 	public static final String PARTNER = "2088421471797022";
 	public static final String SELLER = "2088421471797022";
-	public static final String RSA_PRIVATE = "MIICXAIBAAKBgQCwXb4hCkjOvTtiOO+5IzQDbBEVCKlt9/ZxKL8omrbZiNUnA3ye"+
-		"upD+EFH1m8vGaZCG5xfez8ZaCnh4tOHib3wM8HzFcPXZkugFCkZTDnyrpgjt8YNt"+
-		"L55AazJXckze7UmWGc/musXirI/7IZQZ8ukrLfASMbQ39X6yeHPEevDLEQIDAQAB"+
-		"AoGAYL37JgqLJ4Rbh6RtsuNhi6MCt8P5lE3ZC/dq7C35sNfC/FSITlVOZV60ZoJg"+
-		"Q+TyF126FUlpp0hpDuVBpsC6jUD9kx9K48UUt7pHldMuzh9uwlfvnJV/0JPjTPOn"+
-		"OFWbWCUnPx/bI2V4dGuvyx+kB7dlKTUrXujkU/4Mr7aKPKUCQQDg06z5A9OGGrpn"+
-		"Tzao/6DhLjbf4pEJGIv0Tdvk00rMIjbgQ64RZauOFRnhJrSUPWE8zWFWpRGOiiT/"+
-		"IycdIeCDAkEAyNHvUryvdqtYnZKCTW21PArvMXXfaUQ18bZzzEhdNkjhBPRzzW24"+
-		"8PoCIRXdESQ2gGhlXl628HTy3OLDyKBp2wJABUo1ua4zXeZnGGMuwA8zs9ioheAI"+
-		"1ZP0Rw1F7T5jdiYf8GrnP5WK0c8BSuDkQtCm5w1WCvnbTeVGNZKYKwFPDQJAUZXA"+
-		"dcuEOWDZSoLX/x7f7zm9/UkW74wvojhuiQKpI8Gt8TZiyYWXCgd3z/sy6aDdp4NC"+
-		"E3nFNqE8fXJ++cX52wJBALProEMAIVTylgQBL9P8MQAq15grei73DX8gMZ5BoUi8"+
-		"amuGFDdoLkmBnIDj8k06rPV6yYp3yRwPgBD3k3/iVBo=";
+	public static final String RSA_PRIVATE = "MIICWwIBAAKBgQCm9QQTT/GyzK85xZleJ4Cw3wSzx5mbNmlgTzroaouY2C4ov8+v"+
+		"7rNFOa0TkIa0bIYtFj4/eAwwQeNb8DUwqtLCPi6p7kUD4/nEcH3UYrwyPxwgch5X"+
+		"TcKpANy7Xv9mHLrrm8eGWWbInrMcVfW8a+DAz8hCx8VWdIEXCrD314w9xQIDAQAB"+
+		"AoGAE2bl0li3/c9Ljaso54gvrF4+baYEc8Ue+dI7RkcbceetdY7U090peCH7uwpQ"+
+		"nSb/cL3k/fs1b2Y4xbZkeANh+oCveaXJiSsUUmbXL/6qDHbGnLSdck2wzsUe3Gk+"+
+		"yR/kbPlm7hXdGXMoyyH/g+X5nMZJLQL8VCwI6gkr7WPsPQECQQDTVeUR0smmpKSr"+
+		"SZni8JbWP2oF93hc3Z1erKTnxt9kUZFETGnkfCJj+awsN/RtOrMAIm1g49zq3+fI"+
+		"m8j4zuq3AkEAyj4Rl3+1Pn4VLTfDcgMqcNNz5NGp3Fpoee5sPl+1BFNoZd7kobeU"+
+		"eQkXmT+7+m4HXFr3acsvCbpCAvU7Pq9PYwJAaD9Op+QapKFCuVutFU0omrbdTeQs"+
+		"82I+Zp0zG0H2oD28Mrye3558OGTIkWdooxj5g294FPtR1mpso4B1OoaXMQJAbY2z"+
+		"39pZJtILzKPRZrhaTCXvOLtuhSQgRjSmRB96Ii7AdbaJKSUV836+XtCMlnr118yb"+
+		"C576Cw3vZkTLZAh5OwJAcLIiq+4GJRVG93tu+DJzR41A910wjz/lyS2F3vYGTNXC"+
+		"4lAM35Fi2WfcI2nYe9Kb5l96fqYNhckTI9N8HBUwlQ==";
 	
 	public static final String NOTIFY_URL = "https://mapi.alipay.com/gateway.do?";
 

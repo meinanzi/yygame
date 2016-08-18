@@ -234,6 +234,8 @@ namespace HN
 		}
 	}
 
+
+
 	void HNRoomLogicBase::I_R_M_LoginFinish()
 	{
 		UserInfoStruct info = RoomLogic()->loginResult.pUserInfoStruct;
