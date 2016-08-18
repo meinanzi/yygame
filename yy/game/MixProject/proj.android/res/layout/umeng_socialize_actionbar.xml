@@ -103,7 +103,6 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/umeng_socialize_comment_bt"
         style="@style/umeng_socialize_action_bar_itemlayout"
         android:layout_width="fill_parent"
         android:layout_toLeftOf="@id/umeng_socialize_funcation_area"
