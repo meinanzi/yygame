@@ -1838,11 +1838,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				TargetAttributes = {
-					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = XFA9C6XUR7;
-					};
-				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MixProject" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2180,7 +2175,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2230,9 +2225,9 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.yygame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ley.MixProject;
 				PRODUCT_NAME = "MixProject-mobile";
-				PROVISIONING_PROFILE = "792bd38c-44e2-4a2b-a6fa-c134a72caae5";
+				PROVISIONING_PROFILE = "70edbf66-9efa-442e-b7ac-1c6cd98abac8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
@@ -2244,7 +2239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2292,9 +2287,9 @@
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.redbird.company.yygame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ley.MixProject;
 				PRODUCT_NAME = "MixProject-mobile";
-				PROVISIONING_PROFILE = "792bd38c-44e2-4a2b-a6fa-c134a72caae5";
+				PROVISIONING_PROFILE = "70edbf66-9efa-442e-b7ac-1c6cd98abac8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
