@@ -603,7 +603,8 @@ bool GameMatch::constBuyPropResult(HNSocketMessage* socketMessage)
 	{
 		GamePromptLayer::create()->showPrompt(GBKToUtf8(prompt.c_str()));
 	}
-
+    
+    return true;
 }
 
 void GameMatch::cleanTimeMatchData()
