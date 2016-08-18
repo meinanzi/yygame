@@ -58,6 +58,8 @@ public:
 
 	void joinMatchCallBack(Ref* pSender, Widget::TouchEventType type);
 
+	void buyMatchTicketCallBack(Ref* pSender, Widget::TouchEventType type);
+
 	// 定时器回调函数
 public:
 	void countDown(float delay);
@@ -88,6 +90,8 @@ public:
 
 	//报名与退赛消息处理
 	bool contestRegistrationResult(HNSocketMessage* socketMessage);
+	//购买道具消息
+	bool constBuyPropResult(HNSocketMessage* socketMessage);
 
 public:
 	// 排队用户坐下

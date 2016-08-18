@@ -284,20 +284,20 @@ void GameStoreLayer::buyEventCallBack(Ref* pSender, Widget::TouchEventType type)
             _product = (PRODUCT_INFO*)selectedBtn->getUserData();
             if (nullptr != _product)
             {
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-//				if(PlatformConfig::getInstance()->isIAP())
-//				{
-//                    _closeButton->setEnabled(false);
-//                    _product->payType = PRODUCT_PAY_TYPE_IAP;
-//					startPayment(_product);
-//				}
-//				else
-//				{
-//					//showPayLayer(_product);
-//				}
-//#else
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+				if(PlatformConfig::getInstance()->isIAP())
+				{
+                    _closeButton->setEnabled(false);
+                    _product->payType = PRODUCT_PAY_TYPE_IAP;
+					startPayment(_product);
+				}
+				else
+				{
+					//showPayLayer(_product);
+				}
+#else
 				showPayLayer(_product);
-//#endif								
+#endif								
             }
 		}
 		break;

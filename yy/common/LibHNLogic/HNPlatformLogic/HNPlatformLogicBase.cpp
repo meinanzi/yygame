@@ -33,4 +33,6 @@ namespace HN
 	{
 		_callback->onPlatformNewsCallback(pData->szMessage);
 	}
+
+
 }

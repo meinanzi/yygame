@@ -42,6 +42,7 @@ namespace HN
 
 		// 房间密码
 		virtual void I_P_M_RoomPassword(MSG_GP_S_C_CheckRoomPasswd* pData){}
+
 	};
 }
 

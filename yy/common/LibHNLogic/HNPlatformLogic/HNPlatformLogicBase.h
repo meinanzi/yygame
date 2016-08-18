@@ -32,6 +32,8 @@ namespace HN
 
 		// 新闻系统消息
 		virtual void I_P_M_NewsSys(MSG_GR_RS_NormalTalk* pData) override;
+
+		
 	protected:
 		IHNPlatformLogicBase* _callback;
 	};

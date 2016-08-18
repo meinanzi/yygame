@@ -104,6 +104,17 @@
 #define	ASS_GR_CONTEST_RECORD			25					//个人参赛纪录，登陆完成后服务端主动发送NET_ROOM_CONTEST_RECORD_RESULT
 #define	ASS_GR_CONTEST_AWARDS			26					//比赛奖励，一连串的NET_ROOM_CONTEST_AWARD_RESULT
 #define	ASS_GR_CONTEST_GETINFO			27					//获取比赛信息（服务端返回24,25,26三个消息包）
+
+#define MDM_GR_PROP							160					//房间和游戏中道具相关的消息
+//道具辅助消息
+#define ASS_PROP_GETUSERPROP			0x01				//取得服务器上存储的个人道具
+#define ASS_PROP_GETPROPINFO			0x02				//取得某个道具的信息
+#define ASS_PROP_BUY							0x03				//购买道具
+#define ASS_PROP_GIVE							0x04				//赠送道具
+#define ASS_PROP_VIP_CHECKTIME			0x05				//检查VIP时间
+#define ASS_PROP_KICKUSER					0x06				//踢人
+#define ASS_PROP_BIG_BOARDCASE			0x07				//大喇叭消息
+#define ASS_PROP_SMALL_BOARDCASE	0x08				//小喇叭消息
 /*------------------------------------------------------------------------------------------------------------------------*/
 
 //框架消息
