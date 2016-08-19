@@ -35,7 +35,7 @@ public class AlipayManager {
 		"C576Cw3vZkTLZAh5OwJAcLIiq+4GJRVG93tu+DJzR41A910wjz/lyS2F3vYGTNXC"+
 		"4lAM35Fi2WfcI2nYe9Kb5l96fqYNhckTI9N8HBUwlQ==";
 	
-	public static final String NOTIFY_URL = "https://mapi.alipay.com/gateway.do?";
+	public static final String NOTIFY_URL = "http://www.dzpk886.com/manage/pay/alipay/alipay_mobile.aspx";
 
 	private static final int SDK_PAY_FLAG = 1;
 
