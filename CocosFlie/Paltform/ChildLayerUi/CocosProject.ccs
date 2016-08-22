@@ -1,26 +1,9 @@
 <Solution>
-  <PropertyGroup Name="CocosProject" Version="2.3.3.0" Type="CocosStudio" />
+  <PropertyGroup Name="CocosProject" Version="3.10.0.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Folder Name="platform">
-          <Folder Name="store">
-            <Folder Name="storeRes">
-              <Image Name="payBg.png" />
-              <Image Name="weixin.png" />
-              <Image Name="xinyongka.png" />
-              <Image Name="yinlian.png" />
-              <Image Name="zhifubao.png" />
-              <Image Name="moneyBg.png" />
-              <Image Name="coinMid.png" />
-              <Image Name="store_add.png" />
-              <Image Name="bottom.png" />
-              <Image Name="pp.png" />
-              <Image Name="zhifu.png" />
-            </Folder>
-            <Project Name="Node.csd" Type="Node" />
-            <Project Name="moneyNode.csd" Type="Node" />
-          </Folder>
           <Folder Name="common">
             <Image Name="close_btn.png" />
             <Image Name="common_bg.png" />
@@ -32,6 +15,23 @@
             <Image Name="gree_btn.png" />
             <Image Name="line.png" />
             <Image Name="red_btn.png" />
+          </Folder>
+          <Folder Name="store">
+            <Folder Name="storeRes">
+              <Image Name="bottom.png" />
+              <Image Name="coinMid.png" />
+              <Image Name="moneyBg.png" />
+              <Image Name="payBg.png" />
+              <Image Name="pp.png" />
+              <Image Name="store_add.png" />
+              <Image Name="weixin.png" />
+              <Image Name="xinyongka.png" />
+              <Image Name="yinlian.png" />
+              <Image Name="zhifu.png" />
+              <Image Name="zhifubao.png" />
+            </Folder>
+            <Project Name="moneyNode.csd" Type="Node" />
+            <Project Name="Node.csd" Type="Node" />
           </Folder>
         </Folder>
       </RootFolder>
