@@ -6,6 +6,19 @@
       <ObjectData Name="Scene" Tag="32" ctype="GameNodeObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
+          <AbstractNodeData Name="Panel_bg" ActionTag="-469254165" Tag="42" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" TouchEnable="True" StretchWidthEnable="True" StretchHeightEnable="True" ClipAble="False" BackColorAlpha="152" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="1280.0000" Y="720.0000" />
+            <AnchorPoint />
+            <Position />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="1.0000" Y="1.0000" />
+            <SingleColor A="255" R="0" G="0" B="0" />
+            <FirstColor A="255" R="150" G="200" B="255" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
           <AbstractNodeData Name="Image_bg" ActionTag="315705312" Tag="33" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="290.5000" RightMargin="290.5000" TopMargin="219.5000" BottomMargin="219.5000" LeftEage="230" RightEage="230" TopEage="92" BottomEage="92" Scale9OriginX="230" Scale9OriginY="92" Scale9Width="239" Scale9Height="97" ctype="ImageViewObjectData">
             <Size X="699.0000" Y="281.0000" />
             <Children>

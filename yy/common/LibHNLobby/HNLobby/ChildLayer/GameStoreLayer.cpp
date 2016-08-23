@@ -37,6 +37,8 @@ static const char* LEAF_RIGHT	    = "platform/subViewBambooRight.png";
 static const char* CHIP_BG			= "platform/chip.png";                      
 static const char* STORE_TITLE		= "platform/store/title_btn.png";
 
+static const char* SCENE_GITFCARD = "platform/store/giftcard.csb";
+
 static const char* NOTIFY_URL_DINPAY				= "http://%s/manage/pay/zhifu/mobilereceive.aspx";
 static const char* MECHANT_ID_DINPAY				= "1111110166";
 static const char* MECHANT_KEY_DINPAY				= "123456789a123456789_";
@@ -195,6 +197,28 @@ bool GameStoreLayer::init()
 	//selfQuan->setVisible(false);
 	//lotteryBg->setVisible(false);
 	//lotteryBtn->setVisible(false);
+    
+    // ³äÖµ¶Ò»»
+    auto giftcardBtn = (Button*)moneyLayout->getChildByName("Button_card");
+    giftcardBtn->addTouchEventListener([this](Ref* sender, Widget::TouchEventType touch)
+    {
+        if(touch == Widget::TouchEventType::ENDED)
+        {
+            auto node = (Widget*)CSLoader::createNode(SCENE_GITFCARD);
+            this->addChild(node, 20);
+            
+            auto bg = (Layout*)Helper::seekWidgetByName(node, "Panel_bg");
+            
+            auto cancelBtn = (Button*)Helper::seekWidgetByName(node, "Button_cancel");
+            cancelBtn->addTouchEventListener([node](Ref* sender, Widget::TouchEventType touch)
+            {
+                if(touch == Widget::TouchEventType::ENDED)
+                {
+                    node->removeFromParent();
+                }
+            });
+        }
+    });
 
 	return true;
 }
