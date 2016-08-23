@@ -100,7 +100,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="255" G="127" B="80" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Button_1" ActionTag="-680765800" Tag="31" IconVisible="False" LeftMargin="967.1835" RightMargin="200.8165" TopMargin="2.7429" BottomMargin="3.2571" TouchEnable="True" FontSize="38" ButtonText="点卡" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="82" Scale9Height="52" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="Button_card" ActionTag="-680765800" Tag="31" IconVisible="False" LeftMargin="967.1835" RightMargin="200.8165" TopMargin="2.7429" BottomMargin="3.2571" TouchEnable="True" FontSize="38" ButtonText="点卡" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="82" Scale9Height="52" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="112.0000" Y="74.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="1023.1835" Y="40.2571" />

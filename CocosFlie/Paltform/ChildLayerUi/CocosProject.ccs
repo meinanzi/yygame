@@ -32,6 +32,7 @@
             </Folder>
             <Project Name="moneyNode.csd" Type="Node" />
             <Project Name="Node.csd" Type="Node" />
+            <Project Name="giftcard.csd" Type="Scene" />
           </Folder>
         </Folder>
       </RootFolder>
