@@ -114,6 +114,8 @@ private:
 
 	// 未给金币的订单号
 	std::string                     _notOfferOrderNo;
+    
+    network::HttpRequest* _req;
 };
 
 #endif // __GAMESTORE_LAYER_H__

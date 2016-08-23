@@ -63,6 +63,7 @@ GameStoreLayer::GameStoreLayer()
 : _product(nullptr)
 , _selfCoin(nullptr)
 , onCloseCallBack (nullptr)
+, _req(nullptr)
 {
 
 }
@@ -71,6 +72,8 @@ GameStoreLayer::~GameStoreLayer()
 {
 	PlatformLogic()->removeEventSelector(MDM_GP_NOTIFY_PAY, ASS_GP_NOTIFY_PAY);
 	HNHttpRequest::getInstance()->removeObserver(this);
+    
+    _req->release();
 }
 
 void GameStoreLayer::openStore(Node* parent, Vec2 vec, int zorder, int tag)
@@ -207,14 +210,94 @@ bool GameStoreLayer::init()
             auto node = (Widget*)CSLoader::createNode(SCENE_GITFCARD);
             this->addChild(node, 20);
             
-            auto bg = (Layout*)Helper::seekWidgetByName(node, "Panel_bg");
-            
+            // 取消返回
             auto cancelBtn = (Button*)Helper::seekWidgetByName(node, "Button_cancel");
             cancelBtn->addTouchEventListener([node](Ref* sender, Widget::TouchEventType touch)
             {
                 if(touch == Widget::TouchEventType::ENDED)
                 {
                     node->removeFromParent();
+                }
+            });
+            
+            // 确定充值
+            auto sureBtn =(Button*)Helper::seekWidgetByName(node, "Button_sure");
+            sureBtn->addTouchEventListener([=](Ref* sender, Widget::TouchEventType touch)
+            {
+                if(touch == Widget::TouchEventType::ENDED)
+                {
+                    sureBtn->setTouchEnabled(false);
+                    sureBtn->setBright(false);
+                    
+                    auto editCard = (TextField*)Helper::seekWidgetByName(node, "TextField_card");
+                    auto editPass = (TextField*)Helper::seekWidgetByName(node, "TextField_pass");
+                    if(editCard->getString().empty() || editPass->getString().empty())
+                    {
+                        return;
+                    }
+                    
+                    std::string url = "http://www.dzpk886.com/Public/XmlHttpUser.aspx?";
+                    url += "type=PayByPointCard";
+                    url += "&username=";
+                    url += PlatformLogic()->loginResult.szName;
+                    url += "&CardNo=";
+                    url += editCard->getString();
+                    url += "&CardPwd=";
+                    url += editPass->getString();
+                    
+                    if(_req) _req = new(std::nothrow)network::HttpRequest();
+                    _req->setUrl(url.c_str());
+                    _req->setRequestType(network::HttpRequest::Type::GET);
+                    _req->setResponseCallback([=](network::HttpClient* client, network::HttpResponse* response)
+                    {
+                        sureBtn->setTouchEnabled(true);
+                        sureBtn->setBright(true);
+                        
+                        bool errflag = false;
+                        std::string msg;
+                        auto buff = response->getResponseData();
+                        std::string data(buff->begin(), buff->end());
+                        do
+                        {
+                            if(!response->isSucceed()){
+                                break;
+                            }
+                            
+                            rapidjson::Document doc;
+                            doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
+                            if(!doc.IsObject() || doc.HasParseError()){
+                                errflag = false;
+                                break;
+                            }
+                            
+                            if(doc.HasMember("msg") && !doc["msg"].IsNull())
+                            {
+                                msg = doc["msg"].GetString();
+                            }
+                            
+                            if(doc.HasMember("rs") && !doc["rs"].IsNull())
+                            {
+                                int rs = doc["rs"].GetInt();
+                                if(rs == 1){
+                                    errflag = true;
+                                    node->removeFromParent();
+                                    break;
+                                }
+                                else{
+                                    errflag = false;
+                                    break;
+                                }
+                            }
+                            
+                        }while(0);
+                        
+                        if(!errflag && msg.empty())
+                            msg = "兑换失败！";
+                        if(errflag && msg.empty())
+                            msg = "兑换成功！";
+                        GamePromptLayer::create()->showPrompt(GBKToUtf8(msg.c_str()));
+                    });
+                    HttpClient::getInstance()->sendImmediate(_req);
                 }
             });
         }
