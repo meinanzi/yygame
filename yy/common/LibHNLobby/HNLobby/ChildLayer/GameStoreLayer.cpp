@@ -73,7 +73,8 @@ GameStoreLayer::~GameStoreLayer()
 	PlatformLogic()->removeEventSelector(MDM_GP_NOTIFY_PAY, ASS_GP_NOTIFY_PAY);
 	HNHttpRequest::getInstance()->removeObserver(this);
     
-    _req->release();
+    if(_req)
+        _req->release();
 }
 
 void GameStoreLayer::openStore(Node* parent, Vec2 vec, int zorder, int tag)

@@ -30,9 +30,9 @@
               <Image Name="zhifu.png" />
               <Image Name="zhifubao.png" />
             </Folder>
+            <Project Name="giftcard.csd" Type="Scene" />
             <Project Name="moneyNode.csd" Type="Node" />
             <Project Name="Node.csd" Type="Node" />
-            <Project Name="giftcard.csd" Type="Scene" />
           </Folder>
         </Folder>
       </RootFolder>
