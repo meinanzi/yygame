@@ -33,15 +33,6 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="TextField_pass" ActionTag="-345697859" Tag="38" IconVisible="False" LeftMargin="218.9059" RightMargin="105.0941" TopMargin="182.9973" BottomMargin="58.0027" TouchEnable="True" FontSize="35" IsCustomSize="True" LabelText="" PlaceHolderText="请输入密码" MaxLengthText="10" ctype="TextFieldObjectData">
-                <Size X="375.0000" Y="40.0000" />
-                <AnchorPoint ScaleY="0.5000" />
-                <Position X="218.9059" Y="78.0027" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3132" Y="0.2776" />
-                <PreSize X="0.5365" Y="0.1423" />
-              </AbstractNodeData>
               <AbstractNodeData Name="TextField_card" ActionTag="1002867604" Tag="37" IconVisible="False" LeftMargin="218.9059" RightMargin="105.0941" TopMargin="106.5100" BottomMargin="134.4900" TouchEnable="True" FontSize="35" IsCustomSize="True" LabelText="" PlaceHolderText="请输入卡号" MaxLengthText="10" ctype="TextFieldObjectData">
                 <Size X="375.0000" Y="40.0000" />
                 <AnchorPoint ScaleY="0.5000" />
@@ -51,16 +42,14 @@
                 <PrePosition X="0.3132" Y="0.5498" />
                 <PreSize X="0.5365" Y="0.1423" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_pass" ActionTag="1326186111" Tag="36" IconVisible="False" LeftMargin="122.1079" RightMargin="471.8921" TopMargin="182.9973" BottomMargin="58.0027" FontSize="35" LabelText="密码：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="105.0000" Y="40.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="174.6079" Y="78.0027" />
+              <AbstractNodeData Name="TextField_pass" ActionTag="-345697859" Tag="38" IconVisible="False" LeftMargin="218.9059" RightMargin="105.0941" TopMargin="182.9973" BottomMargin="58.0027" TouchEnable="True" FontSize="35" IsCustomSize="True" LabelText="" PlaceHolderText="请输入密码" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="375.0000" Y="40.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="218.9059" Y="78.0027" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.2498" Y="0.2776" />
-                <PreSize X="0.1502" Y="0.1423" />
-                <OutlineColor A="255" R="255" G="0" B="0" />
-                <ShadowColor A="255" R="110" G="110" B="110" />
+                <PrePosition X="0.3132" Y="0.2776" />
+                <PreSize X="0.5365" Y="0.1423" />
               </AbstractNodeData>
               <AbstractNodeData Name="Text_card" ActionTag="-588791783" Tag="35" IconVisible="False" LeftMargin="122.1079" RightMargin="471.8921" TopMargin="106.5100" BottomMargin="134.4900" FontSize="35" LabelText="卡号：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="105.0000" Y="40.0000" />
@@ -69,6 +58,17 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2498" Y="0.5498" />
+                <PreSize X="0.1502" Y="0.1423" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_pass" ActionTag="1326186111" Tag="36" IconVisible="False" LeftMargin="122.1079" RightMargin="471.8921" TopMargin="182.9973" BottomMargin="58.0027" FontSize="35" LabelText="密码：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="105.0000" Y="40.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="174.6079" Y="78.0027" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.2498" Y="0.2776" />
                 <PreSize X="0.1502" Y="0.1423" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />

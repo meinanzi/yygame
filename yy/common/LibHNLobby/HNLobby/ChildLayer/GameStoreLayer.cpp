@@ -244,7 +244,7 @@ bool GameStoreLayer::init()
                     url += editCard->getString();
                     url += "&CardPwd=";
                     url += editPass->getString();
-                    
+                    CCLOG("%s", url.c_str());
                     if(!_req) _req = new(std::nothrow)network::HttpRequest();
                     _req->setUrl(url.c_str());
                     _req->setRequestType(network::HttpRequest::Type::GET);
