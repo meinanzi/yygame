@@ -22,8 +22,10 @@ namespace ZYHZ
 		virtual void dealGameEndResp(BYTE bDeskNO) override;
 
 		virtual void dealUserAgreeResp(MSG_GR_R_UserAgree* agree) override;
-
+		// 玩家坐下（平台消息）
 		virtual void dealUserSitResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user) override;
+		//玩家排队坐下
+		virtual void dealQueueUserSitMessage(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& user);
 		// 用户站起
 		virtual void dealUserUpResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* user) override;
 		// 游戏状态
@@ -70,6 +72,12 @@ namespace ZYHZ
 		void waitAgree();		// 等候同意
 		void showMoney();  //
 
+		//进入游戏
+		void enterGame();
+
+		// 加载用户
+		void loadUsers();
+
 	public:
 		sitDir getUserDir(const BYTE& deskStation);
 		INT getUserStation(const sitDir& dir);
@@ -114,7 +122,13 @@ namespace ZYHZ
         
         // 排队标志, true表示排队中
         bool _queueflag;
-		
+
+
+	public:
+		//记录是否为比赛场准备
+		bool _isReadyQueue;
+		// 是否比赛场
+		bool	_bContestRoom;
 	};
 
 	#define GTLogic() GameTableLogic::getInstance()

@@ -19,7 +19,7 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 	GameTableLogic::GameTableLogic(GameTableUICallBack* tableUICallBack, BYTE deskNo, bool bAutoCreate) 
 		: HNGameLogicBase(deskNo, PLAY_COUNT, bAutoCreate, tableUICallBack)
 		, _tableUICallBack(tableUICallBack)
-        , _queueflag(false)
+		, _isReadyQueue(false)
 	{
 		_callBack = (GameTableUI *)_tableUICallBack;
 		_instance = this;
@@ -56,6 +56,18 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 		if (_userInfo.bDeskStation >=0 && _userInfo.bDeskStation < PLAY_COUNT)
 		{
 			_callBack->addUser(getUserDir(userSit->bDeskStation), *user);
+			sendGameInfo();
+			//loadUsers();
+		}
+	}
+	void GameTableLogic::dealQueueUserSitMessage(BYTE deskNo, const std::vector<QUEUE_USER_SIT_RESULT*>& user)
+	{
+
+		HNGameLogicBase::dealQueueUserSitMessage(deskNo, user);
+
+		if (_mySeatNo != INVALID_DESKSTATION)
+		{
+			loadUsers();
 		}
 	}
 
@@ -75,14 +87,25 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 		// 清除本地界面的ui显示
 		if (userSit->dwUserID == _userInfo.dwUserID)
 		{
-            if(isQueueGame())
-            {
-                RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
-            }
-            else
-            {
-                _callBack->dealLeaveDesk();
-            }
+			if (_isReadyQueue && user->dwUserID == RoomLogic()->loginResult.pUserInfoStruct.dwUserID)
+			{
+				
+				//隐藏开始按钮
+				COCOS_NODE(Button, "start")->setVisible(false);
+				COCOS_NODE(Sprite, "waiting")->setVisible(true);
+				_callBack->_mahjongManager->restartGame();
+				//隐藏倒计时
+				GameManager::getInstance()->endAllTimer();
+				
+				_callBack->dealLeaveDesk();
+				//RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
+				_isReadyQueue = false;
+				return;
+			}
+			else
+			{
+				_callBack->dealLeaveDesk();
+			}
 		}
 		else
 		{
@@ -911,10 +934,20 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 	void GameTableLogic::safeQuit()
 	{
 		HNAudioEngine::getInstance()->stopBackgroundMusic();
-		if (RoomLogic()->isConnect())
+
+		if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME))
 		{
-			sendUserUp();	
+			RoomLogic()->close();
+			GamePlatform::returnPlatform(LayerType::ROOMLIST);
 		}
+		else
+		{
+			if (RoomLogic()->isConnect())
+			{
+				sendUserUp();
+			}
+		}
+		
 	}
 
 	void GameTableLogic::waitAgree()
@@ -936,19 +969,89 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
 	
 	}
 
+
+	//进入游戏
+	void GameTableLogic::enterGame()
+	{
+		if (RoomLogic()->getRoomRule() & GRR_CONTEST || (RoomLogic()->getRoomRule() & GRR_TIMINGCONTEST))	// 定时淘汰比赛场
+		{
+			_bContestRoom = true;
+		}
+		else if (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME)		// 排队机
+		{
+			_bContestRoom = false;
+		}
+		else					// 金币场不扣积分
+		{
+			_bContestRoom = false;
+		}
+		if (_mySeatNo == INVALID_DESKSTATION && !_autoCreate)
+		{
+			for (int i = 0; i < PLAY_COUNT; i++)
+			{
+				if (!_existPlayer[i])
+				{
+					sendUserSit(logicToViewSeatNo(i));
+					break;
+				}
+			}
+		}
+		else
+		{
+			loadUsers();
+			if (_mySeatNo != INVALID_DESKSTATION && _autoCreate)
+			{
+				sendGameInfo();
+			}
+		}
+	}
+
+
+	void GameTableLogic::loadUsers()
+	{
+		//先全部隐藏
+		for (int i = 0; i < PLAY_COUNT; i++)
+		{
+			_callBack->removeUser(getUserDir(i));
+		}
+		// 重新加载桌内玩家
+		for (int i = 0; i < PLAY_COUNT; i++)
+		{
+			UserInfoStruct* pUser = _deskUserList->getUserByDeskStation(i);
+			if (nullptr != pUser)
+			{
+				_callBack->addUser(getUserDir(pUser->bDeskStation), *pUser);
+
+				if (i == _mySeatNo)
+				{
+					_userInfo = *pUser;
+					// 更新自己信息
+					if (pUser->dwUserID == RoomLogic()->loginResult.pUserInfoStruct.dwUserID)
+					{
+						RoomLogic()->loginResult.pUserInfoStruct.bDeskNO = pUser->bDeskNO;
+						RoomLogic()->loginResult.pUserInfoStruct.bDeskStation = pUser->bDeskStation;
+						RoomLogic()->loginResult.pUserInfoStruct.bUserState = pUser->bUserState;
+					}
+				}
+			}
+		}
+
+		sendGameInfo();
+	}
+
 	sitDir GameTableLogic::getUserDir(const BYTE& deskStation)
 	{
-		return  sitDir((deskStation - _userInfo.bDeskStation+PLAY_COUNT)%PLAY_COUNT + 1);
+		return  sitDir((deskStation - _mySeatNo+PLAY_COUNT)%PLAY_COUNT + 1);
 	}
 
 	INT GameTableLogic::getUserStation(const sitDir& dir)
 	{
-		return (INT(dir) - INT(sitDir::SOUTH_DIR) + _userInfo.bDeskStation)%PLAY_COUNT;
+		return (INT(dir) - INT(sitDir::SOUTH_DIR) + _userInfo.bDeskStation) % PLAY_COUNT;
 	}
 
 	int GameTableLogic::getUserVecIndex(const BYTE& deskStation)
 	{
-		return (deskStation - _userInfo.bDeskStation+PLAY_COUNT)%PLAY_COUNT;
+		return (deskStation - _userInfo.bDeskStation + PLAY_COUNT) % PLAY_COUNT;
 	}
 
 	void GameTableLogic::reconnected()
@@ -1116,7 +1219,7 @@ GameTableLogic* GameTableLogic::_instance = nullptr;
     
     void GameTableLogic::continueQueueGame()
     {
-        _queueflag = true;
+        //_queueflag = true;
         sendUserUp();
     }
 

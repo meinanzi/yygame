@@ -46,21 +46,9 @@ namespace ZYHZ
 
 		// logic
 		_tableLogic = new GameTableLogic(this, deskNo, autoCreate);
-		_tableLogic->sendGameInfo();
-
+		//_tableLogic->sendGameInfo();
+		_tableLogic->enterGame();
 		_mahjongManager->restartGame();
-
-        {
-//            // test
-//            tagMaiMa testdata;
-//            testdata.byCount=3;
-//            testdata.byCard[0] = 8;
-//            testdata.byCard[1] = 8;
-//            testdata.byCard[2] = 8;
-//            testdata.byCard[3] = 8;
-//            
-//            showMaimaOption(10, &testdata);
-        }
 
 		return true;
 	}
@@ -80,13 +68,14 @@ namespace ZYHZ
 
 	void GameTableUI::dealLeaveDesk()
 	{
-		if (PlatformLogic()->isConnect())
+		if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME))
+		{
+			RoomLogic()->close();
+			GamePlatform::returnPlatform(LayerType::ROOMLIST);
+		}
+		else 	if (PlatformLogic()->isConnect())
 		{
 			GamePlatform::returnPlatform(LayerType::DESKLIST);
-		}
-		else
-		{
-            GamePlatform::returnPlatform(LayerType::ROOMLIST);
 		}
 	}
 

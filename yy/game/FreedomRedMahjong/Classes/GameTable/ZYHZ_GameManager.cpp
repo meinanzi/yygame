@@ -99,7 +99,15 @@ namespace ZYHZ
 		COCOS_NODE(Sprite, "waiting")->setVisible(false);
 		COCOS_NODE(Sprite, "timerPoint1")->setVisible(true);
 		COCOS_NODE(Button, "return")->setVisible(true);
-		COCOS_NODE(Button, "start")->setVisible(true);
+		if (GameTableLogic::getInstance()->isQueueGame())
+		{
+			COCOS_NODE(Button, "start")->setVisible(false);
+		}
+		else
+		{
+			COCOS_NODE(Button, "start")->setVisible(true);
+		}
+		
 		COCOS_NODE(Button, "trusteeshep")->setVisible(true);
 		COCOS_NODE(Button, "quxiaotuoguang")->setVisible(false);
 
@@ -404,12 +412,19 @@ namespace ZYHZ
 			{
 				COCOS_NODE(Sprite, "finish")->setVisible(false);
 				COCOS_NODE(Sprite, "finish")->stopAllActions();
-                
-                if(GameTableLogic::getInstance()->isQueueGame())
-                    ;
-                else
-                    GTLogic()->sendAgreeGame();
-                
+				restartSetData();
+                //防作弊场
+				if (GameTableLogic::getInstance()->isQueueGame())
+				{
+					GTLogic()->_isReadyQueue = true;
+					//排队机准备，先发送站起，再开始游戏
+					RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_USER_UP);
+				}
+				else
+				{
+					GTLogic()->sendAgreeGame();
+				}
+                  
 				break;
 			}
 		default:
@@ -425,7 +440,16 @@ namespace ZYHZ
 			{
 				COCOS_NODE(Sprite, "finish")->setVisible(false);
 				COCOS_NODE(Sprite, "finish")->stopAllActions();
-				GTLogic()->sendUserUp();
+				restartGame();
+				if ((RoomLogic()->getRoomRule() & GRR_QUEUE_GAME))
+				{
+					RoomLogic()->close();
+					GamePlatform::returnPlatform(LayerType::ROOMLIST);
+				}
+				else
+				{
+					GTLogic()->sendUserUp();
+				}
 				break;
 			}
 		default:

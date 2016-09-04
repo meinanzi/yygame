@@ -130,6 +130,10 @@ namespace landlord
 		virtual void removeContestAnimate() override;									//删除比赛动画
 		virtual void showLeftUpPNG(GameTaskStruct gameTask) override;
 
+
+
+
+
 		//检测报名的定时赛是否开始
 		void checkTimeMatchStart(float dt);
 		/*

@@ -103,7 +103,7 @@ namespace DZPoker
 			}
 			else
 			{
-				GamePromptLayer::create()->showPrompt(GBKToUtf8("金币不足"));
+				GamePromptLayer::create()->showPrompt(GBKToUtf8("尚币不足"));
 			}
 		}
 		else if (btn == _btnMin)		//直接按最小携带
