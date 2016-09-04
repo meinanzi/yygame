@@ -331,7 +331,7 @@ namespace HN
 				INT i = 0;
 				while (i++ < userCount)
 				{
-					RoomInfoModule()->addRoom(pComRoomInfo++);
+					RoomInfoModule()->addRoom(pComRoomInfo++);					
 				}
 			}
 

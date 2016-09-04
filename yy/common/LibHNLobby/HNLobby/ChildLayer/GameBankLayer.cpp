@@ -445,7 +445,7 @@ void GameBankLayer::forwardUIEventCallBack(Ref* pSender, Widget::TouchEventType 
 
 			if (forwardMoney.empty())
 			{
-				GamePromptLayer::create()->showPrompt(GBKToUtf8("转账金币数为空。")); break;
+				GamePromptLayer::create()->showPrompt(GBKToUtf8("转账尚币数为空。")); break;
 			}
 
 			if (bankPassword.empty())
@@ -811,7 +811,7 @@ bool GameBankLayer::bankerEventSelector(HNSocketMessage* socketMessage)
 			} break;
 		case HC_GP_BANK_CHECK_NO_USER://				1			//没有找到用户
 			{
-				GamePromptLayer::create()->showPrompt(GBKToUtf8("金币不足无法存入。"));
+				GamePromptLayer::create()->showPrompt(GBKToUtf8("尚币不足无法存入。"));
 			} break;
 		case HC_GP_BANK_CHECK_ERR_PWD://				2			//错误密码
 			{
@@ -884,3 +884,5 @@ void GameBankLayer::SaveAndOpenBank(void* pDate, int isize)
 
 	GamePromptLayer::create()->showPrompt(promptInfo.c_str());
 }
+
+

@@ -715,7 +715,7 @@ void GamePlatform::menuLobbyTopCallBack(Ref* pSender, Widget::TouchEventType typ
 	else if (name.compare("Button_service") == 0)
 	{
 		auto serviceLayer = ServiceLayer::create();
-		serviceLayer->showService(this, Vec2(990, winSize.height - 55), CHILD_LAYER_ZORDER, CHILD_LAYER_SERVICE_TAG);
+		serviceLayer->showService(this, Vec2(winSize / 2), CHILD_LAYER_ZORDER, CHILD_LAYER_SERVICE_TAG);
 	}
 
 	// ÍË³ö

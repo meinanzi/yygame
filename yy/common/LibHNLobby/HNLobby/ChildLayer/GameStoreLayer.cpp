@@ -73,8 +73,8 @@ GameStoreLayer::~GameStoreLayer()
 	PlatformLogic()->removeEventSelector(MDM_GP_NOTIFY_PAY, ASS_GP_NOTIFY_PAY);
 	HNHttpRequest::getInstance()->removeObserver(this);
     
-    if(_req)
-        _req->release();
+	if (_req)
+		_req->release();
 }
 
 void GameStoreLayer::openStore(Node* parent, Vec2 vec, int zorder, int tag)
@@ -245,7 +245,7 @@ bool GameStoreLayer::init()
                     url += editCard->getString();
                     url += "&CardPwd=";
                     url += editPass->getString();
-                    CCLOG("%s", url.c_str());
+                    
                     if(!_req) _req = new(std::nothrow)network::HttpRequest();
                     _req->setUrl(url.c_str());
                     _req->setRequestType(network::HttpRequest::Type::GET);
@@ -352,7 +352,7 @@ Button* GameStoreLayer::showStoreMassage(const PRODUCT_INFO* product,int pos)
 	auto storeText = Text::create("", "", 25);
 	storeText->setAnchorPoint(Vec2(0, 0.5));
 	storeText->setPosition(Vec2(btnW*0.3f, btnH*0.7f));
-	sprintf(buffer, GBKToUtf8("%lld 金币"), product->number);
+	sprintf(buffer, GBKToUtf8("%lld 尚币"), product->number);
 	storeText->setString(buffer);
 	storeBtn->addChild(storeText, 1, 2);
 	// 价格
@@ -367,7 +367,7 @@ Button* GameStoreLayer::showStoreMassage(const PRODUCT_INFO* product,int pos)
 	//兑换价格
 	if((int)product->price != 0)
 	{
-		sprintf(buffer, GBKToUtf8(" 1 元 = %d 金币"),(int)product->number/(int)product->price);
+		sprintf(buffer, GBKToUtf8(" 1 元 = %d 尚币"),(int)product->number/(int)product->price);
 		auto replacePrice = Text::create("", "", 24);	
 		replacePrice->setString(buffer);
 		replacePrice->setAnchorPoint(Vec2(0, 0.5));
@@ -392,20 +392,20 @@ void GameStoreLayer::buyEventCallBack(Ref* pSender, Widget::TouchEventType type)
             _product = (PRODUCT_INFO*)selectedBtn->getUserData();
             if (nullptr != _product)
             {
-//#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-//				if(PlatformConfig::getInstance()->isIAP())
-//				{
-//                    _closeButton->setEnabled(false);
-//                    _product->payType = PRODUCT_PAY_TYPE_IAP;
-//					startPayment(_product);
-//				}
-//				else
-//				{
-//					//showPayLayer(_product);
-//				}
-//#else
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+				if(PlatformConfig::getInstance()->isIAP())
+				{
+                    _closeButton->setEnabled(false);
+                    _product->payType = PRODUCT_PAY_TYPE_IAP;
+					startPayment(_product);
+				}
+				else
+				{
+					showPayLayer(_product);
+				}
+#else
 				showPayLayer(_product);
-//#endif								
+#endif								
             }
 		}
 		break;
@@ -1086,7 +1086,7 @@ void GameStoreLayer::executePayment_Dinpay(PRODUCT_INFO* productInfo)
 	sign.append(StringUtils::format("&order_no=%s", productInfo->orderID.c_str()));
 	sign.append(StringUtils::format("&order_time=%s", dateTime.c_str()));
 	sign.append("&product_name=");
-	sign.append(GBKToUtf8("金币"));
+	sign.append(GBKToUtf8("尚币"));
 	sign.append(StringUtils::format("&key=%s", MECHANT_KEY_DINPAY));
 
 	auto md5_sign = MD5_CTX::MD5String(sign);
@@ -1102,7 +1102,7 @@ void GameStoreLayer::executePayment_Dinpay(PRODUCT_INFO* productInfo)
 		"<order_amount>%.2f</order_amount>"\
 		"<product_name>%s</product_name>"\
 		"</trade></request></dinpay>", MECHANT_ID_DINPAY, notify_url.c_str(), md5_sign.c_str(), productInfo->orderID.c_str(), 
-		dateTime.c_str(), productInfo->price/*0.1*/, GBKToUtf8("金币"));
+		dateTime.c_str(), productInfo->price/*0.1*/, GBKToUtf8("尚币"));
     
     /*
      "<redo_flag></redo_flag>"\

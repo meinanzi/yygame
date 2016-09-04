@@ -17,6 +17,7 @@ class GameRechargeRebate : public HNLayer
 	struct RebateUi
 	{
 		ImageView*		ImageView_RebateBG;
+		ImageView*		Image_ErWeiMa;
 		Text*			Text_RechMoney;
 		Text*			Text_RebateMoney;
 

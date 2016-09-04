@@ -110,8 +110,7 @@ void  GameSignLayer::buttonEventCallBack(Ref* pSender, Widget::TouchEventType ty
 //查询签到信息
 void GameSignLayer::checkSignData()
 {
-	PlatformLogic()->sendData(MDM_GP_SIGN, ASS_GP_SIGN_CHECK, 0, 0, 
-		HN_SOCKET_CALLBACK(GameSignLayer::checkSignDataEventSelector, this));
+	PlatformLogic()->sendData(MDM_GP_SIGN, ASS_GP_SIGN_CHECK, 0, 0, HN_SOCKET_CALLBACK(GameSignLayer::checkSignDataEventSelector, this));
 }
 
 //申请查询签到信息回调
@@ -130,7 +129,7 @@ bool GameSignLayer::checkSignDataEventSelector(HNSocketMessage* socketMessage)
 		return true;
 	}
 	
-	sprintf(str, "您已连续登陆%d天了，获得奖励金币", iCheck->byCountDay);
+	sprintf(str, "您已连续登陆%d天了，获得奖励尚币", iCheck->byCountDay);
 	_SignUi.Text_Prompt->setString(GBKToUtf8(str));
 
 	sprintf(str, "%d", iCheck->iGetMoney);
@@ -178,7 +177,7 @@ bool GameSignLayer::getSignRewardEventSelector(HNSocketMessage* socketMessage)
 	if (1 == iGet->iRs)
 	{
 		PlatformLogic()->loginResult.i64Money += iGet->iGetMoney;
-		sprintf(str, "恭喜你领取成功，获得%d金币奖励！", iGet->iGetMoney);
+		sprintf(str, "恭喜你领取成功，获得%d尚币奖励！", iGet->iGetMoney);
 		if (nullptr != onUpdataUserMoney)
 		{
 			onUpdataUserMoney(PlatformLogic()->loginResult.i64Money);

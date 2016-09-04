@@ -35,6 +35,7 @@ namespace HN
 		std::vector<UINT> vecMatchRoom;
 		for (auto iter = _rooms->begin(); iter != _rooms->end(); ++iter)
 		{
+
 			ComRoomInfo* pInfo = (ComRoomInfo*)*iter;
 			// 不是比赛
 			if(((pInfo->dwRoomRule & GRR_TIMINGCONTEST) == 0) && ((pInfo->dwRoomRule & GRR_CONTEST) == 0))
@@ -45,18 +46,22 @@ namespace HN
 			
 			if ((*iter)->dwRoomRule & GRR_TIMINGCONTEST)
 			{
-			roomCount++;
-			continue;
+				roomCount++;
+				continue;
 			}
+
 			auto it = vecMatchRoom.begin();
 			for (; it != vecMatchRoom.end(); ++it)
 			{
-				if ((*iter)->iUpPeople == *it && (*iter)->dwRoomRule == *(++it))		break;
+				if ((*iter)->iContestID == *it && (*iter)->dwRoomRule == *(++it))
+				{
+					break;
+				}
 			}
 
-			if (it == vecMatchRoom.end())	
+			if (it == vecMatchRoom.end() )	
 			{
-				vecMatchRoom.push_back((*iter)->iUpPeople);
+				vecMatchRoom.push_back((*iter)->iContestID);
 				vecMatchRoom.push_back((*iter)->dwRoomRule);
 				roomCount++;
 			}

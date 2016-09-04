@@ -182,7 +182,6 @@ namespace HN
 					else if (RoomLogic()->getRoomRule() & GRR_QUEUE_GAME) // 单排队机或者排队机+防作弊
 					{
 						RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
-
 						dealGameInline(true);
 					}
 				}

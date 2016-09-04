@@ -27,13 +27,13 @@ namespace HN
 			if (PlatformLogic()->loginResult.i64Money < pRoomInfo->iLessPoint)
 			{
 				char buffer[128];
-				sprintf(buffer, "您的金币小于%u, 不能进入房间, 请到商店充值。", pRoomInfo->iLessPoint);
+				sprintf(buffer, "您的尚币小于%u, 不能进入房间, 请到商店充值。", pRoomInfo->iLessPoint);
 				_callback->onRoomLoginCallback(false, GBKToUtf8(buffer), _roomID);
 			}
 			else if(pRoomInfo->iMaxPoint != 0 && (PlatformLogic()->loginResult.i64Money > pRoomInfo->iMaxPoint))
 			{
 				char buffer[128];
-				sprintf(buffer, "您的金币大于%u, 不能进入房间,超过最大买入。", pRoomInfo->iMaxPoint);
+				sprintf(buffer, "您的尚币大于%u, 不能进入房间,超过最大买入。", pRoomInfo->iMaxPoint);
 				_callback->onRoomLoginCallback(false, GBKToUtf8(buffer), _roomID);
 			}
 			else

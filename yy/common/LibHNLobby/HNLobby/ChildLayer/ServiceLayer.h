@@ -11,11 +11,26 @@ USING_NS_CC;
 using namespace ui;
 using namespace cocostudio;
 
-class ServiceLayer : public HNLayer, public HNHttpDelegate
+class ServiceLayer : public HNLayer, public HNHttpDelegate, public ui::EditBoxDelegate
 {
+	struct SHANGBIDATA_UI
+	{
+		ImageView* img_BG;
+		Text* Txt_Lotteries;
+		Text* Txt_BiLi;
+		Text* Txt_Info;
+		HNEditBox* edit_Num;
+		Button * Button_ShangBiOK;
+	}_ChangeDataUi;
+
+
 public:
 	// 显示
 	void showService(Node* parent, Vec2 vec, int zorder, int tag);
+
+	//显示兑换页面
+	//bShangbi--默认显示尚币兑换界面
+	void	ShowChangeView();
 
 	// 隐藏
 	void closeService();
@@ -32,9 +47,16 @@ public:
 protected:
 	// 按钮回调
 	void onServiceClick(Ref* pRef);
-
+	//兑换回调
+	void onChangeClick(Ref* pRef);
 	// 客服信息回调
 	virtual void onHttpResponse(const std::string& requestName, bool isSucceed, const std::string &responseData) override;
+
+private:
+
+	// 银行操作处理函数
+	bool ExchangeEventSelector(HNSocketMessage* socketMessage);
+
 
 	// 构造函数
 	ServiceLayer();
@@ -43,7 +65,7 @@ protected:
 	virtual ~ServiceLayer();
 
 	// 获取客服信息
-	void requestServiceInfo();
+	void requestServiceInfo(int iNum);
 
 private:
 	// 布局文件
@@ -62,9 +84,15 @@ private:
 	Size            _winSize;
 
 	// 按钮
-	Button*         _buttonPhone;
-	Button*         _buttonMessage;
-	Button*         _buttonEmail;
+	Button*         _buttonClose;
+	Button*         _buttonShangBi;
+	Button*         _buttonJiFen;
+	//兑换类型  0-兑换尚币  1-兑换积分
+	BYTE				_byChangeType;
+
+	INT				_iIntegralRatio;		//积分兑换比例
+
+	virtual void editBoxReturn(ui::EditBox* editBox) {};
 };
 
 #endif // ServiceLayer_h__

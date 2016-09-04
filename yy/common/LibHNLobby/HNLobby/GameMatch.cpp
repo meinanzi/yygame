@@ -363,7 +363,7 @@ bool GameMatch::contestInit()
 	{
 		if (!ptr[i])
 		{
-			sprintf(buffer, GBKToUtf8("第 %d 名:奖励%9d金币"), i + 1, str[i]);
+			sprintf(buffer, GBKToUtf8("第 %d 名:奖励%9d尚币"), i + 1, str[i]);
 		}
 		else
 		{
@@ -373,7 +373,7 @@ bool GameMatch::contestInit()
 		_matchLayout.ListView_Reward->pushBackCustomItem(tmp);
 	}
 
-	sprintf(buffer, GBKToUtf8("报名费:%8d金币"), Ddata->getIntegerForKey("iEntryFee"));
+	sprintf(buffer, GBKToUtf8("报名费:%8d尚币"), Ddata->getIntegerForKey("iEntryFee"));
 	Text * tmp = Text::create(GBKToUtf8(buffer), "", 25);
 	_matchLayout.ListView_Reward->pushBackCustomItem(tmp);
 
@@ -525,7 +525,7 @@ bool GameMatch::contestRegistrationResult(HNSocketMessage* socketMessage)
 		} break;
 	case 8:
 		{
-			prompt = "金币不足，无法报名。";
+			prompt = "尚币不足，无法报名。";
 		} break;
 	case 10:
 	{
@@ -587,7 +587,7 @@ bool GameMatch::constBuyPropResult(HNSocketMessage* socketMessage)
 	}
 	case  DTK_GP_PROP_BUY_NOMONEY:	//
 	{
-		prompt = "银行金币不足,购买参赛卡失败";
+		prompt = "银行尚币不足,购买参赛卡失败";
 		break;
 	}
 	case  DTK_GP_PROP_BUY_SUCCEED:	//
@@ -603,8 +603,7 @@ bool GameMatch::constBuyPropResult(HNSocketMessage* socketMessage)
 	{
 		GamePromptLayer::create()->showPrompt(GBKToUtf8(prompt.c_str()));
 	}
-    
-    return true;
+	return true;
 }
 
 void GameMatch::cleanTimeMatchData()
