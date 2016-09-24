@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">商户样例</string>
+    <string name="merchant_demo_title">商户调用环迅插件(UPMP)样例\n（外网测试环境标准版)</string>
+    <string name="bankcard_hint">请输入银行卡号（选填）</string>
+
+</resources>

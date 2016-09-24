@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+	<title>易宝网银支付接口</title>
+</head>
+	<body>
+		<br /> <br />
+		<table width="80%" border="0" align="center" cellpadding="5" cellspacing="0" style="border:solid 1px #107929">
+			<tr>
+		  		<th align="center" height="30" colspan="5" bgcolor="#6BBE18">
+					请输入订单支付参数	
+				</th>
+		  	</tr> 
+
+			<form method="post" action="sendPay_02.jsp" accept-charset="GBK">
+				<tr >
+					<td width="20%" align="left">&nbsp;业务类型</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p0_Cmd" value="Buy" readonly="readonly" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p0_Cmd</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;商户订单号</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p2_Order" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p2_Order</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;支付金额</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p3_Amt" value="0.01" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p3_Amt</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;支付币种</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p4_Cur" value="CNY" readonly="readonly" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p4_Cur</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;商品名称</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p5_Pid" value="productname" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p5_Pid</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;商品种类</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p6_Pcat" value="productcat" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p6_Pcat</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;商品描述</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p7_Pdesc" value="productdesc" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p7_Pdesc</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;通知地址</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p8_Url" value="http://localhost:8080/YeepayPaymentGateway/callback.jsp" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p8_Url</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;是否送货</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<select name="p9_SAF">
+							<option value="0">不需要</option>
+							<option value="1">需要</option>
+						</select>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p9_SAF</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;扩展信息</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pa_MP" value="" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pa_MP</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;支付通道</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pd_FrpId" value="" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pd_FrpId</td> 
+				</tr>
+				
+				<tr >
+					<td width="20%" align="left">&nbsp;订单有效期</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pm_Period" value="" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pm_Period</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;订单有效期单位</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pn_Unit" value="" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pn_Unit</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;应答机制</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pr_NeedResponse" value="1" readonly="readonly" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pr_NeadResponse</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;</td>
+					<td width="5%"  align="center">&nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input type="submit" value="提交订单" />
+					</td>
+					<td width="5%"  align="center">&nbsp;</td> 
+					<td width="15%" align="left">&nbsp;</td> 
+				</tr>
+
+			</form>
+		</table>
+</body>
+</html>

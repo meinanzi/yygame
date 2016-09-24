@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+	<title>订单撤销接口</title>
+</head>
+	<body>
+		<br /> <br />
+		<table width="80%" border="0" align="center" cellpadding="5" cellspacing="0" style="border:solid 1px #107929">
+			<tr>
+		  		<th align="center" height="30" colspan="5" bgcolor="#6BBE18">
+					请输入订单撤销参数	
+				</th>
+		  	</tr> 
+
+			<form method="post" action="sendCancel.jsp">
+				<tr >
+					<td width="20%" align="left">&nbsp;业务类型</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p0_Cmd" value="CancelOrd" readonly="readonly"/>
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p0_Cmd</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;商户订单号</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pb_TrxId" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pb_TrxId</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;</td>
+					<td width="5%"  align="center">&nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input type="submit" value="单击撤销订单" />
+					</td>
+					<td width="5%"  align="center">&nbsp;</td> 
+					<td width="15%" align="left">&nbsp;</td> 
+				</tr>
+
+			</form>
+		</table>
+</body>
+</html>

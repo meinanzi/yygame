@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gbk">
+	<title>订单退款接口.</title>
+</head>
+	<body>
+		<br /> <br />
+		<table width="80%" border="0" align="center" cellpadding="5" cellspacing="0" style="border:solid 1px #107929">
+			<tr>
+		  		<th align="center" height="30" colspan="5" bgcolor="#6BBE18">
+					请输入退款订单参数	
+				</th>
+		  	</tr> 
+
+			<form method="post" action="sendRefund.jsp" accept-charset="GBK">
+				<tr >
+					<td width="20%" align="left">&nbsp;业务类型</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p0_Cmd" value="RefundOrd" readonly="readonly" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p0_Cmd</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;退款请求编号</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p2_order" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p2_order</td> 
+				</tr>
+				
+				<tr >
+					<td width="20%" align="left">&nbsp;易宝流水号</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="pb_TrxId" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">pb_TrxId</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;退款金额</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p3_Amt" value="0.01"/>
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p3_Amt</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;交易币种</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p4_Cur" value="CNY" readonly="readonly" />
+						<span style="color:#FF0000;font-weight:100;">*</span>
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p4_Cur</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;退款说明</td>
+					<td width="5%"  align="center"> : &nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input size="70" type="text" name="p5_Desc" />
+					</td>
+					<td width="5%"  align="center"> - </td> 
+					<td width="15%" align="left">p5_Desc</td> 
+				</tr>
+
+				<tr >
+					<td width="20%" align="left">&nbsp;</td>
+					<td width="5%"  align="center">&nbsp;</td> 
+					<td width="55%" align="left"> 
+						<input type="submit" value="单击退款" />
+					</td>
+					<td width="5%"  align="center">&nbsp;</td> 
+					<td width="15%" align="left">&nbsp;</td> 
+				</tr>
+
+			</form>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff0099cc"
+    android:gravity="left|center_vertical"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/merchant_demo_title"
+        android:textColor="@android:color/black"
+        android:textSize="10pt" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TableRow android:id="@+id/tableRow1" >
+
+                <TextView android:text="商户号" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_mer_code"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:hint="请输入商户号"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:text="118506"
+                    android:textColor="@android:color/black" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow2" >
+
+                <TextView android:text="交易账户号" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_accCode"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:hint="请输入交易账户号"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:text="1185060017"
+                    android:textColor="@android:color/black" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow3" >
+
+                <TextView
+                    android:layout_gravity="left|center_vertical"
+                    android:text="商户订单号" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_mer_bill_no"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:gravity="left|center_vertical"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:visibility="gone" >
+
+                <TextView android:text="币种" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_mobilePay_ccyCode"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:gravity="left|center_vertical"
+                    android:text="156"
+                    android:textColor="@android:color/black" >
+                </TextView>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow6" >
+
+                <TextView android:text="支付类型" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_prdCode"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:gravity="left|center_vertical"
+                    android:hint="2301(移动无卡支付)"
+                    android:singleLine="true"
+                    android:text="2301"
+                    android:textColor="@android:color/black" >
+                </EditText>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="left|center_vertical"
+                    android:text="订单金额" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_tranAmt"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:digits="0123456789."
+                    android:gravity="left|center_vertical"
+                    android:inputType="numberDecimal"
+                    android:text="100.02"
+                    android:hint="订单金额保留两位小数"
+                    android:textColor="@android:color/black" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow7" >
+
+                <TextView
+                    android:layout_gravity="left|center_vertical"
+                    android:text="请求日期" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_mobilePay_requestTime"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@android:color/black" >
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="left|center_vertical"
+                    android:text="订单有效期" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_ordPerVal"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:digits="0123456789"
+                    android:gravity="left|center_vertical"
+                    android:hint="单位:小时(1即1小时）"
+                    android:inputType="numberDecimal"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gray" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow9" >
+
+                <TextView android:text="商户通知URL" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_merNoticeUrl"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:hint="商户通知URL(异步)"
+                    android:inputType="textUri"
+                    android:singleLine="true"
+                    android:text="http://m.ips.com.cn"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gray" >
+                </EditText>
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow12" >
+
+                <TextView android:text="订单描述" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mobilePay_orderDesc"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:hint="订单描述(不能为空)"
+                    android:singleLine="true"
+                    android:text="测试交易001"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gray" >
+                </EditText>
+            </TableRow>
+            <!-- add start -->
+
+            <TableRow android:id="@+id/tableRow0" >
+
+                <TextView android:text="银行卡号" />
+
+                <EditText
+                    android:id="@+id/et_mobilePay_bank_card_num"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bar"
+                    android:hint="@string/bankcard_hint"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+            <!-- add end -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_go_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="confirmMobilePay"
+                    android:text="开始支付"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/cancel_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cancelMobilePay"
+                    android:text="取消支付"
+                    android:textStyle="italic" >
+                </Button>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
