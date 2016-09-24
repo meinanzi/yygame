@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="bankTitleNode" Type="Node" ID="ef234b2f-1bf8-4238-8a29-8d6d8de0297e" Version="2.3.3.0" />
+  <PropertyGroup Name="bankTitleNode" Type="Node" ID="ef234b2f-1bf8-4238-8a29-8d6d8de0297e" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Node" Tag="72" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="2045444827" Tag="73" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="-640.0000" RightMargin="-640.0000" BottomMargin="-100.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="2045444827" Tag="73" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="-640.0000" RightMargin="-640.0000" BottomMargin="-100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="1280.0000" Y="100.0000" />
             <Children>
               <AbstractNodeData Name="Image_1" ActionTag="-492832506" Tag="77" IconVisible="False" LeftMargin="769.0000" RightMargin="509.0000" TopMargin="5.0000" BottomMargin="25.0000" Scale9Width="2" Scale9Height="60" ctype="ImageViewObjectData">

@@ -1,12 +1,12 @@
 <GameFile>
-  <PropertyGroup Name="settingNode" Type="Node" ID="af54ad5f-d16a-4828-9e6d-c21d28e7f24e" Version="2.3.3.0" />
+  <PropertyGroup Name="settingNode" Type="Node" ID="af54ad5f-d16a-4828-9e6d-c21d28e7f24e" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Node" Tag="83" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="156113984" Tag="84" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="-350.0000" RightMargin="-350.0000" TopMargin="-200.0000" BottomMargin="-200.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="156113984" Tag="84" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" LeftMargin="-350.0000" RightMargin="-350.0000" TopMargin="-200.0000" BottomMargin="-200.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="700.0000" Y="400.0000" />
             <Children>
               <AbstractNodeData Name="Image_1" ActionTag="27552987" Tag="85" IconVisible="False" HorizontalEdge="BothEdge" VerticalEdge="BothEdge" TopMargin="-5.0000" BottomMargin="-5.0000" LeftEage="15" RightEage="15" TopEage="15" BottomEage="15" Scale9OriginX="15" Scale9OriginY="15" Scale9Width="670" Scale9Height="380" ctype="ImageViewObjectData">

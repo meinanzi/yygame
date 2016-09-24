@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="ServiceNode" Type="Node" ID="e671a02f-5942-4ef3-a4d1-c23744c6837d" Version="2.3.3.0" />
+  <PropertyGroup Name="ServiceNode" Type="Node" ID="e671a02f-5942-4ef3-a4d1-c23744c6837d" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
