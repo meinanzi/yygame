@@ -606,22 +606,22 @@ void GameTableUI::showLeftUpPNG(GameTaskStruct gameTask)
 	{
 	case  TYPE_HAVE_A_CARD:
 		{
-			sprintf(strName,"最后一手牌：带%s胜利，金币增加100%%" , CardName[gameTask.bySpecifyCard - 3].c_str())  ; 
+			sprintf(strName,"最后一手牌：带%s胜利，尚币增加100%%" , CardName[gameTask.bySpecifyCard - 3].c_str())  ; 
 			break;
 		}
 	case  TYPE_SOME_SHAPE:
 		{
-			sprintf(strName,"最后一手牌：以%s胜利，金币增加150%%" ,CardShpae[gameTask.bySpecifyShape].c_str()) ; 
+			sprintf(strName,"最后一手牌：以%s胜利，尚币增加150%%" ,CardShpae[gameTask.bySpecifyShape].c_str()) ; 
 			break;
 		}
 	case  TYPE_SINGLE_SOME_CARD:
 		{
-			sprintf(strName,"最后一手牌：以单张%s胜利，金币增加150%%" ,CardName[gameTask.bySpecifyCard - 3].c_str()) ; 
+			sprintf(strName,"最后一手牌：以单张%s胜利，尚币增加150%%" ,CardName[gameTask.bySpecifyCard - 3].c_str()) ; 
 			break;
 		}
 	case  TYPE_DOUBLE_SOME_CARD:
 		{
-			sprintf(strName,"最后一手牌：以一对%s胜利，金币增加150%%" ,CardName[gameTask.bySpecifyCard - 3].c_str()) ;
+			sprintf(strName,"最后一手牌：以一对%s胜利，尚币增加150%%" ,CardName[gameTask.bySpecifyCard - 3].c_str()) ;
 			break;
 		}
 	default:

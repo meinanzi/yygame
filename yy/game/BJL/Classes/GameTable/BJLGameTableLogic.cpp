@@ -521,7 +521,7 @@ namespace BJL
 		LLONG betValue[] = {100, 1000, 10000, 100000, 1000000, 5000000, 10000000};
 		if (_userMoney < betValue[betType])
 		{
-			_uiCallback->IShowNoticeMessage(GBKToUtf8("金币不足！"));
+			_uiCallback->IShowNoticeMessage(GBKToUtf8("尚币不足！"));
 			return ;
 		}
 
@@ -550,7 +550,7 @@ namespace BJL
 
 		if (_userMoney < _NTMinLimit)
 		{
-			sprintf(str, "上庄失败, 金币大于%lld才能上庄", _NTMinLimit);
+			sprintf(str, "上庄失败, 尚币大于%lld才能上庄", _NTMinLimit);
 			_uiCallback->IShowNoticeMessage(GBKToUtf8(str));
 			return ;
 		}		

@@ -744,7 +744,7 @@ void GameTableLogic::dealContinueEndResp(void* object, INT objectSize)
 		
 		if (!_bContestRoom)
 		{
-			sprintf(str, GBKToUtf8("½ð±Ò£º%lld"), pUser->i64Money);
+			sprintf(str, GBKToUtf8("ÉÐ±Ò£º%lld"), pUser->i64Money);
 			_uiCallback->setUserMoney(seatNo, str);
 			_uiCallback->showUserMoney(seatNo, true);
 		}
@@ -889,7 +889,7 @@ void GameTableLogic::dealUserSitResp(MSG_GR_R_UserSit * userSit, UserInfoStruct*
 		}
 		else
 		{
-			sprintf(str, GBKToUtf8("½ð±Ò£º%lld"), user->i64Money);
+			sprintf(str, GBKToUtf8("ÉÐ±Ò£º%lld"), user->i64Money);
 			_uiCallback->setUserMoney(seatNo, str);
 			_uiCallback->showUserMoney(seatNo, true);
 		}
@@ -919,7 +919,8 @@ void GameTableLogic::dealUserUpResp(MSG_GR_R_UserSit * userSit, UserInfoStruct* 
 
 	if (_isReadyQueue && user->dwUserID == RoomLogic()->loginResult.pUserInfoStruct.dwUserID)
 	{
-		RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
+		_uiCallback->leaveDesk(false);
+		//RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
 		_isReadyQueue = false;
 		return;
 	}
@@ -1523,7 +1524,7 @@ void GameTableLogic::loadUsers()
 			}
 			else
 			{
-				sprintf(str, GBKToUtf8("½ð±Ò£º%lld"), pUser->i64Money);
+				sprintf(str, GBKToUtf8("ÉÐ±Ò£º%lld"), pUser->i64Money);
 				_uiCallback->setUserMoney(seatNo, str);
 				_uiCallback->showUserMoney(seatNo, true);
 			}

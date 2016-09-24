@@ -10,8 +10,7 @@
 
 namespace ZYHZ
 {
-	class GameManager :
-		public cocos2d::Node
+	class GameManager :public cocos2d::Node
 	{
 	public:
 		GameManager(void);
@@ -55,11 +54,12 @@ namespace ZYHZ
 		// 按纽或计时器调用实现
 	private:
 		void endQueMen(INT queColor = 0, bool isRand = false);												// 结束定缺,按钮或者计时器调用
-		void endAllTimer();																										// 终止所有计时器
+																									
 		int getRd_A_N(int a, int n);
 
 		// 计时器
 	public:
+		void endAllTimer();	// 终止所有计时器
 		void startTimer(const sitDir& timerPointDir, timerType timerType);
 	private:
 		void waitTimer(float dt);																							    // 等候开始

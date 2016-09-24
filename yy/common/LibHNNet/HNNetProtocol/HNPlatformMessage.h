@@ -101,7 +101,8 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-#define		MDM_GP_LIST						101			// 游戏列表
+#define		MDM_GP_LIST							101			// 游戏列表
+
 
 ///通信辅助标识										
 #define		ASS_GP_LIST_KIND				1			//获取游戏类型列表
@@ -111,6 +112,9 @@
 #define		ASS_GP_ROOM_LIST_PEOCOUNT		5			//获取游戏人数列表
 #define		ASS_GP_ROOM_PASSWORD			6			//发送房间密码,试图进入密码房间时发送此消息
 #define		ASS_GP_GET_SELLGAMELIST			7			//获取游戏销售列表
+
+//////////////////////////////////////////////////////////////////////////
+
 
 //////////////////////////////////////////////////////////////////////////
 //添加用户资料管理通讯协议
@@ -205,6 +209,8 @@ typedef struct tagMSG_GP_R_LogonResult
 	INT									iLockMathine;					///当前帐号是否锁定了某台机器，1为锁定，0为未锁定
 	INT									iBindMobile;						///当前帐号是否绑定手机号码，1为绑定，0为未绑定
 	INT									iAddFriendType;				///是否允许任何人加为好友
+
+	INT									iExChageRatio;					///奖券兑换尚币(金币)比例
 } MSG_GP_R_LogonResult;
 
 typedef MSG_GP_R_LogonResult MSG_GP_UserInfo;
@@ -529,6 +535,34 @@ typedef struct MSG_GP_S_GetMoney_ByPay
 	LLONG							i64TotalMoney;		//累计充了多少钱
 	LLONG							i64Money;			//应该得到多少金币奖励
 } MSG_GP_S_GetMoney_ByPay;
+
+
+//////////////////////////////////////////////////////////////////////////
+//元亨卡兑换
+#define		MDM_GP_EXCHANGE					136		
+#define		ASS_GP_EXCHANGE_COIN			1		//兑换尚币
+#define		ASS_GP_EXCHANGE_INTEGRAL		2		//兑换积分
+//////////////////////////////////////////////////////////////////////////
+//兑换
+typedef struct MSG_GP_S_EXCHANGE
+{
+	UINT					dwUserID;					//玩家ID号
+	INT					iExChangeNum;		//兑换数量
+} MSG_GP_S_EXCHANGE;
+
+//兑换结果
+typedef struct MSG_GP_S_EXCHANGE_RESULT
+{
+	INT					iResutl;			//兑换结果
+	INT					iGetMoenyNum;		//兑换获得的尚币数量
+	INT					iRemaindLotteries;	//兑换后 剩余的元亨卡数量
+	INT					iRemaindMoney;		//兑换后身上的尚币数
+
+	MSG_GP_S_EXCHANGE_RESULT()
+	{
+		memset(this, 0, sizeof(MSG_GP_S_EXCHANGE_RESULT));
+	}
+} MSG_GP_S_EXCHANGE_RESULT;
 
 #pragma pack()
 

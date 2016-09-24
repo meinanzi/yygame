@@ -269,7 +269,7 @@ void GameGiftShop::getEntityPage(GiftInfo* info, SpriteFrame* frame)
 		float money = (float)value / 100000000;
 		sprintf(buffer, "%.2f亿", money);
 	}
-
+	sprintf(buffer, "%lld", value);
 	auto textNum = dynamic_cast<Text*>(_panel_Entity->getChildByName("Text_Num"));
 	textNum->setString(GBKToUtf8(buffer));
 
@@ -560,7 +560,7 @@ void GameGiftShop::createGiftPages()
 void GameGiftShop::onHttpDownloadPicCompleted(const std::string& tag, const std::string& data)
 {
 	//请求的图片顺序不一定，所以把对应的商品和图片查找配对
-	char str[24];
+	char str[64];
 	for (UINT i = 0; i < _gifts.size(); i++)
 	{
 		sprintf(str, "Award_Pic%d", i);
@@ -595,13 +595,14 @@ void GameGiftShop::onHttpDownloadPicCompleted(const std::string& tag, const std:
 			else if (value >= 10000 && value < 100000000)
 			{
 				int money = (int)value / 10000;
-				sprintf(str, "%d万元亨卡", money);
+				sprintf(str, "%lld万元亨卡", money);
 			}
 			else
 			{
 				float money = (float)value / 100000000;
 				sprintf(str, "%.2f亿元亨卡", money);
 			}
+			sprintf(str, "%lld元亨卡", value);
 			auto textLottery = dynamic_cast<Text*>(giftBtn->getChildByName("Text_Lottery"));
 			textLottery->setString(GBKToUtf8(str));
 

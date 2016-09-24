@@ -911,7 +911,7 @@ namespace GoldenToad
 	void GameTableUI::dealCatchSweepFishResultEx(CMD_S_CatchSweepFishResultEx* pResult)
 	{
 		char str[128];
-		sprintf(str, "%s%d号桌的%s被玩家%s捕到，获得%lld金币奖励！！", pResult->cRoomName, pResult->iDeskID + 1, pResult->cFishName, 
+		sprintf(str, "%s%d号桌的%s被玩家%s捕到，获得%lld尚币奖励！！", pResult->cRoomName, pResult->iDeskID + 1, pResult->cFishName, 
 			pResult->szNickName, pResult->fish_score);
 		showNoticeMessage(GBKToUtf8(str));
 	}
@@ -1449,7 +1449,7 @@ namespace GoldenToad
 
 		if(!_players[_tableLogic->_MYSEATNO]->isFireEnable())
 		{
-			showNoticeMessage(GBKToUtf8("玩家金币不够，无法开火！"));
+			showNoticeMessage(GBKToUtf8("玩家尚币不够，无法开火！"));
 			return ;
 		}
 
@@ -1495,7 +1495,7 @@ namespace GoldenToad
 			{
 				Prompt = GamePromptLayer::create();
 				Prompt->setName("Prompt");
-				Prompt->showPrompt(GBKToUtf8("玩家金币不够，无法开火！"));
+				Prompt->showPrompt(GBKToUtf8("玩家尚币不够，无法开火！"));
 			}
 
 			unschedule(schedule_selector(GameTableUI::setAtuoFire));

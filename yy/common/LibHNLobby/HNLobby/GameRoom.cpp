@@ -143,7 +143,7 @@ void GameRoom::createRoomList()
 				ComRoomInfo* roomInfo = RoomInfoModule()->getRoom(currentIndex);
 
 				if (!roomInfo)			continue;
-				if (JudgeMatchRoom(roomInfo->iUpPeople, roomInfo->dwRoomRule))		continue;
+				if (JudgeMatchRoom(roomInfo->iContestID, roomInfo->dwRoomRule))		continue;
 				room ++;
 
 				pages.push_back(roomInfo);
@@ -159,7 +159,7 @@ void GameRoom::createRoomList()
 		{
 			ComRoomInfo* roomInfo = RoomInfoModule()->getRoom(currentIndex);
 
-			if (JudgeMatchRoom(roomInfo->iUpPeople, roomInfo->dwRoomRule))		continue;
+			if (JudgeMatchRoom(roomInfo->iContestID, roomInfo->dwRoomRule))		continue;
 			room ++;
 			pages.push_back(roomInfo);
 		}
@@ -578,7 +578,7 @@ void GameRoom::updateRoomPeopleCount(UINT roomID, UINT userCount)
 	}
 }
 
-bool GameRoom::JudgeMatchRoom(UINT upPeople, UINT roomRule)
+bool GameRoom::JudgeMatchRoom(UINT iContestID, UINT roomRule)
 {
 	if (!((roomRule & GRR_CONTEST) || (roomRule & GRR_TIMINGCONTEST)))			return false;
 	
@@ -586,10 +586,10 @@ bool GameRoom::JudgeMatchRoom(UINT upPeople, UINT roomRule)
 	
 	for (auto it = _vecContestRoom.begin(); it != _vecContestRoom.end(); it++)
 	{
-		if (*it == upPeople && *(++it) == roomRule)	return true;
+		if (*it == iContestID && *(++it) == roomRule)	return true;
 	}
 
-	_vecContestRoom.push_back(upPeople);
+	_vecContestRoom.push_back(iContestID);
 	_vecContestRoom.push_back(roomRule);
 
 	return false;

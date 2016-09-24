@@ -10,7 +10,7 @@
 // ¶·µØÖ÷
 #include "LandlordMessageHead.h"
 #include "LandlordGameTableUI.h"
-    
+
 
 // ½ğó¸²¶Óã
 #include "GoldenToadMessageHead.h"

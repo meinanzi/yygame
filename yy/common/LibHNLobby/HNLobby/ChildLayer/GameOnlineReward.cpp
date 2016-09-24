@@ -169,7 +169,7 @@ bool GameOnlineReward::getOnlineRewardEventSelector(HNSocketMessage* socketMessa
 		schedule(schedule_selector(GameOnlineReward::updataGetRewardTimeMessage), 1.0f);
 
 		PlatformLogic()->loginResult.i64Money += iGet->iCurrentGetMoney;
-		sprintf(str, "恭喜你领取成功，获得%u金币奖励！", iGet->iCurrentGetMoney);
+		sprintf(str, "恭喜你领取成功，获得%u尚币奖励！", iGet->iCurrentGetMoney);
 		if (nullptr != onUpdataUserMoney)
 		{
 			onUpdataUserMoney(PlatformLogic()->loginResult.i64Money);

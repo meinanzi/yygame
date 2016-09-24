@@ -74,7 +74,7 @@ private:
 	private:  // 逻辑层
 		GameTableLogic* _tableLogic;
 
-	private:          //  核心数据
+	public:          //  核心数据
 		GameManager* _mahjongManager;
 	};
 

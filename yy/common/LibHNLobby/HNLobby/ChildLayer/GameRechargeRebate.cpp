@@ -57,6 +57,10 @@ bool GameRechargeRebate::init()
 
 	_RebateUi.ImageView_RebateBG = (ImageView*)node->getChildByName("Image_RebateBG");
 
+
+	_RebateUi.Image_ErWeiMa = (ImageView*)_RebateUi.ImageView_RebateBG->getChildByName("Image_EWM");
+	_RebateUi.Image_ErWeiMa->setVisible(true);
+
 	_RebateUi.Text_RechMoney = (Text*)_RebateUi.ImageView_RebateBG->getChildByName("Text_RechMoney");
 	_RebateUi.Text_RebateMoney = (Text*)_RebateUi.ImageView_RebateBG->getChildByName("Text_RebateMoney");
 
@@ -65,10 +69,11 @@ bool GameRechargeRebate::init()
 
 	_RebateUi.Button_Get = (Button*)_RebateUi.ImageView_RebateBG->getChildByName("Button_Get");
 	_RebateUi.Button_Get->addTouchEventListener(CC_CALLBACK_2(GameRechargeRebate::buttonEventCallBack, this));
+	_RebateUi.Button_Get->setVisible(false);
 	_RebateUi.Button_Get->setEnabled(false);
 	_RebateUi.Button_Get->setBright(false);
 
-	checkRebateData();
+//	checkRebateData();
 
 	return true;
 }
@@ -151,7 +156,7 @@ bool GameRechargeRebate::getRebateEventSelector(HNSocketMessage* socketMessage)
 	if (1 == socketMessage->messageHead.bHandleCode)
 	{
 		PlatformLogic()->loginResult.i64Money += iGet->i64Money;
-		sprintf(str, "恭喜你领取成功，获得%d金币奖励！", iGet->i64Money);
+		sprintf(str, "恭喜你领取成功，获得%d尚币奖励！", iGet->i64Money);
 		if (nullptr != onUpdataUserMoney)
 		{
 			onUpdataUserMoney(PlatformLogic()->loginResult.i64Money);

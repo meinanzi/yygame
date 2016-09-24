@@ -779,7 +779,7 @@ namespace goldenflower
 			//准备排队
 			if (_isReadyQueue)
 			{
-				RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
+				
 				_isReadyQueue = false;
 				//隐藏开始按钮
 				_uiCallback->showReady(false);
@@ -798,6 +798,9 @@ namespace goldenflower
 
 				//显示正在为您配桌提示
 				_uiCallback->showQueNotice(GBKToUtf8("正在为您配桌，请耐心等待..."), true);
+
+				_uiCallback->leaveDesk();
+				//RoomLogic()->sendData(MDM_GR_USER_ACTION, ASS_GR_JOIN_QUEUE);
 			}
 			else
 			{
